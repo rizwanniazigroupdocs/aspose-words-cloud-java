@@ -85,13 +85,13 @@ public class WordsApi {
         Map<String, Object> localVarFormParams = new LinkedHashMap<String, Object>();
         
         final String[] localVarAccepts = {
-            
+            "application/xml", "application/json"
         };
         final String localVarAccept = apiClient.selectHeaderAccept(localVarAccepts);
         if (localVarAccept != null) localVarHeaderParams.put("Accept", localVarAccept);
 
         final String[] localVarContentTypes = {
-            
+            "application/xml", "application/json"
         };
         final String localVarContentType = apiClient.selectHeaderContentType(localVarContentTypes);
         localVarHeaderParams.put("Content-Type", localVarContentType);
@@ -224,13 +224,13 @@ public class WordsApi {
         Map<String, Object> localVarFormParams = new LinkedHashMap<String, Object>();
         
         final String[] localVarAccepts = {
-            
+            "application/xml", "application/json"
         };
         final String localVarAccept = apiClient.selectHeaderAccept(localVarAccepts);
         if (localVarAccept != null) localVarHeaderParams.put("Accept", localVarAccept);
 
         final String[] localVarContentTypes = {
-            
+            "application/xml", "application/json"
         };
         final String localVarContentType = apiClient.selectHeaderContentType(localVarContentTypes);
         localVarHeaderParams.put("Content-Type", localVarContentType);
@@ -361,13 +361,13 @@ public class WordsApi {
         Map<String, Object> localVarFormParams = new LinkedHashMap<String, Object>();
         
         final String[] localVarAccepts = {
-            
+            "application/xml", "application/json"
         };
         final String localVarAccept = apiClient.selectHeaderAccept(localVarAccepts);
         if (localVarAccept != null) localVarHeaderParams.put("Accept", localVarAccept);
 
         final String[] localVarContentTypes = {
-            
+            "application/xml", "application/json"
         };
         final String localVarContentType = apiClient.selectHeaderContentType(localVarContentTypes);
         localVarHeaderParams.put("Content-Type", localVarContentType);
@@ -499,13 +499,13 @@ public class WordsApi {
         Map<String, Object> localVarFormParams = new LinkedHashMap<String, Object>();
         
         final String[] localVarAccepts = {
-            
+            "application/xml", "application/json"
         };
         final String localVarAccept = apiClient.selectHeaderAccept(localVarAccepts);
         if (localVarAccept != null) localVarHeaderParams.put("Accept", localVarAccept);
 
         final String[] localVarContentTypes = {
-            
+            "application/xml", "application/json"
         };
         final String localVarContentType = apiClient.selectHeaderContentType(localVarContentTypes);
         localVarHeaderParams.put("Content-Type", localVarContentType);
@@ -636,13 +636,13 @@ public class WordsApi {
         Map<String, Object> localVarFormParams = new LinkedHashMap<String, Object>();
         
         final String[] localVarAccepts = {
-            
+            "application/xml", "application/json"
         };
         final String localVarAccept = apiClient.selectHeaderAccept(localVarAccepts);
         if (localVarAccept != null) localVarHeaderParams.put("Accept", localVarAccept);
 
         final String[] localVarContentTypes = {
-            
+            "application/xml", "application/json"
         };
         final String localVarContentType = apiClient.selectHeaderContentType(localVarContentTypes);
         localVarHeaderParams.put("Content-Type", localVarContentType);
@@ -779,13 +779,13 @@ public class WordsApi {
           localVarFormParams.put("Document", request.getDocument());
 
         final String[] localVarAccepts = {
-            
+            "application/xml", "application/json"
         };
         final String localVarAccept = apiClient.selectHeaderAccept(localVarAccepts);
         if (localVarAccept != null) localVarHeaderParams.put("Accept", localVarAccept);
 
         final String[] localVarContentTypes = {
-            
+            "multipart/form-data"
         };
         final String localVarContentType = apiClient.selectHeaderContentType(localVarContentTypes);
         localVarHeaderParams.put("Content-Type", localVarContentType);
@@ -920,13 +920,13 @@ public class WordsApi {
         Map<String, Object> localVarFormParams = new LinkedHashMap<String, Object>();
         
         final String[] localVarAccepts = {
-            
+            "application/xml", "application/json"
         };
         final String localVarAccept = apiClient.selectHeaderAccept(localVarAccepts);
         if (localVarAccept != null) localVarHeaderParams.put("Accept", localVarAccept);
 
         final String[] localVarContentTypes = {
-            
+            "application/xml", "application/json"
         };
         final String localVarContentType = apiClient.selectHeaderContentType(localVarContentTypes);
         localVarHeaderParams.put("Content-Type", localVarContentType);
@@ -1056,13 +1056,13 @@ public class WordsApi {
         Map<String, Object> localVarFormParams = new LinkedHashMap<String, Object>();
         
         final String[] localVarAccepts = {
-            
+            "application/xml", "application/json"
         };
         final String localVarAccept = apiClient.selectHeaderAccept(localVarAccepts);
         if (localVarAccept != null) localVarHeaderParams.put("Accept", localVarAccept);
 
         final String[] localVarContentTypes = {
-            
+            "application/xml", "application/json"
         };
         final String localVarContentType = apiClient.selectHeaderContentType(localVarContentTypes);
         localVarHeaderParams.put("Content-Type", localVarContentType);
@@ -1191,13 +1191,13 @@ public class WordsApi {
         Map<String, Object> localVarFormParams = new LinkedHashMap<String, Object>();
         
         final String[] localVarAccepts = {
-            
+            "application/xml", "application/json"
         };
         final String localVarAccept = apiClient.selectHeaderAccept(localVarAccepts);
         if (localVarAccept != null) localVarHeaderParams.put("Accept", localVarAccept);
 
         final String[] localVarContentTypes = {
-            
+            "application/xml", "application/json"
         };
         final String localVarContentType = apiClient.selectHeaderContentType(localVarContentTypes);
         localVarHeaderParams.put("Content-Type", localVarContentType);
@@ -1319,13 +1319,13 @@ public class WordsApi {
         Map<String, Object> localVarFormParams = new LinkedHashMap<String, Object>();
         
         final String[] localVarAccepts = {
-            
+            "application/xml", "application/json"
         };
         final String localVarAccept = apiClient.selectHeaderAccept(localVarAccepts);
         if (localVarAccept != null) localVarHeaderParams.put("Accept", localVarAccept);
 
         final String[] localVarContentTypes = {
-            
+            "application/xml", "application/json"
         };
         final String localVarContentType = apiClient.selectHeaderContentType(localVarContentTypes);
         localVarHeaderParams.put("Content-Type", localVarContentType);
@@ -1455,13 +1455,13 @@ public class WordsApi {
         Map<String, Object> localVarFormParams = new LinkedHashMap<String, Object>();
         
         final String[] localVarAccepts = {
-            
+            "application/xml", "application/json"
         };
         final String localVarAccept = apiClient.selectHeaderAccept(localVarAccepts);
         if (localVarAccept != null) localVarHeaderParams.put("Accept", localVarAccept);
 
         final String[] localVarContentTypes = {
-            
+            "application/xml", "application/json"
         };
         final String localVarContentType = apiClient.selectHeaderContentType(localVarContentTypes);
         localVarHeaderParams.put("Content-Type", localVarContentType);
@@ -1606,13 +1606,13 @@ public class WordsApi {
         Map<String, Object> localVarFormParams = new LinkedHashMap<String, Object>();
         
         final String[] localVarAccepts = {
-            
+            "application/xml", "application/json"
         };
         final String localVarAccept = apiClient.selectHeaderAccept(localVarAccepts);
         if (localVarAccept != null) localVarHeaderParams.put("Accept", localVarAccept);
 
         final String[] localVarContentTypes = {
-            
+            "application/xml", "application/json"
         };
         final String localVarContentType = apiClient.selectHeaderContentType(localVarContentTypes);
         localVarHeaderParams.put("Content-Type", localVarContentType);
@@ -1756,13 +1756,13 @@ public class WordsApi {
         Map<String, Object> localVarFormParams = new LinkedHashMap<String, Object>();
         
         final String[] localVarAccepts = {
-            
+            "application/xml", "application/json"
         };
         final String localVarAccept = apiClient.selectHeaderAccept(localVarAccepts);
         if (localVarAccept != null) localVarHeaderParams.put("Accept", localVarAccept);
 
         final String[] localVarContentTypes = {
-            
+            "application/xml", "application/json"
         };
         final String localVarContentType = apiClient.selectHeaderContentType(localVarContentTypes);
         localVarHeaderParams.put("Content-Type", localVarContentType);
@@ -1901,13 +1901,13 @@ public class WordsApi {
         Map<String, Object> localVarFormParams = new LinkedHashMap<String, Object>();
         
         final String[] localVarAccepts = {
-            
+            "application/xml", "application/json"
         };
         final String localVarAccept = apiClient.selectHeaderAccept(localVarAccepts);
         if (localVarAccept != null) localVarHeaderParams.put("Accept", localVarAccept);
 
         final String[] localVarContentTypes = {
-            
+            "application/xml", "application/json"
         };
         final String localVarContentType = apiClient.selectHeaderContentType(localVarContentTypes);
         localVarHeaderParams.put("Content-Type", localVarContentType);
@@ -2042,13 +2042,13 @@ public class WordsApi {
         Map<String, Object> localVarFormParams = new LinkedHashMap<String, Object>();
         
         final String[] localVarAccepts = {
-            
+            "application/xml", "application/json"
         };
         final String localVarAccept = apiClient.selectHeaderAccept(localVarAccepts);
         if (localVarAccept != null) localVarHeaderParams.put("Accept", localVarAccept);
 
         final String[] localVarContentTypes = {
-            
+            "application/xml", "application/json"
         };
         final String localVarContentType = apiClient.selectHeaderContentType(localVarContentTypes);
         localVarHeaderParams.put("Content-Type", localVarContentType);
@@ -2184,13 +2184,13 @@ public class WordsApi {
         Map<String, Object> localVarFormParams = new LinkedHashMap<String, Object>();
         
         final String[] localVarAccepts = {
-            
+            "application/xml", "application/json"
         };
         final String localVarAccept = apiClient.selectHeaderAccept(localVarAccepts);
         if (localVarAccept != null) localVarHeaderParams.put("Accept", localVarAccept);
 
         final String[] localVarContentTypes = {
-            
+            "application/xml", "application/json"
         };
         final String localVarContentType = apiClient.selectHeaderContentType(localVarContentTypes);
         localVarHeaderParams.put("Content-Type", localVarContentType);
@@ -2330,13 +2330,13 @@ public class WordsApi {
         Map<String, Object> localVarFormParams = new LinkedHashMap<String, Object>();
         
         final String[] localVarAccepts = {
-            
+            "application/xml", "application/json"
         };
         final String localVarAccept = apiClient.selectHeaderAccept(localVarAccepts);
         if (localVarAccept != null) localVarHeaderParams.put("Accept", localVarAccept);
 
         final String[] localVarContentTypes = {
-            
+            "application/xml", "application/json"
         };
         final String localVarContentType = apiClient.selectHeaderContentType(localVarContentTypes);
         localVarHeaderParams.put("Content-Type", localVarContentType);
@@ -2472,13 +2472,13 @@ public class WordsApi {
         Map<String, Object> localVarFormParams = new LinkedHashMap<String, Object>();
         
         final String[] localVarAccepts = {
-            
+            "application/xml", "application/json"
         };
         final String localVarAccept = apiClient.selectHeaderAccept(localVarAccepts);
         if (localVarAccept != null) localVarHeaderParams.put("Accept", localVarAccept);
 
         final String[] localVarContentTypes = {
-            
+            "application/xml", "application/json"
         };
         final String localVarContentType = apiClient.selectHeaderContentType(localVarContentTypes);
         localVarHeaderParams.put("Content-Type", localVarContentType);
@@ -2618,13 +2618,13 @@ public class WordsApi {
         Map<String, Object> localVarFormParams = new LinkedHashMap<String, Object>();
         
         final String[] localVarAccepts = {
-            
+            "application/xml", "application/json"
         };
         final String localVarAccept = apiClient.selectHeaderAccept(localVarAccepts);
         if (localVarAccept != null) localVarHeaderParams.put("Accept", localVarAccept);
 
         final String[] localVarContentTypes = {
-            
+            "application/xml", "application/json"
         };
         final String localVarContentType = apiClient.selectHeaderContentType(localVarContentTypes);
         localVarHeaderParams.put("Content-Type", localVarContentType);
@@ -2759,13 +2759,13 @@ public class WordsApi {
         Map<String, Object> localVarFormParams = new LinkedHashMap<String, Object>();
         
         final String[] localVarAccepts = {
-            
+            "application/xml", "application/json"
         };
         final String localVarAccept = apiClient.selectHeaderAccept(localVarAccepts);
         if (localVarAccept != null) localVarHeaderParams.put("Accept", localVarAccept);
 
         final String[] localVarContentTypes = {
-            
+            "application/xml", "application/json"
         };
         final String localVarContentType = apiClient.selectHeaderContentType(localVarContentTypes);
         localVarHeaderParams.put("Content-Type", localVarContentType);
@@ -2899,13 +2899,13 @@ public class WordsApi {
         Map<String, Object> localVarFormParams = new LinkedHashMap<String, Object>();
         
         final String[] localVarAccepts = {
-            
+            "application/xml", "application/json"
         };
         final String localVarAccept = apiClient.selectHeaderAccept(localVarAccepts);
         if (localVarAccept != null) localVarHeaderParams.put("Accept", localVarAccept);
 
         final String[] localVarContentTypes = {
-            
+            "application/xml", "application/json"
         };
         final String localVarContentType = apiClient.selectHeaderContentType(localVarContentTypes);
         localVarHeaderParams.put("Content-Type", localVarContentType);
@@ -3029,13 +3029,13 @@ public class WordsApi {
         Map<String, Object> localVarFormParams = new LinkedHashMap<String, Object>();
         
         final String[] localVarAccepts = {
-            
+            "application/xml", "application/json"
         };
         final String localVarAccept = apiClient.selectHeaderAccept(localVarAccepts);
         if (localVarAccept != null) localVarHeaderParams.put("Accept", localVarAccept);
 
         final String[] localVarContentTypes = {
-            
+            "application/xml", "application/json"
         };
         final String localVarContentType = apiClient.selectHeaderContentType(localVarContentTypes);
         localVarHeaderParams.put("Content-Type", localVarContentType);
@@ -3159,13 +3159,13 @@ public class WordsApi {
         Map<String, Object> localVarFormParams = new LinkedHashMap<String, Object>();
         
         final String[] localVarAccepts = {
-            
+            "application/xml", "application/json"
         };
         final String localVarAccept = apiClient.selectHeaderAccept(localVarAccepts);
         if (localVarAccept != null) localVarHeaderParams.put("Accept", localVarAccept);
 
         final String[] localVarContentTypes = {
-            
+            "application/xml", "application/json"
         };
         final String localVarContentType = apiClient.selectHeaderContentType(localVarContentTypes);
         localVarHeaderParams.put("Content-Type", localVarContentType);
@@ -3296,13 +3296,13 @@ public class WordsApi {
         Map<String, Object> localVarFormParams = new LinkedHashMap<String, Object>();
         
         final String[] localVarAccepts = {
-            
+            "application/xml", "application/json"
         };
         final String localVarAccept = apiClient.selectHeaderAccept(localVarAccepts);
         if (localVarAccept != null) localVarHeaderParams.put("Accept", localVarAccept);
 
         final String[] localVarContentTypes = {
-            
+            "application/xml", "application/json"
         };
         final String localVarContentType = apiClient.selectHeaderContentType(localVarContentTypes);
         localVarHeaderParams.put("Content-Type", localVarContentType);
@@ -3442,13 +3442,13 @@ public class WordsApi {
         Map<String, Object> localVarFormParams = new LinkedHashMap<String, Object>();
         
         final String[] localVarAccepts = {
-            
+            "application/xml", "application/json"
         };
         final String localVarAccept = apiClient.selectHeaderAccept(localVarAccepts);
         if (localVarAccept != null) localVarHeaderParams.put("Accept", localVarAccept);
 
         final String[] localVarContentTypes = {
-            
+            "application/xml", "application/json"
         };
         final String localVarContentType = apiClient.selectHeaderContentType(localVarContentTypes);
         localVarHeaderParams.put("Content-Type", localVarContentType);
@@ -3584,13 +3584,13 @@ public class WordsApi {
         Map<String, Object> localVarFormParams = new LinkedHashMap<String, Object>();
         
         final String[] localVarAccepts = {
-            
+            "application/xml", "application/json"
         };
         final String localVarAccept = apiClient.selectHeaderAccept(localVarAccepts);
         if (localVarAccept != null) localVarHeaderParams.put("Accept", localVarAccept);
 
         final String[] localVarContentTypes = {
-            
+            "application/xml", "application/json"
         };
         final String localVarContentType = apiClient.selectHeaderContentType(localVarContentTypes);
         localVarHeaderParams.put("Content-Type", localVarContentType);
@@ -3730,13 +3730,13 @@ public class WordsApi {
         Map<String, Object> localVarFormParams = new LinkedHashMap<String, Object>();
         
         final String[] localVarAccepts = {
-            
+            "application/xml", "application/json"
         };
         final String localVarAccept = apiClient.selectHeaderAccept(localVarAccepts);
         if (localVarAccept != null) localVarHeaderParams.put("Accept", localVarAccept);
 
         final String[] localVarContentTypes = {
-            
+            "application/xml", "application/json"
         };
         final String localVarContentType = apiClient.selectHeaderContentType(localVarContentTypes);
         localVarHeaderParams.put("Content-Type", localVarContentType);
@@ -3872,13 +3872,13 @@ public class WordsApi {
         Map<String, Object> localVarFormParams = new LinkedHashMap<String, Object>();
         
         final String[] localVarAccepts = {
-            
+            "application/xml", "application/json"
         };
         final String localVarAccept = apiClient.selectHeaderAccept(localVarAccepts);
         if (localVarAccept != null) localVarHeaderParams.put("Accept", localVarAccept);
 
         final String[] localVarContentTypes = {
-            
+            "application/xml", "application/json"
         };
         final String localVarContentType = apiClient.selectHeaderContentType(localVarContentTypes);
         localVarHeaderParams.put("Content-Type", localVarContentType);
@@ -4019,13 +4019,13 @@ public class WordsApi {
         Map<String, Object> localVarFormParams = new LinkedHashMap<String, Object>();
         
         final String[] localVarAccepts = {
-            
+            "application/xml", "application/json"
         };
         final String localVarAccept = apiClient.selectHeaderAccept(localVarAccepts);
         if (localVarAccept != null) localVarHeaderParams.put("Accept", localVarAccept);
 
         final String[] localVarContentTypes = {
-            
+            "application/xml", "application/json"
         };
         final String localVarContentType = apiClient.selectHeaderContentType(localVarContentTypes);
         localVarHeaderParams.put("Content-Type", localVarContentType);
@@ -4159,13 +4159,13 @@ public class WordsApi {
         Map<String, Object> localVarFormParams = new LinkedHashMap<String, Object>();
         
         final String[] localVarAccepts = {
-            
+            "application/xml", "application/json"
         };
         final String localVarAccept = apiClient.selectHeaderAccept(localVarAccepts);
         if (localVarAccept != null) localVarHeaderParams.put("Accept", localVarAccept);
 
         final String[] localVarContentTypes = {
-            
+            "application/xml", "application/json"
         };
         final String localVarContentType = apiClient.selectHeaderContentType(localVarContentTypes);
         localVarHeaderParams.put("Content-Type", localVarContentType);
@@ -4296,13 +4296,13 @@ public class WordsApi {
         Map<String, Object> localVarFormParams = new LinkedHashMap<String, Object>();
         
         final String[] localVarAccepts = {
-            
+            "application/xml", "application/json"
         };
         final String localVarAccept = apiClient.selectHeaderAccept(localVarAccepts);
         if (localVarAccept != null) localVarHeaderParams.put("Accept", localVarAccept);
 
         final String[] localVarContentTypes = {
-            
+            "application/xml", "application/json"
         };
         final String localVarContentType = apiClient.selectHeaderContentType(localVarContentTypes);
         localVarHeaderParams.put("Content-Type", localVarContentType);
@@ -4442,13 +4442,13 @@ public class WordsApi {
         Map<String, Object> localVarFormParams = new LinkedHashMap<String, Object>();
         
         final String[] localVarAccepts = {
-            
+            "application/xml", "application/json"
         };
         final String localVarAccept = apiClient.selectHeaderAccept(localVarAccepts);
         if (localVarAccept != null) localVarHeaderParams.put("Accept", localVarAccept);
 
         final String[] localVarContentTypes = {
-            
+            "application/xml", "application/json"
         };
         final String localVarContentType = apiClient.selectHeaderContentType(localVarContentTypes);
         localVarHeaderParams.put("Content-Type", localVarContentType);
@@ -4584,13 +4584,13 @@ public class WordsApi {
         Map<String, Object> localVarFormParams = new LinkedHashMap<String, Object>();
         
         final String[] localVarAccepts = {
-            
+            "application/xml", "application/json"
         };
         final String localVarAccept = apiClient.selectHeaderAccept(localVarAccepts);
         if (localVarAccept != null) localVarHeaderParams.put("Accept", localVarAccept);
 
         final String[] localVarContentTypes = {
-            
+            "application/xml", "application/json"
         };
         final String localVarContentType = apiClient.selectHeaderContentType(localVarContentTypes);
         localVarHeaderParams.put("Content-Type", localVarContentType);
@@ -4730,13 +4730,13 @@ public class WordsApi {
         Map<String, Object> localVarFormParams = new LinkedHashMap<String, Object>();
         
         final String[] localVarAccepts = {
-            
+            "application/xml", "application/json"
         };
         final String localVarAccept = apiClient.selectHeaderAccept(localVarAccepts);
         if (localVarAccept != null) localVarHeaderParams.put("Accept", localVarAccept);
 
         final String[] localVarContentTypes = {
-            
+            "application/xml", "application/json"
         };
         final String localVarContentType = apiClient.selectHeaderContentType(localVarContentTypes);
         localVarHeaderParams.put("Content-Type", localVarContentType);
@@ -4872,13 +4872,13 @@ public class WordsApi {
         Map<String, Object> localVarFormParams = new LinkedHashMap<String, Object>();
         
         final String[] localVarAccepts = {
-            
+            "application/xml", "application/json"
         };
         final String localVarAccept = apiClient.selectHeaderAccept(localVarAccepts);
         if (localVarAccept != null) localVarHeaderParams.put("Accept", localVarAccept);
 
         final String[] localVarContentTypes = {
-            
+            "application/xml", "application/json"
         };
         final String localVarContentType = apiClient.selectHeaderContentType(localVarContentTypes);
         localVarHeaderParams.put("Content-Type", localVarContentType);
@@ -5018,13 +5018,13 @@ public class WordsApi {
         Map<String, Object> localVarFormParams = new LinkedHashMap<String, Object>();
         
         final String[] localVarAccepts = {
-            
+            "application/xml", "application/json"
         };
         final String localVarAccept = apiClient.selectHeaderAccept(localVarAccepts);
         if (localVarAccept != null) localVarHeaderParams.put("Accept", localVarAccept);
 
         final String[] localVarContentTypes = {
-            
+            "application/xml", "application/json"
         };
         final String localVarContentType = apiClient.selectHeaderContentType(localVarContentTypes);
         localVarHeaderParams.put("Content-Type", localVarContentType);
@@ -5160,13 +5160,13 @@ public class WordsApi {
         Map<String, Object> localVarFormParams = new LinkedHashMap<String, Object>();
         
         final String[] localVarAccepts = {
-            
+            "application/xml", "application/json"
         };
         final String localVarAccept = apiClient.selectHeaderAccept(localVarAccepts);
         if (localVarAccept != null) localVarHeaderParams.put("Accept", localVarAccept);
 
         final String[] localVarContentTypes = {
-            
+            "application/xml", "application/json"
         };
         final String localVarContentType = apiClient.selectHeaderContentType(localVarContentTypes);
         localVarHeaderParams.put("Content-Type", localVarContentType);
@@ -5307,13 +5307,13 @@ public class WordsApi {
         Map<String, Object> localVarFormParams = new LinkedHashMap<String, Object>();
         
         final String[] localVarAccepts = {
-            
+            "application/xml", "application/json"
         };
         final String localVarAccept = apiClient.selectHeaderAccept(localVarAccepts);
         if (localVarAccept != null) localVarHeaderParams.put("Accept", localVarAccept);
 
         final String[] localVarContentTypes = {
-            
+            "application/xml", "application/json"
         };
         final String localVarContentType = apiClient.selectHeaderContentType(localVarContentTypes);
         localVarHeaderParams.put("Content-Type", localVarContentType);
@@ -5454,13 +5454,13 @@ public class WordsApi {
         Map<String, Object> localVarFormParams = new LinkedHashMap<String, Object>();
         
         final String[] localVarAccepts = {
-            
+            "application/xml", "application/json"
         };
         final String localVarAccept = apiClient.selectHeaderAccept(localVarAccepts);
         if (localVarAccept != null) localVarHeaderParams.put("Accept", localVarAccept);
 
         final String[] localVarContentTypes = {
-            
+            "application/xml", "application/json"
         };
         final String localVarContentType = apiClient.selectHeaderContentType(localVarContentTypes);
         localVarHeaderParams.put("Content-Type", localVarContentType);
@@ -5600,13 +5600,13 @@ public class WordsApi {
         Map<String, Object> localVarFormParams = new LinkedHashMap<String, Object>();
         
         final String[] localVarAccepts = {
-            
+            "application/xml", "application/json"
         };
         final String localVarAccept = apiClient.selectHeaderAccept(localVarAccepts);
         if (localVarAccept != null) localVarHeaderParams.put("Accept", localVarAccept);
 
         final String[] localVarContentTypes = {
-            
+            "application/xml", "application/json"
         };
         final String localVarContentType = apiClient.selectHeaderContentType(localVarContentTypes);
         localVarHeaderParams.put("Content-Type", localVarContentType);
@@ -5740,13 +5740,13 @@ public class WordsApi {
         Map<String, Object> localVarFormParams = new LinkedHashMap<String, Object>();
         
         final String[] localVarAccepts = {
-            
+            "application/xml", "application/json"
         };
         final String localVarAccept = apiClient.selectHeaderAccept(localVarAccepts);
         if (localVarAccept != null) localVarHeaderParams.put("Accept", localVarAccept);
 
         final String[] localVarContentTypes = {
-            
+            "application/xml", "application/json"
         };
         final String localVarContentType = apiClient.selectHeaderContentType(localVarContentTypes);
         localVarHeaderParams.put("Content-Type", localVarContentType);
@@ -5874,13 +5874,13 @@ public class WordsApi {
         Map<String, Object> localVarFormParams = new LinkedHashMap<String, Object>();
         
         final String[] localVarAccepts = {
-            
+            "application/xml", "application/json"
         };
         final String localVarAccept = apiClient.selectHeaderAccept(localVarAccepts);
         if (localVarAccept != null) localVarHeaderParams.put("Accept", localVarAccept);
 
         final String[] localVarContentTypes = {
-            
+            "application/xml", "application/json"
         };
         final String localVarContentType = apiClient.selectHeaderContentType(localVarContentTypes);
         localVarHeaderParams.put("Content-Type", localVarContentType);
@@ -6017,13 +6017,13 @@ public class WordsApi {
           localVarFormParams.put("Data", request.getData());
 
         final String[] localVarAccepts = {
-            
+            "application/xml", "application/json"
         };
         final String localVarAccept = apiClient.selectHeaderAccept(localVarAccepts);
         if (localVarAccept != null) localVarHeaderParams.put("Accept", localVarAccept);
 
         final String[] localVarContentTypes = {
-            
+            "multipart/form-data"
         };
         final String localVarContentType = apiClient.selectHeaderContentType(localVarContentTypes);
         localVarHeaderParams.put("Content-Type", localVarContentType);
@@ -6155,13 +6155,13 @@ if (request.getData() != null)
           localVarFormParams.put("Data", request.getData());
 
         final String[] localVarAccepts = {
-            
+            "application/xml", "application/json"
         };
         final String localVarAccept = apiClient.selectHeaderAccept(localVarAccepts);
         if (localVarAccept != null) localVarHeaderParams.put("Accept", localVarAccept);
 
         final String[] localVarContentTypes = {
-            
+            "multipart/form-data"
         };
         final String localVarContentType = apiClient.selectHeaderContentType(localVarContentTypes);
         localVarHeaderParams.put("Content-Type", localVarContentType);
@@ -6292,13 +6292,13 @@ if (request.getData() != null)
         Map<String, Object> localVarFormParams = new LinkedHashMap<String, Object>();
         
         final String[] localVarAccepts = {
-            
+            "application/xml", "application/json"
         };
         final String localVarAccept = apiClient.selectHeaderAccept(localVarAccepts);
         if (localVarAccept != null) localVarHeaderParams.put("Accept", localVarAccept);
 
         final String[] localVarContentTypes = {
-            
+            "application/xml", "application/json"
         };
         final String localVarContentType = apiClient.selectHeaderContentType(localVarContentTypes);
         localVarHeaderParams.put("Content-Type", localVarContentType);
@@ -6424,13 +6424,13 @@ if (request.getData() != null)
         Map<String, Object> localVarFormParams = new LinkedHashMap<String, Object>();
         
         final String[] localVarAccepts = {
-            
+            "application/xml", "application/json"
         };
         final String localVarAccept = apiClient.selectHeaderAccept(localVarAccepts);
         if (localVarAccept != null) localVarHeaderParams.put("Accept", localVarAccept);
 
         final String[] localVarContentTypes = {
-            
+            "application/xml", "application/json"
         };
         final String localVarContentType = apiClient.selectHeaderContentType(localVarContentTypes);
         localVarHeaderParams.put("Content-Type", localVarContentType);
@@ -6565,13 +6565,13 @@ if (request.getData() != null)
         Map<String, Object> localVarFormParams = new LinkedHashMap<String, Object>();
         
         final String[] localVarAccepts = {
-            
+            "application/xml", "application/json"
         };
         final String localVarAccept = apiClient.selectHeaderAccept(localVarAccepts);
         if (localVarAccept != null) localVarHeaderParams.put("Accept", localVarAccept);
 
         final String[] localVarContentTypes = {
-            
+            "application/xml", "application/json"
         };
         final String localVarContentType = apiClient.selectHeaderContentType(localVarContentTypes);
         localVarHeaderParams.put("Content-Type", localVarContentType);
@@ -6703,13 +6703,13 @@ if (request.getData() != null)
         Map<String, Object> localVarFormParams = new LinkedHashMap<String, Object>();
         
         final String[] localVarAccepts = {
-            
+            "application/xml", "application/json"
         };
         final String localVarAccept = apiClient.selectHeaderAccept(localVarAccepts);
         if (localVarAccept != null) localVarHeaderParams.put("Accept", localVarAccept);
 
         final String[] localVarContentTypes = {
-            
+            "application/xml", "application/json"
         };
         final String localVarContentType = apiClient.selectHeaderContentType(localVarContentTypes);
         localVarHeaderParams.put("Content-Type", localVarContentType);
@@ -6850,13 +6850,13 @@ if (request.getData() != null)
         Map<String, Object> localVarFormParams = new LinkedHashMap<String, Object>();
         
         final String[] localVarAccepts = {
-            
+            "application/xml", "application/json"
         };
         final String localVarAccept = apiClient.selectHeaderAccept(localVarAccepts);
         if (localVarAccept != null) localVarHeaderParams.put("Accept", localVarAccept);
 
         final String[] localVarContentTypes = {
-            
+            "application/xml", "application/json"
         };
         final String localVarContentType = apiClient.selectHeaderContentType(localVarContentTypes);
         localVarHeaderParams.put("Content-Type", localVarContentType);
@@ -6992,13 +6992,13 @@ if (request.getData() != null)
         Map<String, Object> localVarFormParams = new LinkedHashMap<String, Object>();
         
         final String[] localVarAccepts = {
-            
+            "application/xml", "application/json"
         };
         final String localVarAccept = apiClient.selectHeaderAccept(localVarAccepts);
         if (localVarAccept != null) localVarHeaderParams.put("Accept", localVarAccept);
 
         final String[] localVarContentTypes = {
-            
+            "application/xml", "application/json"
         };
         final String localVarContentType = apiClient.selectHeaderContentType(localVarContentTypes);
         localVarHeaderParams.put("Content-Type", localVarContentType);
@@ -7133,13 +7133,13 @@ if (request.getData() != null)
         Map<String, Object> localVarFormParams = new LinkedHashMap<String, Object>();
         
         final String[] localVarAccepts = {
-            
+            "application/xml", "application/json"
         };
         final String localVarAccept = apiClient.selectHeaderAccept(localVarAccepts);
         if (localVarAccept != null) localVarHeaderParams.put("Accept", localVarAccept);
 
         final String[] localVarContentTypes = {
-            
+            "application/xml", "application/json"
         };
         final String localVarContentType = apiClient.selectHeaderContentType(localVarContentTypes);
         localVarHeaderParams.put("Content-Type", localVarContentType);
@@ -7269,13 +7269,13 @@ if (request.getData() != null)
         Map<String, Object> localVarFormParams = new LinkedHashMap<String, Object>();
         
         final String[] localVarAccepts = {
-            
+            "application/xml", "application/json"
         };
         final String localVarAccept = apiClient.selectHeaderAccept(localVarAccepts);
         if (localVarAccept != null) localVarHeaderParams.put("Accept", localVarAccept);
 
         final String[] localVarContentTypes = {
-            
+            "application/xml", "application/json"
         };
         final String localVarContentType = apiClient.selectHeaderContentType(localVarContentTypes);
         localVarHeaderParams.put("Content-Type", localVarContentType);
@@ -7407,13 +7407,13 @@ if (request.getData() != null)
         Map<String, Object> localVarFormParams = new LinkedHashMap<String, Object>();
         
         final String[] localVarAccepts = {
-            
+            "application/xml", "application/json"
         };
         final String localVarAccept = apiClient.selectHeaderAccept(localVarAccepts);
         if (localVarAccept != null) localVarHeaderParams.put("Accept", localVarAccept);
 
         final String[] localVarContentTypes = {
-            
+            "application/xml", "application/json"
         };
         final String localVarContentType = apiClient.selectHeaderContentType(localVarContentTypes);
         localVarHeaderParams.put("Content-Type", localVarContentType);
@@ -7554,13 +7554,13 @@ if (request.getData() != null)
         Map<String, Object> localVarFormParams = new LinkedHashMap<String, Object>();
         
         final String[] localVarAccepts = {
-            
+            "application/xml", "application/json"
         };
         final String localVarAccept = apiClient.selectHeaderAccept(localVarAccepts);
         if (localVarAccept != null) localVarHeaderParams.put("Accept", localVarAccept);
 
         final String[] localVarContentTypes = {
-            
+            "application/xml", "application/json"
         };
         final String localVarContentType = apiClient.selectHeaderContentType(localVarContentTypes);
         localVarHeaderParams.put("Content-Type", localVarContentType);
@@ -7697,13 +7697,13 @@ if (request.getData() != null)
         Map<String, Object> localVarFormParams = new LinkedHashMap<String, Object>();
         
         final String[] localVarAccepts = {
-            
+            "application/xml", "application/json"
         };
         final String localVarAccept = apiClient.selectHeaderAccept(localVarAccepts);
         if (localVarAccept != null) localVarHeaderParams.put("Accept", localVarAccept);
 
         final String[] localVarContentTypes = {
-            
+            "application/xml", "application/json"
         };
         final String localVarContentType = apiClient.selectHeaderContentType(localVarContentTypes);
         localVarHeaderParams.put("Content-Type", localVarContentType);
@@ -7844,13 +7844,13 @@ if (request.getData() != null)
         Map<String, Object> localVarFormParams = new LinkedHashMap<String, Object>();
         
         final String[] localVarAccepts = {
-            
+            "application/xml", "application/json"
         };
         final String localVarAccept = apiClient.selectHeaderAccept(localVarAccepts);
         if (localVarAccept != null) localVarHeaderParams.put("Accept", localVarAccept);
 
         final String[] localVarContentTypes = {
-            
+            "application/xml", "application/json"
         };
         final String localVarContentType = apiClient.selectHeaderContentType(localVarContentTypes);
         localVarHeaderParams.put("Content-Type", localVarContentType);
@@ -7987,13 +7987,13 @@ if (request.getData() != null)
         Map<String, Object> localVarFormParams = new LinkedHashMap<String, Object>();
         
         final String[] localVarAccepts = {
-            
+            "application/xml", "application/json"
         };
         final String localVarAccept = apiClient.selectHeaderAccept(localVarAccepts);
         if (localVarAccept != null) localVarHeaderParams.put("Accept", localVarAccept);
 
         final String[] localVarContentTypes = {
-            
+            "application/xml", "application/json"
         };
         final String localVarContentType = apiClient.selectHeaderContentType(localVarContentTypes);
         localVarHeaderParams.put("Content-Type", localVarContentType);
@@ -8134,13 +8134,13 @@ if (request.getData() != null)
         Map<String, Object> localVarFormParams = new LinkedHashMap<String, Object>();
         
         final String[] localVarAccepts = {
-            
+            "application/xml", "application/json"
         };
         final String localVarAccept = apiClient.selectHeaderAccept(localVarAccepts);
         if (localVarAccept != null) localVarHeaderParams.put("Accept", localVarAccept);
 
         final String[] localVarContentTypes = {
-            
+            "application/xml", "application/json"
         };
         final String localVarContentType = apiClient.selectHeaderContentType(localVarContentTypes);
         localVarHeaderParams.put("Content-Type", localVarContentType);
@@ -8276,13 +8276,13 @@ if (request.getData() != null)
         Map<String, Object> localVarFormParams = new LinkedHashMap<String, Object>();
         
         final String[] localVarAccepts = {
-            
+            "application/xml", "application/json"
         };
         final String localVarAccept = apiClient.selectHeaderAccept(localVarAccepts);
         if (localVarAccept != null) localVarHeaderParams.put("Accept", localVarAccept);
 
         final String[] localVarContentTypes = {
-            
+            "application/xml", "application/json"
         };
         final String localVarContentType = apiClient.selectHeaderContentType(localVarContentTypes);
         localVarHeaderParams.put("Content-Type", localVarContentType);
@@ -8417,13 +8417,13 @@ if (request.getData() != null)
         Map<String, Object> localVarFormParams = new LinkedHashMap<String, Object>();
         
         final String[] localVarAccepts = {
-            
+            "application/xml", "application/json"
         };
         final String localVarAccept = apiClient.selectHeaderAccept(localVarAccepts);
         if (localVarAccept != null) localVarHeaderParams.put("Accept", localVarAccept);
 
         final String[] localVarContentTypes = {
-            
+            "application/xml", "application/json"
         };
         final String localVarContentType = apiClient.selectHeaderContentType(localVarContentTypes);
         localVarHeaderParams.put("Content-Type", localVarContentType);
@@ -8554,13 +8554,13 @@ if (request.getData() != null)
         Map<String, Object> localVarFormParams = new LinkedHashMap<String, Object>();
         
         final String[] localVarAccepts = {
-            
+            "application/xml", "application/json"
         };
         final String localVarAccept = apiClient.selectHeaderAccept(localVarAccepts);
         if (localVarAccept != null) localVarHeaderParams.put("Accept", localVarAccept);
 
         final String[] localVarContentTypes = {
-            
+            "application/xml", "application/json"
         };
         final String localVarContentType = apiClient.selectHeaderContentType(localVarContentTypes);
         localVarHeaderParams.put("Content-Type", localVarContentType);
@@ -8688,13 +8688,13 @@ if (request.getData() != null)
           localVarFormParams.put("Template", request.getTemplate());
 
         final String[] localVarAccepts = {
-            
+            "application/xml", "application/json"
         };
         final String localVarAccept = apiClient.selectHeaderAccept(localVarAccepts);
         if (localVarAccept != null) localVarHeaderParams.put("Accept", localVarAccept);
 
         final String[] localVarContentTypes = {
-            
+            "multipart/form-data"
         };
         final String localVarContentType = apiClient.selectHeaderContentType(localVarContentTypes);
         localVarHeaderParams.put("Content-Type", localVarContentType);
@@ -8825,13 +8825,13 @@ if (request.getData() != null)
         Map<String, Object> localVarFormParams = new LinkedHashMap<String, Object>();
         
         final String[] localVarAccepts = {
-            
+            "application/xml", "application/json"
         };
         final String localVarAccept = apiClient.selectHeaderAccept(localVarAccepts);
         if (localVarAccept != null) localVarHeaderParams.put("Accept", localVarAccept);
 
         final String[] localVarContentTypes = {
-            
+            "application/xml", "application/json"
         };
         final String localVarContentType = apiClient.selectHeaderContentType(localVarContentTypes);
         localVarHeaderParams.put("Content-Type", localVarContentType);
@@ -8966,13 +8966,13 @@ if (request.getData() != null)
         Map<String, Object> localVarFormParams = new LinkedHashMap<String, Object>();
         
         final String[] localVarAccepts = {
-            
+            "application/xml", "application/json"
         };
         final String localVarAccept = apiClient.selectHeaderAccept(localVarAccepts);
         if (localVarAccept != null) localVarHeaderParams.put("Accept", localVarAccept);
 
         final String[] localVarContentTypes = {
-            
+            "application/xml", "application/json"
         };
         final String localVarContentType = apiClient.selectHeaderContentType(localVarContentTypes);
         localVarHeaderParams.put("Content-Type", localVarContentType);
@@ -9102,13 +9102,13 @@ if (request.getData() != null)
         Map<String, Object> localVarFormParams = new LinkedHashMap<String, Object>();
         
         final String[] localVarAccepts = {
-            
+            "application/xml", "application/json"
         };
         final String localVarAccept = apiClient.selectHeaderAccept(localVarAccepts);
         if (localVarAccept != null) localVarHeaderParams.put("Accept", localVarAccept);
 
         final String[] localVarContentTypes = {
-            
+            "application/xml", "application/json"
         };
         final String localVarContentType = apiClient.selectHeaderContentType(localVarContentTypes);
         localVarHeaderParams.put("Content-Type", localVarContentType);
@@ -9239,13 +9239,13 @@ if (request.getData() != null)
         Map<String, Object> localVarFormParams = new LinkedHashMap<String, Object>();
         
         final String[] localVarAccepts = {
-            
+            "application/xml", "application/json"
         };
         final String localVarAccept = apiClient.selectHeaderAccept(localVarAccepts);
         if (localVarAccept != null) localVarHeaderParams.put("Accept", localVarAccept);
 
         final String[] localVarContentTypes = {
-            
+            "application/xml", "application/json"
         };
         final String localVarContentType = apiClient.selectHeaderContentType(localVarContentTypes);
         localVarHeaderParams.put("Content-Type", localVarContentType);
@@ -9380,13 +9380,13 @@ if (request.getData() != null)
         Map<String, Object> localVarFormParams = new LinkedHashMap<String, Object>();
         
         final String[] localVarAccepts = {
-            
+            "application/xml", "application/json"
         };
         final String localVarAccept = apiClient.selectHeaderAccept(localVarAccepts);
         if (localVarAccept != null) localVarHeaderParams.put("Accept", localVarAccept);
 
         final String[] localVarContentTypes = {
-            
+            "application/xml", "application/json"
         };
         final String localVarContentType = apiClient.selectHeaderContentType(localVarContentTypes);
         localVarHeaderParams.put("Content-Type", localVarContentType);
@@ -9519,13 +9519,13 @@ if (request.getData() != null)
         Map<String, Object> localVarFormParams = new LinkedHashMap<String, Object>();
         
         final String[] localVarAccepts = {
-            
+            "application/xml", "application/json"
         };
         final String localVarAccept = apiClient.selectHeaderAccept(localVarAccepts);
         if (localVarAccept != null) localVarHeaderParams.put("Accept", localVarAccept);
 
         final String[] localVarContentTypes = {
-            
+            "application/xml", "application/json"
         };
         final String localVarContentType = apiClient.selectHeaderContentType(localVarContentTypes);
         localVarHeaderParams.put("Content-Type", localVarContentType);
@@ -9658,13 +9658,13 @@ if (request.getData() != null)
         Map<String, Object> localVarFormParams = new LinkedHashMap<String, Object>();
         
         final String[] localVarAccepts = {
-            
+            "application/xml", "application/json"
         };
         final String localVarAccept = apiClient.selectHeaderAccept(localVarAccepts);
         if (localVarAccept != null) localVarHeaderParams.put("Accept", localVarAccept);
 
         final String[] localVarContentTypes = {
-            
+            "application/xml", "application/json"
         };
         final String localVarContentType = apiClient.selectHeaderContentType(localVarContentTypes);
         localVarHeaderParams.put("Content-Type", localVarContentType);
@@ -9801,13 +9801,13 @@ if (request.getData() != null)
         Map<String, Object> localVarFormParams = new LinkedHashMap<String, Object>();
         
         final String[] localVarAccepts = {
-            
+            "application/xml", "application/json"
         };
         final String localVarAccept = apiClient.selectHeaderAccept(localVarAccepts);
         if (localVarAccept != null) localVarHeaderParams.put("Accept", localVarAccept);
 
         final String[] localVarContentTypes = {
-            
+            "application/xml", "application/json"
         };
         final String localVarContentType = apiClient.selectHeaderContentType(localVarContentTypes);
         localVarHeaderParams.put("Content-Type", localVarContentType);
@@ -9948,13 +9948,13 @@ if (request.getData() != null)
         Map<String, Object> localVarFormParams = new LinkedHashMap<String, Object>();
         
         final String[] localVarAccepts = {
-            
+            "application/xml", "application/json"
         };
         final String localVarAccept = apiClient.selectHeaderAccept(localVarAccepts);
         if (localVarAccept != null) localVarHeaderParams.put("Accept", localVarAccept);
 
         final String[] localVarContentTypes = {
-            
+            "application/xml", "application/json"
         };
         final String localVarContentType = apiClient.selectHeaderContentType(localVarContentTypes);
         localVarHeaderParams.put("Content-Type", localVarContentType);
@@ -10090,13 +10090,13 @@ if (request.getData() != null)
         Map<String, Object> localVarFormParams = new LinkedHashMap<String, Object>();
         
         final String[] localVarAccepts = {
-            
+            "application/xml", "application/json"
         };
         final String localVarAccept = apiClient.selectHeaderAccept(localVarAccepts);
         if (localVarAccept != null) localVarHeaderParams.put("Accept", localVarAccept);
 
         final String[] localVarContentTypes = {
-            
+            "application/xml", "application/json"
         };
         final String localVarContentType = apiClient.selectHeaderContentType(localVarContentTypes);
         localVarHeaderParams.put("Content-Type", localVarContentType);
@@ -10231,13 +10231,13 @@ if (request.getData() != null)
         Map<String, Object> localVarFormParams = new LinkedHashMap<String, Object>();
         
         final String[] localVarAccepts = {
-            
+            "application/xml", "application/json"
         };
         final String localVarAccept = apiClient.selectHeaderAccept(localVarAccepts);
         if (localVarAccept != null) localVarHeaderParams.put("Accept", localVarAccept);
 
         final String[] localVarContentTypes = {
-            
+            "application/xml", "application/json"
         };
         final String localVarContentType = apiClient.selectHeaderContentType(localVarContentTypes);
         localVarHeaderParams.put("Content-Type", localVarContentType);
@@ -10364,13 +10364,13 @@ if (request.getData() != null)
         Map<String, Object> localVarFormParams = new LinkedHashMap<String, Object>();
         
         final String[] localVarAccepts = {
-            
+            "application/xml", "application/json"
         };
         final String localVarAccept = apiClient.selectHeaderAccept(localVarAccepts);
         if (localVarAccept != null) localVarHeaderParams.put("Accept", localVarAccept);
 
         final String[] localVarContentTypes = {
-            
+            "application/xml", "application/json"
         };
         final String localVarContentType = apiClient.selectHeaderContentType(localVarContentTypes);
         localVarHeaderParams.put("Content-Type", localVarContentType);
@@ -10502,13 +10502,13 @@ if (request.getData() != null)
         Map<String, Object> localVarFormParams = new LinkedHashMap<String, Object>();
         
         final String[] localVarAccepts = {
-            
+            "application/xml", "application/json"
         };
         final String localVarAccept = apiClient.selectHeaderAccept(localVarAccepts);
         if (localVarAccept != null) localVarHeaderParams.put("Accept", localVarAccept);
 
         final String[] localVarContentTypes = {
-            
+            "application/xml", "application/json"
         };
         final String localVarContentType = apiClient.selectHeaderContentType(localVarContentTypes);
         localVarHeaderParams.put("Content-Type", localVarContentType);
@@ -10649,13 +10649,13 @@ if (request.getData() != null)
         Map<String, Object> localVarFormParams = new LinkedHashMap<String, Object>();
         
         final String[] localVarAccepts = {
-            
+            "application/xml", "application/json"
         };
         final String localVarAccept = apiClient.selectHeaderAccept(localVarAccepts);
         if (localVarAccept != null) localVarHeaderParams.put("Accept", localVarAccept);
 
         final String[] localVarContentTypes = {
-            
+            "application/xml", "application/json"
         };
         final String localVarContentType = apiClient.selectHeaderContentType(localVarContentTypes);
         localVarHeaderParams.put("Content-Type", localVarContentType);
@@ -10791,13 +10791,13 @@ if (request.getData() != null)
         Map<String, Object> localVarFormParams = new LinkedHashMap<String, Object>();
         
         final String[] localVarAccepts = {
-            
+            "application/xml", "application/json"
         };
         final String localVarAccept = apiClient.selectHeaderAccept(localVarAccepts);
         if (localVarAccept != null) localVarHeaderParams.put("Accept", localVarAccept);
 
         final String[] localVarContentTypes = {
-            
+            "application/xml", "application/json"
         };
         final String localVarContentType = apiClient.selectHeaderContentType(localVarContentTypes);
         localVarHeaderParams.put("Content-Type", localVarContentType);
@@ -10932,13 +10932,13 @@ if (request.getData() != null)
         Map<String, Object> localVarFormParams = new LinkedHashMap<String, Object>();
         
         final String[] localVarAccepts = {
-            
+            "application/xml", "application/json"
         };
         final String localVarAccept = apiClient.selectHeaderAccept(localVarAccepts);
         if (localVarAccept != null) localVarHeaderParams.put("Accept", localVarAccept);
 
         final String[] localVarContentTypes = {
-            
+            "application/xml", "application/json"
         };
         final String localVarContentType = apiClient.selectHeaderContentType(localVarContentTypes);
         localVarHeaderParams.put("Content-Type", localVarContentType);
@@ -11070,13 +11070,13 @@ if (request.getData() != null)
         Map<String, Object> localVarFormParams = new LinkedHashMap<String, Object>();
         
         final String[] localVarAccepts = {
-            
+            "application/xml", "application/json"
         };
         final String localVarAccept = apiClient.selectHeaderAccept(localVarAccepts);
         if (localVarAccept != null) localVarHeaderParams.put("Accept", localVarAccept);
 
         final String[] localVarContentTypes = {
-            
+            "application/xml", "application/json"
         };
         final String localVarContentType = apiClient.selectHeaderContentType(localVarContentTypes);
         localVarHeaderParams.put("Content-Type", localVarContentType);
@@ -11217,13 +11217,13 @@ if (request.getData() != null)
         Map<String, Object> localVarFormParams = new LinkedHashMap<String, Object>();
         
         final String[] localVarAccepts = {
-            
+            "application/xml", "application/json"
         };
         final String localVarAccept = apiClient.selectHeaderAccept(localVarAccepts);
         if (localVarAccept != null) localVarHeaderParams.put("Accept", localVarAccept);
 
         final String[] localVarContentTypes = {
-            
+            "application/xml", "application/json"
         };
         final String localVarContentType = apiClient.selectHeaderContentType(localVarContentTypes);
         localVarHeaderParams.put("Content-Type", localVarContentType);
@@ -11359,13 +11359,13 @@ if (request.getData() != null)
         Map<String, Object> localVarFormParams = new LinkedHashMap<String, Object>();
         
         final String[] localVarAccepts = {
-            
+            "application/xml", "application/json"
         };
         final String localVarAccept = apiClient.selectHeaderAccept(localVarAccepts);
         if (localVarAccept != null) localVarHeaderParams.put("Accept", localVarAccept);
 
         final String[] localVarContentTypes = {
-            
+            "application/xml", "application/json"
         };
         final String localVarContentType = apiClient.selectHeaderContentType(localVarContentTypes);
         localVarHeaderParams.put("Content-Type", localVarContentType);
@@ -11500,13 +11500,13 @@ if (request.getData() != null)
         Map<String, Object> localVarFormParams = new LinkedHashMap<String, Object>();
         
         final String[] localVarAccepts = {
-            
+            "application/xml", "application/json"
         };
         final String localVarAccept = apiClient.selectHeaderAccept(localVarAccepts);
         if (localVarAccept != null) localVarHeaderParams.put("Accept", localVarAccept);
 
         final String[] localVarContentTypes = {
-            
+            "application/xml", "application/json"
         };
         final String localVarContentType = apiClient.selectHeaderContentType(localVarContentTypes);
         localVarHeaderParams.put("Content-Type", localVarContentType);
@@ -11638,13 +11638,13 @@ if (request.getData() != null)
         Map<String, Object> localVarFormParams = new LinkedHashMap<String, Object>();
         
         final String[] localVarAccepts = {
-            
+            "application/xml", "application/json"
         };
         final String localVarAccept = apiClient.selectHeaderAccept(localVarAccepts);
         if (localVarAccept != null) localVarHeaderParams.put("Accept", localVarAccept);
 
         final String[] localVarContentTypes = {
-            
+            "application/xml", "application/json"
         };
         final String localVarContentType = apiClient.selectHeaderContentType(localVarContentTypes);
         localVarHeaderParams.put("Content-Type", localVarContentType);
@@ -11782,13 +11782,13 @@ if (request.getData() != null)
         Map<String, Object> localVarFormParams = new LinkedHashMap<String, Object>();
         
         final String[] localVarAccepts = {
-            
+            "application/xml", "application/json"
         };
         final String localVarAccept = apiClient.selectHeaderAccept(localVarAccepts);
         if (localVarAccept != null) localVarHeaderParams.put("Accept", localVarAccept);
 
         final String[] localVarContentTypes = {
-            
+            "application/xml", "application/json"
         };
         final String localVarContentType = apiClient.selectHeaderContentType(localVarContentTypes);
         localVarHeaderParams.put("Content-Type", localVarContentType);
@@ -11930,13 +11930,13 @@ if (request.getData() != null)
         Map<String, Object> localVarFormParams = new LinkedHashMap<String, Object>();
         
         final String[] localVarAccepts = {
-            
+            "application/xml", "application/json"
         };
         final String localVarAccept = apiClient.selectHeaderAccept(localVarAccepts);
         if (localVarAccept != null) localVarHeaderParams.put("Accept", localVarAccept);
 
         final String[] localVarContentTypes = {
-            
+            "application/xml", "application/json"
         };
         final String localVarContentType = apiClient.selectHeaderContentType(localVarContentTypes);
         localVarHeaderParams.put("Content-Type", localVarContentType);
@@ -12073,13 +12073,13 @@ if (request.getData() != null)
         Map<String, Object> localVarFormParams = new LinkedHashMap<String, Object>();
         
         final String[] localVarAccepts = {
-            
+            "application/xml", "application/json"
         };
         final String localVarAccept = apiClient.selectHeaderAccept(localVarAccepts);
         if (localVarAccept != null) localVarHeaderParams.put("Accept", localVarAccept);
 
         final String[] localVarContentTypes = {
-            
+            "application/xml", "application/json"
         };
         final String localVarContentType = apiClient.selectHeaderContentType(localVarContentTypes);
         localVarHeaderParams.put("Content-Type", localVarContentType);
@@ -12220,13 +12220,13 @@ if (request.getData() != null)
         Map<String, Object> localVarFormParams = new LinkedHashMap<String, Object>();
         
         final String[] localVarAccepts = {
-            
+            "application/xml", "application/json"
         };
         final String localVarAccept = apiClient.selectHeaderAccept(localVarAccepts);
         if (localVarAccept != null) localVarHeaderParams.put("Accept", localVarAccept);
 
         final String[] localVarContentTypes = {
-            
+            "application/xml", "application/json"
         };
         final String localVarContentType = apiClient.selectHeaderContentType(localVarContentTypes);
         localVarHeaderParams.put("Content-Type", localVarContentType);
@@ -12362,13 +12362,13 @@ if (request.getData() != null)
         Map<String, Object> localVarFormParams = new LinkedHashMap<String, Object>();
         
         final String[] localVarAccepts = {
-            
+            "application/xml", "application/json"
         };
         final String localVarAccept = apiClient.selectHeaderAccept(localVarAccepts);
         if (localVarAccept != null) localVarHeaderParams.put("Accept", localVarAccept);
 
         final String[] localVarContentTypes = {
-            
+            "application/xml", "application/json"
         };
         final String localVarContentType = apiClient.selectHeaderContentType(localVarContentTypes);
         localVarHeaderParams.put("Content-Type", localVarContentType);
@@ -12503,13 +12503,13 @@ if (request.getData() != null)
         Map<String, Object> localVarFormParams = new LinkedHashMap<String, Object>();
         
         final String[] localVarAccepts = {
-            
+            "application/xml", "application/json"
         };
         final String localVarAccept = apiClient.selectHeaderAccept(localVarAccepts);
         if (localVarAccept != null) localVarHeaderParams.put("Accept", localVarAccept);
 
         final String[] localVarContentTypes = {
-            
+            "application/xml", "application/json"
         };
         final String localVarContentType = apiClient.selectHeaderContentType(localVarContentTypes);
         localVarHeaderParams.put("Content-Type", localVarContentType);
@@ -12641,13 +12641,13 @@ if (request.getData() != null)
         Map<String, Object> localVarFormParams = new LinkedHashMap<String, Object>();
         
         final String[] localVarAccepts = {
-            
+            "application/xml", "application/json"
         };
         final String localVarAccept = apiClient.selectHeaderAccept(localVarAccepts);
         if (localVarAccept != null) localVarHeaderParams.put("Accept", localVarAccept);
 
         final String[] localVarContentTypes = {
-            
+            "application/xml", "application/json"
         };
         final String localVarContentType = apiClient.selectHeaderContentType(localVarContentTypes);
         localVarHeaderParams.put("Content-Type", localVarContentType);
@@ -12789,13 +12789,13 @@ if (request.getData() != null)
         Map<String, Object> localVarFormParams = new LinkedHashMap<String, Object>();
         
         final String[] localVarAccepts = {
-            
+            "application/xml", "application/json"
         };
         final String localVarAccept = apiClient.selectHeaderAccept(localVarAccepts);
         if (localVarAccept != null) localVarHeaderParams.put("Accept", localVarAccept);
 
         final String[] localVarContentTypes = {
-            
+            "application/xml", "application/json"
         };
         final String localVarContentType = apiClient.selectHeaderContentType(localVarContentTypes);
         localVarHeaderParams.put("Content-Type", localVarContentType);
@@ -12936,13 +12936,13 @@ if (request.getData() != null)
         Map<String, Object> localVarFormParams = new LinkedHashMap<String, Object>();
         
         final String[] localVarAccepts = {
-            
+            "application/xml", "application/json"
         };
         final String localVarAccept = apiClient.selectHeaderAccept(localVarAccepts);
         if (localVarAccept != null) localVarHeaderParams.put("Accept", localVarAccept);
 
         final String[] localVarContentTypes = {
-            
+            "application/xml", "application/json"
         };
         final String localVarContentType = apiClient.selectHeaderContentType(localVarContentTypes);
         localVarHeaderParams.put("Content-Type", localVarContentType);
@@ -13078,13 +13078,13 @@ if (request.getData() != null)
         Map<String, Object> localVarFormParams = new LinkedHashMap<String, Object>();
         
         final String[] localVarAccepts = {
-            
+            "application/xml", "application/json"
         };
         final String localVarAccept = apiClient.selectHeaderAccept(localVarAccepts);
         if (localVarAccept != null) localVarHeaderParams.put("Accept", localVarAccept);
 
         final String[] localVarContentTypes = {
-            
+            "application/xml", "application/json"
         };
         final String localVarContentType = apiClient.selectHeaderContentType(localVarContentTypes);
         localVarHeaderParams.put("Content-Type", localVarContentType);
@@ -13220,13 +13220,13 @@ if (request.getData() != null)
         Map<String, Object> localVarFormParams = new LinkedHashMap<String, Object>();
         
         final String[] localVarAccepts = {
-            
+            "application/xml", "application/json"
         };
         final String localVarAccept = apiClient.selectHeaderAccept(localVarAccepts);
         if (localVarAccept != null) localVarHeaderParams.put("Accept", localVarAccept);
 
         final String[] localVarContentTypes = {
-            
+            "application/xml", "application/json"
         };
         final String localVarContentType = apiClient.selectHeaderContentType(localVarContentTypes);
         localVarHeaderParams.put("Content-Type", localVarContentType);
@@ -13361,13 +13361,13 @@ if (request.getData() != null)
         Map<String, Object> localVarFormParams = new LinkedHashMap<String, Object>();
         
         final String[] localVarAccepts = {
-            
+            "application/xml", "application/json"
         };
         final String localVarAccept = apiClient.selectHeaderAccept(localVarAccepts);
         if (localVarAccept != null) localVarHeaderParams.put("Accept", localVarAccept);
 
         final String[] localVarContentTypes = {
-            
+            "application/xml", "application/json"
         };
         final String localVarContentType = apiClient.selectHeaderContentType(localVarContentTypes);
         localVarHeaderParams.put("Content-Type", localVarContentType);
@@ -13499,13 +13499,13 @@ if (request.getData() != null)
         Map<String, Object> localVarFormParams = new LinkedHashMap<String, Object>();
         
         final String[] localVarAccepts = {
-            
+            "application/xml", "application/json"
         };
         final String localVarAccept = apiClient.selectHeaderAccept(localVarAccepts);
         if (localVarAccept != null) localVarHeaderParams.put("Accept", localVarAccept);
 
         final String[] localVarContentTypes = {
-            
+            "application/xml", "application/json"
         };
         final String localVarContentType = apiClient.selectHeaderContentType(localVarContentTypes);
         localVarHeaderParams.put("Content-Type", localVarContentType);
@@ -13642,13 +13642,13 @@ if (request.getData() != null)
         Map<String, Object> localVarFormParams = new LinkedHashMap<String, Object>();
         
         final String[] localVarAccepts = {
-            
+            "application/xml", "application/json"
         };
         final String localVarAccept = apiClient.selectHeaderAccept(localVarAccepts);
         if (localVarAccept != null) localVarHeaderParams.put("Accept", localVarAccept);
 
         final String[] localVarContentTypes = {
-            
+            "application/xml", "application/json"
         };
         final String localVarContentType = apiClient.selectHeaderContentType(localVarContentTypes);
         localVarHeaderParams.put("Content-Type", localVarContentType);
@@ -13790,13 +13790,13 @@ if (request.getData() != null)
         Map<String, Object> localVarFormParams = new LinkedHashMap<String, Object>();
         
         final String[] localVarAccepts = {
-            
+            "application/xml", "application/json"
         };
         final String localVarAccept = apiClient.selectHeaderAccept(localVarAccepts);
         if (localVarAccept != null) localVarHeaderParams.put("Accept", localVarAccept);
 
         final String[] localVarContentTypes = {
-            
+            "application/xml", "application/json"
         };
         final String localVarContentType = apiClient.selectHeaderContentType(localVarContentTypes);
         localVarHeaderParams.put("Content-Type", localVarContentType);
@@ -13937,13 +13937,13 @@ if (request.getData() != null)
         Map<String, Object> localVarFormParams = new LinkedHashMap<String, Object>();
         
         final String[] localVarAccepts = {
-            
+            "application/xml", "application/json"
         };
         final String localVarAccept = apiClient.selectHeaderAccept(localVarAccepts);
         if (localVarAccept != null) localVarHeaderParams.put("Accept", localVarAccept);
 
         final String[] localVarContentTypes = {
-            
+            "application/xml", "application/json"
         };
         final String localVarContentType = apiClient.selectHeaderContentType(localVarContentTypes);
         localVarHeaderParams.put("Content-Type", localVarContentType);
@@ -14079,13 +14079,13 @@ if (request.getData() != null)
         Map<String, Object> localVarFormParams = new LinkedHashMap<String, Object>();
         
         final String[] localVarAccepts = {
-            
+            "application/xml", "application/json"
         };
         final String localVarAccept = apiClient.selectHeaderAccept(localVarAccepts);
         if (localVarAccept != null) localVarHeaderParams.put("Accept", localVarAccept);
 
         final String[] localVarContentTypes = {
-            
+            "application/xml", "application/json"
         };
         final String localVarContentType = apiClient.selectHeaderContentType(localVarContentTypes);
         localVarHeaderParams.put("Content-Type", localVarContentType);
@@ -14221,13 +14221,13 @@ if (request.getData() != null)
         Map<String, Object> localVarFormParams = new LinkedHashMap<String, Object>();
         
         final String[] localVarAccepts = {
-            
+            "application/xml", "application/json"
         };
         final String localVarAccept = apiClient.selectHeaderAccept(localVarAccepts);
         if (localVarAccept != null) localVarHeaderParams.put("Accept", localVarAccept);
 
         final String[] localVarContentTypes = {
-            
+            "application/xml", "application/json"
         };
         final String localVarContentType = apiClient.selectHeaderContentType(localVarContentTypes);
         localVarHeaderParams.put("Content-Type", localVarContentType);
@@ -14362,13 +14362,13 @@ if (request.getData() != null)
         Map<String, Object> localVarFormParams = new LinkedHashMap<String, Object>();
         
         final String[] localVarAccepts = {
-            
+            "application/xml", "application/json"
         };
         final String localVarAccept = apiClient.selectHeaderAccept(localVarAccepts);
         if (localVarAccept != null) localVarHeaderParams.put("Accept", localVarAccept);
 
         final String[] localVarContentTypes = {
-            
+            "application/xml", "application/json"
         };
         final String localVarContentType = apiClient.selectHeaderContentType(localVarContentTypes);
         localVarHeaderParams.put("Content-Type", localVarContentType);
@@ -14500,13 +14500,13 @@ if (request.getData() != null)
         Map<String, Object> localVarFormParams = new LinkedHashMap<String, Object>();
         
         final String[] localVarAccepts = {
-            
+            "application/xml", "application/json"
         };
         final String localVarAccept = apiClient.selectHeaderAccept(localVarAccepts);
         if (localVarAccept != null) localVarHeaderParams.put("Accept", localVarAccept);
 
         final String[] localVarContentTypes = {
-            
+            "application/xml", "application/json"
         };
         final String localVarContentType = apiClient.selectHeaderContentType(localVarContentTypes);
         localVarHeaderParams.put("Content-Type", localVarContentType);
@@ -14648,13 +14648,13 @@ if (request.getData() != null)
         Map<String, Object> localVarFormParams = new LinkedHashMap<String, Object>();
         
         final String[] localVarAccepts = {
-            
+            "application/xml", "application/json"
         };
         final String localVarAccept = apiClient.selectHeaderAccept(localVarAccepts);
         if (localVarAccept != null) localVarHeaderParams.put("Accept", localVarAccept);
 
         final String[] localVarContentTypes = {
-            
+            "application/xml", "application/json"
         };
         final String localVarContentType = apiClient.selectHeaderContentType(localVarContentTypes);
         localVarHeaderParams.put("Content-Type", localVarContentType);
@@ -14796,13 +14796,13 @@ if (request.getData() != null)
         Map<String, Object> localVarFormParams = new LinkedHashMap<String, Object>();
         
         final String[] localVarAccepts = {
-            
+            "application/xml", "application/json"
         };
         final String localVarAccept = apiClient.selectHeaderAccept(localVarAccepts);
         if (localVarAccept != null) localVarHeaderParams.put("Accept", localVarAccept);
 
         final String[] localVarContentTypes = {
-            
+            "application/xml", "application/json"
         };
         final String localVarContentType = apiClient.selectHeaderContentType(localVarContentTypes);
         localVarHeaderParams.put("Content-Type", localVarContentType);
@@ -14944,13 +14944,13 @@ if (request.getData() != null)
         Map<String, Object> localVarFormParams = new LinkedHashMap<String, Object>();
         
         final String[] localVarAccepts = {
-            
+            "application/xml", "application/json"
         };
         final String localVarAccept = apiClient.selectHeaderAccept(localVarAccepts);
         if (localVarAccept != null) localVarHeaderParams.put("Accept", localVarAccept);
 
         final String[] localVarContentTypes = {
-            
+            "application/xml", "application/json"
         };
         final String localVarContentType = apiClient.selectHeaderContentType(localVarContentTypes);
         localVarHeaderParams.put("Content-Type", localVarContentType);
@@ -15091,13 +15091,13 @@ if (request.getData() != null)
         Map<String, Object> localVarFormParams = new LinkedHashMap<String, Object>();
         
         final String[] localVarAccepts = {
-            
+            "application/xml", "application/json"
         };
         final String localVarAccept = apiClient.selectHeaderAccept(localVarAccepts);
         if (localVarAccept != null) localVarHeaderParams.put("Accept", localVarAccept);
 
         final String[] localVarContentTypes = {
-            
+            "application/xml", "application/json"
         };
         final String localVarContentType = apiClient.selectHeaderContentType(localVarContentTypes);
         localVarHeaderParams.put("Content-Type", localVarContentType);
@@ -15234,13 +15234,13 @@ if (request.getData() != null)
         Map<String, Object> localVarFormParams = new LinkedHashMap<String, Object>();
         
         final String[] localVarAccepts = {
-            
+            "application/xml", "application/json"
         };
         final String localVarAccept = apiClient.selectHeaderAccept(localVarAccepts);
         if (localVarAccept != null) localVarHeaderParams.put("Accept", localVarAccept);
 
         final String[] localVarContentTypes = {
-            
+            "application/xml", "application/json"
         };
         final String localVarContentType = apiClient.selectHeaderContentType(localVarContentTypes);
         localVarHeaderParams.put("Content-Type", localVarContentType);
@@ -15382,13 +15382,13 @@ if (request.getData() != null)
         Map<String, Object> localVarFormParams = new LinkedHashMap<String, Object>();
         
         final String[] localVarAccepts = {
-            
+            "application/xml", "application/json"
         };
         final String localVarAccept = apiClient.selectHeaderAccept(localVarAccepts);
         if (localVarAccept != null) localVarHeaderParams.put("Accept", localVarAccept);
 
         final String[] localVarContentTypes = {
-            
+            "application/xml", "application/json"
         };
         final String localVarContentType = apiClient.selectHeaderContentType(localVarContentTypes);
         localVarHeaderParams.put("Content-Type", localVarContentType);
@@ -15529,13 +15529,13 @@ if (request.getData() != null)
         Map<String, Object> localVarFormParams = new LinkedHashMap<String, Object>();
         
         final String[] localVarAccepts = {
-            
+            "application/xml", "application/json"
         };
         final String localVarAccept = apiClient.selectHeaderAccept(localVarAccepts);
         if (localVarAccept != null) localVarHeaderParams.put("Accept", localVarAccept);
 
         final String[] localVarContentTypes = {
-            
+            "application/xml", "application/json"
         };
         final String localVarContentType = apiClient.selectHeaderContentType(localVarContentTypes);
         localVarHeaderParams.put("Content-Type", localVarContentType);
@@ -15671,13 +15671,13 @@ if (request.getData() != null)
         Map<String, Object> localVarFormParams = new LinkedHashMap<String, Object>();
         
         final String[] localVarAccepts = {
-            
+            "application/xml", "application/json"
         };
         final String localVarAccept = apiClient.selectHeaderAccept(localVarAccepts);
         if (localVarAccept != null) localVarHeaderParams.put("Accept", localVarAccept);
 
         final String[] localVarContentTypes = {
-            
+            "application/xml", "application/json"
         };
         final String localVarContentType = apiClient.selectHeaderContentType(localVarContentTypes);
         localVarHeaderParams.put("Content-Type", localVarContentType);
@@ -15812,13 +15812,13 @@ if (request.getData() != null)
         Map<String, Object> localVarFormParams = new LinkedHashMap<String, Object>();
         
         final String[] localVarAccepts = {
-            
+            "application/xml", "application/json"
         };
         final String localVarAccept = apiClient.selectHeaderAccept(localVarAccepts);
         if (localVarAccept != null) localVarHeaderParams.put("Accept", localVarAccept);
 
         final String[] localVarContentTypes = {
-            
+            "application/xml", "application/json"
         };
         final String localVarContentType = apiClient.selectHeaderContentType(localVarContentTypes);
         localVarHeaderParams.put("Content-Type", localVarContentType);
@@ -15951,13 +15951,13 @@ if (request.getData() != null)
         Map<String, Object> localVarFormParams = new LinkedHashMap<String, Object>();
         
         final String[] localVarAccepts = {
-            
+            "application/xml", "application/json"
         };
         final String localVarAccept = apiClient.selectHeaderAccept(localVarAccepts);
         if (localVarAccept != null) localVarHeaderParams.put("Accept", localVarAccept);
 
         final String[] localVarContentTypes = {
-            
+            "application/xml", "application/json"
         };
         final String localVarContentType = apiClient.selectHeaderContentType(localVarContentTypes);
         localVarHeaderParams.put("Content-Type", localVarContentType);
@@ -16100,13 +16100,13 @@ if (request.getImageFile() != null)
           localVarFormParams.put("ImageFile", request.getImageFile());
 
         final String[] localVarAccepts = {
-            
+            "application/xml", "application/json"
         };
         final String localVarAccept = apiClient.selectHeaderAccept(localVarAccepts);
         if (localVarAccept != null) localVarHeaderParams.put("Accept", localVarAccept);
 
         final String[] localVarContentTypes = {
-            
+            "multipart/form-data"
         };
         final String localVarContentType = apiClient.selectHeaderContentType(localVarContentTypes);
         localVarHeaderParams.put("Content-Type", localVarContentType);
@@ -16258,13 +16258,13 @@ if (request.getImageFile() != null)
           localVarFormParams.put("ImageFile", request.getImageFile());
 
         final String[] localVarAccepts = {
-            
+            "application/xml", "application/json"
         };
         final String localVarAccept = apiClient.selectHeaderAccept(localVarAccepts);
         if (localVarAccept != null) localVarHeaderParams.put("Accept", localVarAccept);
 
         final String[] localVarContentTypes = {
-            
+            "multipart/form-data"
         };
         final String localVarContentType = apiClient.selectHeaderContentType(localVarContentTypes);
         localVarHeaderParams.put("Content-Type", localVarContentType);
@@ -16409,13 +16409,13 @@ if (request.getImageFile() != null)
         Map<String, Object> localVarFormParams = new LinkedHashMap<String, Object>();
         
         final String[] localVarAccepts = {
-            
+            "application/xml", "application/json"
         };
         final String localVarAccept = apiClient.selectHeaderAccept(localVarAccepts);
         if (localVarAccept != null) localVarHeaderParams.put("Accept", localVarAccept);
 
         final String[] localVarContentTypes = {
-            
+            "application/xml", "application/json"
         };
         final String localVarContentType = apiClient.selectHeaderContentType(localVarContentTypes);
         localVarHeaderParams.put("Content-Type", localVarContentType);
@@ -16559,13 +16559,13 @@ if (request.getImageFile() != null)
         Map<String, Object> localVarFormParams = new LinkedHashMap<String, Object>();
         
         final String[] localVarAccepts = {
-            
+            "application/xml", "application/json"
         };
         final String localVarAccept = apiClient.selectHeaderAccept(localVarAccepts);
         if (localVarAccept != null) localVarHeaderParams.put("Accept", localVarAccept);
 
         final String[] localVarContentTypes = {
-            
+            "application/xml", "application/json"
         };
         final String localVarContentType = apiClient.selectHeaderContentType(localVarContentTypes);
         localVarHeaderParams.put("Content-Type", localVarContentType);
@@ -16704,13 +16704,13 @@ if (request.getImageFile() != null)
         Map<String, Object> localVarFormParams = new LinkedHashMap<String, Object>();
         
         final String[] localVarAccepts = {
-            
+            "application/xml", "application/json"
         };
         final String localVarAccept = apiClient.selectHeaderAccept(localVarAccepts);
         if (localVarAccept != null) localVarHeaderParams.put("Accept", localVarAccept);
 
         final String[] localVarContentTypes = {
-            
+            "application/xml", "application/json"
         };
         final String localVarContentType = apiClient.selectHeaderContentType(localVarContentTypes);
         localVarHeaderParams.put("Content-Type", localVarContentType);
@@ -16853,13 +16853,13 @@ if (request.getImageFile() != null)
         Map<String, Object> localVarFormParams = new LinkedHashMap<String, Object>();
         
         final String[] localVarAccepts = {
-            
+            "application/xml", "application/json"
         };
         final String localVarAccept = apiClient.selectHeaderAccept(localVarAccepts);
         if (localVarAccept != null) localVarHeaderParams.put("Accept", localVarAccept);
 
         final String[] localVarContentTypes = {
-            
+            "application/xml", "application/json"
         };
         final String localVarContentType = apiClient.selectHeaderContentType(localVarContentTypes);
         localVarHeaderParams.put("Content-Type", localVarContentType);
@@ -16999,13 +16999,13 @@ if (request.getImageFile() != null)
         Map<String, Object> localVarFormParams = new LinkedHashMap<String, Object>();
         
         final String[] localVarAccepts = {
-            
+            "application/xml", "application/json"
         };
         final String localVarAccept = apiClient.selectHeaderAccept(localVarAccepts);
         if (localVarAccept != null) localVarHeaderParams.put("Accept", localVarAccept);
 
         final String[] localVarContentTypes = {
-            
+            "application/xml", "application/json"
         };
         final String localVarContentType = apiClient.selectHeaderContentType(localVarContentTypes);
         localVarHeaderParams.put("Content-Type", localVarContentType);
@@ -17149,13 +17149,13 @@ if (request.getImageFile() != null)
         Map<String, Object> localVarFormParams = new LinkedHashMap<String, Object>();
         
         final String[] localVarAccepts = {
-            
+            "application/xml", "application/json"
         };
         final String localVarAccept = apiClient.selectHeaderAccept(localVarAccepts);
         if (localVarAccept != null) localVarHeaderParams.put("Accept", localVarAccept);
 
         final String[] localVarContentTypes = {
-            
+            "application/xml", "application/json"
         };
         final String localVarContentType = apiClient.selectHeaderContentType(localVarContentTypes);
         localVarHeaderParams.put("Content-Type", localVarContentType);
@@ -17294,13 +17294,13 @@ if (request.getImageFile() != null)
         Map<String, Object> localVarFormParams = new LinkedHashMap<String, Object>();
         
         final String[] localVarAccepts = {
-            
+            "application/xml", "application/json"
         };
         final String localVarAccept = apiClient.selectHeaderAccept(localVarAccepts);
         if (localVarAccept != null) localVarHeaderParams.put("Accept", localVarAccept);
 
         final String[] localVarContentTypes = {
-            
+            "application/xml", "application/json"
         };
         final String localVarContentType = apiClient.selectHeaderContentType(localVarContentTypes);
         localVarHeaderParams.put("Content-Type", localVarContentType);
@@ -17443,13 +17443,13 @@ if (request.getImageFile() != null)
         Map<String, Object> localVarFormParams = new LinkedHashMap<String, Object>();
         
         final String[] localVarAccepts = {
-            
+            "application/xml", "application/json"
         };
         final String localVarAccept = apiClient.selectHeaderAccept(localVarAccepts);
         if (localVarAccept != null) localVarHeaderParams.put("Accept", localVarAccept);
 
         final String[] localVarContentTypes = {
-            
+            "application/xml", "application/json"
         };
         final String localVarContentType = apiClient.selectHeaderContentType(localVarContentTypes);
         localVarHeaderParams.put("Content-Type", localVarContentType);
@@ -17589,13 +17589,13 @@ if (request.getImageFile() != null)
         Map<String, Object> localVarFormParams = new LinkedHashMap<String, Object>();
         
         final String[] localVarAccepts = {
-            
+            "application/xml", "application/json"
         };
         final String localVarAccept = apiClient.selectHeaderAccept(localVarAccepts);
         if (localVarAccept != null) localVarHeaderParams.put("Accept", localVarAccept);
 
         final String[] localVarContentTypes = {
-            
+            "application/xml", "application/json"
         };
         final String localVarContentType = apiClient.selectHeaderContentType(localVarContentTypes);
         localVarHeaderParams.put("Content-Type", localVarContentType);
@@ -17740,13 +17740,13 @@ if (request.getImageFile() != null)
         Map<String, Object> localVarFormParams = new LinkedHashMap<String, Object>();
         
         final String[] localVarAccepts = {
-            
+            "application/xml", "application/json"
         };
         final String localVarAccept = apiClient.selectHeaderAccept(localVarAccepts);
         if (localVarAccept != null) localVarHeaderParams.put("Accept", localVarAccept);
 
         final String[] localVarContentTypes = {
-            
+            "application/xml", "application/json"
         };
         final String localVarContentType = apiClient.selectHeaderContentType(localVarContentTypes);
         localVarHeaderParams.put("Content-Type", localVarContentType);
@@ -17890,13 +17890,13 @@ if (request.getImageFile() != null)
         Map<String, Object> localVarFormParams = new LinkedHashMap<String, Object>();
         
         final String[] localVarAccepts = {
-            
+            "application/xml", "application/json"
         };
         final String localVarAccept = apiClient.selectHeaderAccept(localVarAccepts);
         if (localVarAccept != null) localVarHeaderParams.put("Accept", localVarAccept);
 
         final String[] localVarContentTypes = {
-            
+            "application/xml", "application/json"
         };
         final String localVarContentType = apiClient.selectHeaderContentType(localVarContentTypes);
         localVarHeaderParams.put("Content-Type", localVarContentType);
@@ -17925,14 +17925,14 @@ if (request.getImageFile() != null)
           throw new ApiException(BadRequest, "Missing the required parameter 'Name' when calling insertTable");
         }
         
-        // verify the required parameter 'Table' is set
-        if (request.getTable() == null) {
-          throw new ApiException(BadRequest, "Missing the required parameter 'Table' when calling insertTable");
-        }
-        
         // verify the required parameter 'NodePath' is set
         if (request.getNodePath() == null) {
           throw new ApiException(BadRequest, "Missing the required parameter 'NodePath' when calling insertTable");
+        }
+        
+        // verify the required parameter 'Table' is set
+        if (request.getTable() == null) {
+          throw new ApiException(BadRequest, "Missing the required parameter 'Table' when calling insertTable");
         }
         
 
@@ -18040,13 +18040,13 @@ if (request.getImageFile() != null)
         Map<String, Object> localVarFormParams = new LinkedHashMap<String, Object>();
         
         final String[] localVarAccepts = {
-            
+            "application/xml", "application/json"
         };
         final String localVarAccept = apiClient.selectHeaderAccept(localVarAccepts);
         if (localVarAccept != null) localVarHeaderParams.put("Accept", localVarAccept);
 
         final String[] localVarContentTypes = {
-            
+            "application/xml", "application/json"
         };
         final String localVarContentType = apiClient.selectHeaderContentType(localVarContentTypes);
         localVarHeaderParams.put("Content-Type", localVarContentType);
@@ -18075,14 +18075,14 @@ if (request.getImageFile() != null)
           throw new ApiException(BadRequest, "Missing the required parameter 'Name' when calling insertTableCell");
         }
         
-        // verify the required parameter 'Cell' is set
-        if (request.getCell() == null) {
-          throw new ApiException(BadRequest, "Missing the required parameter 'Cell' when calling insertTableCell");
-        }
-        
         // verify the required parameter 'TableRowPath' is set
         if (request.getTableRowPath() == null) {
           throw new ApiException(BadRequest, "Missing the required parameter 'TableRowPath' when calling insertTableCell");
+        }
+        
+        // verify the required parameter 'Cell' is set
+        if (request.getCell() == null) {
+          throw new ApiException(BadRequest, "Missing the required parameter 'Cell' when calling insertTableCell");
         }
         
 
@@ -18190,13 +18190,13 @@ if (request.getImageFile() != null)
         Map<String, Object> localVarFormParams = new LinkedHashMap<String, Object>();
         
         final String[] localVarAccepts = {
-            
+            "application/xml", "application/json"
         };
         final String localVarAccept = apiClient.selectHeaderAccept(localVarAccepts);
         if (localVarAccept != null) localVarHeaderParams.put("Accept", localVarAccept);
 
         final String[] localVarContentTypes = {
-            
+            "application/xml", "application/json"
         };
         final String localVarContentType = apiClient.selectHeaderContentType(localVarContentTypes);
         localVarHeaderParams.put("Content-Type", localVarContentType);
@@ -18225,14 +18225,14 @@ if (request.getImageFile() != null)
           throw new ApiException(BadRequest, "Missing the required parameter 'Name' when calling insertTableRow");
         }
         
-        // verify the required parameter 'Row' is set
-        if (request.getRow() == null) {
-          throw new ApiException(BadRequest, "Missing the required parameter 'Row' when calling insertTableRow");
-        }
-        
         // verify the required parameter 'TablePath' is set
         if (request.getTablePath() == null) {
           throw new ApiException(BadRequest, "Missing the required parameter 'TablePath' when calling insertTableRow");
+        }
+        
+        // verify the required parameter 'Row' is set
+        if (request.getRow() == null) {
+          throw new ApiException(BadRequest, "Missing the required parameter 'Row' when calling insertTableRow");
         }
         
 
@@ -18339,13 +18339,13 @@ if (request.getImageFile() != null)
         Map<String, Object> localVarFormParams = new LinkedHashMap<String, Object>();
         
         final String[] localVarAccepts = {
-            
+            "application/xml", "application/json"
         };
         final String localVarAccept = apiClient.selectHeaderAccept(localVarAccepts);
         if (localVarAccept != null) localVarHeaderParams.put("Accept", localVarAccept);
 
         final String[] localVarContentTypes = {
-            
+            "application/xml", "application/json"
         };
         final String localVarContentType = apiClient.selectHeaderContentType(localVarContentTypes);
         localVarHeaderParams.put("Content-Type", localVarContentType);
@@ -18487,13 +18487,13 @@ if (request.getImageFile() != null)
           localVarFormParams.put("ImageFile", request.getImageFile());
 
         final String[] localVarAccepts = {
-            
+            "application/xml", "application/json"
         };
         final String localVarAccept = apiClient.selectHeaderAccept(localVarAccepts);
         if (localVarAccept != null) localVarHeaderParams.put("Accept", localVarAccept);
 
         final String[] localVarContentTypes = {
-            
+            "multipart/form-data"
         };
         final String localVarContentType = apiClient.selectHeaderContentType(localVarContentTypes);
         localVarHeaderParams.put("Content-Type", localVarContentType);
@@ -18626,13 +18626,13 @@ if (request.getImageFile() != null)
         Map<String, Object> localVarFormParams = new LinkedHashMap<String, Object>();
         
         final String[] localVarAccepts = {
-            
+            "application/xml", "application/json"
         };
         final String localVarAccept = apiClient.selectHeaderAccept(localVarAccepts);
         if (localVarAccept != null) localVarHeaderParams.put("Accept", localVarAccept);
 
         final String[] localVarContentTypes = {
-            
+            "application/xml", "application/json"
         };
         final String localVarContentType = apiClient.selectHeaderContentType(localVarContentTypes);
         localVarHeaderParams.put("Content-Type", localVarContentType);
@@ -18763,13 +18763,13 @@ if (request.getImageFile() != null)
         Map<String, Object> localVarFormParams = new LinkedHashMap<String, Object>();
         
         final String[] localVarAccepts = {
-            
+            "application/xml", "application/json"
         };
         final String localVarAccept = apiClient.selectHeaderAccept(localVarAccepts);
         if (localVarAccept != null) localVarHeaderParams.put("Accept", localVarAccept);
 
         final String[] localVarContentTypes = {
-            
+            "application/xml", "application/json"
         };
         final String localVarContentType = apiClient.selectHeaderContentType(localVarContentTypes);
         localVarHeaderParams.put("Content-Type", localVarContentType);
@@ -18899,13 +18899,13 @@ if (request.getImageFile() != null)
         Map<String, Object> localVarFormParams = new LinkedHashMap<String, Object>();
         
         final String[] localVarAccepts = {
-            
+            "application/xml", "application/json"
         };
         final String localVarAccept = apiClient.selectHeaderAccept(localVarAccepts);
         if (localVarAccept != null) localVarHeaderParams.put("Accept", localVarAccept);
 
         final String[] localVarContentTypes = {
-            
+            "application/xml", "application/json"
         };
         final String localVarContentType = apiClient.selectHeaderContentType(localVarContentTypes);
         localVarHeaderParams.put("Content-Type", localVarContentType);
@@ -19035,13 +19035,13 @@ if (request.getImageFile() != null)
         Map<String, Object> localVarFormParams = new LinkedHashMap<String, Object>();
         
         final String[] localVarAccepts = {
-            
+            "application/xml", "application/json"
         };
         final String localVarAccept = apiClient.selectHeaderAccept(localVarAccepts);
         if (localVarAccept != null) localVarHeaderParams.put("Accept", localVarAccept);
 
         final String[] localVarContentTypes = {
-            
+            "application/xml", "application/json"
         };
         final String localVarContentType = apiClient.selectHeaderContentType(localVarContentTypes);
         localVarHeaderParams.put("Content-Type", localVarContentType);
@@ -19173,13 +19173,13 @@ if (request.getImageFile() != null)
         Map<String, Object> localVarFormParams = new LinkedHashMap<String, Object>();
         
         final String[] localVarAccepts = {
-            
+            "application/xml", "application/json"
         };
         final String localVarAccept = apiClient.selectHeaderAccept(localVarAccepts);
         if (localVarAccept != null) localVarHeaderParams.put("Accept", localVarAccept);
 
         final String[] localVarContentTypes = {
-            
+            "application/xml", "application/json"
         };
         final String localVarContentType = apiClient.selectHeaderContentType(localVarContentTypes);
         localVarHeaderParams.put("Content-Type", localVarContentType);
@@ -19315,13 +19315,13 @@ if (request.getImageFile() != null)
         Map<String, Object> localVarFormParams = new LinkedHashMap<String, Object>();
         
         final String[] localVarAccepts = {
-            
+            "application/xml", "application/json"
         };
         final String localVarAccept = apiClient.selectHeaderAccept(localVarAccepts);
         if (localVarAccept != null) localVarHeaderParams.put("Accept", localVarAccept);
 
         final String[] localVarContentTypes = {
-            
+            "application/xml", "application/json"
         };
         final String localVarContentType = apiClient.selectHeaderContentType(localVarContentTypes);
         localVarHeaderParams.put("Content-Type", localVarContentType);
@@ -19454,13 +19454,13 @@ if (request.getImageFile() != null)
         Map<String, Object> localVarFormParams = new LinkedHashMap<String, Object>();
         
         final String[] localVarAccepts = {
-            
+            "application/xml", "application/json"
         };
         final String localVarAccept = apiClient.selectHeaderAccept(localVarAccepts);
         if (localVarAccept != null) localVarHeaderParams.put("Accept", localVarAccept);
 
         final String[] localVarContentTypes = {
-            
+            "application/xml", "application/json"
         };
         final String localVarContentType = apiClient.selectHeaderContentType(localVarContentTypes);
         localVarHeaderParams.put("Content-Type", localVarContentType);
@@ -19599,13 +19599,13 @@ if (request.getImageFile() != null)
         Map<String, Object> localVarFormParams = new LinkedHashMap<String, Object>();
         
         final String[] localVarAccepts = {
-            
+            "application/xml", "application/json"
         };
         final String localVarAccept = apiClient.selectHeaderAccept(localVarAccepts);
         if (localVarAccept != null) localVarHeaderParams.put("Accept", localVarAccept);
 
         final String[] localVarContentTypes = {
-            
+            "application/xml", "application/json"
         };
         final String localVarContentType = apiClient.selectHeaderContentType(localVarContentTypes);
         localVarHeaderParams.put("Content-Type", localVarContentType);
@@ -19753,13 +19753,13 @@ if (request.getImageFile() != null)
         Map<String, Object> localVarFormParams = new LinkedHashMap<String, Object>();
         
         final String[] localVarAccepts = {
-            
+            "application/xml", "application/json"
         };
         final String localVarAccept = apiClient.selectHeaderAccept(localVarAccepts);
         if (localVarAccept != null) localVarHeaderParams.put("Accept", localVarAccept);
 
         final String[] localVarContentTypes = {
-            
+            "application/xml", "application/json"
         };
         final String localVarContentType = apiClient.selectHeaderContentType(localVarContentTypes);
         localVarHeaderParams.put("Content-Type", localVarContentType);
@@ -19903,13 +19903,13 @@ if (request.getImageFile() != null)
         Map<String, Object> localVarFormParams = new LinkedHashMap<String, Object>();
         
         final String[] localVarAccepts = {
-            
+            "application/xml", "application/json"
         };
         final String localVarAccept = apiClient.selectHeaderAccept(localVarAccepts);
         if (localVarAccept != null) localVarHeaderParams.put("Accept", localVarAccept);
 
         final String[] localVarContentTypes = {
-            
+            "application/xml", "application/json"
         };
         final String localVarContentType = apiClient.selectHeaderContentType(localVarContentTypes);
         localVarHeaderParams.put("Content-Type", localVarContentType);
@@ -20057,13 +20057,13 @@ if (request.getImageFile() != null)
         Map<String, Object> localVarFormParams = new LinkedHashMap<String, Object>();
         
         final String[] localVarAccepts = {
-            
+            "application/xml", "application/json"
         };
         final String localVarAccept = apiClient.selectHeaderAccept(localVarAccepts);
         if (localVarAccept != null) localVarHeaderParams.put("Accept", localVarAccept);
 
         final String[] localVarContentTypes = {
-            
+            "application/xml", "application/json"
         };
         final String localVarContentType = apiClient.selectHeaderContentType(localVarContentTypes);
         localVarHeaderParams.put("Content-Type", localVarContentType);
@@ -20206,13 +20206,13 @@ if (request.getImageFile() != null)
         Map<String, Object> localVarFormParams = new LinkedHashMap<String, Object>();
         
         final String[] localVarAccepts = {
-            
+            "application/xml", "application/json"
         };
         final String localVarAccept = apiClient.selectHeaderAccept(localVarAccepts);
         if (localVarAccept != null) localVarHeaderParams.put("Accept", localVarAccept);
 
         final String[] localVarContentTypes = {
-            
+            "application/xml", "application/json"
         };
         final String localVarContentType = apiClient.selectHeaderContentType(localVarContentTypes);
         localVarHeaderParams.put("Content-Type", localVarContentType);
@@ -20356,13 +20356,13 @@ if (request.getImageFile() != null)
         Map<String, Object> localVarFormParams = new LinkedHashMap<String, Object>();
         
         final String[] localVarAccepts = {
-            
+            "application/xml", "application/json"
         };
         final String localVarAccept = apiClient.selectHeaderAccept(localVarAccepts);
         if (localVarAccept != null) localVarHeaderParams.put("Accept", localVarAccept);
 
         final String[] localVarContentTypes = {
-            
+            "application/xml", "application/json"
         };
         final String localVarContentType = apiClient.selectHeaderContentType(localVarContentTypes);
         localVarHeaderParams.put("Content-Type", localVarContentType);
@@ -20510,13 +20510,13 @@ if (request.getImageFile() != null)
         Map<String, Object> localVarFormParams = new LinkedHashMap<String, Object>();
         
         final String[] localVarAccepts = {
-            
+            "application/xml", "application/json"
         };
         final String localVarAccept = apiClient.selectHeaderAccept(localVarAccepts);
         if (localVarAccept != null) localVarHeaderParams.put("Accept", localVarAccept);
 
         final String[] localVarContentTypes = {
-            
+            "application/xml", "application/json"
         };
         final String localVarContentType = apiClient.selectHeaderContentType(localVarContentTypes);
         localVarHeaderParams.put("Content-Type", localVarContentType);
@@ -20660,13 +20660,13 @@ if (request.getImageFile() != null)
         Map<String, Object> localVarFormParams = new LinkedHashMap<String, Object>();
         
         final String[] localVarAccepts = {
-            
+            "application/xml", "application/json"
         };
         final String localVarAccept = apiClient.selectHeaderAccept(localVarAccepts);
         if (localVarAccept != null) localVarHeaderParams.put("Accept", localVarAccept);
 
         final String[] localVarContentTypes = {
-            
+            "application/xml", "application/json"
         };
         final String localVarContentType = apiClient.selectHeaderContentType(localVarContentTypes);
         localVarHeaderParams.put("Content-Type", localVarContentType);
@@ -20814,13 +20814,13 @@ if (request.getImageFile() != null)
         Map<String, Object> localVarFormParams = new LinkedHashMap<String, Object>();
         
         final String[] localVarAccepts = {
-            
+            "application/xml", "application/json"
         };
         final String localVarAccept = apiClient.selectHeaderAccept(localVarAccepts);
         if (localVarAccept != null) localVarHeaderParams.put("Accept", localVarAccept);
 
         final String[] localVarContentTypes = {
-            
+            "application/xml", "application/json"
         };
         final String localVarContentType = apiClient.selectHeaderContentType(localVarContentTypes);
         localVarHeaderParams.put("Content-Type", localVarContentType);
@@ -20963,13 +20963,13 @@ if (request.getImageFile() != null)
         Map<String, Object> localVarFormParams = new LinkedHashMap<String, Object>();
         
         final String[] localVarAccepts = {
-            
+            "application/xml", "application/json"
         };
         final String localVarAccept = apiClient.selectHeaderAccept(localVarAccepts);
         if (localVarAccept != null) localVarHeaderParams.put("Accept", localVarAccept);
 
         final String[] localVarContentTypes = {
-            
+            "application/xml", "application/json"
         };
         final String localVarContentType = apiClient.selectHeaderContentType(localVarContentTypes);
         localVarHeaderParams.put("Content-Type", localVarContentType);
@@ -21107,13 +21107,13 @@ if (request.getImageFile() != null)
         Map<String, Object> localVarFormParams = new LinkedHashMap<String, Object>();
         
         final String[] localVarAccepts = {
-            
+            "application/xml", "application/json"
         };
         final String localVarAccept = apiClient.selectHeaderAccept(localVarAccepts);
         if (localVarAccept != null) localVarHeaderParams.put("Accept", localVarAccept);
 
         final String[] localVarContentTypes = {
-            
+            "application/xml", "application/json"
         };
         final String localVarContentType = apiClient.selectHeaderContentType(localVarContentTypes);
         localVarHeaderParams.put("Content-Type", localVarContentType);
@@ -21248,13 +21248,13 @@ if (request.getImageFile() != null)
         Map<String, Object> localVarFormParams = new LinkedHashMap<String, Object>();
         
         final String[] localVarAccepts = {
-            
+            "application/xml", "application/json"
         };
         final String localVarAccept = apiClient.selectHeaderAccept(localVarAccepts);
         if (localVarAccept != null) localVarHeaderParams.put("Accept", localVarAccept);
 
         final String[] localVarContentTypes = {
-            
+            "application/xml", "application/json"
         };
         final String localVarContentType = apiClient.selectHeaderContentType(localVarContentTypes);
         localVarHeaderParams.put("Content-Type", localVarContentType);
@@ -21376,13 +21376,13 @@ if (request.getImageFile() != null)
         Map<String, Object> localVarFormParams = new LinkedHashMap<String, Object>();
         
         final String[] localVarAccepts = {
-            
+            "application/xml", "application/json"
         };
         final String localVarAccept = apiClient.selectHeaderAccept(localVarAccepts);
         if (localVarAccept != null) localVarHeaderParams.put("Accept", localVarAccept);
 
         final String[] localVarContentTypes = {
-            
+            "application/xml", "application/json"
         };
         final String localVarContentType = apiClient.selectHeaderContentType(localVarContentTypes);
         localVarHeaderParams.put("Content-Type", localVarContentType);
@@ -21519,13 +21519,13 @@ if (request.getImageFile() != null)
         Map<String, Object> localVarFormParams = new LinkedHashMap<String, Object>();
         
         final String[] localVarAccepts = {
-            
+            "application/xml", "application/json"
         };
         final String localVarAccept = apiClient.selectHeaderAccept(localVarAccepts);
         if (localVarAccept != null) localVarHeaderParams.put("Accept", localVarAccept);
 
         final String[] localVarContentTypes = {
-            
+            "application/xml", "application/json"
         };
         final String localVarContentType = apiClient.selectHeaderContentType(localVarContentTypes);
         localVarHeaderParams.put("Content-Type", localVarContentType);
@@ -21683,13 +21683,13 @@ if (request.getImageFile() != null)
         Map<String, Object> localVarFormParams = new LinkedHashMap<String, Object>();
         
         final String[] localVarAccepts = {
-            
+            "application/xml", "application/json"
         };
         final String localVarAccept = apiClient.selectHeaderAccept(localVarAccepts);
         if (localVarAccept != null) localVarHeaderParams.put("Accept", localVarAccept);
 
         final String[] localVarContentTypes = {
-            
+            "application/xml", "application/json"
         };
         final String localVarContentType = apiClient.selectHeaderContentType(localVarContentTypes);
         localVarHeaderParams.put("Content-Type", localVarContentType);
@@ -21825,13 +21825,13 @@ if (request.getImageFile() != null)
         Map<String, Object> localVarFormParams = new LinkedHashMap<String, Object>();
         
         final String[] localVarAccepts = {
-            
+            "application/xml", "application/json"
         };
         final String localVarAccept = apiClient.selectHeaderAccept(localVarAccepts);
         if (localVarAccept != null) localVarHeaderParams.put("Accept", localVarAccept);
 
         final String[] localVarContentTypes = {
-            
+            "application/xml", "application/json"
         };
         final String localVarContentType = apiClient.selectHeaderContentType(localVarContentTypes);
         localVarHeaderParams.put("Content-Type", localVarContentType);
@@ -21972,13 +21972,13 @@ if (request.getImageFile() != null)
         Map<String, Object> localVarFormParams = new LinkedHashMap<String, Object>();
         
         final String[] localVarAccepts = {
-            
+            "application/xml", "application/json"
         };
         final String localVarAccept = apiClient.selectHeaderAccept(localVarAccepts);
         if (localVarAccept != null) localVarHeaderParams.put("Accept", localVarAccept);
 
         final String[] localVarContentTypes = {
-            
+            "application/xml", "application/json"
         };
         final String localVarContentType = apiClient.selectHeaderContentType(localVarContentTypes);
         localVarHeaderParams.put("Content-Type", localVarContentType);
@@ -22109,13 +22109,13 @@ if (request.getImageFile() != null)
         Map<String, Object> localVarFormParams = new LinkedHashMap<String, Object>();
         
         final String[] localVarAccepts = {
-            
+            "application/xml", "application/json"
         };
         final String localVarAccept = apiClient.selectHeaderAccept(localVarAccepts);
         if (localVarAccept != null) localVarHeaderParams.put("Accept", localVarAccept);
 
         final String[] localVarContentTypes = {
-            
+            "application/xml", "application/json"
         };
         final String localVarContentType = apiClient.selectHeaderContentType(localVarContentTypes);
         localVarHeaderParams.put("Content-Type", localVarContentType);
@@ -22254,13 +22254,13 @@ if (request.getImageFile() != null)
         Map<String, Object> localVarFormParams = new LinkedHashMap<String, Object>();
         
         final String[] localVarAccepts = {
-            
+            "application/xml", "application/json"
         };
         final String localVarAccept = apiClient.selectHeaderAccept(localVarAccepts);
         if (localVarAccept != null) localVarHeaderParams.put("Accept", localVarAccept);
 
         final String[] localVarContentTypes = {
-            
+            "application/xml", "application/json"
         };
         final String localVarContentType = apiClient.selectHeaderContentType(localVarContentTypes);
         localVarHeaderParams.put("Content-Type", localVarContentType);
@@ -22405,13 +22405,13 @@ if (request.getImageFile() != null)
         Map<String, Object> localVarFormParams = new LinkedHashMap<String, Object>();
         
         final String[] localVarAccepts = {
-            
+            "application/xml", "application/json"
         };
         final String localVarAccept = apiClient.selectHeaderAccept(localVarAccepts);
         if (localVarAccept != null) localVarHeaderParams.put("Accept", localVarAccept);
 
         final String[] localVarContentTypes = {
-            
+            "application/xml", "application/json"
         };
         final String localVarContentType = apiClient.selectHeaderContentType(localVarContentTypes);
         localVarHeaderParams.put("Content-Type", localVarContentType);
@@ -22560,13 +22560,13 @@ if (request.getImageFile() != null)
         Map<String, Object> localVarFormParams = new LinkedHashMap<String, Object>();
         
         final String[] localVarAccepts = {
-            
+            "application/xml", "application/json"
         };
         final String localVarAccept = apiClient.selectHeaderAccept(localVarAccepts);
         if (localVarAccept != null) localVarHeaderParams.put("Accept", localVarAccept);
 
         final String[] localVarContentTypes = {
-            
+            "application/xml", "application/json"
         };
         final String localVarContentType = apiClient.selectHeaderContentType(localVarContentTypes);
         localVarHeaderParams.put("Content-Type", localVarContentType);
@@ -22715,13 +22715,13 @@ if (request.getImageFile() != null)
           localVarFormParams.put("ImageFile", request.getImageFile());
 
         final String[] localVarAccepts = {
-            
+            "application/xml", "application/json"
         };
         final String localVarAccept = apiClient.selectHeaderAccept(localVarAccepts);
         if (localVarAccept != null) localVarHeaderParams.put("Accept", localVarAccept);
 
         final String[] localVarContentTypes = {
-            
+            "multipart/form-data"
         };
         final String localVarContentType = apiClient.selectHeaderContentType(localVarContentTypes);
         localVarHeaderParams.put("Content-Type", localVarContentType);
@@ -22879,13 +22879,13 @@ if (request.getImageFile() != null)
           localVarFormParams.put("ImageFile", request.getImageFile());
 
         final String[] localVarAccepts = {
-            
+            "application/xml", "application/json"
         };
         final String localVarAccept = apiClient.selectHeaderAccept(localVarAccepts);
         if (localVarAccept != null) localVarHeaderParams.put("Accept", localVarAccept);
 
         final String[] localVarContentTypes = {
-            
+            "multipart/form-data"
         };
         final String localVarContentType = apiClient.selectHeaderContentType(localVarContentTypes);
         localVarHeaderParams.put("Content-Type", localVarContentType);
@@ -23035,13 +23035,13 @@ if (request.getImageFile() != null)
         Map<String, Object> localVarFormParams = new LinkedHashMap<String, Object>();
         
         final String[] localVarAccepts = {
-            
+            "application/xml", "application/json"
         };
         final String localVarAccept = apiClient.selectHeaderAccept(localVarAccepts);
         if (localVarAccept != null) localVarHeaderParams.put("Accept", localVarAccept);
 
         final String[] localVarContentTypes = {
-            
+            "application/xml", "application/json"
         };
         final String localVarContentType = apiClient.selectHeaderContentType(localVarContentTypes);
         localVarHeaderParams.put("Content-Type", localVarContentType);
@@ -23187,13 +23187,13 @@ if (request.getImageFile() != null)
         Map<String, Object> localVarFormParams = new LinkedHashMap<String, Object>();
         
         final String[] localVarAccepts = {
-            
+            "application/xml", "application/json"
         };
         final String localVarAccept = apiClient.selectHeaderAccept(localVarAccepts);
         if (localVarAccept != null) localVarHeaderParams.put("Accept", localVarAccept);
 
         final String[] localVarContentTypes = {
-            
+            "application/xml", "application/json"
         };
         final String localVarContentType = apiClient.selectHeaderContentType(localVarContentTypes);
         localVarHeaderParams.put("Content-Type", localVarContentType);
@@ -23328,13 +23328,13 @@ if (request.getImageFile() != null)
         Map<String, Object> localVarFormParams = new LinkedHashMap<String, Object>();
         
         final String[] localVarAccepts = {
-            
+            "application/xml", "application/json"
         };
         final String localVarAccept = apiClient.selectHeaderAccept(localVarAccepts);
         if (localVarAccept != null) localVarHeaderParams.put("Accept", localVarAccept);
 
         final String[] localVarContentTypes = {
-            
+            "application/xml", "application/json"
         };
         final String localVarContentType = apiClient.selectHeaderContentType(localVarContentTypes);
         localVarHeaderParams.put("Content-Type", localVarContentType);
@@ -23483,13 +23483,13 @@ if (request.getImageFile() != null)
         Map<String, Object> localVarFormParams = new LinkedHashMap<String, Object>();
         
         final String[] localVarAccepts = {
-            
+            "application/xml", "application/json"
         };
         final String localVarAccept = apiClient.selectHeaderAccept(localVarAccepts);
         if (localVarAccept != null) localVarHeaderParams.put("Accept", localVarAccept);
 
         final String[] localVarContentTypes = {
-            
+            "application/xml", "application/json"
         };
         final String localVarContentType = apiClient.selectHeaderContentType(localVarContentTypes);
         localVarHeaderParams.put("Content-Type", localVarContentType);
@@ -23634,13 +23634,13 @@ if (request.getImageFile() != null)
         Map<String, Object> localVarFormParams = new LinkedHashMap<String, Object>();
         
         final String[] localVarAccepts = {
-            
+            "application/xml", "application/json"
         };
         final String localVarAccept = apiClient.selectHeaderAccept(localVarAccepts);
         if (localVarAccept != null) localVarHeaderParams.put("Accept", localVarAccept);
 
         final String[] localVarContentTypes = {
-            
+            "application/xml", "application/json"
         };
         final String localVarContentType = apiClient.selectHeaderContentType(localVarContentTypes);
         localVarHeaderParams.put("Content-Type", localVarContentType);
@@ -23789,13 +23789,13 @@ if (request.getImageFile() != null)
         Map<String, Object> localVarFormParams = new LinkedHashMap<String, Object>();
         
         final String[] localVarAccepts = {
-            
+            "application/xml", "application/json"
         };
         final String localVarAccept = apiClient.selectHeaderAccept(localVarAccepts);
         if (localVarAccept != null) localVarHeaderParams.put("Accept", localVarAccept);
 
         final String[] localVarContentTypes = {
-            
+            "application/xml", "application/json"
         };
         final String localVarContentType = apiClient.selectHeaderContentType(localVarContentTypes);
         localVarHeaderParams.put("Content-Type", localVarContentType);
@@ -23940,13 +23940,13 @@ if (request.getImageFile() != null)
         Map<String, Object> localVarFormParams = new LinkedHashMap<String, Object>();
         
         final String[] localVarAccepts = {
-            
+            "application/xml", "application/json"
         };
         final String localVarAccept = apiClient.selectHeaderAccept(localVarAccepts);
         if (localVarAccept != null) localVarHeaderParams.put("Accept", localVarAccept);
 
         final String[] localVarContentTypes = {
-            
+            "application/xml", "application/json"
         };
         final String localVarContentType = apiClient.selectHeaderContentType(localVarContentTypes);
         localVarHeaderParams.put("Content-Type", localVarContentType);
@@ -24096,13 +24096,13 @@ if (request.getImageFile() != null)
         Map<String, Object> localVarFormParams = new LinkedHashMap<String, Object>();
         
         final String[] localVarAccepts = {
-            
+            "application/xml", "application/json"
         };
         final String localVarAccept = apiClient.selectHeaderAccept(localVarAccepts);
         if (localVarAccept != null) localVarHeaderParams.put("Accept", localVarAccept);
 
         final String[] localVarContentTypes = {
-            
+            "application/xml", "application/json"
         };
         final String localVarContentType = apiClient.selectHeaderContentType(localVarContentTypes);
         localVarHeaderParams.put("Content-Type", localVarContentType);
@@ -24252,13 +24252,13 @@ if (request.getImageFile() != null)
         Map<String, Object> localVarFormParams = new LinkedHashMap<String, Object>();
         
         final String[] localVarAccepts = {
-            
+            "application/xml", "application/json"
         };
         final String localVarAccept = apiClient.selectHeaderAccept(localVarAccepts);
         if (localVarAccept != null) localVarHeaderParams.put("Accept", localVarAccept);
 
         final String[] localVarContentTypes = {
-            
+            "application/xml", "application/json"
         };
         final String localVarContentType = apiClient.selectHeaderContentType(localVarContentTypes);
         localVarHeaderParams.put("Content-Type", localVarContentType);
@@ -24407,13 +24407,13 @@ if (request.getImageFile() != null)
         Map<String, Object> localVarFormParams = new LinkedHashMap<String, Object>();
         
         final String[] localVarAccepts = {
-            
+            "application/xml", "application/json"
         };
         final String localVarAccept = apiClient.selectHeaderAccept(localVarAccepts);
         if (localVarAccept != null) localVarHeaderParams.put("Accept", localVarAccept);
 
         final String[] localVarContentTypes = {
-            
+            "application/xml", "application/json"
         };
         final String localVarContentType = apiClient.selectHeaderContentType(localVarContentTypes);
         localVarHeaderParams.put("Content-Type", localVarContentType);
@@ -24558,13 +24558,13 @@ if (request.getImageFile() != null)
         Map<String, Object> localVarFormParams = new LinkedHashMap<String, Object>();
         
         final String[] localVarAccepts = {
-            
+            "application/xml", "application/json"
         };
         final String localVarAccept = apiClient.selectHeaderAccept(localVarAccepts);
         if (localVarAccept != null) localVarHeaderParams.put("Accept", localVarAccept);
 
         final String[] localVarContentTypes = {
-            
+            "application/xml", "application/json"
         };
         final String localVarContentType = apiClient.selectHeaderContentType(localVarContentTypes);
         localVarHeaderParams.put("Content-Type", localVarContentType);
@@ -24593,11 +24593,6 @@ if (request.getImageFile() != null)
           throw new ApiException(BadRequest, "Missing the required parameter 'Name' when calling updateTableCellFormat");
         }
         
-        // verify the required parameter 'Format' is set
-        if (request.getFormat() == null) {
-          throw new ApiException(BadRequest, "Missing the required parameter 'Format' when calling updateTableCellFormat");
-        }
-        
         // verify the required parameter 'TableRowPath' is set
         if (request.getTableRowPath() == null) {
           throw new ApiException(BadRequest, "Missing the required parameter 'TableRowPath' when calling updateTableCellFormat");
@@ -24606,6 +24601,11 @@ if (request.getImageFile() != null)
         // verify the required parameter 'Index' is set
         if (request.getIndex() == null) {
           throw new ApiException(BadRequest, "Missing the required parameter 'Index' when calling updateTableCellFormat");
+        }
+        
+        // verify the required parameter 'Format' is set
+        if (request.getFormat() == null) {
+          throw new ApiException(BadRequest, "Missing the required parameter 'Format' when calling updateTableCellFormat");
         }
         
 
@@ -24714,13 +24714,13 @@ if (request.getImageFile() != null)
         Map<String, Object> localVarFormParams = new LinkedHashMap<String, Object>();
         
         final String[] localVarAccepts = {
-            
+            "application/xml", "application/json"
         };
         final String localVarAccept = apiClient.selectHeaderAccept(localVarAccepts);
         if (localVarAccept != null) localVarHeaderParams.put("Accept", localVarAccept);
 
         final String[] localVarContentTypes = {
-            
+            "application/xml", "application/json"
         };
         final String localVarContentType = apiClient.selectHeaderContentType(localVarContentTypes);
         localVarHeaderParams.put("Content-Type", localVarContentType);
@@ -24749,11 +24749,6 @@ if (request.getImageFile() != null)
           throw new ApiException(BadRequest, "Missing the required parameter 'Name' when calling updateTableProperties");
         }
         
-        // verify the required parameter 'Properties' is set
-        if (request.getProperties() == null) {
-          throw new ApiException(BadRequest, "Missing the required parameter 'Properties' when calling updateTableProperties");
-        }
-        
         // verify the required parameter 'NodePath' is set
         if (request.getNodePath() == null) {
           throw new ApiException(BadRequest, "Missing the required parameter 'NodePath' when calling updateTableProperties");
@@ -24762,6 +24757,11 @@ if (request.getImageFile() != null)
         // verify the required parameter 'Index' is set
         if (request.getIndex() == null) {
           throw new ApiException(BadRequest, "Missing the required parameter 'Index' when calling updateTableProperties");
+        }
+        
+        // verify the required parameter 'Properties' is set
+        if (request.getProperties() == null) {
+          throw new ApiException(BadRequest, "Missing the required parameter 'Properties' when calling updateTableProperties");
         }
         
 
@@ -24869,13 +24869,13 @@ if (request.getImageFile() != null)
         Map<String, Object> localVarFormParams = new LinkedHashMap<String, Object>();
         
         final String[] localVarAccepts = {
-            
+            "application/xml", "application/json"
         };
         final String localVarAccept = apiClient.selectHeaderAccept(localVarAccepts);
         if (localVarAccept != null) localVarHeaderParams.put("Accept", localVarAccept);
 
         final String[] localVarContentTypes = {
-            
+            "application/xml", "application/json"
         };
         final String localVarContentType = apiClient.selectHeaderContentType(localVarContentTypes);
         localVarHeaderParams.put("Content-Type", localVarContentType);
@@ -24904,14 +24904,14 @@ if (request.getImageFile() != null)
           throw new ApiException(BadRequest, "Missing the required parameter 'Name' when calling updateTablePropertiesWithoutNodePath");
         }
         
-        // verify the required parameter 'Properties' is set
-        if (request.getProperties() == null) {
-          throw new ApiException(BadRequest, "Missing the required parameter 'Properties' when calling updateTablePropertiesWithoutNodePath");
-        }
-        
         // verify the required parameter 'Index' is set
         if (request.getIndex() == null) {
           throw new ApiException(BadRequest, "Missing the required parameter 'Index' when calling updateTablePropertiesWithoutNodePath");
+        }
+        
+        // verify the required parameter 'Properties' is set
+        if (request.getProperties() == null) {
+          throw new ApiException(BadRequest, "Missing the required parameter 'Properties' when calling updateTablePropertiesWithoutNodePath");
         }
         
 
@@ -25020,13 +25020,13 @@ if (request.getImageFile() != null)
         Map<String, Object> localVarFormParams = new LinkedHashMap<String, Object>();
         
         final String[] localVarAccepts = {
-            
+            "application/xml", "application/json"
         };
         final String localVarAccept = apiClient.selectHeaderAccept(localVarAccepts);
         if (localVarAccept != null) localVarHeaderParams.put("Accept", localVarAccept);
 
         final String[] localVarContentTypes = {
-            
+            "application/xml", "application/json"
         };
         final String localVarContentType = apiClient.selectHeaderContentType(localVarContentTypes);
         localVarHeaderParams.put("Content-Type", localVarContentType);
@@ -25055,11 +25055,6 @@ if (request.getImageFile() != null)
           throw new ApiException(BadRequest, "Missing the required parameter 'Name' when calling updateTableRowFormat");
         }
         
-        // verify the required parameter 'Format' is set
-        if (request.getFormat() == null) {
-          throw new ApiException(BadRequest, "Missing the required parameter 'Format' when calling updateTableRowFormat");
-        }
-        
         // verify the required parameter 'TablePath' is set
         if (request.getTablePath() == null) {
           throw new ApiException(BadRequest, "Missing the required parameter 'TablePath' when calling updateTableRowFormat");
@@ -25068,6 +25063,11 @@ if (request.getImageFile() != null)
         // verify the required parameter 'Index' is set
         if (request.getIndex() == null) {
           throw new ApiException(BadRequest, "Missing the required parameter 'Index' when calling updateTableRowFormat");
+        }
+        
+        // verify the required parameter 'Format' is set
+        if (request.getFormat() == null) {
+          throw new ApiException(BadRequest, "Missing the required parameter 'Format' when calling updateTableRowFormat");
         }
         
 
@@ -25170,13 +25170,13 @@ if (request.getImageFile() != null)
           localVarFormParams.put("FileContent", request.getFileContent());
 
         final String[] localVarAccepts = {
-            
+            "application/xml", "application/json"
         };
         final String localVarAccept = apiClient.selectHeaderAccept(localVarAccepts);
         if (localVarAccept != null) localVarHeaderParams.put("Accept", localVarAccept);
 
         final String[] localVarContentTypes = {
-            
+            "multipart/form-data"
         };
         final String localVarContentType = apiClient.selectHeaderContentType(localVarContentTypes);
         localVarHeaderParams.put("Content-Type", localVarContentType);
