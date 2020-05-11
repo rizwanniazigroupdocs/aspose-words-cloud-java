@@ -1,6 +1,6 @@
 /*
  * --------------------------------------------------------------------------------------
- * <copyright company="Aspose" file="InsertOrUpdateTabStopRequest.java">
+ * <copyright company="Aspose" file="InsertOrUpdateParagraphTabStopRequest.java">
  *   Copyright (c) 2019 Aspose.Words for Cloud
  * </copyright>
  * <summary>
@@ -29,9 +29,9 @@ import com.aspose.words.cloud.model.*;
 import java.io.File;
 
 /*
- * Request model for insertOrUpdateTabStop operation.
+ * Request model for insertOrUpdateParagraphTabStop operation.
  */
-public class InsertOrUpdateTabStopRequest {
+public class InsertOrUpdateParagraphTabStopRequest {
     /*
      * The document name.
      */
@@ -78,7 +78,7 @@ public class InsertOrUpdateTabStopRequest {
     private String DestFileName;
     
     /*
-     * Initializes a new instance of the insertOrUpdateTabStopRequest class.
+     * Initializes a new instance of the insertOrUpdateParagraphTabStopRequest class.
      *  
      * @param String name The document name.
      * @param String nodePath Path to the node which contains paragraph.
@@ -90,7 +90,7 @@ public class InsertOrUpdateTabStopRequest {
      * @param String password Password for opening an encrypted document.
      * @param String destFileName Result path of the document after the operation. If this parameter is omitted then result of the operation will be saved as the source document.
      */
-    public InsertOrUpdateTabStopRequest(String name,  String nodePath,  TabStopInsert dto,  Integer index,  String folder,  String storage,  String loadEncoding,  String password,  String destFileName) {
+    public InsertOrUpdateParagraphTabStopRequest(String name,  String nodePath,  TabStopInsert dto,  Integer index,  String folder,  String storage,  String loadEncoding,  String password,  String destFileName) {
         Name = name;
         NodePath = nodePath;
         Dto = dto;

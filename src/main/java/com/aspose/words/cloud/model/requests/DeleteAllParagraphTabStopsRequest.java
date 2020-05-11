@@ -1,6 +1,6 @@
 /*
  * --------------------------------------------------------------------------------------
- * <copyright company="Aspose" file="DeleteTabStopRequest.java">
+ * <copyright company="Aspose" file="DeleteAllParagraphTabStopsRequest.java">
  *   Copyright (c) 2019 Aspose.Words for Cloud
  * </copyright>
  * <summary>
@@ -29,9 +29,9 @@ import com.aspose.words.cloud.model.*;
 import java.io.File;
 
 /*
- * Request model for deleteTabStop operation.
+ * Request model for deleteAllParagraphTabStops operation.
  */
-public class DeleteTabStopRequest {
+public class DeleteAllParagraphTabStopsRequest {
     /*
      * The document name.
      */
@@ -41,11 +41,6 @@ public class DeleteTabStopRequest {
      * Path to the node which contains paragraph.
      */
     private String NodePath;
-
-    /*
-     * a tab stop position to remove.
-     */
-    private Double Position;
 
     /*
      * Object index.
@@ -78,11 +73,10 @@ public class DeleteTabStopRequest {
     private String DestFileName;
     
     /*
-     * Initializes a new instance of the deleteTabStopRequest class.
+     * Initializes a new instance of the deleteAllParagraphTabStopsRequest class.
      *  
      * @param String name The document name.
      * @param String nodePath Path to the node which contains paragraph.
-     * @param Double position a tab stop position to remove.
      * @param Integer index Object index.
      * @param String folder Original document folder.
      * @param String storage Original document storage.
@@ -90,10 +84,9 @@ public class DeleteTabStopRequest {
      * @param String password Password for opening an encrypted document.
      * @param String destFileName Result path of the document after the operation. If this parameter is omitted then result of the operation will be saved as the source document.
      */
-    public DeleteTabStopRequest(String name,  String nodePath,  Double position,  Integer index,  String folder,  String storage,  String loadEncoding,  String password,  String destFileName) {
+    public DeleteAllParagraphTabStopsRequest(String name,  String nodePath,  Integer index,  String folder,  String storage,  String loadEncoding,  String password,  String destFileName) {
         Name = name;
         NodePath = nodePath;
-        Position = position;
         Index = index;
         Folder = folder;
         Storage = storage;
@@ -128,20 +121,6 @@ public class DeleteTabStopRequest {
      */
     public void setNodePath(String value) {
         NodePath = value;
-    }
-
-    /*
-     *  Gets a tab stop position to remove.
-     */
-    public Double getPosition() {
-        return Position;
-    }
-
-    /*
-     * Sets a tab stop position to remove.
-     */
-    public void setPosition(Double value) {
-        Position = value;
     }
 
     /*
