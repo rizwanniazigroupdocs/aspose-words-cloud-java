@@ -1,7 +1,7 @@
 /*
  * --------------------------------------------------------------------------------
- * <copyright company="Aspose" file="ReplaceTextResponse.java">
- *   Copyright (c) 2020 Aspose.Words for Cloud
+ * <copyright company="Aspose">
+ *   Copyright (c) 2019 Aspose.Words for Cloud
  * </copyright>
  * <summary>
  *   Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -43,71 +43,72 @@ import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
 
 /**
- * Response for "Replace text" action.
+ * Response for \&quot;Replace text\&quot; action.
  */
 @ApiModel(description = "Response for \"Replace text\" action.")
 public class ReplaceTextResponse extends WordsResponse {
-    @SerializedName("DocumentLink")
-    private FileLink documentLink = null;
+  @SerializedName("DocumentLink")
+  private FileLink documentLink = null;
 
-    @SerializedName("Matches")
-    private Integer matches = null;
-    public ReplaceTextResponse documentLink(FileLink documentLink) {
-        this.documentLink = documentLink;
-        return this;
+  @SerializedName("Matches")
+  private Integer matches = null;
+
+  public ReplaceTextResponse documentLink(FileLink documentLink) {
+    this.documentLink = documentLink;
+    return this;
+  }
+
+   /**
+   * Get documentLink
+   * @return documentLink
+  **/
+  @ApiModelProperty(value = "")
+  public FileLink getDocumentLink() {
+    return documentLink;
+  }
+
+  public void setDocumentLink(FileLink documentLink) {
+    this.documentLink = documentLink;
+  }
+
+  public ReplaceTextResponse matches(Integer matches) {
+    this.matches = matches;
+    return this;
+  }
+
+   /**
+   * Gets or sets number of occurrences of the captured text in the document.
+   * @return matches
+  **/
+  @ApiModelProperty(value = "Gets or sets number of occurrences of the captured text in the document.")
+  public Integer getMatches() {
+    return matches;
+  }
+
+  public void setMatches(Integer matches) {
+    this.matches = matches;
+  }
+
+
+  @Override
+  public boolean equals(java.lang.Object o) {
+    if (this == o) {
+      return true;
     }
-
-    /**
-     * Gets or sets link to the document.
-    * @return documentLink
-    **/
-    @ApiModelProperty(value = "Gets or sets link to the document.")
-    public FileLink getDocumentLink() {
-        return documentLink;
+    if (o == null || getClass() != o.getClass()) {
+      return false;
     }
-
-    public void setDocumentLink(FileLink documentLink) {
-        this.documentLink = documentLink;
-    }
-
-    public ReplaceTextResponse matches(Integer matches) {
-        this.matches = matches;
-        return this;
-    }
-
-    /**
-     * Gets or sets number of occurrences of the captured text in the document.
-    * @return matches
-    **/
-    @ApiModelProperty(value = "Gets or sets number of occurrences of the captured text in the document.")
-    public Integer getMatches() {
-        return matches;
-    }
-
-    public void setMatches(Integer matches) {
-        this.matches = matches;
-    }
-
-    @Override
-    public boolean equals(java.lang.Object o) {
-        if (this == o) {
-            return true;
-        }
-        if (o == null || getClass() != o.getClass()) {
-            return false;
-        }
-
-        ReplaceTextResponse replaceTextResponse = (ReplaceTextResponse) o;
-        return
-            Objects.equals(this.documentLink, replaceTextResponse.documentLink) &&
-            Objects.equals(this.matches, replaceTextResponse.matches) &&
-            super.equals(o);
+    ReplaceTextResponse replaceTextResponse = (ReplaceTextResponse) o;
+    return Objects.equals(this.documentLink, replaceTextResponse.documentLink) &&
+        Objects.equals(this.matches, replaceTextResponse.matches) &&
+        super.equals(o);
   }
 
   @Override
   public int hashCode() {
     return Objects.hash(documentLink, matches, super.hashCode());
   }
+
 
   @Override
   public String toString() {
@@ -130,4 +131,6 @@ public class ReplaceTextResponse extends WordsResponse {
     }
     return o.toString().replace("\n", "\n    ");
   }
+
 }
+

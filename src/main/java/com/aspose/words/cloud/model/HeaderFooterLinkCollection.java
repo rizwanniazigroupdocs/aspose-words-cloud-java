@@ -1,7 +1,7 @@
 /*
  * --------------------------------------------------------------------------------
- * <copyright company="Aspose" file="HeaderFooterLinkCollection.java">
- *   Copyright (c) 2020 Aspose.Words for Cloud
+ * <copyright company="Aspose">
+ *   Copyright (c) 2019 Aspose.Words for Cloud
  * </copyright>
  * <summary>
  *   Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -47,53 +47,54 @@ import io.swagger.annotations.ApiModelProperty;
  */
 @ApiModel(description = "Collection of links to header/footers.")
 public class HeaderFooterLinkCollection extends LinkElement {
-    @SerializedName("List")
-    private List<HeaderFooterLink> list = null;
-    public HeaderFooterLinkCollection list(List<HeaderFooterLink> list) {
-        this.list = list;
-        return this;
+  @SerializedName("List")
+  private List<HeaderFooterLink> list = null;
+
+  public HeaderFooterLinkCollection list(List<HeaderFooterLink> list) {
+    this.list = list;
+    return this;
+  }
+
+  public HeaderFooterLinkCollection addListItem(HeaderFooterLink listItem) {
+    if (this.list == null) {
+      this.list = new ArrayList<HeaderFooterLink>();
     }
+    this.list.add(listItem);
+    return this;
+  }
 
-    public HeaderFooterLinkCollection addListItem(HeaderFooterLink listItem) {
-        if (this.list == null) {
-            this.list = new ArrayList<HeaderFooterLink>();
-        }
-        this.list.add(listItem);
-        return this;
+   /**
+   * Gets or sets collection of section&#39;s links.
+   * @return list
+  **/
+  @ApiModelProperty(value = "Gets or sets collection of section's links.")
+  public List<HeaderFooterLink> getList() {
+    return list;
+  }
+
+  public void setList(List<HeaderFooterLink> list) {
+    this.list = list;
+  }
+
+
+  @Override
+  public boolean equals(java.lang.Object o) {
+    if (this == o) {
+      return true;
     }
-
-    /**
-     * Gets or sets collection of section's links.
-    * @return list
-    **/
-    @ApiModelProperty(value = "Gets or sets collection of section's links.")
-    public List<HeaderFooterLink> getList() {
-        return list;
+    if (o == null || getClass() != o.getClass()) {
+      return false;
     }
-
-    public void setList(List<HeaderFooterLink> list) {
-        this.list = list;
-    }
-
-    @Override
-    public boolean equals(java.lang.Object o) {
-        if (this == o) {
-            return true;
-        }
-        if (o == null || getClass() != o.getClass()) {
-            return false;
-        }
-
-        HeaderFooterLinkCollection headerFooterLinkCollection = (HeaderFooterLinkCollection) o;
-        return
-            Objects.equals(this.list, headerFooterLinkCollection.list) &&
-            super.equals(o);
+    HeaderFooterLinkCollection headerFooterLinkCollection = (HeaderFooterLinkCollection) o;
+    return Objects.equals(this.list, headerFooterLinkCollection.list) &&
+        super.equals(o);
   }
 
   @Override
   public int hashCode() {
     return Objects.hash(list, super.hashCode());
   }
+
 
   @Override
   public String toString() {
@@ -115,4 +116,6 @@ public class HeaderFooterLinkCollection extends LinkElement {
     }
     return o.toString().replace("\n", "\n    ");
   }
+
 }
+

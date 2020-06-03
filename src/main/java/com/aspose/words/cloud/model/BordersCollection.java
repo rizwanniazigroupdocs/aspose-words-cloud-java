@@ -1,7 +1,7 @@
 /*
  * --------------------------------------------------------------------------------
- * <copyright company="Aspose" file="BordersCollection.java">
- *   Copyright (c) 2020 Aspose.Words for Cloud
+ * <copyright company="Aspose">
+ *   Copyright (c) 2019 Aspose.Words for Cloud
  * </copyright>
  * <summary>
  *   Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -47,53 +47,54 @@ import io.swagger.annotations.ApiModelProperty;
  */
 @ApiModel(description = "Collection of borders.")
 public class BordersCollection extends LinkElement {
-    @SerializedName("List")
-    private List<Border> list = null;
-    public BordersCollection list(List<Border> list) {
-        this.list = list;
-        return this;
+  @SerializedName("List")
+  private List<Border> list = null;
+
+  public BordersCollection list(List<Border> list) {
+    this.list = list;
+    return this;
+  }
+
+  public BordersCollection addListItem(Border listItem) {
+    if (this.list == null) {
+      this.list = new ArrayList<Border>();
     }
+    this.list.add(listItem);
+    return this;
+  }
 
-    public BordersCollection addListItem(Border listItem) {
-        if (this.list == null) {
-            this.list = new ArrayList<Border>();
-        }
-        this.list.add(listItem);
-        return this;
+   /**
+   * Gets or sets collection of comments.
+   * @return list
+  **/
+  @ApiModelProperty(value = "Gets or sets collection of comments.")
+  public List<Border> getList() {
+    return list;
+  }
+
+  public void setList(List<Border> list) {
+    this.list = list;
+  }
+
+
+  @Override
+  public boolean equals(java.lang.Object o) {
+    if (this == o) {
+      return true;
     }
-
-    /**
-     * Gets or sets collection of comments.
-    * @return list
-    **/
-    @ApiModelProperty(value = "Gets or sets collection of comments.")
-    public List<Border> getList() {
-        return list;
+    if (o == null || getClass() != o.getClass()) {
+      return false;
     }
-
-    public void setList(List<Border> list) {
-        this.list = list;
-    }
-
-    @Override
-    public boolean equals(java.lang.Object o) {
-        if (this == o) {
-            return true;
-        }
-        if (o == null || getClass() != o.getClass()) {
-            return false;
-        }
-
-        BordersCollection bordersCollection = (BordersCollection) o;
-        return
-            Objects.equals(this.list, bordersCollection.list) &&
-            super.equals(o);
+    BordersCollection bordersCollection = (BordersCollection) o;
+    return Objects.equals(this.list, bordersCollection.list) &&
+        super.equals(o);
   }
 
   @Override
   public int hashCode() {
     return Objects.hash(list, super.hashCode());
   }
+
 
   @Override
   public String toString() {
@@ -115,4 +116,6 @@ public class BordersCollection extends LinkElement {
     }
     return o.toString().replace("\n", "\n    ");
   }
+
 }
+

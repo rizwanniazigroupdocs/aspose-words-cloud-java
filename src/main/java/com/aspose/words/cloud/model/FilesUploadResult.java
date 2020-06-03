@@ -1,7 +1,7 @@
 /*
  * --------------------------------------------------------------------------------
- * <copyright company="Aspose" file="FilesUploadResult.java">
- *   Copyright (c) 2020 Aspose.Words for Cloud
+ * <copyright company="Aspose">
+ *   Copyright (c) 2019 Aspose.Words for Cloud
  * </copyright>
  * <summary>
  *   Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -43,93 +43,95 @@ import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
 
 /**
- * File upload result.
+ * File upload result
  */
-@ApiModel(description = "File upload result.")
+@ApiModel(description = "File upload result")
 public class FilesUploadResult {
-    @SerializedName("Errors")
-    private List<Error> errors = null;
+  @SerializedName("Uploaded")
+  private List<String> uploaded = null;
 
-    @SerializedName("Uploaded")
-    private List<String> uploaded = null;
-    public FilesUploadResult errors(List<Error> errors) {
-        this.errors = errors;
-        return this;
+  @SerializedName("Errors")
+  private List<Error> errors = null;
+
+  public FilesUploadResult uploaded(List<String> uploaded) {
+    this.uploaded = uploaded;
+    return this;
+  }
+
+  public FilesUploadResult addUploadedItem(String uploadedItem) {
+    if (this.uploaded == null) {
+      this.uploaded = new ArrayList<String>();
     }
+    this.uploaded.add(uploadedItem);
+    return this;
+  }
 
-    public FilesUploadResult addErrorsItem(Error errorsItem) {
-        if (this.errors == null) {
-            this.errors = new ArrayList<Error>();
-        }
-        this.errors.add(errorsItem);
-        return this;
+   /**
+   * List of uploaded file names
+   * @return uploaded
+  **/
+  @ApiModelProperty(value = "List of uploaded file names")
+  public List<String> getUploaded() {
+    return uploaded;
+  }
+
+  public void setUploaded(List<String> uploaded) {
+    this.uploaded = uploaded;
+  }
+
+  public FilesUploadResult errors(List<Error> errors) {
+    this.errors = errors;
+    return this;
+  }
+
+  public FilesUploadResult addErrorsItem(Error errorsItem) {
+    if (this.errors == null) {
+      this.errors = new ArrayList<Error>();
     }
+    this.errors.add(errorsItem);
+    return this;
+  }
 
-    /**
-     * List of errors.
-    * @return errors
-    **/
-    @ApiModelProperty(value = "List of errors.")
-    public List<Error> getErrors() {
-        return errors;
+   /**
+   * List of errors.
+   * @return errors
+  **/
+  @ApiModelProperty(value = "List of errors.")
+  public List<Error> getErrors() {
+    return errors;
+  }
+
+  public void setErrors(List<Error> errors) {
+    this.errors = errors;
+  }
+
+
+  @Override
+  public boolean equals(java.lang.Object o) {
+    if (this == o) {
+      return true;
     }
-
-    public void setErrors(List<Error> errors) {
-        this.errors = errors;
+    if (o == null || getClass() != o.getClass()) {
+      return false;
     }
-
-    public FilesUploadResult uploaded(List<String> uploaded) {
-        this.uploaded = uploaded;
-        return this;
-    }
-
-    public FilesUploadResult addUploadedItem(String uploadedItem) {
-        if (this.uploaded == null) {
-            this.uploaded = new ArrayList<String>();
-        }
-        this.uploaded.add(uploadedItem);
-        return this;
-    }
-
-    /**
-     * List of uploaded file names.
-    * @return uploaded
-    **/
-    @ApiModelProperty(value = "List of uploaded file names.")
-    public List<String> getUploaded() {
-        return uploaded;
-    }
-
-    public void setUploaded(List<String> uploaded) {
-        this.uploaded = uploaded;
-    }
-
-    @Override
-    public boolean equals(java.lang.Object o) {
-        if (this == o) {
-            return true;
-        }
-        if (o == null || getClass() != o.getClass()) {
-            return false;
-        }
-
-        FilesUploadResult filesUploadResult = (FilesUploadResult) o;
-        return
-            Objects.equals(this.errors, filesUploadResult.errors) &&
-            Objects.equals(this.uploaded, filesUploadResult.uploaded);
+    FilesUploadResult filesUploadResult = (FilesUploadResult) o;
+    return Objects.equals(this.uploaded, filesUploadResult.uploaded) &&
+        Objects.equals(this.errors, filesUploadResult.errors);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(errors, uploaded);
+    return Objects.hash(uploaded, errors);
   }
+
 
   @Override
   public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class FilesUploadResult {\n");
-    sb.append("    errors: ").append(toIndentedString(errors)).append("\n");
+    
     sb.append("    uploaded: ").append(toIndentedString(uploaded)).append("\n");
+    sb.append("    errors: ").append(toIndentedString(errors)).append("\n");
     sb.append("}");
     return sb.toString();
   }
@@ -144,4 +146,6 @@ public class FilesUploadResult {
     }
     return o.toString().replace("\n", "\n    ");
   }
+
 }
+

@@ -1,7 +1,7 @@
 /*
  * --------------------------------------------------------------------------------
- * <copyright company="Aspose" file="XmlColor.java">
- *   Copyright (c) 2020 Aspose.Words for Cloud
+ * <copyright company="Aspose">
+ *   Copyright (c) 2019 Aspose.Words for Cloud
  * </copyright>
  * <summary>
  *   Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -47,73 +47,75 @@ import io.swagger.annotations.ApiModelProperty;
  */
 @ApiModel(description = "Utility class for Color serialization.")
 public class XmlColor {
-    @SerializedName("Alpha")
-    private Integer alpha = null;
+  @SerializedName("Web")
+  private String web = null;
 
-    @SerializedName("Web")
-    private String web = null;
-    public XmlColor alpha(Integer alpha) {
-        this.alpha = alpha;
-        return this;
+  @SerializedName("Alpha")
+  private Integer alpha = null;
+
+  public XmlColor web(String web) {
+    this.web = web;
+    return this;
+  }
+
+   /**
+   * Gets or sets hTML string color representation.
+   * @return web
+  **/
+  @ApiModelProperty(value = "Gets or sets hTML string color representation.")
+  public String getWeb() {
+    return web;
+  }
+
+  public void setWeb(String web) {
+    this.web = web;
+  }
+
+  public XmlColor alpha(Integer alpha) {
+    this.alpha = alpha;
+    return this;
+  }
+
+   /**
+   * Gets or sets alpha component of color structure.
+   * @return alpha
+  **/
+  @ApiModelProperty(value = "Gets or sets alpha component of color structure.")
+  public Integer getAlpha() {
+    return alpha;
+  }
+
+  public void setAlpha(Integer alpha) {
+    this.alpha = alpha;
+  }
+
+
+  @Override
+  public boolean equals(java.lang.Object o) {
+    if (this == o) {
+      return true;
     }
-
-    /**
-     * Gets or sets alpha component of color structure.
-    * @return alpha
-    **/
-    @ApiModelProperty(value = "Gets or sets alpha component of color structure.")
-    public Integer getAlpha() {
-        return alpha;
+    if (o == null || getClass() != o.getClass()) {
+      return false;
     }
-
-    public void setAlpha(Integer alpha) {
-        this.alpha = alpha;
-    }
-
-    public XmlColor web(String web) {
-        this.web = web;
-        return this;
-    }
-
-    /**
-     * Gets or sets hTML string color representation.
-    * @return web
-    **/
-    @ApiModelProperty(value = "Gets or sets hTML string color representation.")
-    public String getWeb() {
-        return web;
-    }
-
-    public void setWeb(String web) {
-        this.web = web;
-    }
-
-    @Override
-    public boolean equals(java.lang.Object o) {
-        if (this == o) {
-            return true;
-        }
-        if (o == null || getClass() != o.getClass()) {
-            return false;
-        }
-
-        XmlColor xmlColor = (XmlColor) o;
-        return
-            Objects.equals(this.alpha, xmlColor.alpha) &&
-            Objects.equals(this.web, xmlColor.web);
+    XmlColor xmlColor = (XmlColor) o;
+    return Objects.equals(this.web, xmlColor.web) &&
+        Objects.equals(this.alpha, xmlColor.alpha);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(alpha, web);
+    return Objects.hash(web, alpha);
   }
+
 
   @Override
   public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class XmlColor {\n");
-    sb.append("    alpha: ").append(toIndentedString(alpha)).append("\n");
+    
     sb.append("    web: ").append(toIndentedString(web)).append("\n");
+    sb.append("    alpha: ").append(toIndentedString(alpha)).append("\n");
     sb.append("}");
     return sb.toString();
   }
@@ -128,4 +130,6 @@ public class XmlColor {
     }
     return o.toString().replace("\n", "\n    ");
   }
+
 }
+

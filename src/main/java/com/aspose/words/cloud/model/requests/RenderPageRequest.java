@@ -1,7 +1,7 @@
 /*
- * --------------------------------------------------------------------------------
+ * --------------------------------------------------------------------------------------
  * <copyright company="Aspose" file="RenderPageRequest.java">
- *   Copyright (c) 2020 Aspose.Words for Cloud
+ *   Copyright (c) 2019 Aspose.Words for Cloud
  * </copyright>
  * <summary>
  *   Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -22,11 +22,9 @@
  *  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  *  SOFTWARE.
  * </summary>
- * --------------------------------------------------------------------------------
+ * --------------------------------------------------------------------------------------
  */
-
 package com.aspose.words.cloud.model.requests;
-
 import com.aspose.words.cloud.model.*;
 import java.io.File;
 
@@ -34,178 +32,12 @@ import java.io.File;
  * Request model for renderPage operation.
  */
 public class RenderPageRequest {
+    
     /*
-     * The document name.
+     * Initializes a new instance of the renderPageRequest class.
+     *  
      */
-    private String name;
-
-    /*
-     * Comment index.
-     */
-    private Integer pageIndex;
-
-    /*
-     * The destination format.
-     */
-    private String format;
-
-    /*
-     * Original document folder.
-     */
-    private String folder;
-
-    /*
-     * Original document storage.
-     */
-    private String storage;
-
-    /*
-     * Encoding that will be used to load an HTML (or TXT) document if the encoding is not specified in HTML.
-     */
-    private String loadEncoding;
-
-    /*
-     * Password for opening an encrypted document.
-     */
-    private String password;
-
-    /*
-     * Folder in filestorage with custom fonts.
-     */
-    private String fontsLocation;
-
-    /*
-     * Initializes a new instance of the RenderPageRequest class.
-     *
-     * @param String name The document name.
-     * @param Integer pageIndex Comment index.
-     * @param String format The destination format.
-     * @param String folder Original document folder.
-     * @param String storage Original document storage.
-     * @param String loadEncoding Encoding that will be used to load an HTML (or TXT) document if the encoding is not specified in HTML.
-     * @param String password Password for opening an encrypted document.
-     * @param String fontsLocation Folder in filestorage with custom fonts.
-     */
-    public RenderPageRequest(String name, Integer pageIndex, String format, String folder, String storage, String loadEncoding, String password, String fontsLocation) {
-        this.name = name;
-        this.pageIndex = pageIndex;
-        this.format = format;
-        this.folder = folder;
-        this.storage = storage;
-        this.loadEncoding = loadEncoding;
-        this.password = password;
-        this.fontsLocation = fontsLocation;
+    public RenderPageRequest() {
     }
 
-    /*
-     * Gets The document name.
-     */
-    public String getName() {
-        return this.name;
-    }
-
-    /*
-     * Sets The document name.
-     */
-    public void setName(String value) {
-        this.name = value;
-    }
-
-    /*
-     * Gets Comment index.
-     */
-    public Integer getPageIndex() {
-        return this.pageIndex;
-    }
-
-    /*
-     * Sets Comment index.
-     */
-    public void setPageIndex(Integer value) {
-        this.pageIndex = value;
-    }
-
-    /*
-     * Gets The destination format.
-     */
-    public String getFormat() {
-        return this.format;
-    }
-
-    /*
-     * Sets The destination format.
-     */
-    public void setFormat(String value) {
-        this.format = value;
-    }
-
-    /*
-     * Gets Original document folder.
-     */
-    public String getFolder() {
-        return this.folder;
-    }
-
-    /*
-     * Sets Original document folder.
-     */
-    public void setFolder(String value) {
-        this.folder = value;
-    }
-
-    /*
-     * Gets Original document storage.
-     */
-    public String getStorage() {
-        return this.storage;
-    }
-
-    /*
-     * Sets Original document storage.
-     */
-    public void setStorage(String value) {
-        this.storage = value;
-    }
-
-    /*
-     * Gets Encoding that will be used to load an HTML (or TXT) document if the encoding is not specified in HTML.
-     */
-    public String getLoadEncoding() {
-        return this.loadEncoding;
-    }
-
-    /*
-     * Sets Encoding that will be used to load an HTML (or TXT) document if the encoding is not specified in HTML.
-     */
-    public void setLoadEncoding(String value) {
-        this.loadEncoding = value;
-    }
-
-    /*
-     * Gets Password for opening an encrypted document.
-     */
-    public String getPassword() {
-        return this.password;
-    }
-
-    /*
-     * Sets Password for opening an encrypted document.
-     */
-    public void setPassword(String value) {
-        this.password = value;
-    }
-
-    /*
-     * Gets Folder in filestorage with custom fonts.
-     */
-    public String getFontsLocation() {
-        return this.fontsLocation;
-    }
-
-    /*
-     * Sets Folder in filestorage with custom fonts.
-     */
-    public void setFontsLocation(String value) {
-        this.fontsLocation = value;
-    }
 }

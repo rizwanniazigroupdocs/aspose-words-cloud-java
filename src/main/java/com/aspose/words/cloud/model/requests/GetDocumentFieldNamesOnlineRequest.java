@@ -1,7 +1,7 @@
 /*
- * --------------------------------------------------------------------------------
+ * --------------------------------------------------------------------------------------
  * <copyright company="Aspose" file="GetDocumentFieldNamesOnlineRequest.java">
- *   Copyright (c) 2020 Aspose.Words for Cloud
+ *   Copyright (c) 2019 Aspose.Words for Cloud
  * </copyright>
  * <summary>
  *   Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -22,11 +22,9 @@
  *  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  *  SOFTWARE.
  * </summary>
- * --------------------------------------------------------------------------------
+ * --------------------------------------------------------------------------------------
  */
-
 package com.aspose.words.cloud.model.requests;
-
 import com.aspose.words.cloud.model.*;
 import java.io.File;
 
@@ -34,52 +32,12 @@ import java.io.File;
  * Request model for getDocumentFieldNamesOnline operation.
  */
 public class GetDocumentFieldNamesOnlineRequest {
+    
     /*
-     * File with template.
+     * Initializes a new instance of the getDocumentFieldNamesOnlineRequest class.
+     *  
      */
-    private byte[] template;
-
-    /*
-     * Use non merge fields or not.
-     */
-    private Boolean useNonMergeFields;
-
-    /*
-     * Initializes a new instance of the GetDocumentFieldNamesOnlineRequest class.
-     *
-     * @param byte[] template File with template.
-     * @param Boolean useNonMergeFields Use non merge fields or not.
-     */
-    public GetDocumentFieldNamesOnlineRequest(byte[] template, Boolean useNonMergeFields) {
-        this.template = template;
-        this.useNonMergeFields = useNonMergeFields;
+    public GetDocumentFieldNamesOnlineRequest() {
     }
 
-    /*
-     * Gets File with template.
-     */
-    public byte[] getTemplate() {
-        return this.template;
-    }
-
-    /*
-     * Sets File with template.
-     */
-    public void setTemplate(byte[] value) {
-        this.template = value;
-    }
-
-    /*
-     * Gets Use non merge fields or not.
-     */
-    public Boolean getUseNonMergeFields() {
-        return this.useNonMergeFields;
-    }
-
-    /*
-     * Sets Use non merge fields or not.
-     */
-    public void setUseNonMergeFields(Boolean value) {
-        this.useNonMergeFields = value;
-    }
 }

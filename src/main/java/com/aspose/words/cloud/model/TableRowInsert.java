@@ -1,7 +1,7 @@
 /*
  * --------------------------------------------------------------------------------
- * <copyright company="Aspose" file="TableRowInsert.java">
- *   Copyright (c) 2020 Aspose.Words for Cloud
+ * <copyright company="Aspose">
+ *   Copyright (c) 2019 Aspose.Words for Cloud
  * </copyright>
  * <summary>
  *   Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -47,73 +47,75 @@ import io.swagger.annotations.ApiModelProperty;
  */
 @ApiModel(description = "Table row element.")
 public class TableRowInsert {
-    @SerializedName("ColumnsCount")
-    private Integer columnsCount = null;
+  @SerializedName("InsertAfter")
+  private Integer insertAfter = null;
 
-    @SerializedName("InsertAfter")
-    private Integer insertAfter = null;
-    public TableRowInsert columnsCount(Integer columnsCount) {
-        this.columnsCount = columnsCount;
-        return this;
+  @SerializedName("ColumnsCount")
+  private Integer columnsCount = null;
+
+  public TableRowInsert insertAfter(Integer insertAfter) {
+    this.insertAfter = insertAfter;
+    return this;
+  }
+
+   /**
+   * Gets or sets table row will be inserted after row with specified 0-based index.
+   * @return insertAfter
+  **/
+  @ApiModelProperty(value = "Gets or sets table row will be inserted after row with specified 0-based index.")
+  public Integer getInsertAfter() {
+    return insertAfter;
+  }
+
+  public void setInsertAfter(Integer insertAfter) {
+    this.insertAfter = insertAfter;
+  }
+
+  public TableRowInsert columnsCount(Integer columnsCount) {
+    this.columnsCount = columnsCount;
+    return this;
+  }
+
+   /**
+   * Gets or sets count of columns. Default is 1.
+   * @return columnsCount
+  **/
+  @ApiModelProperty(value = "Gets or sets count of columns. Default is 1.")
+  public Integer getColumnsCount() {
+    return columnsCount;
+  }
+
+  public void setColumnsCount(Integer columnsCount) {
+    this.columnsCount = columnsCount;
+  }
+
+
+  @Override
+  public boolean equals(java.lang.Object o) {
+    if (this == o) {
+      return true;
     }
-
-    /**
-     * Gets or sets count of columns. Default is 1.
-    * @return columnsCount
-    **/
-    @ApiModelProperty(value = "Gets or sets count of columns. Default is 1.")
-    public Integer getColumnsCount() {
-        return columnsCount;
+    if (o == null || getClass() != o.getClass()) {
+      return false;
     }
-
-    public void setColumnsCount(Integer columnsCount) {
-        this.columnsCount = columnsCount;
-    }
-
-    public TableRowInsert insertAfter(Integer insertAfter) {
-        this.insertAfter = insertAfter;
-        return this;
-    }
-
-    /**
-     * Gets or sets table row will be inserted after row with specified 0-based index.
-    * @return insertAfter
-    **/
-    @ApiModelProperty(value = "Gets or sets table row will be inserted after row with specified 0-based index.")
-    public Integer getInsertAfter() {
-        return insertAfter;
-    }
-
-    public void setInsertAfter(Integer insertAfter) {
-        this.insertAfter = insertAfter;
-    }
-
-    @Override
-    public boolean equals(java.lang.Object o) {
-        if (this == o) {
-            return true;
-        }
-        if (o == null || getClass() != o.getClass()) {
-            return false;
-        }
-
-        TableRowInsert tableRowInsert = (TableRowInsert) o;
-        return
-            Objects.equals(this.columnsCount, tableRowInsert.columnsCount) &&
-            Objects.equals(this.insertAfter, tableRowInsert.insertAfter);
+    TableRowInsert tableRowInsert = (TableRowInsert) o;
+    return Objects.equals(this.insertAfter, tableRowInsert.insertAfter) &&
+        Objects.equals(this.columnsCount, tableRowInsert.columnsCount);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(columnsCount, insertAfter);
+    return Objects.hash(insertAfter, columnsCount);
   }
+
 
   @Override
   public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class TableRowInsert {\n");
-    sb.append("    columnsCount: ").append(toIndentedString(columnsCount)).append("\n");
+    
     sb.append("    insertAfter: ").append(toIndentedString(insertAfter)).append("\n");
+    sb.append("    columnsCount: ").append(toIndentedString(columnsCount)).append("\n");
     sb.append("}");
     return sb.toString();
   }
@@ -128,4 +130,6 @@ public class TableRowInsert {
     }
     return o.toString().replace("\n", "\n    ");
   }
+
 }
+

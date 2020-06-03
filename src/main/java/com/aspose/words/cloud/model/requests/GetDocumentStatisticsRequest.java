@@ -1,7 +1,7 @@
 /*
- * --------------------------------------------------------------------------------
+ * --------------------------------------------------------------------------------------
  * <copyright company="Aspose" file="GetDocumentStatisticsRequest.java">
- *   Copyright (c) 2020 Aspose.Words for Cloud
+ *   Copyright (c) 2019 Aspose.Words for Cloud
  * </copyright>
  * <summary>
  *   Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -22,11 +22,9 @@
  *  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  *  SOFTWARE.
  * </summary>
- * --------------------------------------------------------------------------------
+ * --------------------------------------------------------------------------------------
  */
-
 package com.aspose.words.cloud.model.requests;
-
 import com.aspose.words.cloud.model.*;
 import java.io.File;
 
@@ -34,178 +32,12 @@ import java.io.File;
  * Request model for getDocumentStatistics operation.
  */
 public class GetDocumentStatisticsRequest {
+    
     /*
-     * The document name.
+     * Initializes a new instance of the getDocumentStatisticsRequest class.
+     *  
      */
-    private String name;
-
-    /*
-     * Original document folder.
-     */
-    private String folder;
-
-    /*
-     * Original document storage.
-     */
-    private String storage;
-
-    /*
-     * Encoding that will be used to load an HTML (or TXT) document if the encoding is not specified in HTML.
-     */
-    private String loadEncoding;
-
-    /*
-     * Password for opening an encrypted document.
-     */
-    private String password;
-
-    /*
-     * Support including/excluding comments from the WordCount. Default value is "false".
-     */
-    private Boolean includeComments;
-
-    /*
-     * Support including/excluding footnotes from the WordCount. Default value is "false".
-     */
-    private Boolean includeFootnotes;
-
-    /*
-     * Support including/excluding shape's text from the WordCount. Default value is "false".
-     */
-    private Boolean includeTextInShapes;
-
-    /*
-     * Initializes a new instance of the GetDocumentStatisticsRequest class.
-     *
-     * @param String name The document name.
-     * @param String folder Original document folder.
-     * @param String storage Original document storage.
-     * @param String loadEncoding Encoding that will be used to load an HTML (or TXT) document if the encoding is not specified in HTML.
-     * @param String password Password for opening an encrypted document.
-     * @param Boolean includeComments Support including/excluding comments from the WordCount. Default value is "false".
-     * @param Boolean includeFootnotes Support including/excluding footnotes from the WordCount. Default value is "false".
-     * @param Boolean includeTextInShapes Support including/excluding shape's text from the WordCount. Default value is "false".
-     */
-    public GetDocumentStatisticsRequest(String name, String folder, String storage, String loadEncoding, String password, Boolean includeComments, Boolean includeFootnotes, Boolean includeTextInShapes) {
-        this.name = name;
-        this.folder = folder;
-        this.storage = storage;
-        this.loadEncoding = loadEncoding;
-        this.password = password;
-        this.includeComments = includeComments;
-        this.includeFootnotes = includeFootnotes;
-        this.includeTextInShapes = includeTextInShapes;
+    public GetDocumentStatisticsRequest() {
     }
 
-    /*
-     * Gets The document name.
-     */
-    public String getName() {
-        return this.name;
-    }
-
-    /*
-     * Sets The document name.
-     */
-    public void setName(String value) {
-        this.name = value;
-    }
-
-    /*
-     * Gets Original document folder.
-     */
-    public String getFolder() {
-        return this.folder;
-    }
-
-    /*
-     * Sets Original document folder.
-     */
-    public void setFolder(String value) {
-        this.folder = value;
-    }
-
-    /*
-     * Gets Original document storage.
-     */
-    public String getStorage() {
-        return this.storage;
-    }
-
-    /*
-     * Sets Original document storage.
-     */
-    public void setStorage(String value) {
-        this.storage = value;
-    }
-
-    /*
-     * Gets Encoding that will be used to load an HTML (or TXT) document if the encoding is not specified in HTML.
-     */
-    public String getLoadEncoding() {
-        return this.loadEncoding;
-    }
-
-    /*
-     * Sets Encoding that will be used to load an HTML (or TXT) document if the encoding is not specified in HTML.
-     */
-    public void setLoadEncoding(String value) {
-        this.loadEncoding = value;
-    }
-
-    /*
-     * Gets Password for opening an encrypted document.
-     */
-    public String getPassword() {
-        return this.password;
-    }
-
-    /*
-     * Sets Password for opening an encrypted document.
-     */
-    public void setPassword(String value) {
-        this.password = value;
-    }
-
-    /*
-     * Gets Support including/excluding comments from the WordCount. Default value is "false".
-     */
-    public Boolean getIncludeComments() {
-        return this.includeComments;
-    }
-
-    /*
-     * Sets Support including/excluding comments from the WordCount. Default value is "false".
-     */
-    public void setIncludeComments(Boolean value) {
-        this.includeComments = value;
-    }
-
-    /*
-     * Gets Support including/excluding footnotes from the WordCount. Default value is "false".
-     */
-    public Boolean getIncludeFootnotes() {
-        return this.includeFootnotes;
-    }
-
-    /*
-     * Sets Support including/excluding footnotes from the WordCount. Default value is "false".
-     */
-    public void setIncludeFootnotes(Boolean value) {
-        this.includeFootnotes = value;
-    }
-
-    /*
-     * Gets Support including/excluding shape's text from the WordCount. Default value is "false".
-     */
-    public Boolean getIncludeTextInShapes() {
-        return this.includeTextInShapes;
-    }
-
-    /*
-     * Sets Support including/excluding shape's text from the WordCount. Default value is "false".
-     */
-    public void setIncludeTextInShapes(Boolean value) {
-        this.includeTextInShapes = value;
-    }
 }

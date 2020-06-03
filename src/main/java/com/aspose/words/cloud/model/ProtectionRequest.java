@@ -1,7 +1,7 @@
 /*
  * --------------------------------------------------------------------------------
- * <copyright company="Aspose" file="ProtectionRequest.java">
- *   Copyright (c) 2020 Aspose.Words for Cloud
+ * <copyright company="Aspose">
+ *   Copyright (c) 2019 Aspose.Words for Cloud
  * </copyright>
  * <summary>
  *   Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -47,95 +47,97 @@ import io.swagger.annotations.ApiModelProperty;
  */
 @ApiModel(description = "Request on changing of protection.")
 public class ProtectionRequest {
-    @SerializedName("NewPassword")
-    private String newPassword = null;
+  @SerializedName("Password")
+  private String password = null;
 
-    @SerializedName("Password")
-    private String password = null;
+  @SerializedName("NewPassword")
+  private String newPassword = null;
 
-    @SerializedName("ProtectionType")
-    private String protectionType = null;
-    public ProtectionRequest newPassword(String newPassword) {
-        this.newPassword = newPassword;
-        return this;
+  @SerializedName("ProtectionType")
+  private String protectionType = null;
+
+  public ProtectionRequest password(String password) {
+    this.password = password;
+    return this;
+  }
+
+   /**
+   * Gets or sets current password.
+   * @return password
+  **/
+  @ApiModelProperty(value = "Gets or sets current password.")
+  public String getPassword() {
+    return password;
+  }
+
+  public void setPassword(String password) {
+    this.password = password;
+  }
+
+  public ProtectionRequest newPassword(String newPassword) {
+    this.newPassword = newPassword;
+    return this;
+  }
+
+   /**
+   * Gets or sets new password.
+   * @return newPassword
+  **/
+  @ApiModelProperty(value = "Gets or sets new password.")
+  public String getNewPassword() {
+    return newPassword;
+  }
+
+  public void setNewPassword(String newPassword) {
+    this.newPassword = newPassword;
+  }
+
+  public ProtectionRequest protectionType(String protectionType) {
+    this.protectionType = protectionType;
+    return this;
+  }
+
+   /**
+   * Gets or sets new type of protection.
+   * @return protectionType
+  **/
+  @ApiModelProperty(value = "Gets or sets new type of protection.")
+  public String getProtectionType() {
+    return protectionType;
+  }
+
+  public void setProtectionType(String protectionType) {
+    this.protectionType = protectionType;
+  }
+
+
+  @Override
+  public boolean equals(java.lang.Object o) {
+    if (this == o) {
+      return true;
     }
-
-    /**
-     * Gets or sets new password.
-    * @return newPassword
-    **/
-    @ApiModelProperty(value = "Gets or sets new password.")
-    public String getNewPassword() {
-        return newPassword;
+    if (o == null || getClass() != o.getClass()) {
+      return false;
     }
-
-    public void setNewPassword(String newPassword) {
-        this.newPassword = newPassword;
-    }
-
-    public ProtectionRequest password(String password) {
-        this.password = password;
-        return this;
-    }
-
-    /**
-     * Gets or sets current password.
-    * @return password
-    **/
-    @ApiModelProperty(value = "Gets or sets current password.")
-    public String getPassword() {
-        return password;
-    }
-
-    public void setPassword(String password) {
-        this.password = password;
-    }
-
-    public ProtectionRequest protectionType(String protectionType) {
-        this.protectionType = protectionType;
-        return this;
-    }
-
-    /**
-     * Gets or sets new type of protection.
-    * @return protectionType
-    **/
-    @ApiModelProperty(value = "Gets or sets new type of protection.")
-    public String getProtectionType() {
-        return protectionType;
-    }
-
-    public void setProtectionType(String protectionType) {
-        this.protectionType = protectionType;
-    }
-
-    @Override
-    public boolean equals(java.lang.Object o) {
-        if (this == o) {
-            return true;
-        }
-        if (o == null || getClass() != o.getClass()) {
-            return false;
-        }
-
-        ProtectionRequest protectionRequest = (ProtectionRequest) o;
-        return
-            Objects.equals(this.newPassword, protectionRequest.newPassword) &&
-            Objects.equals(this.password, protectionRequest.password) &&
-            Objects.equals(this.protectionType, protectionRequest.protectionType);
+    ProtectionRequest protectionRequest = (ProtectionRequest) o;
+    return Objects.equals(this.password, protectionRequest.password) &&
+        Objects.equals(this.newPassword, protectionRequest.newPassword) &&
+        Objects.equals(this.protectionType, protectionRequest.protectionType);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(newPassword, password, protectionType);
+    return Objects.hash(password, newPassword, protectionType);
   }
+
 
   @Override
   public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class ProtectionRequest {\n");
-    sb.append("    newPassword: ").append(toIndentedString(newPassword)).append("\n");
+    
     sb.append("    password: ").append(toIndentedString(password)).append("\n");
+    sb.append("    newPassword: ").append(toIndentedString(newPassword)).append("\n");
     sb.append("    protectionType: ").append(toIndentedString(protectionType)).append("\n");
     sb.append("}");
     return sb.toString();
@@ -151,4 +153,6 @@ public class ProtectionRequest {
     }
     return o.toString().replace("\n", "\n    ");
   }
+
 }
+

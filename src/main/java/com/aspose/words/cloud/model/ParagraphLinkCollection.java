@@ -1,7 +1,7 @@
 /*
  * --------------------------------------------------------------------------------
- * <copyright company="Aspose" file="ParagraphLinkCollection.java">
- *   Copyright (c) 2020 Aspose.Words for Cloud
+ * <copyright company="Aspose">
+ *   Copyright (c) 2019 Aspose.Words for Cloud
  * </copyright>
  * <summary>
  *   Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -47,53 +47,54 @@ import io.swagger.annotations.ApiModelProperty;
  */
 @ApiModel(description = "Collection of links to paragraphs.")
 public class ParagraphLinkCollection extends LinkElement {
-    @SerializedName("ParagraphLinkList")
-    private List<ParagraphLink> paragraphLinkList = null;
-    public ParagraphLinkCollection paragraphLinkList(List<ParagraphLink> paragraphLinkList) {
-        this.paragraphLinkList = paragraphLinkList;
-        return this;
+  @SerializedName("ParagraphLinkList")
+  private List<ParagraphLink> paragraphLinkList = null;
+
+  public ParagraphLinkCollection paragraphLinkList(List<ParagraphLink> paragraphLinkList) {
+    this.paragraphLinkList = paragraphLinkList;
+    return this;
+  }
+
+  public ParagraphLinkCollection addParagraphLinkListItem(ParagraphLink paragraphLinkListItem) {
+    if (this.paragraphLinkList == null) {
+      this.paragraphLinkList = new ArrayList<ParagraphLink>();
     }
+    this.paragraphLinkList.add(paragraphLinkListItem);
+    return this;
+  }
 
-    public ParagraphLinkCollection addParagraphLinkListItem(ParagraphLink paragraphLinkListItem) {
-        if (this.paragraphLinkList == null) {
-            this.paragraphLinkList = new ArrayList<ParagraphLink>();
-        }
-        this.paragraphLinkList.add(paragraphLinkListItem);
-        return this;
+   /**
+   * Gets or sets collection of paragraph&#39;s links.
+   * @return paragraphLinkList
+  **/
+  @ApiModelProperty(value = "Gets or sets collection of paragraph's links.")
+  public List<ParagraphLink> getParagraphLinkList() {
+    return paragraphLinkList;
+  }
+
+  public void setParagraphLinkList(List<ParagraphLink> paragraphLinkList) {
+    this.paragraphLinkList = paragraphLinkList;
+  }
+
+
+  @Override
+  public boolean equals(java.lang.Object o) {
+    if (this == o) {
+      return true;
     }
-
-    /**
-     * Gets or sets collection of paragraph's links.
-    * @return paragraphLinkList
-    **/
-    @ApiModelProperty(value = "Gets or sets collection of paragraph's links.")
-    public List<ParagraphLink> getParagraphLinkList() {
-        return paragraphLinkList;
+    if (o == null || getClass() != o.getClass()) {
+      return false;
     }
-
-    public void setParagraphLinkList(List<ParagraphLink> paragraphLinkList) {
-        this.paragraphLinkList = paragraphLinkList;
-    }
-
-    @Override
-    public boolean equals(java.lang.Object o) {
-        if (this == o) {
-            return true;
-        }
-        if (o == null || getClass() != o.getClass()) {
-            return false;
-        }
-
-        ParagraphLinkCollection paragraphLinkCollection = (ParagraphLinkCollection) o;
-        return
-            Objects.equals(this.paragraphLinkList, paragraphLinkCollection.paragraphLinkList) &&
-            super.equals(o);
+    ParagraphLinkCollection paragraphLinkCollection = (ParagraphLinkCollection) o;
+    return Objects.equals(this.paragraphLinkList, paragraphLinkCollection.paragraphLinkList) &&
+        super.equals(o);
   }
 
   @Override
   public int hashCode() {
     return Objects.hash(paragraphLinkList, super.hashCode());
   }
+
 
   @Override
   public String toString() {
@@ -115,4 +116,6 @@ public class ParagraphLinkCollection extends LinkElement {
     }
     return o.toString().replace("\n", "\n    ");
   }
+
 }
+

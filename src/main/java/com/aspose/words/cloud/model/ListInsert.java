@@ -1,7 +1,7 @@
 /*
  * --------------------------------------------------------------------------------
- * <copyright company="Aspose" file="ListInsert.java">
- *   Copyright (c) 2020 Aspose.Words for Cloud
+ * <copyright company="Aspose">
+ *   Copyright (c) 2019 Aspose.Words for Cloud
  * </copyright>
  * <summary>
  *   Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -47,104 +47,125 @@ import io.swagger.annotations.ApiModelProperty;
  */
 @ApiModel(description = "Insert document to document list.")
 public class ListInsert {
-    /**
-     * Gets or sets a value indicating whether specifies whether list should be restarted at each section. Default value is false.
-     */
-    @JsonAdapter(TemplateEnum.Adapter.class)
-    public enum TemplateEnum {
-        BULLETDEFAULT("BulletDefault"),
-        BULLETDISK("BulletDisk"),
-        BULLETCIRCLE("BulletCircle"),
-        BULLETSQUARE("BulletSquare"),
-        BULLETDIAMONDS("BulletDiamonds"),
-        BULLETARROWHEAD("BulletArrowHead"),
-        BULLETTICK("BulletTick"),
-        NUMBERDEFAULT("NumberDefault"),
-        NUMBERARABICDOT("NumberArabicDot"),
-        NUMBERARABICPARENTHESIS("NumberArabicParenthesis"),
-        NUMBERUPPERCASEROMANDOT("NumberUppercaseRomanDot"),
-        NUMBERUPPERCASELETTERDOT("NumberUppercaseLetterDot"),
-        NUMBERLOWERCASELETTERPARENTHESIS("NumberLowercaseLetterParenthesis"),
-        NUMBERLOWERCASELETTERDOT("NumberLowercaseLetterDot"),
-        NUMBERLOWERCASEROMANDOT("NumberLowercaseRomanDot"),
-        OUTLINENUMBERS("OutlineNumbers"),
-        OUTLINELEGAL("OutlineLegal"),
-        OUTLINEBULLETS("OutlineBullets"),
-        OUTLINEHEADINGSARTICLESECTION("OutlineHeadingsArticleSection"),
-        OUTLINEHEADINGSLEGAL("OutlineHeadingsLegal"),
-        OUTLINEHEADINGSNUMBERS("OutlineHeadingsNumbers"),
-        OUTLINEHEADINGSCHAPTER("OutlineHeadingsChapter");
+  /**
+   * Gets or sets a value indicating whether specifies whether list should be restarted at each section. Default value is false.
+   */
+  @JsonAdapter(TemplateEnum.Adapter.class)
+  public enum TemplateEnum {
+    BULLETDEFAULT("BulletDefault"),
+    
+    BULLETDISK("BulletDisk"),
+    
+    BULLETCIRCLE("BulletCircle"),
+    
+    BULLETSQUARE("BulletSquare"),
+    
+    BULLETDIAMONDS("BulletDiamonds"),
+    
+    BULLETARROWHEAD("BulletArrowHead"),
+    
+    BULLETTICK("BulletTick"),
+    
+    NUMBERDEFAULT("NumberDefault"),
+    
+    NUMBERARABICDOT("NumberArabicDot"),
+    
+    NUMBERARABICPARENTHESIS("NumberArabicParenthesis"),
+    
+    NUMBERUPPERCASEROMANDOT("NumberUppercaseRomanDot"),
+    
+    NUMBERUPPERCASELETTERDOT("NumberUppercaseLetterDot"),
+    
+    NUMBERLOWERCASELETTERPARENTHESIS("NumberLowercaseLetterParenthesis"),
+    
+    NUMBERLOWERCASELETTERDOT("NumberLowercaseLetterDot"),
+    
+    NUMBERLOWERCASEROMANDOT("NumberLowercaseRomanDot"),
+    
+    OUTLINENUMBERS("OutlineNumbers"),
+    
+    OUTLINELEGAL("OutlineLegal"),
+    
+    OUTLINEBULLETS("OutlineBullets"),
+    
+    OUTLINEHEADINGSARTICLESECTION("OutlineHeadingsArticleSection"),
+    
+    OUTLINEHEADINGSLEGAL("OutlineHeadingsLegal"),
+    
+    OUTLINEHEADINGSNUMBERS("OutlineHeadingsNumbers"),
+    
+    OUTLINEHEADINGSCHAPTER("OutlineHeadingsChapter");
 
-        private String value;
+    private String value;
 
-        TemplateEnum(String value) {
-            this.value = value;
-        }
-
-        public String getValue() {
-            return value;
-        }
-
-        @Override
-        public String toString() {
-            return String.valueOf(value);
-        }
-
-        public static TemplateEnum fromValue(String text) {
-            for (TemplateEnum b : TemplateEnum.values()) {
-                if (String.valueOf(b.value).equals(text)) {
-                    return b;
-                }
-            }
-            return null;
-        }
-
-        public static class Adapter extends TypeAdapter< TemplateEnum > {
-            @Override
-            public void write(final JsonWriter jsonWriter, final TemplateEnum enumeration) throws IOException {
-                jsonWriter.value(enumeration.getValue());
-            }
-
-            @Override
-            public TemplateEnum read(final JsonReader jsonReader) throws IOException {
-                String value = jsonReader.nextString();
-                return TemplateEnum.fromValue(String.valueOf(value));
-            }
-        }
+    TemplateEnum(String value) {
+      this.value = value;
     }
 
-    @SerializedName("Template")
-    private TemplateEnum template = null;
-    public ListInsert template(TemplateEnum template) {
-        this.template = template;
-        return this;
-    }
-
-    /**
-     * Gets or sets a value indicating whether specifies whether list should be restarted at each section. Default value is false.
-    * @return template
-    **/
-    @ApiModelProperty(value = "Gets or sets a value indicating whether specifies whether list should be restarted at each section. Default value is false.")
-    public TemplateEnum getTemplate() {
-        return template;
-    }
-
-    public void setTemplate(TemplateEnum template) {
-        this.template = template;
+    public String getValue() {
+      return value;
     }
 
     @Override
-    public boolean equals(java.lang.Object o) {
-        if (this == o) {
-            return true;
-        }
-        if (o == null || getClass() != o.getClass()) {
-            return false;
-        }
+    public String toString() {
+      return String.valueOf(value);
+    }
 
-        ListInsert listInsert = (ListInsert) o;
-        return
-            Objects.equals(this.template, listInsert.template);
+    public static TemplateEnum fromValue(String text) {
+      for (TemplateEnum b : TemplateEnum.values()) {
+        if (String.valueOf(b.value).equals(text)) {
+          return b;
+        }
+      }
+      return null;
+    }
+
+    public static class Adapter extends TypeAdapter<TemplateEnum> {
+      @Override
+      public void write(final JsonWriter jsonWriter, final TemplateEnum enumeration) throws IOException {
+        jsonWriter.value(enumeration.getValue());
+      }
+
+      @Override
+      public TemplateEnum read(final JsonReader jsonReader) throws IOException {
+        String value = jsonReader.nextString();
+        return TemplateEnum.fromValue(String.valueOf(value));
+      }
+    }
+  }
+
+  @SerializedName("Template")
+  private TemplateEnum template = null;
+
+  public ListInsert template(TemplateEnum template) {
+    this.template = template;
+    return this;
+  }
+
+   /**
+   * Gets or sets a value indicating whether specifies whether list should be restarted at each section. Default value is false.
+   * @return template
+  **/
+  @ApiModelProperty(value = "Gets or sets a value indicating whether specifies whether list should be restarted at each section. Default value is false.")
+  public TemplateEnum getTemplate() {
+    return template;
+  }
+
+  public void setTemplate(TemplateEnum template) {
+    this.template = template;
+  }
+
+
+  @Override
+  public boolean equals(java.lang.Object o) {
+    if (this == o) {
+      return true;
+    }
+    if (o == null || getClass() != o.getClass()) {
+      return false;
+    }
+    ListInsert listInsert = (ListInsert) o;
+    return Objects.equals(this.template, listInsert.template);
   }
 
   @Override
@@ -152,10 +173,12 @@ public class ListInsert {
     return Objects.hash(template);
   }
 
+
   @Override
   public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class ListInsert {\n");
+    
     sb.append("    template: ").append(toIndentedString(template)).append("\n");
     sb.append("}");
     return sb.toString();
@@ -171,4 +194,6 @@ public class ListInsert {
     }
     return o.toString().replace("\n", "\n    ");
   }
+
 }
+

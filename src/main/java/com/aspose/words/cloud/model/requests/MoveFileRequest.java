@@ -1,7 +1,7 @@
 /*
- * --------------------------------------------------------------------------------
+ * --------------------------------------------------------------------------------------
  * <copyright company="Aspose" file="MoveFileRequest.java">
- *   Copyright (c) 2020 Aspose.Words for Cloud
+ *   Copyright (c) 2019 Aspose.Words for Cloud
  * </copyright>
  * <summary>
  *   Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -22,11 +22,9 @@
  *  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  *  SOFTWARE.
  * </summary>
- * --------------------------------------------------------------------------------
+ * --------------------------------------------------------------------------------------
  */
-
 package com.aspose.words.cloud.model.requests;
-
 import com.aspose.words.cloud.model.*;
 import java.io.File;
 
@@ -34,115 +32,12 @@ import java.io.File;
  * Request model for moveFile operation.
  */
 public class MoveFileRequest {
+    
     /*
-     * Destination file path e.g. '/dest.ext'.
+     * Initializes a new instance of the moveFileRequest class.
+     *  
      */
-    private String destPath;
-
-    /*
-     * Source file's path e.g. '/Folder 1/file.ext' or '/Bucket/Folder 1/file.ext'.
-     */
-    private String srcPath;
-
-    /*
-     * Source storage name.
-     */
-    private String srcStorageName;
-
-    /*
-     * Destination storage name.
-     */
-    private String destStorageName;
-
-    /*
-     * File version ID to move.
-     */
-    private String versionId;
-
-    /*
-     * Initializes a new instance of the MoveFileRequest class.
-     *
-     * @param String destPath Destination file path e.g. '/dest.ext'.
-     * @param String srcPath Source file's path e.g. '/Folder 1/file.ext' or '/Bucket/Folder 1/file.ext'.
-     * @param String srcStorageName Source storage name.
-     * @param String destStorageName Destination storage name.
-     * @param String versionId File version ID to move.
-     */
-    public MoveFileRequest(String destPath, String srcPath, String srcStorageName, String destStorageName, String versionId) {
-        this.destPath = destPath;
-        this.srcPath = srcPath;
-        this.srcStorageName = srcStorageName;
-        this.destStorageName = destStorageName;
-        this.versionId = versionId;
+    public MoveFileRequest() {
     }
 
-    /*
-     * Gets Destination file path e.g. '/dest.ext'.
-     */
-    public String getDestPath() {
-        return this.destPath;
-    }
-
-    /*
-     * Sets Destination file path e.g. '/dest.ext'.
-     */
-    public void setDestPath(String value) {
-        this.destPath = value;
-    }
-
-    /*
-     * Gets Source file's path e.g. '/Folder 1/file.ext' or '/Bucket/Folder 1/file.ext'.
-     */
-    public String getSrcPath() {
-        return this.srcPath;
-    }
-
-    /*
-     * Sets Source file's path e.g. '/Folder 1/file.ext' or '/Bucket/Folder 1/file.ext'.
-     */
-    public void setSrcPath(String value) {
-        this.srcPath = value;
-    }
-
-    /*
-     * Gets Source storage name.
-     */
-    public String getSrcStorageName() {
-        return this.srcStorageName;
-    }
-
-    /*
-     * Sets Source storage name.
-     */
-    public void setSrcStorageName(String value) {
-        this.srcStorageName = value;
-    }
-
-    /*
-     * Gets Destination storage name.
-     */
-    public String getDestStorageName() {
-        return this.destStorageName;
-    }
-
-    /*
-     * Sets Destination storage name.
-     */
-    public void setDestStorageName(String value) {
-        this.destStorageName = value;
-    }
-
-    /*
-     * Gets File version ID to move.
-     */
-    public String getVersionId() {
-        return this.versionId;
-    }
-
-    /*
-     * Sets File version ID to move.
-     */
-    public void setVersionId(String value) {
-        this.versionId = value;
-    }
 }

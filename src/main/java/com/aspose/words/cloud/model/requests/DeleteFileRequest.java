@@ -1,7 +1,7 @@
 /*
- * --------------------------------------------------------------------------------
+ * --------------------------------------------------------------------------------------
  * <copyright company="Aspose" file="DeleteFileRequest.java">
- *   Copyright (c) 2020 Aspose.Words for Cloud
+ *   Copyright (c) 2019 Aspose.Words for Cloud
  * </copyright>
  * <summary>
  *   Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -22,11 +22,9 @@
  *  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  *  SOFTWARE.
  * </summary>
- * --------------------------------------------------------------------------------
+ * --------------------------------------------------------------------------------------
  */
-
 package com.aspose.words.cloud.model.requests;
-
 import com.aspose.words.cloud.model.*;
 import java.io.File;
 
@@ -34,73 +32,12 @@ import java.io.File;
  * Request model for deleteFile operation.
  */
 public class DeleteFileRequest {
+    
     /*
-     * Path of the file including file name and extension e.g. /Folder1/file.ext.
+     * Initializes a new instance of the deleteFileRequest class.
+     *  
      */
-    private String path;
-
-    /*
-     * Storage name.
-     */
-    private String storageName;
-
-    /*
-     * File version ID to delete.
-     */
-    private String versionId;
-
-    /*
-     * Initializes a new instance of the DeleteFileRequest class.
-     *
-     * @param String path Path of the file including file name and extension e.g. /Folder1/file.ext.
-     * @param String storageName Storage name.
-     * @param String versionId File version ID to delete.
-     */
-    public DeleteFileRequest(String path, String storageName, String versionId) {
-        this.path = path;
-        this.storageName = storageName;
-        this.versionId = versionId;
+    public DeleteFileRequest() {
     }
 
-    /*
-     * Gets Path of the file including file name and extension e.g. /Folder1/file.ext.
-     */
-    public String getPath() {
-        return this.path;
-    }
-
-    /*
-     * Sets Path of the file including file name and extension e.g. /Folder1/file.ext.
-     */
-    public void setPath(String value) {
-        this.path = value;
-    }
-
-    /*
-     * Gets Storage name.
-     */
-    public String getStorageName() {
-        return this.storageName;
-    }
-
-    /*
-     * Sets Storage name.
-     */
-    public void setStorageName(String value) {
-        this.storageName = value;
-    }
-
-    /*
-     * Gets File version ID to delete.
-     */
-    public String getVersionId() {
-        return this.versionId;
-    }
-
-    /*
-     * Sets File version ID to delete.
-     */
-    public void setVersionId(String value) {
-        this.versionId = value;
-    }
 }

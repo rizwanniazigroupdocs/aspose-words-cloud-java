@@ -1,7 +1,7 @@
 /*
  * --------------------------------------------------------------------------------
- * <copyright company="Aspose" file="FieldNamesResponse.java">
- *   Copyright (c) 2020 Aspose.Words for Cloud
+ * <copyright company="Aspose">
+ *   Copyright (c) 2019 Aspose.Words for Cloud
  * </copyright>
  * <summary>
  *   Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -47,45 +47,46 @@ import io.swagger.annotations.ApiModelProperty;
  */
 @ApiModel(description = "This response should be returned by the service when handling:  GET /{name}/mailMergeFieldNames.")
 public class FieldNamesResponse extends WordsResponse {
-    @SerializedName("FieldNames")
-    private FieldNames fieldNames = null;
-    public FieldNamesResponse fieldNames(FieldNames fieldNames) {
-        this.fieldNames = fieldNames;
-        return this;
+  @SerializedName("FieldNames")
+  private FieldNames fieldNames = null;
+
+  public FieldNamesResponse fieldNames(FieldNames fieldNames) {
+    this.fieldNames = fieldNames;
+    return this;
+  }
+
+   /**
+   * Get fieldNames
+   * @return fieldNames
+  **/
+  @ApiModelProperty(value = "")
+  public FieldNames getFieldNames() {
+    return fieldNames;
+  }
+
+  public void setFieldNames(FieldNames fieldNames) {
+    this.fieldNames = fieldNames;
+  }
+
+
+  @Override
+  public boolean equals(java.lang.Object o) {
+    if (this == o) {
+      return true;
     }
-
-    /**
-     * Gets or sets collection of mail merge fields.
-    * @return fieldNames
-    **/
-    @ApiModelProperty(value = "Gets or sets collection of mail merge fields.")
-    public FieldNames getFieldNames() {
-        return fieldNames;
+    if (o == null || getClass() != o.getClass()) {
+      return false;
     }
-
-    public void setFieldNames(FieldNames fieldNames) {
-        this.fieldNames = fieldNames;
-    }
-
-    @Override
-    public boolean equals(java.lang.Object o) {
-        if (this == o) {
-            return true;
-        }
-        if (o == null || getClass() != o.getClass()) {
-            return false;
-        }
-
-        FieldNamesResponse fieldNamesResponse = (FieldNamesResponse) o;
-        return
-            Objects.equals(this.fieldNames, fieldNamesResponse.fieldNames) &&
-            super.equals(o);
+    FieldNamesResponse fieldNamesResponse = (FieldNamesResponse) o;
+    return Objects.equals(this.fieldNames, fieldNamesResponse.fieldNames) &&
+        super.equals(o);
   }
 
   @Override
   public int hashCode() {
     return Objects.hash(fieldNames, super.hashCode());
   }
+
 
   @Override
   public String toString() {
@@ -107,4 +108,6 @@ public class FieldNamesResponse extends WordsResponse {
     }
     return o.toString().replace("\n", "\n    ");
   }
+
 }
+

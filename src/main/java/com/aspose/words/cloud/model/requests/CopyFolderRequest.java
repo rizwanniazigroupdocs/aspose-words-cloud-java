@@ -1,7 +1,7 @@
 /*
- * --------------------------------------------------------------------------------
+ * --------------------------------------------------------------------------------------
  * <copyright company="Aspose" file="CopyFolderRequest.java">
- *   Copyright (c) 2020 Aspose.Words for Cloud
+ *   Copyright (c) 2019 Aspose.Words for Cloud
  * </copyright>
  * <summary>
  *   Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -22,11 +22,9 @@
  *  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  *  SOFTWARE.
  * </summary>
- * --------------------------------------------------------------------------------
+ * --------------------------------------------------------------------------------------
  */
-
 package com.aspose.words.cloud.model.requests;
-
 import com.aspose.words.cloud.model.*;
 import java.io.File;
 
@@ -34,94 +32,12 @@ import java.io.File;
  * Request model for copyFolder operation.
  */
 public class CopyFolderRequest {
+    
     /*
-     * Destination folder path e.g. '/dst'.
+     * Initializes a new instance of the copyFolderRequest class.
+     *  
      */
-    private String destPath;
-
-    /*
-     * Source folder path e.g. /Folder1.
-     */
-    private String srcPath;
-
-    /*
-     * Source storage name.
-     */
-    private String srcStorageName;
-
-    /*
-     * Destination storage name.
-     */
-    private String destStorageName;
-
-    /*
-     * Initializes a new instance of the CopyFolderRequest class.
-     *
-     * @param String destPath Destination folder path e.g. '/dst'.
-     * @param String srcPath Source folder path e.g. /Folder1.
-     * @param String srcStorageName Source storage name.
-     * @param String destStorageName Destination storage name.
-     */
-    public CopyFolderRequest(String destPath, String srcPath, String srcStorageName, String destStorageName) {
-        this.destPath = destPath;
-        this.srcPath = srcPath;
-        this.srcStorageName = srcStorageName;
-        this.destStorageName = destStorageName;
+    public CopyFolderRequest() {
     }
 
-    /*
-     * Gets Destination folder path e.g. '/dst'.
-     */
-    public String getDestPath() {
-        return this.destPath;
-    }
-
-    /*
-     * Sets Destination folder path e.g. '/dst'.
-     */
-    public void setDestPath(String value) {
-        this.destPath = value;
-    }
-
-    /*
-     * Gets Source folder path e.g. /Folder1.
-     */
-    public String getSrcPath() {
-        return this.srcPath;
-    }
-
-    /*
-     * Sets Source folder path e.g. /Folder1.
-     */
-    public void setSrcPath(String value) {
-        this.srcPath = value;
-    }
-
-    /*
-     * Gets Source storage name.
-     */
-    public String getSrcStorageName() {
-        return this.srcStorageName;
-    }
-
-    /*
-     * Sets Source storage name.
-     */
-    public void setSrcStorageName(String value) {
-        this.srcStorageName = value;
-    }
-
-    /*
-     * Gets Destination storage name.
-     */
-    public String getDestStorageName() {
-        return this.destStorageName;
-    }
-
-    /*
-     * Sets Destination storage name.
-     */
-    public void setDestStorageName(String value) {
-        this.destStorageName = value;
-    }
 }

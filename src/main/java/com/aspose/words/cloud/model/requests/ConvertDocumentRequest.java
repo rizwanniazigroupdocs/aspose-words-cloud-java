@@ -1,7 +1,7 @@
 /*
- * --------------------------------------------------------------------------------
+ * --------------------------------------------------------------------------------------
  * <copyright company="Aspose" file="ConvertDocumentRequest.java">
- *   Copyright (c) 2020 Aspose.Words for Cloud
+ *   Copyright (c) 2019 Aspose.Words for Cloud
  * </copyright>
  * <summary>
  *   Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -22,11 +22,9 @@
  *  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  *  SOFTWARE.
  * </summary>
- * --------------------------------------------------------------------------------
+ * --------------------------------------------------------------------------------------
  */
-
 package com.aspose.words.cloud.model.requests;
-
 import com.aspose.words.cloud.model.*;
 import java.io.File;
 
@@ -34,136 +32,12 @@ import java.io.File;
  * Request model for convertDocument operation.
  */
 public class ConvertDocumentRequest {
+    
     /*
-     * Converting document.
+     * Initializes a new instance of the convertDocumentRequest class.
+     *  
      */
-    private byte[] document;
-
-    /*
-     * Format to convert.
-     */
-    private String format;
-
-    /*
-     * Original document storage.
-     */
-    private String storage;
-
-    /*
-     * Path for saving operation result to the local storage.
-     */
-    private String outPath;
-
-    /*
-     * This file name will be used when resulting document has dynamic field for document file name {filename}. If it is not set, "sourceFilename" will be used instead.
-     */
-    private String fileNameFieldValue;
-
-    /*
-     * Folder in filestorage with custom fonts.
-     */
-    private String fontsLocation;
-
-    /*
-     * Initializes a new instance of the ConvertDocumentRequest class.
-     *
-     * @param byte[] document Converting document.
-     * @param String format Format to convert.
-     * @param String storage Original document storage.
-     * @param String outPath Path for saving operation result to the local storage.
-     * @param String fileNameFieldValue This file name will be used when resulting document has dynamic field for document file name {filename}. If it is not set, "sourceFilename" will be used instead.
-     * @param String fontsLocation Folder in filestorage with custom fonts.
-     */
-    public ConvertDocumentRequest(byte[] document, String format, String storage, String outPath, String fileNameFieldValue, String fontsLocation) {
-        this.document = document;
-        this.format = format;
-        this.storage = storage;
-        this.outPath = outPath;
-        this.fileNameFieldValue = fileNameFieldValue;
-        this.fontsLocation = fontsLocation;
+    public ConvertDocumentRequest() {
     }
 
-    /*
-     * Gets Converting document.
-     */
-    public byte[] getDocument() {
-        return this.document;
-    }
-
-    /*
-     * Sets Converting document.
-     */
-    public void setDocument(byte[] value) {
-        this.document = value;
-    }
-
-    /*
-     * Gets Format to convert.
-     */
-    public String getFormat() {
-        return this.format;
-    }
-
-    /*
-     * Sets Format to convert.
-     */
-    public void setFormat(String value) {
-        this.format = value;
-    }
-
-    /*
-     * Gets Original document storage.
-     */
-    public String getStorage() {
-        return this.storage;
-    }
-
-    /*
-     * Sets Original document storage.
-     */
-    public void setStorage(String value) {
-        this.storage = value;
-    }
-
-    /*
-     * Gets Path for saving operation result to the local storage.
-     */
-    public String getOutPath() {
-        return this.outPath;
-    }
-
-    /*
-     * Sets Path for saving operation result to the local storage.
-     */
-    public void setOutPath(String value) {
-        this.outPath = value;
-    }
-
-    /*
-     * Gets This file name will be used when resulting document has dynamic field for document file name {filename}. If it is not set, "sourceFilename" will be used instead.
-     */
-    public String getFileNameFieldValue() {
-        return this.fileNameFieldValue;
-    }
-
-    /*
-     * Sets This file name will be used when resulting document has dynamic field for document file name {filename}. If it is not set, "sourceFilename" will be used instead.
-     */
-    public void setFileNameFieldValue(String value) {
-        this.fileNameFieldValue = value;
-    }
-
-    /*
-     * Gets Folder in filestorage with custom fonts.
-     */
-    public String getFontsLocation() {
-        return this.fontsLocation;
-    }
-
-    /*
-     * Sets Folder in filestorage with custom fonts.
-     */
-    public void setFontsLocation(String value) {
-        this.fontsLocation = value;
-    }
 }

@@ -1,7 +1,7 @@
 /*
- * --------------------------------------------------------------------------------
+ * --------------------------------------------------------------------------------------
  * <copyright company="Aspose" file="LoadWebDocumentRequest.java">
- *   Copyright (c) 2020 Aspose.Words for Cloud
+ *   Copyright (c) 2019 Aspose.Words for Cloud
  * </copyright>
  * <summary>
  *   Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -22,11 +22,9 @@
  *  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  *  SOFTWARE.
  * </summary>
- * --------------------------------------------------------------------------------
+ * --------------------------------------------------------------------------------------
  */
-
 package com.aspose.words.cloud.model.requests;
-
 import com.aspose.words.cloud.model.*;
 import java.io.File;
 
@@ -34,52 +32,12 @@ import java.io.File;
  * Request model for loadWebDocument operation.
  */
 public class LoadWebDocumentRequest {
+    
     /*
-     * Parameters of loading.
+     * Initializes a new instance of the loadWebDocumentRequest class.
+     *  
      */
-    private LoadWebDocumentData data;
-
-    /*
-     * Original document storage.
-     */
-    private String storage;
-
-    /*
-     * Initializes a new instance of the LoadWebDocumentRequest class.
-     *
-     * @param LoadWebDocumentData data Parameters of loading.
-     * @param String storage Original document storage.
-     */
-    public LoadWebDocumentRequest(LoadWebDocumentData data, String storage) {
-        this.data = data;
-        this.storage = storage;
+    public LoadWebDocumentRequest() {
     }
 
-    /*
-     * Gets Parameters of loading.
-     */
-    public LoadWebDocumentData getData() {
-        return this.data;
-    }
-
-    /*
-     * Sets Parameters of loading.
-     */
-    public void setData(LoadWebDocumentData value) {
-        this.data = value;
-    }
-
-    /*
-     * Gets Original document storage.
-     */
-    public String getStorage() {
-        return this.storage;
-    }
-
-    /*
-     * Sets Original document storage.
-     */
-    public void setStorage(String value) {
-        this.storage = value;
-    }
 }

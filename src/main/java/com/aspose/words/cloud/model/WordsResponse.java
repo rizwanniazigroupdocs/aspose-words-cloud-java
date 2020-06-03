@@ -1,7 +1,7 @@
 /*
  * --------------------------------------------------------------------------------
- * <copyright company="Aspose" file="WordsResponse.java">
- *   Copyright (c) 2020 Aspose.Words for Cloud
+ * <copyright company="Aspose">
+ *   Copyright (c) 2019 Aspose.Words for Cloud
  * </copyright>
  * <summary>
  *   Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -46,39 +46,40 @@ import io.swagger.annotations.ApiModelProperty;
  * Base class for all responses.
  */
 @ApiModel(description = "Base class for all responses.")
+
 public class WordsResponse {
-    @SerializedName("RequestId")
-    private String requestId = null;
-    public WordsResponse requestId(String requestId) {
-        this.requestId = requestId;
-        return this;
+  @SerializedName("RequestId")
+  private String requestId = null;
+
+  public WordsResponse requestId(String requestId) {
+    this.requestId = requestId;
+    return this;
+  }
+
+   /**
+   * Gets or sets request Id.
+   * @return requestId
+  **/
+  @ApiModelProperty(value = "Gets or sets request Id.")
+  public String getRequestId() {
+    return requestId;
+  }
+
+  public void setRequestId(String requestId) {
+    this.requestId = requestId;
+  }
+
+
+  @Override
+  public boolean equals(java.lang.Object o) {
+    if (this == o) {
+      return true;
     }
-
-    /**
-     * Gets or sets request Id.
-    * @return requestId
-    **/
-    @ApiModelProperty(value = "Gets or sets request Id.")
-    public String getRequestId() {
-        return requestId;
+    if (o == null || getClass() != o.getClass()) {
+      return false;
     }
-
-    public void setRequestId(String requestId) {
-        this.requestId = requestId;
-    }
-
-    @Override
-    public boolean equals(java.lang.Object o) {
-        if (this == o) {
-            return true;
-        }
-        if (o == null || getClass() != o.getClass()) {
-            return false;
-        }
-
-        WordsResponse wordsResponse = (WordsResponse) o;
-        return
-            Objects.equals(this.requestId, wordsResponse.requestId);
+    WordsResponse wordsResponse = (WordsResponse) o;
+    return Objects.equals(this.requestId, wordsResponse.requestId);
   }
 
   @Override
@@ -86,10 +87,12 @@ public class WordsResponse {
     return Objects.hash(requestId);
   }
 
+
   @Override
   public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class WordsResponse {\n");
+    
     sb.append("    requestId: ").append(toIndentedString(requestId)).append("\n");
     sb.append("}");
     return sb.toString();
@@ -105,4 +108,6 @@ public class WordsResponse {
     }
     return o.toString().replace("\n", "\n    ");
   }
+
 }
+
