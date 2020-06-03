@@ -1,7 +1,7 @@
 /*
- * --------------------------------------------------------------------------------------
+ * --------------------------------------------------------------------------------
  * <copyright company="Aspose" file="GetFilesListRequest.java">
- *   Copyright (c) 2019 Aspose.Words for Cloud
+ *   Copyright (c) 2020 Aspose.Words for Cloud
  * </copyright>
  * <summary>
  *   Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -22,9 +22,11 @@
  *  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  *  SOFTWARE.
  * </summary>
- * --------------------------------------------------------------------------------------
+ * --------------------------------------------------------------------------------
  */
+
 package com.aspose.words.cloud.model.requests;
+
 import com.aspose.words.cloud.model.*;
 import java.io.File;
 
@@ -32,12 +34,52 @@ import java.io.File;
  * Request model for getFilesList operation.
  */
 public class GetFilesListRequest {
-    
     /*
-     * Initializes a new instance of the getFilesListRequest class.
-     *  
+     * Folder path e.g. /Folder1.
      */
-    public GetFilesListRequest() {
+    private String path;
+
+    /*
+     * Storage name.
+     */
+    private String storageName;
+
+    /*
+     * Initializes a new instance of the GetFilesListRequest class.
+     *
+     * @param String path Folder path e.g. /Folder1.
+     * @param String storageName Storage name.
+     */
+    public GetFilesListRequest(String path, String storageName) {
+        this.path = path;
+        this.storageName = storageName;
     }
 
+    /*
+     * Gets Folder path e.g. /Folder1.
+     */
+    public String getPath() {
+        return this.path;
+    }
+
+    /*
+     * Sets Folder path e.g. /Folder1.
+     */
+    public void setPath(String value) {
+        this.path = value;
+    }
+
+    /*
+     * Gets Storage name.
+     */
+    public String getStorageName() {
+        return this.storageName;
+    }
+
+    /*
+     * Sets Storage name.
+     */
+    public void setStorageName(String value) {
+        this.storageName = value;
+    }
 }

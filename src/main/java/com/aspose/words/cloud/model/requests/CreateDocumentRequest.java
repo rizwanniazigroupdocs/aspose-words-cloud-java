@@ -1,7 +1,7 @@
 /*
- * --------------------------------------------------------------------------------------
+ * --------------------------------------------------------------------------------
  * <copyright company="Aspose" file="CreateDocumentRequest.java">
- *   Copyright (c) 2019 Aspose.Words for Cloud
+ *   Copyright (c) 2020 Aspose.Words for Cloud
  * </copyright>
  * <summary>
  *   Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -22,9 +22,11 @@
  *  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  *  SOFTWARE.
  * </summary>
- * --------------------------------------------------------------------------------------
+ * --------------------------------------------------------------------------------
  */
+
 package com.aspose.words.cloud.model.requests;
+
 import com.aspose.words.cloud.model.*;
 import java.io.File;
 
@@ -32,12 +34,73 @@ import java.io.File;
  * Request model for createDocument operation.
  */
 public class CreateDocumentRequest {
-    
     /*
-     * Initializes a new instance of the createDocumentRequest class.
-     *  
+     * Original document storage.
      */
-    public CreateDocumentRequest() {
+    private String storage;
+
+    /*
+     * The document name.
+     */
+    private String fileName;
+
+    /*
+     * The document folder.
+     */
+    private String folder;
+
+    /*
+     * Initializes a new instance of the CreateDocumentRequest class.
+     *
+     * @param String storage Original document storage.
+     * @param String fileName The document name.
+     * @param String folder The document folder.
+     */
+    public CreateDocumentRequest(String storage, String fileName, String folder) {
+        this.storage = storage;
+        this.fileName = fileName;
+        this.folder = folder;
     }
 
+    /*
+     * Gets Original document storage.
+     */
+    public String getStorage() {
+        return this.storage;
+    }
+
+    /*
+     * Sets Original document storage.
+     */
+    public void setStorage(String value) {
+        this.storage = value;
+    }
+
+    /*
+     * Gets The document name.
+     */
+    public String getFileName() {
+        return this.fileName;
+    }
+
+    /*
+     * Sets The document name.
+     */
+    public void setFileName(String value) {
+        this.fileName = value;
+    }
+
+    /*
+     * Gets The document folder.
+     */
+    public String getFolder() {
+        return this.folder;
+    }
+
+    /*
+     * Sets The document folder.
+     */
+    public void setFolder(String value) {
+        this.folder = value;
+    }
 }

@@ -1,7 +1,7 @@
 /*
- * --------------------------------------------------------------------------------------
+ * --------------------------------------------------------------------------------
  * <copyright company="Aspose" file="ClassifyRequest.java">
- *   Copyright (c) 2019 Aspose.Words for Cloud
+ *   Copyright (c) 2020 Aspose.Words for Cloud
  * </copyright>
  * <summary>
  *   Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -22,9 +22,11 @@
  *  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  *  SOFTWARE.
  * </summary>
- * --------------------------------------------------------------------------------------
+ * --------------------------------------------------------------------------------
  */
+
 package com.aspose.words.cloud.model.requests;
+
 import com.aspose.words.cloud.model.*;
 import java.io.File;
 
@@ -32,12 +34,52 @@ import java.io.File;
  * Request model for classify operation.
  */
 public class ClassifyRequest {
-    
     /*
-     * Initializes a new instance of the classifyRequest class.
-     *  
+     * Text to classify.
      */
-    public ClassifyRequest() {
+    private String text;
+
+    /*
+     * Number of the best classes to return.
+     */
+    private String bestClassesCount;
+
+    /*
+     * Initializes a new instance of the ClassifyRequest class.
+     *
+     * @param String text Text to classify.
+     * @param String bestClassesCount Number of the best classes to return.
+     */
+    public ClassifyRequest(String text, String bestClassesCount) {
+        this.text = text;
+        this.bestClassesCount = bestClassesCount;
     }
 
+    /*
+     * Gets Text to classify.
+     */
+    public String getText() {
+        return this.text;
+    }
+
+    /*
+     * Sets Text to classify.
+     */
+    public void setText(String value) {
+        this.text = value;
+    }
+
+    /*
+     * Gets Number of the best classes to return.
+     */
+    public String getBestClassesCount() {
+        return this.bestClassesCount;
+    }
+
+    /*
+     * Sets Number of the best classes to return.
+     */
+    public void setBestClassesCount(String value) {
+        this.bestClassesCount = value;
+    }
 }
