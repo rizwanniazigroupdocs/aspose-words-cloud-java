@@ -1,6 +1,6 @@
 /*
  * --------------------------------------------------------------------------------
- * <copyright company="Aspose" file="UpdateParagraphFormatRequest.java">
+ * <copyright company="Aspose" file="UpdateParagraphFormatWithoutNodePathRequest.java">
  *   Copyright (c) 2020 Aspose.Words for Cloud
  * </copyright>
  * <summary>
@@ -31,9 +31,9 @@ import com.aspose.words.cloud.model.*;
 import java.io.File;
 
 /*
- * Request model for updateParagraphFormat operation.
+ * Request model for updateParagraphFormatWithoutNodePath operation.
  */
-public class UpdateParagraphFormatRequest {
+public class UpdateParagraphFormatWithoutNodePathRequest {
     /*
      * The document name.
      */
@@ -43,11 +43,6 @@ public class UpdateParagraphFormatRequest {
      * Paragraph format object.
      */
     private ParagraphFormat dto;
-
-    /*
-     * Path to the node which contains paragraphs.
-     */
-    private String nodePath;
 
     /*
      * Object index.
@@ -90,11 +85,10 @@ public class UpdateParagraphFormatRequest {
     private String revisionDateTime;
 
     /*
-     * Initializes a new instance of the UpdateParagraphFormatRequest class.
+     * Initializes a new instance of the UpdateParagraphFormatWithoutNodePathRequest class.
      *
      * @param String name The document name.
      * @param ParagraphFormat dto Paragraph format object.
-     * @param String nodePath Path to the node which contains paragraphs.
      * @param Integer index Object index.
      * @param String folder Original document folder.
      * @param String storage Original document storage.
@@ -104,10 +98,9 @@ public class UpdateParagraphFormatRequest {
      * @param String revisionAuthor Initials of the author to use for revisions.If you set this parameter and then make some changes to the document programmatically, save the document and later open the document in MS Word you will see these changes as revisions.
      * @param String revisionDateTime The date and time to use for revisions.
      */
-    public UpdateParagraphFormatRequest(String name, ParagraphFormat dto, String nodePath, Integer index, String folder, String storage, String loadEncoding, String password, String destFileName, String revisionAuthor, String revisionDateTime) {
+    public UpdateParagraphFormatWithoutNodePathRequest(String name, ParagraphFormat dto, Integer index, String folder, String storage, String loadEncoding, String password, String destFileName, String revisionAuthor, String revisionDateTime) {
         this.name = name;
         this.dto = dto;
-        this.nodePath = nodePath;
         this.index = index;
         this.folder = folder;
         this.storage = storage;
@@ -144,20 +137,6 @@ public class UpdateParagraphFormatRequest {
      */
     public void setDto(ParagraphFormat value) {
         this.dto = value;
-    }
-
-    /*
-     * Gets Path to the node which contains paragraphs.
-     */
-    public String getNodePath() {
-        return this.nodePath;
-    }
-
-    /*
-     * Sets Path to the node which contains paragraphs.
-     */
-    public void setNodePath(String value) {
-        this.nodePath = value;
     }
 
     /*
