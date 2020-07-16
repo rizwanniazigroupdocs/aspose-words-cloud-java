@@ -99,6 +99,18 @@ Add this dependency to your project's POM:
 ```java
         // Start README example
 
+        // if baseUrl is null, WordsApi uses default https://api.aspose.cloud 
+        WordsApi wordsApi = new WordsApi(appSid, appKey, baseUrl);
+
+        String localPath = PathUtil.get(localFolder, fileName);
+        String remotePath = PathUtil.get(remoteFolder, remoteName);
+
+        UploadFileRequest uploadRequest = new UploadFileRequest(Files.readAllBytes(Paths.get(localPath)), remotePath, null);
+        //wordsApi.uploadFile(uploadRequest);
+
+        DeleteWatermarkRequest request = new DeleteWatermarkRequest(remoteName, remoteFolder, null, null, null, null, null, null);
+        //DocumentResponse result = wordsApi.deleteWatermark(request);
+
         // End README example
 ```
 
