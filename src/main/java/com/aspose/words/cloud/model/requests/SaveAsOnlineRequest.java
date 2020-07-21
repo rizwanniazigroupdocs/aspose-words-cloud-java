@@ -1,6 +1,6 @@
 /*
  * --------------------------------------------------------------------------------
- * <copyright company="Aspose" file="GetDocumentFieldNamesOnlineRequest.java">
+ * <copyright company="Aspose" file="SaveAsOnlineRequest.java">
  *   Copyright (c) 2020 Aspose.Words for Cloud
  * </copyright>
  * <summary>
@@ -31,28 +31,35 @@ import com.aspose.words.cloud.model.*;
 import java.io.File;
 
 /*
- * Request model for getDocumentFieldNamesOnline operation.
+ * Request model for saveAsOnline operation.
  */
-public class GetDocumentFieldNamesOnlineRequest {
+public class SaveAsOnlineRequest {
     /*
      * The document.
      */
     private byte[] document;
 
     /*
-     * If true, result includes "mustache" field names.
+     * Save options.
      */
-    private Boolean useNonMergeFields;
+    private SaveOptionsData saveOptionsData;
 
     /*
-     * Initializes a new instance of the GetDocumentFieldNamesOnlineRequest class.
+     * Folder in filestorage with custom fonts.
+     */
+    private String fontsLocation;
+
+    /*
+     * Initializes a new instance of the SaveAsOnlineRequest class.
      *
      * @param byte[] document The document.
-     * @param Boolean useNonMergeFields If true, result includes "mustache" field names.
+     * @param SaveOptionsData saveOptionsData Save options.
+     * @param String fontsLocation Folder in filestorage with custom fonts.
      */
-    public GetDocumentFieldNamesOnlineRequest(byte[] document, Boolean useNonMergeFields) {
+    public SaveAsOnlineRequest(byte[] document, SaveOptionsData saveOptionsData, String fontsLocation) {
         this.document = document;
-        this.useNonMergeFields = useNonMergeFields;
+        this.saveOptionsData = saveOptionsData;
+        this.fontsLocation = fontsLocation;
     }
 
     /*
@@ -70,16 +77,30 @@ public class GetDocumentFieldNamesOnlineRequest {
     }
 
     /*
-     * Gets If true, result includes "mustache" field names.
+     * Gets Save options.
      */
-    public Boolean getUseNonMergeFields() {
-        return this.useNonMergeFields;
+    public SaveOptionsData getSaveOptionsData() {
+        return this.saveOptionsData;
     }
 
     /*
-     * Sets If true, result includes "mustache" field names.
+     * Sets Save options.
      */
-    public void setUseNonMergeFields(Boolean value) {
-        this.useNonMergeFields = value;
+    public void setSaveOptionsData(SaveOptionsData value) {
+        this.saveOptionsData = value;
+    }
+
+    /*
+     * Gets Folder in filestorage with custom fonts.
+     */
+    public String getFontsLocation() {
+        return this.fontsLocation;
+    }
+
+    /*
+     * Sets Folder in filestorage with custom fonts.
+     */
+    public void setFontsLocation(String value) {
+        this.fontsLocation = value;
     }
 }

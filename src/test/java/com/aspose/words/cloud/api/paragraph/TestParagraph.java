@@ -78,7 +78,25 @@ public class TestParagraph  extends TestCase
             null
         );
 
-        ParagraphResponse result = TestInitializer.wordsApi.getParagraph(request);
+        File result = TestInitializer.wordsApi.getParagraph(request);
+        assertNotNull(result);
+    }
+
+    /*
+     * Test for getting paragraph online.
+     */
+    @Test
+    public void testGetDocumentParagraphOnline() throws ApiException, IOException
+    {
+        GetParagraphOnlineRequest request = new GetParagraphOnlineRequest(
+            "sections/0",
+            Files.readAllBytes(Paths.get(TestInitializer.LocalTestFolder, localFile).toAbsolutePath()),
+            0,
+            null,
+            null
+        );
+
+        File result = TestInitializer.wordsApi.getParagraphOnline(request);
         assertNotNull(result);
     }
 
@@ -104,7 +122,7 @@ public class TestParagraph  extends TestCase
             null
         );
 
-        ParagraphResponse result = TestInitializer.wordsApi.getParagraphWithoutNodePath(request);
+        File result = TestInitializer.wordsApi.getParagraphWithoutNodePath(request);
         assertNotNull(result);
     }
 
@@ -130,7 +148,24 @@ public class TestParagraph  extends TestCase
             null
         );
 
-        ParagraphLinkCollectionResponse result = TestInitializer.wordsApi.getParagraphs(request);
+        File result = TestInitializer.wordsApi.getParagraphs(request);
+        assertNotNull(result);
+    }
+
+    /*
+     * Test for getting all paragraphs online.
+     */
+    @Test
+    public void testGetDocumentParagraphsOnline() throws ApiException, IOException
+    {
+        GetParagraphsOnlineRequest request = new GetParagraphsOnlineRequest(
+            "sections/0",
+            Files.readAllBytes(Paths.get(TestInitializer.LocalTestFolder, localFile).toAbsolutePath()),
+            null,
+            null
+        );
+
+        File result = TestInitializer.wordsApi.getParagraphsOnline(request);
         assertNotNull(result);
     }
 
@@ -155,7 +190,7 @@ public class TestParagraph  extends TestCase
             null
         );
 
-        ParagraphLinkCollectionResponse result = TestInitializer.wordsApi.getParagraphsWithoutNodePath(request);
+        File result = TestInitializer.wordsApi.getParagraphsWithoutNodePath(request);
         assertNotNull(result);
     }
 
@@ -291,8 +326,8 @@ public class TestParagraph  extends TestCase
 
         InsertParagraphRequest request = new InsertParagraphRequest(
             remoteFileName,
-            requestParagraph,
             "sections/0",
+            requestParagraph,
             remoteDataFolder,
             null,
             null,
@@ -303,7 +338,32 @@ public class TestParagraph  extends TestCase
             null
         );
 
-        ParagraphResponse result = TestInitializer.wordsApi.insertParagraph(request);
+        File result = TestInitializer.wordsApi.insertParagraph(request);
+        assertNotNull(result);
+    }
+
+    /*
+     * Test for adding paragraph online.
+     */
+    @Test
+    public void testInsertParagraphOnline() throws ApiException, IOException
+    {
+        ParagraphInsert requestParagraph = new ParagraphInsert();
+        requestParagraph.setText("This is a new paragraph for your document");
+
+        InsertParagraphOnlineRequest request = new InsertParagraphOnlineRequest(
+            "sections/0",
+            Files.readAllBytes(Paths.get(TestInitializer.LocalTestFolder, localFile).toAbsolutePath()),
+            requestParagraph,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+        );
+
+        File result = TestInitializer.wordsApi.insertParagraphOnline(request);
         assertNotNull(result);
     }
 
@@ -336,7 +396,7 @@ public class TestParagraph  extends TestCase
             null
         );
 
-        ParagraphResponse result = TestInitializer.wordsApi.insertParagraphWithoutNodePath(request);
+        File result = TestInitializer.wordsApi.insertParagraphWithoutNodePath(request);
         assertNotNull(result);
     }
 
@@ -511,6 +571,27 @@ public class TestParagraph  extends TestCase
         );
 
         TestInitializer.wordsApi.deleteParagraph(request);
+    }
+
+    /*
+     * Test for deleting  a paragraph online.
+     */
+    @Test
+    public void testDeleteParagraphOnline() throws ApiException, IOException
+    {
+        DeleteParagraphOnlineRequest request = new DeleteParagraphOnlineRequest(
+            "",
+            Files.readAllBytes(Paths.get(TestInitializer.LocalTestFolder, localFile).toAbsolutePath()),
+            0,
+            null,
+            null,
+            null,
+            null,
+            null
+        );
+
+        File result = TestInitializer.wordsApi.deleteParagraphOnline(request);
+        assertNotNull(result);
     }
 
     /*

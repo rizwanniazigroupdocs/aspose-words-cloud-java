@@ -1,6 +1,6 @@
 /*
  * --------------------------------------------------------------------------------
- * <copyright company="Aspose" file="AppendDocumentRequest.java">
+ * <copyright company="Aspose" file="DeleteParagraphOnlineRequest.java">
  *   Copyright (c) 2020 Aspose.Words for Cloud
  * </copyright>
  * <summary>
@@ -31,28 +31,23 @@ import com.aspose.words.cloud.model.*;
 import java.io.File;
 
 /*
- * Request model for appendDocument operation.
+ * Request model for deleteParagraphOnline operation.
  */
-public class AppendDocumentRequest {
+public class DeleteParagraphOnlineRequest {
     /*
-     * Original document name.
+     * Path to the node which contains paragraphs.
      */
-    private String name;
+    private String nodePath;
 
     /*
-     * <see cref="DocumentEntryList"/> with a list of documents to append.
+     * The document.
      */
-    private DocumentEntryList documentList;
+    private byte[] document;
 
     /*
-     * Original document folder.
+     * Object index.
      */
-    private String folder;
-
-    /*
-     * Original document storage.
-     */
-    private String storage;
+    private Integer index;
 
     /*
      * Encoding that will be used to load an HTML (or TXT) document if the encoding is not specified in HTML.
@@ -80,23 +75,21 @@ public class AppendDocumentRequest {
     private String revisionDateTime;
 
     /*
-     * Initializes a new instance of the AppendDocumentRequest class.
+     * Initializes a new instance of the DeleteParagraphOnlineRequest class.
      *
-     * @param String name Original document name.
-     * @param DocumentEntryList documentList <see cref="DocumentEntryList"/> with a list of documents to append.
-     * @param String folder Original document folder.
-     * @param String storage Original document storage.
+     * @param String nodePath Path to the node which contains paragraphs.
+     * @param byte[] document The document.
+     * @param Integer index Object index.
      * @param String loadEncoding Encoding that will be used to load an HTML (or TXT) document if the encoding is not specified in HTML.
      * @param String password Password for opening an encrypted document.
      * @param String destFileName Result path of the document after the operation. If this parameter is omitted then result of the operation will be saved as the source document.
      * @param String revisionAuthor Initials of the author to use for revisions.If you set this parameter and then make some changes to the document programmatically, save the document and later open the document in MS Word you will see these changes as revisions.
      * @param String revisionDateTime The date and time to use for revisions.
      */
-    public AppendDocumentRequest(String name, DocumentEntryList documentList, String folder, String storage, String loadEncoding, String password, String destFileName, String revisionAuthor, String revisionDateTime) {
-        this.name = name;
-        this.documentList = documentList;
-        this.folder = folder;
-        this.storage = storage;
+    public DeleteParagraphOnlineRequest(String nodePath, byte[] document, Integer index, String loadEncoding, String password, String destFileName, String revisionAuthor, String revisionDateTime) {
+        this.nodePath = nodePath;
+        this.document = document;
+        this.index = index;
         this.loadEncoding = loadEncoding;
         this.password = password;
         this.destFileName = destFileName;
@@ -105,59 +98,45 @@ public class AppendDocumentRequest {
     }
 
     /*
-     * Gets Original document name.
+     * Gets Path to the node which contains paragraphs.
      */
-    public String getName() {
-        return this.name;
+    public String getNodePath() {
+        return this.nodePath;
     }
 
     /*
-     * Sets Original document name.
+     * Sets Path to the node which contains paragraphs.
      */
-    public void setName(String value) {
-        this.name = value;
+    public void setNodePath(String value) {
+        this.nodePath = value;
     }
 
     /*
-     * Gets <see cref="DocumentEntryList"/> with a list of documents to append.
+     * Gets The document.
      */
-    public DocumentEntryList getDocumentList() {
-        return this.documentList;
+    public byte[] getDocument() {
+        return this.document;
     }
 
     /*
-     * Sets <see cref="DocumentEntryList"/> with a list of documents to append.
+     * Sets The document.
      */
-    public void setDocumentList(DocumentEntryList value) {
-        this.documentList = value;
+    public void setDocument(byte[] value) {
+        this.document = value;
     }
 
     /*
-     * Gets Original document folder.
+     * Gets Object index.
      */
-    public String getFolder() {
-        return this.folder;
+    public Integer getIndex() {
+        return this.index;
     }
 
     /*
-     * Sets Original document folder.
+     * Sets Object index.
      */
-    public void setFolder(String value) {
-        this.folder = value;
-    }
-
-    /*
-     * Gets Original document storage.
-     */
-    public String getStorage() {
-        return this.storage;
-    }
-
-    /*
-     * Sets Original document storage.
-     */
-    public void setStorage(String value) {
-        this.storage = value;
+    public void setIndex(Integer value) {
+        this.index = value;
     }
 
     /*

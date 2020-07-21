@@ -339,6 +339,146 @@ public class WordsApi {
     }
 
     /**
+     * Build call for appendDocumentOnline
+     * @param progressListener Progress listener
+     * @param progressRequestListener Progress request listener
+     * @return Call to execute
+     * @throws ApiException If fail to serialize the request body object
+     * @throws IOException If fail to serialize the request body object
+     */
+    private com.squareup.okhttp.Call appendDocumentOnlineCall(AppendDocumentOnlineRequest request, final ProgressResponseBody.ProgressListener progressListener, final ProgressRequestBody.ProgressRequestListener progressRequestListener) throws ApiException, IOException {
+        Object localVarPostBody = null;
+
+        // create path and map variables
+        String localVarPath = "/words/online/appendDocument";
+
+        List<Pair> localVarQueryParams = new ArrayList<Pair>();
+        List<Pair> localVarCollectionQueryParams = new ArrayList<Pair>();
+
+        Map<String, String> localVarHeaderParams = new HashMap<String, String>();
+
+        Map<String, Object> localVarFormParams = new LinkedHashMap<String, Object>();
+        if (request.getDocument() != null)
+            localVarFormParams.put("Document", request.getDocument());
+
+        if (request.getDocumentList() != null)
+            localVarFormParams.put("DocumentList", request.getDocumentList());
+
+        final String[] localVarAccepts = {
+            "application/xml", "application/json"
+        };
+        final String localVarAccept = apiClient.selectHeaderAccept(localVarAccepts);
+        if (localVarAccept != null) localVarHeaderParams.put("Accept", localVarAccept);
+
+        final String[] localVarContentTypes = {
+            "multipart/form-data"
+        };
+        final String localVarContentType = apiClient.selectHeaderContentType(localVarContentTypes);
+        localVarHeaderParams.put("Content-Type", localVarContentType);
+
+        if (progressListener != null) {
+            apiClient.getHttpClient().networkInterceptors().add(new com.squareup.okhttp.Interceptor() {
+                @Override
+                public com.squareup.okhttp.Response intercept(com.squareup.okhttp.Interceptor.Chain chain) throws IOException {
+                    com.squareup.okhttp.Response originalResponse = chain.proceed(chain.request());
+                    return originalResponse.newBuilder()
+                    .body(new ProgressResponseBody(originalResponse.body(), progressListener))
+                    .build();
+                }
+            });
+        }
+
+        String[] localVarAuthNames = new String[] { "JWT" };
+        return apiClient.buildCall(localVarPath, "PUT", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarAuthNames, progressRequestListener);
+    }
+
+    @SuppressWarnings("rawtypes")
+    private com.squareup.okhttp.Call appendDocumentOnlineValidateBeforeCall(AppendDocumentOnlineRequest request, final ProgressResponseBody.ProgressListener progressListener, final ProgressRequestBody.ProgressRequestListener progressRequestListener) throws ApiException, IOException {
+        // verify the required parameter 'Document' is set
+        if (request.getDocument() == null) {
+            throw new ApiException(BadRequest, "Missing the required parameter 'Document' when calling appendDocumentOnline");
+        }
+
+        // verify the required parameter 'DocumentList' is set
+        if (request.getDocumentList() == null) {
+            throw new ApiException(BadRequest, "Missing the required parameter 'DocumentList' when calling appendDocumentOnline");
+        }
+
+        com.squareup.okhttp.Call call = appendDocumentOnlineCall(request, progressListener, progressRequestListener);
+        return call;
+    }
+
+    /**
+     * Appends documents to original document.
+     * @param request Request object
+     * @return File
+     * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
+     * @throws IOException If fail to serialize the request body object
+     */
+    public File appendDocumentOnline(AppendDocumentOnlineRequest request) throws ApiException, IOException {
+        try {
+            ApiResponse< File > resp = appendDocumentOnlineWithHttpInfo(request);
+            return resp.getData();
+        }
+        catch (ApiException ex) {
+            if (ex.getCode() == NotAuth) {
+                apiClient.requestToken();
+                ApiResponse< File > resp = appendDocumentOnlineWithHttpInfo(request);
+                return resp.getData();
+            }
+            throw ex;
+        }
+    }
+
+    /**
+     * Appends documents to original document.
+     * @param request Request object
+     * @return ApiResponse< File >;
+     * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
+     * @throws IOException If fail to serialize the request body object
+     */
+    private ApiResponse< File > appendDocumentOnlineWithHttpInfo(AppendDocumentOnlineRequest request) throws ApiException, IOException {
+        com.squareup.okhttp.Call call = appendDocumentOnlineValidateBeforeCall(request, null, null);
+        Type localVarReturnType = new TypeToken< File >() { }.getType();
+        return apiClient.execute(call, localVarReturnType);
+    }
+
+    /**
+     * Appends documents to original document. (asynchronously)
+     * @param request Request object
+     * @param callback The callback to be executed when the API call finishes
+     * @return The request call
+     * @throws ApiException If fail to process the API call, e.g. serializing the request body object
+     * @throws IOException If fail to serialize the request body object
+     */
+    public com.squareup.okhttp.Call appendDocumentOnlineAsync(AppendDocumentOnlineRequest request, final ApiCallback< File > callback) throws ApiException, IOException {
+
+        ProgressResponseBody.ProgressListener progressListener = null;
+        ProgressRequestBody.ProgressRequestListener progressRequestListener = null;
+
+        if (callback != null) {
+            progressListener = new ProgressResponseBody.ProgressListener() {
+                @Override
+                public void update(long bytesRead, long contentLength, boolean done) {
+                    callback.onDownloadProgress(bytesRead, contentLength, done);
+                }
+            };
+
+            progressRequestListener = new ProgressRequestBody.ProgressRequestListener() {
+                @Override
+                public void onRequestProgress(long bytesWritten, long contentLength, boolean done) {
+                    callback.onUploadProgress(bytesWritten, contentLength, done);
+                }
+            };
+        }
+
+        com.squareup.okhttp.Call call = appendDocumentOnlineValidateBeforeCall(request, progressListener, progressRequestListener);
+        Type localVarReturnType = new TypeToken< File >() { }.getType();
+        apiClient.executeAsync(call, localVarReturnType, callback);
+        return call;
+    }
+
+    /**
      * Build call for applyStyleToDocumentElement
      * @param progressListener Progress listener
      * @param progressRequestListener Progress request listener
@@ -1209,9 +1349,9 @@ public class WordsApi {
         List<Pair> localVarQueryParams = new ArrayList<Pair>();
         List<Pair> localVarCollectionQueryParams = new ArrayList<Pair>();
         localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "format", request.getFormat());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "storage", request.getStorage());
         localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "outPath", request.getOutPath());
         localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "fileNameFieldValue", request.getFileNameFieldValue());
+        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "storage", request.getStorage());
         localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "fontsLocation", request.getFontsLocation());
 
         Map<String, String> localVarHeaderParams = new HashMap<String, String>();
@@ -1759,9 +1899,9 @@ public class WordsApi {
 
         List<Pair> localVarQueryParams = new ArrayList<Pair>();
         List<Pair> localVarCollectionQueryParams = new ArrayList<Pair>();
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "storage", request.getStorage());
         localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "fileName", request.getFileName());
         localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "folder", request.getFolder());
+        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "storage", request.getStorage());
 
         Map<String, String> localVarHeaderParams = new HashMap<String, String>();
 
@@ -5789,6 +5929,154 @@ public class WordsApi {
 
         com.squareup.okhttp.Call call = deleteParagraphListFormatWithoutNodePathValidateBeforeCall(request, progressListener, progressRequestListener);
         Type localVarReturnType = new TypeToken< ParagraphListFormatResponse >() { }.getType();
+        apiClient.executeAsync(call, localVarReturnType, callback);
+        return call;
+    }
+
+    /**
+     * Build call for deleteParagraphOnline
+     * @param progressListener Progress listener
+     * @param progressRequestListener Progress request listener
+     * @return Call to execute
+     * @throws ApiException If fail to serialize the request body object
+     * @throws IOException If fail to serialize the request body object
+     */
+    private com.squareup.okhttp.Call deleteParagraphOnlineCall(DeleteParagraphOnlineRequest request, final ProgressResponseBody.ProgressListener progressListener, final ProgressRequestBody.ProgressRequestListener progressRequestListener) throws ApiException, IOException {
+        Object localVarPostBody = null;
+
+        // create path and map variables
+        String localVarPath = "/words/online/{nodePath}/paragraphs/{index}".replaceAll("\\{" + "nodePath" + "\\}", request.getNodePath().toString()).replaceAll("//", "/")
+    .replaceAll("\\{" + "index" + "\\}", request.getIndex().toString()).replaceAll("//", "/");
+
+        List<Pair> localVarQueryParams = new ArrayList<Pair>();
+        List<Pair> localVarCollectionQueryParams = new ArrayList<Pair>();
+        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "loadEncoding", request.getLoadEncoding());
+        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "password", request.getPassword());
+        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "destFileName", request.getDestFileName());
+        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "revisionAuthor", request.getRevisionAuthor());
+        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "revisionDateTime", request.getRevisionDateTime());
+
+        Map<String, String> localVarHeaderParams = new HashMap<String, String>();
+
+        Map<String, Object> localVarFormParams = new LinkedHashMap<String, Object>();
+        if (request.getDocument() != null)
+            localVarFormParams.put("Document", request.getDocument());
+
+        final String[] localVarAccepts = {
+            "application/xml", "application/json"
+        };
+        final String localVarAccept = apiClient.selectHeaderAccept(localVarAccepts);
+        if (localVarAccept != null) localVarHeaderParams.put("Accept", localVarAccept);
+
+        final String[] localVarContentTypes = {
+            "multipart/form-data"
+        };
+        final String localVarContentType = apiClient.selectHeaderContentType(localVarContentTypes);
+        localVarHeaderParams.put("Content-Type", localVarContentType);
+
+        if (progressListener != null) {
+            apiClient.getHttpClient().networkInterceptors().add(new com.squareup.okhttp.Interceptor() {
+                @Override
+                public com.squareup.okhttp.Response intercept(com.squareup.okhttp.Interceptor.Chain chain) throws IOException {
+                    com.squareup.okhttp.Response originalResponse = chain.proceed(chain.request());
+                    return originalResponse.newBuilder()
+                    .body(new ProgressResponseBody(originalResponse.body(), progressListener))
+                    .build();
+                }
+            });
+        }
+
+        String[] localVarAuthNames = new String[] { "JWT" };
+        return apiClient.buildCall(localVarPath, "DELETE", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarAuthNames, progressRequestListener);
+    }
+
+    @SuppressWarnings("rawtypes")
+    private com.squareup.okhttp.Call deleteParagraphOnlineValidateBeforeCall(DeleteParagraphOnlineRequest request, final ProgressResponseBody.ProgressListener progressListener, final ProgressRequestBody.ProgressRequestListener progressRequestListener) throws ApiException, IOException {
+        // verify the required parameter 'NodePath' is set
+        if (request.getNodePath() == null) {
+            throw new ApiException(BadRequest, "Missing the required parameter 'NodePath' when calling deleteParagraphOnline");
+        }
+
+        // verify the required parameter 'Document' is set
+        if (request.getDocument() == null) {
+            throw new ApiException(BadRequest, "Missing the required parameter 'Document' when calling deleteParagraphOnline");
+        }
+
+        // verify the required parameter 'Index' is set
+        if (request.getIndex() == null) {
+            throw new ApiException(BadRequest, "Missing the required parameter 'Index' when calling deleteParagraphOnline");
+        }
+
+        com.squareup.okhttp.Call call = deleteParagraphOnlineCall(request, progressListener, progressRequestListener);
+        return call;
+    }
+
+    /**
+     * Removes paragraph from section.
+     * @param request Request object
+     * @return File
+     * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
+     * @throws IOException If fail to serialize the request body object
+     */
+    public File deleteParagraphOnline(DeleteParagraphOnlineRequest request) throws ApiException, IOException {
+        try {
+            ApiResponse< File > resp = deleteParagraphOnlineWithHttpInfo(request);
+            return resp.getData();
+        }
+        catch (ApiException ex) {
+            if (ex.getCode() == NotAuth) {
+                apiClient.requestToken();
+                ApiResponse< File > resp = deleteParagraphOnlineWithHttpInfo(request);
+                return resp.getData();
+            }
+            throw ex;
+        }
+    }
+
+    /**
+     * Removes paragraph from section.
+     * @param request Request object
+     * @return ApiResponse< File >;
+     * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
+     * @throws IOException If fail to serialize the request body object
+     */
+    private ApiResponse< File > deleteParagraphOnlineWithHttpInfo(DeleteParagraphOnlineRequest request) throws ApiException, IOException {
+        com.squareup.okhttp.Call call = deleteParagraphOnlineValidateBeforeCall(request, null, null);
+        Type localVarReturnType = new TypeToken< File >() { }.getType();
+        return apiClient.execute(call, localVarReturnType);
+    }
+
+    /**
+     * Removes paragraph from section. (asynchronously)
+     * @param request Request object
+     * @param callback The callback to be executed when the API call finishes
+     * @return The request call
+     * @throws ApiException If fail to process the API call, e.g. serializing the request body object
+     * @throws IOException If fail to serialize the request body object
+     */
+    public com.squareup.okhttp.Call deleteParagraphOnlineAsync(DeleteParagraphOnlineRequest request, final ApiCallback< File > callback) throws ApiException, IOException {
+
+        ProgressResponseBody.ProgressListener progressListener = null;
+        ProgressRequestBody.ProgressRequestListener progressRequestListener = null;
+
+        if (callback != null) {
+            progressListener = new ProgressResponseBody.ProgressListener() {
+                @Override
+                public void update(long bytesRead, long contentLength, boolean done) {
+                    callback.onDownloadProgress(bytesRead, contentLength, done);
+                }
+            };
+
+            progressRequestListener = new ProgressRequestBody.ProgressRequestListener() {
+                @Override
+                public void onRequestProgress(long bytesWritten, long contentLength, boolean done) {
+                    callback.onUploadProgress(bytesWritten, contentLength, done);
+                }
+            };
+        }
+
+        com.squareup.okhttp.Call call = deleteParagraphOnlineValidateBeforeCall(request, progressListener, progressRequestListener);
+        Type localVarReturnType = new TypeToken< File >() { }.getType();
         apiClient.executeAsync(call, localVarReturnType, callback);
         return call;
     }
@@ -10010,7 +10298,7 @@ public class WordsApi {
         Object localVarPostBody = null;
 
         // create path and map variables
-        String localVarPath = "/words/mailMerge/FieldNames";
+        String localVarPath = "/words/online/mailMerge/FieldNames";
 
         List<Pair> localVarQueryParams = new ArrayList<Pair>();
         List<Pair> localVarCollectionQueryParams = new ArrayList<Pair>();
@@ -10019,8 +10307,8 @@ public class WordsApi {
         Map<String, String> localVarHeaderParams = new HashMap<String, String>();
 
         Map<String, Object> localVarFormParams = new LinkedHashMap<String, Object>();
-        if (request.getTemplate() != null)
-            localVarFormParams.put("Template", request.getTemplate());
+        if (request.getDocument() != null)
+            localVarFormParams.put("Document", request.getDocument());
 
         final String[] localVarAccepts = {
             "application/xml", "application/json"
@@ -10047,14 +10335,14 @@ public class WordsApi {
         }
 
         String[] localVarAuthNames = new String[] { "JWT" };
-        return apiClient.buildCall(localVarPath, "PUT", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarAuthNames, progressRequestListener);
+        return apiClient.buildCall(localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarAuthNames, progressRequestListener);
     }
 
     @SuppressWarnings("rawtypes")
     private com.squareup.okhttp.Call getDocumentFieldNamesOnlineValidateBeforeCall(GetDocumentFieldNamesOnlineRequest request, final ProgressResponseBody.ProgressListener progressListener, final ProgressRequestBody.ProgressRequestListener progressRequestListener) throws ApiException, IOException {
-        // verify the required parameter 'Template' is set
-        if (request.getTemplate() == null) {
-            throw new ApiException(BadRequest, "Missing the required parameter 'Template' when calling getDocumentFieldNamesOnline");
+        // verify the required parameter 'Document' is set
+        if (request.getDocument() == null) {
+            throw new ApiException(BadRequest, "Missing the required parameter 'Document' when calling getDocumentFieldNamesOnline");
         }
 
         com.squareup.okhttp.Call call = getDocumentFieldNamesOnlineCall(request, progressListener, progressRequestListener);
@@ -10064,19 +10352,19 @@ public class WordsApi {
     /**
      * Reads document field names.
      * @param request Request object
-     * @return FieldNamesResponse
+     * @return File
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      * @throws IOException If fail to serialize the request body object
      */
-    public FieldNamesResponse getDocumentFieldNamesOnline(GetDocumentFieldNamesOnlineRequest request) throws ApiException, IOException {
+    public File getDocumentFieldNamesOnline(GetDocumentFieldNamesOnlineRequest request) throws ApiException, IOException {
         try {
-            ApiResponse< FieldNamesResponse > resp = getDocumentFieldNamesOnlineWithHttpInfo(request);
+            ApiResponse< File > resp = getDocumentFieldNamesOnlineWithHttpInfo(request);
             return resp.getData();
         }
         catch (ApiException ex) {
             if (ex.getCode() == NotAuth) {
                 apiClient.requestToken();
-                ApiResponse< FieldNamesResponse > resp = getDocumentFieldNamesOnlineWithHttpInfo(request);
+                ApiResponse< File > resp = getDocumentFieldNamesOnlineWithHttpInfo(request);
                 return resp.getData();
             }
             throw ex;
@@ -10086,13 +10374,13 @@ public class WordsApi {
     /**
      * Reads document field names.
      * @param request Request object
-     * @return ApiResponse< FieldNamesResponse >;
+     * @return ApiResponse< File >;
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      * @throws IOException If fail to serialize the request body object
      */
-    private ApiResponse< FieldNamesResponse > getDocumentFieldNamesOnlineWithHttpInfo(GetDocumentFieldNamesOnlineRequest request) throws ApiException, IOException {
+    private ApiResponse< File > getDocumentFieldNamesOnlineWithHttpInfo(GetDocumentFieldNamesOnlineRequest request) throws ApiException, IOException {
         com.squareup.okhttp.Call call = getDocumentFieldNamesOnlineValidateBeforeCall(request, null, null);
-        Type localVarReturnType = new TypeToken< FieldNamesResponse >() { }.getType();
+        Type localVarReturnType = new TypeToken< File >() { }.getType();
         return apiClient.execute(call, localVarReturnType);
     }
 
@@ -10104,7 +10392,7 @@ public class WordsApi {
      * @throws ApiException If fail to process the API call, e.g. serializing the request body object
      * @throws IOException If fail to serialize the request body object
      */
-    public com.squareup.okhttp.Call getDocumentFieldNamesOnlineAsync(GetDocumentFieldNamesOnlineRequest request, final ApiCallback< FieldNamesResponse > callback) throws ApiException, IOException {
+    public com.squareup.okhttp.Call getDocumentFieldNamesOnlineAsync(GetDocumentFieldNamesOnlineRequest request, final ApiCallback< File > callback) throws ApiException, IOException {
 
         ProgressResponseBody.ProgressListener progressListener = null;
         ProgressRequestBody.ProgressRequestListener progressRequestListener = null;
@@ -10126,7 +10414,7 @@ public class WordsApi {
         }
 
         com.squareup.okhttp.Call call = getDocumentFieldNamesOnlineValidateBeforeCall(request, progressListener, progressRequestListener);
-        Type localVarReturnType = new TypeToken< FieldNamesResponse >() { }.getType();
+        Type localVarReturnType = new TypeToken< File >() { }.getType();
         apiClient.executeAsync(call, localVarReturnType, callback);
         return call;
     }
@@ -10946,6 +11234,141 @@ public class WordsApi {
 
         com.squareup.okhttp.Call call = getDocumentStatisticsValidateBeforeCall(request, progressListener, progressRequestListener);
         Type localVarReturnType = new TypeToken< StatDataResponse >() { }.getType();
+        apiClient.executeAsync(call, localVarReturnType, callback);
+        return call;
+    }
+
+    /**
+     * Build call for getDocumentStatisticsOnline
+     * @param progressListener Progress listener
+     * @param progressRequestListener Progress request listener
+     * @return Call to execute
+     * @throws ApiException If fail to serialize the request body object
+     * @throws IOException If fail to serialize the request body object
+     */
+    private com.squareup.okhttp.Call getDocumentStatisticsOnlineCall(GetDocumentStatisticsOnlineRequest request, final ProgressResponseBody.ProgressListener progressListener, final ProgressRequestBody.ProgressRequestListener progressRequestListener) throws ApiException, IOException {
+        Object localVarPostBody = null;
+
+        // create path and map variables
+        String localVarPath = "/words/online/statistics";
+
+        List<Pair> localVarQueryParams = new ArrayList<Pair>();
+        List<Pair> localVarCollectionQueryParams = new ArrayList<Pair>();
+        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "includeComments", request.getIncludeComments());
+        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "includeFootnotes", request.getIncludeFootnotes());
+        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "includeTextInShapes", request.getIncludeTextInShapes());
+
+        Map<String, String> localVarHeaderParams = new HashMap<String, String>();
+
+        Map<String, Object> localVarFormParams = new LinkedHashMap<String, Object>();
+        if (request.getDocument() != null)
+            localVarFormParams.put("Document", request.getDocument());
+
+        final String[] localVarAccepts = {
+            "application/xml", "application/json"
+        };
+        final String localVarAccept = apiClient.selectHeaderAccept(localVarAccepts);
+        if (localVarAccept != null) localVarHeaderParams.put("Accept", localVarAccept);
+
+        final String[] localVarContentTypes = {
+            "multipart/form-data"
+        };
+        final String localVarContentType = apiClient.selectHeaderContentType(localVarContentTypes);
+        localVarHeaderParams.put("Content-Type", localVarContentType);
+
+        if (progressListener != null) {
+            apiClient.getHttpClient().networkInterceptors().add(new com.squareup.okhttp.Interceptor() {
+                @Override
+                public com.squareup.okhttp.Response intercept(com.squareup.okhttp.Interceptor.Chain chain) throws IOException {
+                    com.squareup.okhttp.Response originalResponse = chain.proceed(chain.request());
+                    return originalResponse.newBuilder()
+                    .body(new ProgressResponseBody(originalResponse.body(), progressListener))
+                    .build();
+                }
+            });
+        }
+
+        String[] localVarAuthNames = new String[] { "JWT" };
+        return apiClient.buildCall(localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarAuthNames, progressRequestListener);
+    }
+
+    @SuppressWarnings("rawtypes")
+    private com.squareup.okhttp.Call getDocumentStatisticsOnlineValidateBeforeCall(GetDocumentStatisticsOnlineRequest request, final ProgressResponseBody.ProgressListener progressListener, final ProgressRequestBody.ProgressRequestListener progressRequestListener) throws ApiException, IOException {
+        // verify the required parameter 'Document' is set
+        if (request.getDocument() == null) {
+            throw new ApiException(BadRequest, "Missing the required parameter 'Document' when calling getDocumentStatisticsOnline");
+        }
+
+        com.squareup.okhttp.Call call = getDocumentStatisticsOnlineCall(request, progressListener, progressRequestListener);
+        return call;
+    }
+
+    /**
+     * Reads document statistics.
+     * @param request Request object
+     * @return File
+     * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
+     * @throws IOException If fail to serialize the request body object
+     */
+    public File getDocumentStatisticsOnline(GetDocumentStatisticsOnlineRequest request) throws ApiException, IOException {
+        try {
+            ApiResponse< File > resp = getDocumentStatisticsOnlineWithHttpInfo(request);
+            return resp.getData();
+        }
+        catch (ApiException ex) {
+            if (ex.getCode() == NotAuth) {
+                apiClient.requestToken();
+                ApiResponse< File > resp = getDocumentStatisticsOnlineWithHttpInfo(request);
+                return resp.getData();
+            }
+            throw ex;
+        }
+    }
+
+    /**
+     * Reads document statistics.
+     * @param request Request object
+     * @return ApiResponse< File >;
+     * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
+     * @throws IOException If fail to serialize the request body object
+     */
+    private ApiResponse< File > getDocumentStatisticsOnlineWithHttpInfo(GetDocumentStatisticsOnlineRequest request) throws ApiException, IOException {
+        com.squareup.okhttp.Call call = getDocumentStatisticsOnlineValidateBeforeCall(request, null, null);
+        Type localVarReturnType = new TypeToken< File >() { }.getType();
+        return apiClient.execute(call, localVarReturnType);
+    }
+
+    /**
+     * Reads document statistics. (asynchronously)
+     * @param request Request object
+     * @param callback The callback to be executed when the API call finishes
+     * @return The request call
+     * @throws ApiException If fail to process the API call, e.g. serializing the request body object
+     * @throws IOException If fail to serialize the request body object
+     */
+    public com.squareup.okhttp.Call getDocumentStatisticsOnlineAsync(GetDocumentStatisticsOnlineRequest request, final ApiCallback< File > callback) throws ApiException, IOException {
+
+        ProgressResponseBody.ProgressListener progressListener = null;
+        ProgressRequestBody.ProgressRequestListener progressRequestListener = null;
+
+        if (callback != null) {
+            progressListener = new ProgressResponseBody.ProgressListener() {
+                @Override
+                public void update(long bytesRead, long contentLength, boolean done) {
+                    callback.onDownloadProgress(bytesRead, contentLength, done);
+                }
+            };
+
+            progressRequestListener = new ProgressRequestBody.ProgressRequestListener() {
+                @Override
+                public void onRequestProgress(long bytesWritten, long contentLength, boolean done) {
+                    callback.onUploadProgress(bytesWritten, contentLength, done);
+                }
+            };
+        }
+
+        com.squareup.okhttp.Call call = getDocumentStatisticsOnlineValidateBeforeCall(request, progressListener, progressRequestListener);
+        Type localVarReturnType = new TypeToken< File >() { }.getType();
         apiClient.executeAsync(call, localVarReturnType, callback);
         return call;
     }
@@ -14245,19 +14668,19 @@ public class WordsApi {
     /**
      * This resource represents one of the paragraphs contained in the document.
      * @param request Request object
-     * @return ParagraphResponse
+     * @return File
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      * @throws IOException If fail to serialize the request body object
      */
-    public ParagraphResponse getParagraph(GetParagraphRequest request) throws ApiException, IOException {
+    public File getParagraph(GetParagraphRequest request) throws ApiException, IOException {
         try {
-            ApiResponse< ParagraphResponse > resp = getParagraphWithHttpInfo(request);
+            ApiResponse< File > resp = getParagraphWithHttpInfo(request);
             return resp.getData();
         }
         catch (ApiException ex) {
             if (ex.getCode() == NotAuth) {
                 apiClient.requestToken();
-                ApiResponse< ParagraphResponse > resp = getParagraphWithHttpInfo(request);
+                ApiResponse< File > resp = getParagraphWithHttpInfo(request);
                 return resp.getData();
             }
             throw ex;
@@ -14267,13 +14690,13 @@ public class WordsApi {
     /**
      * This resource represents one of the paragraphs contained in the document.
      * @param request Request object
-     * @return ApiResponse< ParagraphResponse >;
+     * @return ApiResponse< File >;
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      * @throws IOException If fail to serialize the request body object
      */
-    private ApiResponse< ParagraphResponse > getParagraphWithHttpInfo(GetParagraphRequest request) throws ApiException, IOException {
+    private ApiResponse< File > getParagraphWithHttpInfo(GetParagraphRequest request) throws ApiException, IOException {
         com.squareup.okhttp.Call call = getParagraphValidateBeforeCall(request, null, null);
-        Type localVarReturnType = new TypeToken< ParagraphResponse >() { }.getType();
+        Type localVarReturnType = new TypeToken< File >() { }.getType();
         return apiClient.execute(call, localVarReturnType);
     }
 
@@ -14285,7 +14708,7 @@ public class WordsApi {
      * @throws ApiException If fail to process the API call, e.g. serializing the request body object
      * @throws IOException If fail to serialize the request body object
      */
-    public com.squareup.okhttp.Call getParagraphAsync(GetParagraphRequest request, final ApiCallback< ParagraphResponse > callback) throws ApiException, IOException {
+    public com.squareup.okhttp.Call getParagraphAsync(GetParagraphRequest request, final ApiCallback< File > callback) throws ApiException, IOException {
 
         ProgressResponseBody.ProgressListener progressListener = null;
         ProgressRequestBody.ProgressRequestListener progressRequestListener = null;
@@ -14307,7 +14730,7 @@ public class WordsApi {
         }
 
         com.squareup.okhttp.Call call = getParagraphValidateBeforeCall(request, progressListener, progressRequestListener);
-        Type localVarReturnType = new TypeToken< ParagraphResponse >() { }.getType();
+        Type localVarReturnType = new TypeToken< File >() { }.getType();
         apiClient.executeAsync(call, localVarReturnType, callback);
         return call;
     }
@@ -14885,6 +15308,151 @@ public class WordsApi {
     }
 
     /**
+     * Build call for getParagraphOnline
+     * @param progressListener Progress listener
+     * @param progressRequestListener Progress request listener
+     * @return Call to execute
+     * @throws ApiException If fail to serialize the request body object
+     * @throws IOException If fail to serialize the request body object
+     */
+    private com.squareup.okhttp.Call getParagraphOnlineCall(GetParagraphOnlineRequest request, final ProgressResponseBody.ProgressListener progressListener, final ProgressRequestBody.ProgressRequestListener progressRequestListener) throws ApiException, IOException {
+        Object localVarPostBody = null;
+
+        // create path and map variables
+        String localVarPath = "/words/online/{nodePath}/paragraphs/{index}".replaceAll("\\{" + "nodePath" + "\\}", request.getNodePath().toString()).replaceAll("//", "/")
+    .replaceAll("\\{" + "index" + "\\}", request.getIndex().toString()).replaceAll("//", "/");
+
+        List<Pair> localVarQueryParams = new ArrayList<Pair>();
+        List<Pair> localVarCollectionQueryParams = new ArrayList<Pair>();
+        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "loadEncoding", request.getLoadEncoding());
+        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "password", request.getPassword());
+
+        Map<String, String> localVarHeaderParams = new HashMap<String, String>();
+
+        Map<String, Object> localVarFormParams = new LinkedHashMap<String, Object>();
+        if (request.getDocument() != null)
+            localVarFormParams.put("Document", request.getDocument());
+
+        final String[] localVarAccepts = {
+            "application/xml", "application/json"
+        };
+        final String localVarAccept = apiClient.selectHeaderAccept(localVarAccepts);
+        if (localVarAccept != null) localVarHeaderParams.put("Accept", localVarAccept);
+
+        final String[] localVarContentTypes = {
+            "multipart/form-data"
+        };
+        final String localVarContentType = apiClient.selectHeaderContentType(localVarContentTypes);
+        localVarHeaderParams.put("Content-Type", localVarContentType);
+
+        if (progressListener != null) {
+            apiClient.getHttpClient().networkInterceptors().add(new com.squareup.okhttp.Interceptor() {
+                @Override
+                public com.squareup.okhttp.Response intercept(com.squareup.okhttp.Interceptor.Chain chain) throws IOException {
+                    com.squareup.okhttp.Response originalResponse = chain.proceed(chain.request());
+                    return originalResponse.newBuilder()
+                    .body(new ProgressResponseBody(originalResponse.body(), progressListener))
+                    .build();
+                }
+            });
+        }
+
+        String[] localVarAuthNames = new String[] { "JWT" };
+        return apiClient.buildCall(localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarAuthNames, progressRequestListener);
+    }
+
+    @SuppressWarnings("rawtypes")
+    private com.squareup.okhttp.Call getParagraphOnlineValidateBeforeCall(GetParagraphOnlineRequest request, final ProgressResponseBody.ProgressListener progressListener, final ProgressRequestBody.ProgressRequestListener progressRequestListener) throws ApiException, IOException {
+        // verify the required parameter 'NodePath' is set
+        if (request.getNodePath() == null) {
+            throw new ApiException(BadRequest, "Missing the required parameter 'NodePath' when calling getParagraphOnline");
+        }
+
+        // verify the required parameter 'Document' is set
+        if (request.getDocument() == null) {
+            throw new ApiException(BadRequest, "Missing the required parameter 'Document' when calling getParagraphOnline");
+        }
+
+        // verify the required parameter 'Index' is set
+        if (request.getIndex() == null) {
+            throw new ApiException(BadRequest, "Missing the required parameter 'Index' when calling getParagraphOnline");
+        }
+
+        com.squareup.okhttp.Call call = getParagraphOnlineCall(request, progressListener, progressRequestListener);
+        return call;
+    }
+
+    /**
+     * This resource represents one of the paragraphs contained in the document.
+     * @param request Request object
+     * @return File
+     * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
+     * @throws IOException If fail to serialize the request body object
+     */
+    public File getParagraphOnline(GetParagraphOnlineRequest request) throws ApiException, IOException {
+        try {
+            ApiResponse< File > resp = getParagraphOnlineWithHttpInfo(request);
+            return resp.getData();
+        }
+        catch (ApiException ex) {
+            if (ex.getCode() == NotAuth) {
+                apiClient.requestToken();
+                ApiResponse< File > resp = getParagraphOnlineWithHttpInfo(request);
+                return resp.getData();
+            }
+            throw ex;
+        }
+    }
+
+    /**
+     * This resource represents one of the paragraphs contained in the document.
+     * @param request Request object
+     * @return ApiResponse< File >;
+     * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
+     * @throws IOException If fail to serialize the request body object
+     */
+    private ApiResponse< File > getParagraphOnlineWithHttpInfo(GetParagraphOnlineRequest request) throws ApiException, IOException {
+        com.squareup.okhttp.Call call = getParagraphOnlineValidateBeforeCall(request, null, null);
+        Type localVarReturnType = new TypeToken< File >() { }.getType();
+        return apiClient.execute(call, localVarReturnType);
+    }
+
+    /**
+     * This resource represents one of the paragraphs contained in the document. (asynchronously)
+     * @param request Request object
+     * @param callback The callback to be executed when the API call finishes
+     * @return The request call
+     * @throws ApiException If fail to process the API call, e.g. serializing the request body object
+     * @throws IOException If fail to serialize the request body object
+     */
+    public com.squareup.okhttp.Call getParagraphOnlineAsync(GetParagraphOnlineRequest request, final ApiCallback< File > callback) throws ApiException, IOException {
+
+        ProgressResponseBody.ProgressListener progressListener = null;
+        ProgressRequestBody.ProgressRequestListener progressRequestListener = null;
+
+        if (callback != null) {
+            progressListener = new ProgressResponseBody.ProgressListener() {
+                @Override
+                public void update(long bytesRead, long contentLength, boolean done) {
+                    callback.onDownloadProgress(bytesRead, contentLength, done);
+                }
+            };
+
+            progressRequestListener = new ProgressRequestBody.ProgressRequestListener() {
+                @Override
+                public void onRequestProgress(long bytesWritten, long contentLength, boolean done) {
+                    callback.onUploadProgress(bytesWritten, contentLength, done);
+                }
+            };
+        }
+
+        com.squareup.okhttp.Call call = getParagraphOnlineValidateBeforeCall(request, progressListener, progressRequestListener);
+        Type localVarReturnType = new TypeToken< File >() { }.getType();
+        apiClient.executeAsync(call, localVarReturnType, callback);
+        return call;
+    }
+
+    /**
      * Build call for getParagraphs
      * @param progressListener Progress listener
      * @param progressRequestListener Progress request listener
@@ -14957,19 +15525,19 @@ public class WordsApi {
     /**
      * Returns a list of paragraphs that are contained in the document.
      * @param request Request object
-     * @return ParagraphLinkCollectionResponse
+     * @return File
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      * @throws IOException If fail to serialize the request body object
      */
-    public ParagraphLinkCollectionResponse getParagraphs(GetParagraphsRequest request) throws ApiException, IOException {
+    public File getParagraphs(GetParagraphsRequest request) throws ApiException, IOException {
         try {
-            ApiResponse< ParagraphLinkCollectionResponse > resp = getParagraphsWithHttpInfo(request);
+            ApiResponse< File > resp = getParagraphsWithHttpInfo(request);
             return resp.getData();
         }
         catch (ApiException ex) {
             if (ex.getCode() == NotAuth) {
                 apiClient.requestToken();
-                ApiResponse< ParagraphLinkCollectionResponse > resp = getParagraphsWithHttpInfo(request);
+                ApiResponse< File > resp = getParagraphsWithHttpInfo(request);
                 return resp.getData();
             }
             throw ex;
@@ -14979,13 +15547,13 @@ public class WordsApi {
     /**
      * Returns a list of paragraphs that are contained in the document.
      * @param request Request object
-     * @return ApiResponse< ParagraphLinkCollectionResponse >;
+     * @return ApiResponse< File >;
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      * @throws IOException If fail to serialize the request body object
      */
-    private ApiResponse< ParagraphLinkCollectionResponse > getParagraphsWithHttpInfo(GetParagraphsRequest request) throws ApiException, IOException {
+    private ApiResponse< File > getParagraphsWithHttpInfo(GetParagraphsRequest request) throws ApiException, IOException {
         com.squareup.okhttp.Call call = getParagraphsValidateBeforeCall(request, null, null);
-        Type localVarReturnType = new TypeToken< ParagraphLinkCollectionResponse >() { }.getType();
+        Type localVarReturnType = new TypeToken< File >() { }.getType();
         return apiClient.execute(call, localVarReturnType);
     }
 
@@ -14997,7 +15565,7 @@ public class WordsApi {
      * @throws ApiException If fail to process the API call, e.g. serializing the request body object
      * @throws IOException If fail to serialize the request body object
      */
-    public com.squareup.okhttp.Call getParagraphsAsync(GetParagraphsRequest request, final ApiCallback< ParagraphLinkCollectionResponse > callback) throws ApiException, IOException {
+    public com.squareup.okhttp.Call getParagraphsAsync(GetParagraphsRequest request, final ApiCallback< File > callback) throws ApiException, IOException {
 
         ProgressResponseBody.ProgressListener progressListener = null;
         ProgressRequestBody.ProgressRequestListener progressRequestListener = null;
@@ -15019,7 +15587,146 @@ public class WordsApi {
         }
 
         com.squareup.okhttp.Call call = getParagraphsValidateBeforeCall(request, progressListener, progressRequestListener);
-        Type localVarReturnType = new TypeToken< ParagraphLinkCollectionResponse >() { }.getType();
+        Type localVarReturnType = new TypeToken< File >() { }.getType();
+        apiClient.executeAsync(call, localVarReturnType, callback);
+        return call;
+    }
+
+    /**
+     * Build call for getParagraphsOnline
+     * @param progressListener Progress listener
+     * @param progressRequestListener Progress request listener
+     * @return Call to execute
+     * @throws ApiException If fail to serialize the request body object
+     * @throws IOException If fail to serialize the request body object
+     */
+    private com.squareup.okhttp.Call getParagraphsOnlineCall(GetParagraphsOnlineRequest request, final ProgressResponseBody.ProgressListener progressListener, final ProgressRequestBody.ProgressRequestListener progressRequestListener) throws ApiException, IOException {
+        Object localVarPostBody = null;
+
+        // create path and map variables
+        String localVarPath = "/words/online/{nodePath}/paragraphs".replaceAll("\\{" + "nodePath" + "\\}", request.getNodePath().toString()).replaceAll("//", "/");
+
+        List<Pair> localVarQueryParams = new ArrayList<Pair>();
+        List<Pair> localVarCollectionQueryParams = new ArrayList<Pair>();
+        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "loadEncoding", request.getLoadEncoding());
+        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "password", request.getPassword());
+
+        Map<String, String> localVarHeaderParams = new HashMap<String, String>();
+
+        Map<String, Object> localVarFormParams = new LinkedHashMap<String, Object>();
+        if (request.getDocument() != null)
+            localVarFormParams.put("Document", request.getDocument());
+
+        final String[] localVarAccepts = {
+            "application/xml", "application/json"
+        };
+        final String localVarAccept = apiClient.selectHeaderAccept(localVarAccepts);
+        if (localVarAccept != null) localVarHeaderParams.put("Accept", localVarAccept);
+
+        final String[] localVarContentTypes = {
+            "multipart/form-data"
+        };
+        final String localVarContentType = apiClient.selectHeaderContentType(localVarContentTypes);
+        localVarHeaderParams.put("Content-Type", localVarContentType);
+
+        if (progressListener != null) {
+            apiClient.getHttpClient().networkInterceptors().add(new com.squareup.okhttp.Interceptor() {
+                @Override
+                public com.squareup.okhttp.Response intercept(com.squareup.okhttp.Interceptor.Chain chain) throws IOException {
+                    com.squareup.okhttp.Response originalResponse = chain.proceed(chain.request());
+                    return originalResponse.newBuilder()
+                    .body(new ProgressResponseBody(originalResponse.body(), progressListener))
+                    .build();
+                }
+            });
+        }
+
+        String[] localVarAuthNames = new String[] { "JWT" };
+        return apiClient.buildCall(localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarAuthNames, progressRequestListener);
+    }
+
+    @SuppressWarnings("rawtypes")
+    private com.squareup.okhttp.Call getParagraphsOnlineValidateBeforeCall(GetParagraphsOnlineRequest request, final ProgressResponseBody.ProgressListener progressListener, final ProgressRequestBody.ProgressRequestListener progressRequestListener) throws ApiException, IOException {
+        // verify the required parameter 'NodePath' is set
+        if (request.getNodePath() == null) {
+            throw new ApiException(BadRequest, "Missing the required parameter 'NodePath' when calling getParagraphsOnline");
+        }
+
+        // verify the required parameter 'Document' is set
+        if (request.getDocument() == null) {
+            throw new ApiException(BadRequest, "Missing the required parameter 'Document' when calling getParagraphsOnline");
+        }
+
+        com.squareup.okhttp.Call call = getParagraphsOnlineCall(request, progressListener, progressRequestListener);
+        return call;
+    }
+
+    /**
+     * Returns a list of paragraphs that are contained in the document.
+     * @param request Request object
+     * @return File
+     * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
+     * @throws IOException If fail to serialize the request body object
+     */
+    public File getParagraphsOnline(GetParagraphsOnlineRequest request) throws ApiException, IOException {
+        try {
+            ApiResponse< File > resp = getParagraphsOnlineWithHttpInfo(request);
+            return resp.getData();
+        }
+        catch (ApiException ex) {
+            if (ex.getCode() == NotAuth) {
+                apiClient.requestToken();
+                ApiResponse< File > resp = getParagraphsOnlineWithHttpInfo(request);
+                return resp.getData();
+            }
+            throw ex;
+        }
+    }
+
+    /**
+     * Returns a list of paragraphs that are contained in the document.
+     * @param request Request object
+     * @return ApiResponse< File >;
+     * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
+     * @throws IOException If fail to serialize the request body object
+     */
+    private ApiResponse< File > getParagraphsOnlineWithHttpInfo(GetParagraphsOnlineRequest request) throws ApiException, IOException {
+        com.squareup.okhttp.Call call = getParagraphsOnlineValidateBeforeCall(request, null, null);
+        Type localVarReturnType = new TypeToken< File >() { }.getType();
+        return apiClient.execute(call, localVarReturnType);
+    }
+
+    /**
+     * Returns a list of paragraphs that are contained in the document. (asynchronously)
+     * @param request Request object
+     * @param callback The callback to be executed when the API call finishes
+     * @return The request call
+     * @throws ApiException If fail to process the API call, e.g. serializing the request body object
+     * @throws IOException If fail to serialize the request body object
+     */
+    public com.squareup.okhttp.Call getParagraphsOnlineAsync(GetParagraphsOnlineRequest request, final ApiCallback< File > callback) throws ApiException, IOException {
+
+        ProgressResponseBody.ProgressListener progressListener = null;
+        ProgressRequestBody.ProgressRequestListener progressRequestListener = null;
+
+        if (callback != null) {
+            progressListener = new ProgressResponseBody.ProgressListener() {
+                @Override
+                public void update(long bytesRead, long contentLength, boolean done) {
+                    callback.onDownloadProgress(bytesRead, contentLength, done);
+                }
+            };
+
+            progressRequestListener = new ProgressRequestBody.ProgressRequestListener() {
+                @Override
+                public void onRequestProgress(long bytesWritten, long contentLength, boolean done) {
+                    callback.onUploadProgress(bytesWritten, contentLength, done);
+                }
+            };
+        }
+
+        com.squareup.okhttp.Call call = getParagraphsOnlineValidateBeforeCall(request, progressListener, progressRequestListener);
+        Type localVarReturnType = new TypeToken< File >() { }.getType();
         apiClient.executeAsync(call, localVarReturnType, callback);
         return call;
     }
@@ -15091,19 +15798,19 @@ public class WordsApi {
     /**
      * Returns a list of paragraphs that are contained in the document.
      * @param request Request object
-     * @return ParagraphLinkCollectionResponse
+     * @return File
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      * @throws IOException If fail to serialize the request body object
      */
-    public ParagraphLinkCollectionResponse getParagraphsWithoutNodePath(GetParagraphsWithoutNodePathRequest request) throws ApiException, IOException {
+    public File getParagraphsWithoutNodePath(GetParagraphsWithoutNodePathRequest request) throws ApiException, IOException {
         try {
-            ApiResponse< ParagraphLinkCollectionResponse > resp = getParagraphsWithoutNodePathWithHttpInfo(request);
+            ApiResponse< File > resp = getParagraphsWithoutNodePathWithHttpInfo(request);
             return resp.getData();
         }
         catch (ApiException ex) {
             if (ex.getCode() == NotAuth) {
                 apiClient.requestToken();
-                ApiResponse< ParagraphLinkCollectionResponse > resp = getParagraphsWithoutNodePathWithHttpInfo(request);
+                ApiResponse< File > resp = getParagraphsWithoutNodePathWithHttpInfo(request);
                 return resp.getData();
             }
             throw ex;
@@ -15113,13 +15820,13 @@ public class WordsApi {
     /**
      * Returns a list of paragraphs that are contained in the document.
      * @param request Request object
-     * @return ApiResponse< ParagraphLinkCollectionResponse >;
+     * @return ApiResponse< File >;
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      * @throws IOException If fail to serialize the request body object
      */
-    private ApiResponse< ParagraphLinkCollectionResponse > getParagraphsWithoutNodePathWithHttpInfo(GetParagraphsWithoutNodePathRequest request) throws ApiException, IOException {
+    private ApiResponse< File > getParagraphsWithoutNodePathWithHttpInfo(GetParagraphsWithoutNodePathRequest request) throws ApiException, IOException {
         com.squareup.okhttp.Call call = getParagraphsWithoutNodePathValidateBeforeCall(request, null, null);
-        Type localVarReturnType = new TypeToken< ParagraphLinkCollectionResponse >() { }.getType();
+        Type localVarReturnType = new TypeToken< File >() { }.getType();
         return apiClient.execute(call, localVarReturnType);
     }
 
@@ -15131,7 +15838,7 @@ public class WordsApi {
      * @throws ApiException If fail to process the API call, e.g. serializing the request body object
      * @throws IOException If fail to serialize the request body object
      */
-    public com.squareup.okhttp.Call getParagraphsWithoutNodePathAsync(GetParagraphsWithoutNodePathRequest request, final ApiCallback< ParagraphLinkCollectionResponse > callback) throws ApiException, IOException {
+    public com.squareup.okhttp.Call getParagraphsWithoutNodePathAsync(GetParagraphsWithoutNodePathRequest request, final ApiCallback< File > callback) throws ApiException, IOException {
 
         ProgressResponseBody.ProgressListener progressListener = null;
         ProgressRequestBody.ProgressRequestListener progressRequestListener = null;
@@ -15153,7 +15860,7 @@ public class WordsApi {
         }
 
         com.squareup.okhttp.Call call = getParagraphsWithoutNodePathValidateBeforeCall(request, progressListener, progressRequestListener);
-        Type localVarReturnType = new TypeToken< ParagraphLinkCollectionResponse >() { }.getType();
+        Type localVarReturnType = new TypeToken< File >() { }.getType();
         apiClient.executeAsync(call, localVarReturnType, callback);
         return call;
     }
@@ -15517,19 +16224,19 @@ public class WordsApi {
     /**
      * This resource represents one of the paragraphs contained in the document.
      * @param request Request object
-     * @return ParagraphResponse
+     * @return File
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      * @throws IOException If fail to serialize the request body object
      */
-    public ParagraphResponse getParagraphWithoutNodePath(GetParagraphWithoutNodePathRequest request) throws ApiException, IOException {
+    public File getParagraphWithoutNodePath(GetParagraphWithoutNodePathRequest request) throws ApiException, IOException {
         try {
-            ApiResponse< ParagraphResponse > resp = getParagraphWithoutNodePathWithHttpInfo(request);
+            ApiResponse< File > resp = getParagraphWithoutNodePathWithHttpInfo(request);
             return resp.getData();
         }
         catch (ApiException ex) {
             if (ex.getCode() == NotAuth) {
                 apiClient.requestToken();
-                ApiResponse< ParagraphResponse > resp = getParagraphWithoutNodePathWithHttpInfo(request);
+                ApiResponse< File > resp = getParagraphWithoutNodePathWithHttpInfo(request);
                 return resp.getData();
             }
             throw ex;
@@ -15539,13 +16246,13 @@ public class WordsApi {
     /**
      * This resource represents one of the paragraphs contained in the document.
      * @param request Request object
-     * @return ApiResponse< ParagraphResponse >;
+     * @return ApiResponse< File >;
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      * @throws IOException If fail to serialize the request body object
      */
-    private ApiResponse< ParagraphResponse > getParagraphWithoutNodePathWithHttpInfo(GetParagraphWithoutNodePathRequest request) throws ApiException, IOException {
+    private ApiResponse< File > getParagraphWithoutNodePathWithHttpInfo(GetParagraphWithoutNodePathRequest request) throws ApiException, IOException {
         com.squareup.okhttp.Call call = getParagraphWithoutNodePathValidateBeforeCall(request, null, null);
-        Type localVarReturnType = new TypeToken< ParagraphResponse >() { }.getType();
+        Type localVarReturnType = new TypeToken< File >() { }.getType();
         return apiClient.execute(call, localVarReturnType);
     }
 
@@ -15557,7 +16264,7 @@ public class WordsApi {
      * @throws ApiException If fail to process the API call, e.g. serializing the request body object
      * @throws IOException If fail to serialize the request body object
      */
-    public com.squareup.okhttp.Call getParagraphWithoutNodePathAsync(GetParagraphWithoutNodePathRequest request, final ApiCallback< ParagraphResponse > callback) throws ApiException, IOException {
+    public com.squareup.okhttp.Call getParagraphWithoutNodePathAsync(GetParagraphWithoutNodePathRequest request, final ApiCallback< File > callback) throws ApiException, IOException {
 
         ProgressResponseBody.ProgressListener progressListener = null;
         ProgressRequestBody.ProgressRequestListener progressRequestListener = null;
@@ -15579,7 +16286,7 @@ public class WordsApi {
         }
 
         com.squareup.okhttp.Call call = getParagraphWithoutNodePathValidateBeforeCall(request, progressListener, progressRequestListener);
-        Type localVarReturnType = new TypeToken< ParagraphResponse >() { }.getType();
+        Type localVarReturnType = new TypeToken< File >() { }.getType();
         apiClient.executeAsync(call, localVarReturnType, callback);
         return call;
     }
@@ -20536,14 +21243,14 @@ public class WordsApi {
             throw new ApiException(BadRequest, "Missing the required parameter 'Name' when calling insertParagraph");
         }
 
-        // verify the required parameter 'Paragraph' is set
-        if (request.getParagraph() == null) {
-            throw new ApiException(BadRequest, "Missing the required parameter 'Paragraph' when calling insertParagraph");
-        }
-
         // verify the required parameter 'NodePath' is set
         if (request.getNodePath() == null) {
             throw new ApiException(BadRequest, "Missing the required parameter 'NodePath' when calling insertParagraph");
+        }
+
+        // verify the required parameter 'Paragraph' is set
+        if (request.getParagraph() == null) {
+            throw new ApiException(BadRequest, "Missing the required parameter 'Paragraph' when calling insertParagraph");
         }
 
         com.squareup.okhttp.Call call = insertParagraphCall(request, progressListener, progressRequestListener);
@@ -20553,19 +21260,19 @@ public class WordsApi {
     /**
      * Adds paragraph to document, returns added paragraph's data.
      * @param request Request object
-     * @return ParagraphResponse
+     * @return File
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      * @throws IOException If fail to serialize the request body object
      */
-    public ParagraphResponse insertParagraph(InsertParagraphRequest request) throws ApiException, IOException {
+    public File insertParagraph(InsertParagraphRequest request) throws ApiException, IOException {
         try {
-            ApiResponse< ParagraphResponse > resp = insertParagraphWithHttpInfo(request);
+            ApiResponse< File > resp = insertParagraphWithHttpInfo(request);
             return resp.getData();
         }
         catch (ApiException ex) {
             if (ex.getCode() == NotAuth) {
                 apiClient.requestToken();
-                ApiResponse< ParagraphResponse > resp = insertParagraphWithHttpInfo(request);
+                ApiResponse< File > resp = insertParagraphWithHttpInfo(request);
                 return resp.getData();
             }
             throw ex;
@@ -20575,13 +21282,13 @@ public class WordsApi {
     /**
      * Adds paragraph to document, returns added paragraph's data.
      * @param request Request object
-     * @return ApiResponse< ParagraphResponse >;
+     * @return ApiResponse< File >;
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      * @throws IOException If fail to serialize the request body object
      */
-    private ApiResponse< ParagraphResponse > insertParagraphWithHttpInfo(InsertParagraphRequest request) throws ApiException, IOException {
+    private ApiResponse< File > insertParagraphWithHttpInfo(InsertParagraphRequest request) throws ApiException, IOException {
         com.squareup.okhttp.Call call = insertParagraphValidateBeforeCall(request, null, null);
-        Type localVarReturnType = new TypeToken< ParagraphResponse >() { }.getType();
+        Type localVarReturnType = new TypeToken< File >() { }.getType();
         return apiClient.execute(call, localVarReturnType);
     }
 
@@ -20593,7 +21300,7 @@ public class WordsApi {
      * @throws ApiException If fail to process the API call, e.g. serializing the request body object
      * @throws IOException If fail to serialize the request body object
      */
-    public com.squareup.okhttp.Call insertParagraphAsync(InsertParagraphRequest request, final ApiCallback< ParagraphResponse > callback) throws ApiException, IOException {
+    public com.squareup.okhttp.Call insertParagraphAsync(InsertParagraphRequest request, final ApiCallback< File > callback) throws ApiException, IOException {
 
         ProgressResponseBody.ProgressListener progressListener = null;
         ProgressRequestBody.ProgressRequestListener progressRequestListener = null;
@@ -20615,7 +21322,158 @@ public class WordsApi {
         }
 
         com.squareup.okhttp.Call call = insertParagraphValidateBeforeCall(request, progressListener, progressRequestListener);
-        Type localVarReturnType = new TypeToken< ParagraphResponse >() { }.getType();
+        Type localVarReturnType = new TypeToken< File >() { }.getType();
+        apiClient.executeAsync(call, localVarReturnType, callback);
+        return call;
+    }
+
+    /**
+     * Build call for insertParagraphOnline
+     * @param progressListener Progress listener
+     * @param progressRequestListener Progress request listener
+     * @return Call to execute
+     * @throws ApiException If fail to serialize the request body object
+     * @throws IOException If fail to serialize the request body object
+     */
+    private com.squareup.okhttp.Call insertParagraphOnlineCall(InsertParagraphOnlineRequest request, final ProgressResponseBody.ProgressListener progressListener, final ProgressRequestBody.ProgressRequestListener progressRequestListener) throws ApiException, IOException {
+        Object localVarPostBody = null;
+
+        // create path and map variables
+        String localVarPath = "/words/online/{nodePath}/paragraphs".replaceAll("\\{" + "nodePath" + "\\}", request.getNodePath().toString()).replaceAll("//", "/");
+
+        List<Pair> localVarQueryParams = new ArrayList<Pair>();
+        List<Pair> localVarCollectionQueryParams = new ArrayList<Pair>();
+        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "loadEncoding", request.getLoadEncoding());
+        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "password", request.getPassword());
+        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "destFileName", request.getDestFileName());
+        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "revisionAuthor", request.getRevisionAuthor());
+        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "revisionDateTime", request.getRevisionDateTime());
+        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "insertBeforeNode", request.getInsertBeforeNode());
+
+        Map<String, String> localVarHeaderParams = new HashMap<String, String>();
+
+        Map<String, Object> localVarFormParams = new LinkedHashMap<String, Object>();
+        if (request.getDocument() != null)
+            localVarFormParams.put("Document", request.getDocument());
+
+        if (request.getParagraph() != null)
+            localVarFormParams.put("Paragraph", request.getParagraph());
+
+        final String[] localVarAccepts = {
+            "application/xml", "application/json"
+        };
+        final String localVarAccept = apiClient.selectHeaderAccept(localVarAccepts);
+        if (localVarAccept != null) localVarHeaderParams.put("Accept", localVarAccept);
+
+        final String[] localVarContentTypes = {
+            "multipart/form-data"
+        };
+        final String localVarContentType = apiClient.selectHeaderContentType(localVarContentTypes);
+        localVarHeaderParams.put("Content-Type", localVarContentType);
+
+        if (progressListener != null) {
+            apiClient.getHttpClient().networkInterceptors().add(new com.squareup.okhttp.Interceptor() {
+                @Override
+                public com.squareup.okhttp.Response intercept(com.squareup.okhttp.Interceptor.Chain chain) throws IOException {
+                    com.squareup.okhttp.Response originalResponse = chain.proceed(chain.request());
+                    return originalResponse.newBuilder()
+                    .body(new ProgressResponseBody(originalResponse.body(), progressListener))
+                    .build();
+                }
+            });
+        }
+
+        String[] localVarAuthNames = new String[] { "JWT" };
+        return apiClient.buildCall(localVarPath, "POST", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarAuthNames, progressRequestListener);
+    }
+
+    @SuppressWarnings("rawtypes")
+    private com.squareup.okhttp.Call insertParagraphOnlineValidateBeforeCall(InsertParagraphOnlineRequest request, final ProgressResponseBody.ProgressListener progressListener, final ProgressRequestBody.ProgressRequestListener progressRequestListener) throws ApiException, IOException {
+        // verify the required parameter 'NodePath' is set
+        if (request.getNodePath() == null) {
+            throw new ApiException(BadRequest, "Missing the required parameter 'NodePath' when calling insertParagraphOnline");
+        }
+
+        // verify the required parameter 'Document' is set
+        if (request.getDocument() == null) {
+            throw new ApiException(BadRequest, "Missing the required parameter 'Document' when calling insertParagraphOnline");
+        }
+
+        // verify the required parameter 'Paragraph' is set
+        if (request.getParagraph() == null) {
+            throw new ApiException(BadRequest, "Missing the required parameter 'Paragraph' when calling insertParagraphOnline");
+        }
+
+        com.squareup.okhttp.Call call = insertParagraphOnlineCall(request, progressListener, progressRequestListener);
+        return call;
+    }
+
+    /**
+     * Adds paragraph to document, returns added paragraph's data.
+     * @param request Request object
+     * @return File
+     * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
+     * @throws IOException If fail to serialize the request body object
+     */
+    public File insertParagraphOnline(InsertParagraphOnlineRequest request) throws ApiException, IOException {
+        try {
+            ApiResponse< File > resp = insertParagraphOnlineWithHttpInfo(request);
+            return resp.getData();
+        }
+        catch (ApiException ex) {
+            if (ex.getCode() == NotAuth) {
+                apiClient.requestToken();
+                ApiResponse< File > resp = insertParagraphOnlineWithHttpInfo(request);
+                return resp.getData();
+            }
+            throw ex;
+        }
+    }
+
+    /**
+     * Adds paragraph to document, returns added paragraph's data.
+     * @param request Request object
+     * @return ApiResponse< File >;
+     * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
+     * @throws IOException If fail to serialize the request body object
+     */
+    private ApiResponse< File > insertParagraphOnlineWithHttpInfo(InsertParagraphOnlineRequest request) throws ApiException, IOException {
+        com.squareup.okhttp.Call call = insertParagraphOnlineValidateBeforeCall(request, null, null);
+        Type localVarReturnType = new TypeToken< File >() { }.getType();
+        return apiClient.execute(call, localVarReturnType);
+    }
+
+    /**
+     * Adds paragraph to document, returns added paragraph's data. (asynchronously)
+     * @param request Request object
+     * @param callback The callback to be executed when the API call finishes
+     * @return The request call
+     * @throws ApiException If fail to process the API call, e.g. serializing the request body object
+     * @throws IOException If fail to serialize the request body object
+     */
+    public com.squareup.okhttp.Call insertParagraphOnlineAsync(InsertParagraphOnlineRequest request, final ApiCallback< File > callback) throws ApiException, IOException {
+
+        ProgressResponseBody.ProgressListener progressListener = null;
+        ProgressRequestBody.ProgressRequestListener progressRequestListener = null;
+
+        if (callback != null) {
+            progressListener = new ProgressResponseBody.ProgressListener() {
+                @Override
+                public void update(long bytesRead, long contentLength, boolean done) {
+                    callback.onDownloadProgress(bytesRead, contentLength, done);
+                }
+            };
+
+            progressRequestListener = new ProgressRequestBody.ProgressRequestListener() {
+                @Override
+                public void onRequestProgress(long bytesWritten, long contentLength, boolean done) {
+                    callback.onUploadProgress(bytesWritten, contentLength, done);
+                }
+            };
+        }
+
+        com.squareup.okhttp.Call call = insertParagraphOnlineValidateBeforeCall(request, progressListener, progressRequestListener);
+        Type localVarReturnType = new TypeToken< File >() { }.getType();
         apiClient.executeAsync(call, localVarReturnType, callback);
         return call;
     }
@@ -20696,19 +21554,19 @@ public class WordsApi {
     /**
      * Adds paragraph to document, returns added paragraph's data.
      * @param request Request object
-     * @return ParagraphResponse
+     * @return File
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      * @throws IOException If fail to serialize the request body object
      */
-    public ParagraphResponse insertParagraphWithoutNodePath(InsertParagraphWithoutNodePathRequest request) throws ApiException, IOException {
+    public File insertParagraphWithoutNodePath(InsertParagraphWithoutNodePathRequest request) throws ApiException, IOException {
         try {
-            ApiResponse< ParagraphResponse > resp = insertParagraphWithoutNodePathWithHttpInfo(request);
+            ApiResponse< File > resp = insertParagraphWithoutNodePathWithHttpInfo(request);
             return resp.getData();
         }
         catch (ApiException ex) {
             if (ex.getCode() == NotAuth) {
                 apiClient.requestToken();
-                ApiResponse< ParagraphResponse > resp = insertParagraphWithoutNodePathWithHttpInfo(request);
+                ApiResponse< File > resp = insertParagraphWithoutNodePathWithHttpInfo(request);
                 return resp.getData();
             }
             throw ex;
@@ -20718,13 +21576,13 @@ public class WordsApi {
     /**
      * Adds paragraph to document, returns added paragraph's data.
      * @param request Request object
-     * @return ApiResponse< ParagraphResponse >;
+     * @return ApiResponse< File >;
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      * @throws IOException If fail to serialize the request body object
      */
-    private ApiResponse< ParagraphResponse > insertParagraphWithoutNodePathWithHttpInfo(InsertParagraphWithoutNodePathRequest request) throws ApiException, IOException {
+    private ApiResponse< File > insertParagraphWithoutNodePathWithHttpInfo(InsertParagraphWithoutNodePathRequest request) throws ApiException, IOException {
         com.squareup.okhttp.Call call = insertParagraphWithoutNodePathValidateBeforeCall(request, null, null);
-        Type localVarReturnType = new TypeToken< ParagraphResponse >() { }.getType();
+        Type localVarReturnType = new TypeToken< File >() { }.getType();
         return apiClient.execute(call, localVarReturnType);
     }
 
@@ -20736,7 +21594,7 @@ public class WordsApi {
      * @throws ApiException If fail to process the API call, e.g. serializing the request body object
      * @throws IOException If fail to serialize the request body object
      */
-    public com.squareup.okhttp.Call insertParagraphWithoutNodePathAsync(InsertParagraphWithoutNodePathRequest request, final ApiCallback< ParagraphResponse > callback) throws ApiException, IOException {
+    public com.squareup.okhttp.Call insertParagraphWithoutNodePathAsync(InsertParagraphWithoutNodePathRequest request, final ApiCallback< File > callback) throws ApiException, IOException {
 
         ProgressResponseBody.ProgressListener progressListener = null;
         ProgressRequestBody.ProgressRequestListener progressRequestListener = null;
@@ -20758,7 +21616,7 @@ public class WordsApi {
         }
 
         com.squareup.okhttp.Call call = insertParagraphWithoutNodePathValidateBeforeCall(request, progressListener, progressRequestListener);
-        Type localVarReturnType = new TypeToken< ParagraphResponse >() { }.getType();
+        Type localVarReturnType = new TypeToken< File >() { }.getType();
         apiClient.executeAsync(call, localVarReturnType, callback);
         return call;
     }
@@ -24768,6 +25626,147 @@ public class WordsApi {
 
         com.squareup.okhttp.Call call = saveAsValidateBeforeCall(request, progressListener, progressRequestListener);
         Type localVarReturnType = new TypeToken< SaveResponse >() { }.getType();
+        apiClient.executeAsync(call, localVarReturnType, callback);
+        return call;
+    }
+
+    /**
+     * Build call for saveAsOnline
+     * @param progressListener Progress listener
+     * @param progressRequestListener Progress request listener
+     * @return Call to execute
+     * @throws ApiException If fail to serialize the request body object
+     * @throws IOException If fail to serialize the request body object
+     */
+    private com.squareup.okhttp.Call saveAsOnlineCall(SaveAsOnlineRequest request, final ProgressResponseBody.ProgressListener progressListener, final ProgressRequestBody.ProgressRequestListener progressRequestListener) throws ApiException, IOException {
+        Object localVarPostBody = null;
+
+        // create path and map variables
+        String localVarPath = "/words/online/saveAs";
+
+        List<Pair> localVarQueryParams = new ArrayList<Pair>();
+        List<Pair> localVarCollectionQueryParams = new ArrayList<Pair>();
+        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "fontsLocation", request.getFontsLocation());
+
+        Map<String, String> localVarHeaderParams = new HashMap<String, String>();
+
+        Map<String, Object> localVarFormParams = new LinkedHashMap<String, Object>();
+        if (request.getDocument() != null)
+            localVarFormParams.put("Document", request.getDocument());
+
+        if (request.getSaveOptionsData() != null)
+            localVarFormParams.put("SaveOptionsData", request.getSaveOptionsData());
+
+        final String[] localVarAccepts = {
+            "application/xml", "application/json"
+        };
+        final String localVarAccept = apiClient.selectHeaderAccept(localVarAccepts);
+        if (localVarAccept != null) localVarHeaderParams.put("Accept", localVarAccept);
+
+        final String[] localVarContentTypes = {
+            "multipart/form-data"
+        };
+        final String localVarContentType = apiClient.selectHeaderContentType(localVarContentTypes);
+        localVarHeaderParams.put("Content-Type", localVarContentType);
+
+        if (progressListener != null) {
+            apiClient.getHttpClient().networkInterceptors().add(new com.squareup.okhttp.Interceptor() {
+                @Override
+                public com.squareup.okhttp.Response intercept(com.squareup.okhttp.Interceptor.Chain chain) throws IOException {
+                    com.squareup.okhttp.Response originalResponse = chain.proceed(chain.request());
+                    return originalResponse.newBuilder()
+                    .body(new ProgressResponseBody(originalResponse.body(), progressListener))
+                    .build();
+                }
+            });
+        }
+
+        String[] localVarAuthNames = new String[] { "JWT" };
+        return apiClient.buildCall(localVarPath, "PUT", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarAuthNames, progressRequestListener);
+    }
+
+    @SuppressWarnings("rawtypes")
+    private com.squareup.okhttp.Call saveAsOnlineValidateBeforeCall(SaveAsOnlineRequest request, final ProgressResponseBody.ProgressListener progressListener, final ProgressRequestBody.ProgressRequestListener progressRequestListener) throws ApiException, IOException {
+        // verify the required parameter 'Document' is set
+        if (request.getDocument() == null) {
+            throw new ApiException(BadRequest, "Missing the required parameter 'Document' when calling saveAsOnline");
+        }
+
+        // verify the required parameter 'SaveOptionsData' is set
+        if (request.getSaveOptionsData() == null) {
+            throw new ApiException(BadRequest, "Missing the required parameter 'SaveOptionsData' when calling saveAsOnline");
+        }
+
+        com.squareup.okhttp.Call call = saveAsOnlineCall(request, progressListener, progressRequestListener);
+        return call;
+    }
+
+    /**
+     * Converts document to destination format with detailed settings and saves result to storage.
+     * @param request Request object
+     * @return File
+     * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
+     * @throws IOException If fail to serialize the request body object
+     */
+    public File saveAsOnline(SaveAsOnlineRequest request) throws ApiException, IOException {
+        try {
+            ApiResponse< File > resp = saveAsOnlineWithHttpInfo(request);
+            return resp.getData();
+        }
+        catch (ApiException ex) {
+            if (ex.getCode() == NotAuth) {
+                apiClient.requestToken();
+                ApiResponse< File > resp = saveAsOnlineWithHttpInfo(request);
+                return resp.getData();
+            }
+            throw ex;
+        }
+    }
+
+    /**
+     * Converts document to destination format with detailed settings and saves result to storage.
+     * @param request Request object
+     * @return ApiResponse< File >;
+     * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
+     * @throws IOException If fail to serialize the request body object
+     */
+    private ApiResponse< File > saveAsOnlineWithHttpInfo(SaveAsOnlineRequest request) throws ApiException, IOException {
+        com.squareup.okhttp.Call call = saveAsOnlineValidateBeforeCall(request, null, null);
+        Type localVarReturnType = new TypeToken< File >() { }.getType();
+        return apiClient.execute(call, localVarReturnType);
+    }
+
+    /**
+     * Converts document to destination format with detailed settings and saves result to storage. (asynchronously)
+     * @param request Request object
+     * @param callback The callback to be executed when the API call finishes
+     * @return The request call
+     * @throws ApiException If fail to process the API call, e.g. serializing the request body object
+     * @throws IOException If fail to serialize the request body object
+     */
+    public com.squareup.okhttp.Call saveAsOnlineAsync(SaveAsOnlineRequest request, final ApiCallback< File > callback) throws ApiException, IOException {
+
+        ProgressResponseBody.ProgressListener progressListener = null;
+        ProgressRequestBody.ProgressRequestListener progressRequestListener = null;
+
+        if (callback != null) {
+            progressListener = new ProgressResponseBody.ProgressListener() {
+                @Override
+                public void update(long bytesRead, long contentLength, boolean done) {
+                    callback.onDownloadProgress(bytesRead, contentLength, done);
+                }
+            };
+
+            progressRequestListener = new ProgressRequestBody.ProgressRequestListener() {
+                @Override
+                public void onRequestProgress(long bytesWritten, long contentLength, boolean done) {
+                    callback.onUploadProgress(bytesWritten, contentLength, done);
+                }
+            };
+        }
+
+        com.squareup.okhttp.Call call = saveAsOnlineValidateBeforeCall(request, progressListener, progressRequestListener);
+        Type localVarReturnType = new TypeToken< File >() { }.getType();
         apiClient.executeAsync(call, localVarReturnType, callback);
         return call;
     }

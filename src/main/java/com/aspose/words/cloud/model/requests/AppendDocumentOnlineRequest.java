@@ -1,6 +1,6 @@
 /*
  * --------------------------------------------------------------------------------
- * <copyright company="Aspose" file="GetDocumentFieldNamesOnlineRequest.java">
+ * <copyright company="Aspose" file="AppendDocumentOnlineRequest.java">
  *   Copyright (c) 2020 Aspose.Words for Cloud
  * </copyright>
  * <summary>
@@ -31,28 +31,28 @@ import com.aspose.words.cloud.model.*;
 import java.io.File;
 
 /*
- * Request model for getDocumentFieldNamesOnline operation.
+ * Request model for appendDocumentOnline operation.
  */
-public class GetDocumentFieldNamesOnlineRequest {
+public class AppendDocumentOnlineRequest {
     /*
      * The document.
      */
     private byte[] document;
 
     /*
-     * If true, result includes "mustache" field names.
+     * <see cref="DocumentEntryList"/> with a list of documents to append.
      */
-    private Boolean useNonMergeFields;
+    private DocumentEntryList documentList;
 
     /*
-     * Initializes a new instance of the GetDocumentFieldNamesOnlineRequest class.
+     * Initializes a new instance of the AppendDocumentOnlineRequest class.
      *
      * @param byte[] document The document.
-     * @param Boolean useNonMergeFields If true, result includes "mustache" field names.
+     * @param DocumentEntryList documentList <see cref="DocumentEntryList"/> with a list of documents to append.
      */
-    public GetDocumentFieldNamesOnlineRequest(byte[] document, Boolean useNonMergeFields) {
+    public AppendDocumentOnlineRequest(byte[] document, DocumentEntryList documentList) {
         this.document = document;
-        this.useNonMergeFields = useNonMergeFields;
+        this.documentList = documentList;
     }
 
     /*
@@ -70,16 +70,16 @@ public class GetDocumentFieldNamesOnlineRequest {
     }
 
     /*
-     * Gets If true, result includes "mustache" field names.
+     * Gets <see cref="DocumentEntryList"/> with a list of documents to append.
      */
-    public Boolean getUseNonMergeFields() {
-        return this.useNonMergeFields;
+    public DocumentEntryList getDocumentList() {
+        return this.documentList;
     }
 
     /*
-     * Sets If true, result includes "mustache" field names.
+     * Sets <see cref="DocumentEntryList"/> with a list of documents to append.
      */
-    public void setUseNonMergeFields(Boolean value) {
-        this.useNonMergeFields = value;
+    public void setDocumentList(DocumentEntryList value) {
+        this.documentList = value;
     }
 }
