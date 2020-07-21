@@ -98,6 +98,13 @@ public class TestAppendDocument  extends TestCase
     @Test
     public void testAppendDocumentOnline() throws ApiException, IOException
     {
+        String remoteFileName = "TestAppendDocument.docx";
+
+        TestInitializer.UploadFile(
+            PathUtil.get(TestInitializer.LocalTestFolder, localFile),
+            remoteDataFolder + "/" + remoteFileName
+        );
+
         DocumentEntry requestDocumentListDocumentEntries0 = new DocumentEntry();
         requestDocumentListDocumentEntries0.setHref(remoteDataFolder + "/" + remoteFileName);
         requestDocumentListDocumentEntries0.setImportFormatMode("KeepSourceFormatting");
