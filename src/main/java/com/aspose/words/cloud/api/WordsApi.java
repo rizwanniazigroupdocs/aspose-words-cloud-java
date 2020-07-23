@@ -73,15 +73,17 @@ public class WordsApi {
         Object localVarPostBody = null;
 
         // create path and map variables
-        String localVarPath = "/words/{name}/revisions/acceptAll".replaceAll("\\{" + "name" + "\\}", request.getName().toString()).replaceAll("//", "/");
+        String localVarPath = "/words/{name}/revisions/acceptAll";
+        localVarPath = addParameterToPath(localVarPath, "name", request.getName());
+        localVarPath = localVarPath.replaceAll("//", "/");
 
         List<Pair> localVarQueryParams = new ArrayList<Pair>();
         List<Pair> localVarCollectionQueryParams = new ArrayList<Pair>();
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "folder", request.getFolder());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "storage", request.getStorage());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "loadEncoding", request.getLoadEncoding());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "password", request.getPassword());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "destFileName", request.getDestFileName());
+        addParameterToQuery(localVarQueryParams, "folder", request.getFolder());
+        addParameterToQuery(localVarQueryParams, "storage", request.getStorage());
+        addParameterToQuery(localVarQueryParams, "loadEncoding", request.getLoadEncoding());
+        addParameterToQuery(localVarQueryParams, "password", request.getPassword());
+        addParameterToQuery(localVarQueryParams, "destFileName", request.getDestFileName());
 
         Map<String, String> localVarHeaderParams = new HashMap<String, String>();
 
@@ -208,17 +210,19 @@ public class WordsApi {
         Object localVarPostBody = request.getDocumentList();
 
         // create path and map variables
-        String localVarPath = "/words/{name}/appendDocument".replaceAll("\\{" + "name" + "\\}", request.getName().toString()).replaceAll("//", "/");
+        String localVarPath = "/words/{name}/appendDocument";
+        localVarPath = addParameterToPath(localVarPath, "name", request.getName());
+        localVarPath = localVarPath.replaceAll("//", "/");
 
         List<Pair> localVarQueryParams = new ArrayList<Pair>();
         List<Pair> localVarCollectionQueryParams = new ArrayList<Pair>();
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "folder", request.getFolder());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "storage", request.getStorage());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "loadEncoding", request.getLoadEncoding());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "password", request.getPassword());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "destFileName", request.getDestFileName());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "revisionAuthor", request.getRevisionAuthor());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "revisionDateTime", request.getRevisionDateTime());
+        addParameterToQuery(localVarQueryParams, "folder", request.getFolder());
+        addParameterToQuery(localVarQueryParams, "storage", request.getStorage());
+        addParameterToQuery(localVarQueryParams, "loadEncoding", request.getLoadEncoding());
+        addParameterToQuery(localVarQueryParams, "password", request.getPassword());
+        addParameterToQuery(localVarQueryParams, "destFileName", request.getDestFileName());
+        addParameterToQuery(localVarQueryParams, "revisionAuthor", request.getRevisionAuthor());
+        addParameterToQuery(localVarQueryParams, "revisionDateTime", request.getRevisionDateTime());
 
         Map<String, String> localVarHeaderParams = new HashMap<String, String>();
 
@@ -350,18 +354,20 @@ public class WordsApi {
         Object localVarPostBody = request.getStyleApply();
 
         // create path and map variables
-        String localVarPath = "/words/{name}/{styledNodePath}/style".replaceAll("\\{" + "name" + "\\}", request.getName().toString()).replaceAll("//", "/")
-    .replaceAll("\\{" + "styledNodePath" + "\\}", request.getStyledNodePath().toString()).replaceAll("//", "/");
+        String localVarPath = "/words/{name}/{styledNodePath}/style";
+        localVarPath = addParameterToPath(localVarPath, "name", request.getName());
+        localVarPath = addParameterToPath(localVarPath, "styledNodePath", request.getStyledNodePath());
+        localVarPath = localVarPath.replaceAll("//", "/");
 
         List<Pair> localVarQueryParams = new ArrayList<Pair>();
         List<Pair> localVarCollectionQueryParams = new ArrayList<Pair>();
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "folder", request.getFolder());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "storage", request.getStorage());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "loadEncoding", request.getLoadEncoding());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "password", request.getPassword());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "destFileName", request.getDestFileName());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "revisionAuthor", request.getRevisionAuthor());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "revisionDateTime", request.getRevisionDateTime());
+        addParameterToQuery(localVarQueryParams, "folder", request.getFolder());
+        addParameterToQuery(localVarQueryParams, "storage", request.getStorage());
+        addParameterToQuery(localVarQueryParams, "loadEncoding", request.getLoadEncoding());
+        addParameterToQuery(localVarQueryParams, "password", request.getPassword());
+        addParameterToQuery(localVarQueryParams, "destFileName", request.getDestFileName());
+        addParameterToQuery(localVarQueryParams, "revisionAuthor", request.getRevisionAuthor());
+        addParameterToQuery(localVarQueryParams, "revisionDateTime", request.getRevisionDateTime());
 
         Map<String, String> localVarHeaderParams = new HashMap<String, String>();
 
@@ -498,15 +504,17 @@ public class WordsApi {
         Object localVarPostBody = null;
 
         // create path and map variables
-        String localVarPath = "/words/{name}/buildReport".replaceAll("\\{" + "name" + "\\}", request.getName().toString()).replaceAll("//", "/");
+        String localVarPath = "/words/{name}/buildReport";
+        localVarPath = addParameterToPath(localVarPath, "name", request.getName());
+        localVarPath = localVarPath.replaceAll("//", "/");
 
         List<Pair> localVarQueryParams = new ArrayList<Pair>();
         List<Pair> localVarCollectionQueryParams = new ArrayList<Pair>();
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "folder", request.getFolder());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "storage", request.getStorage());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "loadEncoding", request.getLoadEncoding());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "password", request.getPassword());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "destFileName", request.getDestFileName());
+        addParameterToQuery(localVarQueryParams, "folder", request.getFolder());
+        addParameterToQuery(localVarQueryParams, "storage", request.getStorage());
+        addParameterToQuery(localVarQueryParams, "loadEncoding", request.getLoadEncoding());
+        addParameterToQuery(localVarQueryParams, "password", request.getPassword());
+        addParameterToQuery(localVarQueryParams, "destFileName", request.getDestFileName());
 
         Map<String, String> localVarHeaderParams = new HashMap<String, String>();
 
@@ -649,10 +657,11 @@ public class WordsApi {
 
         // create path and map variables
         String localVarPath = "/words/buildReport";
+        localVarPath = localVarPath.replaceAll("//", "/");
 
         List<Pair> localVarQueryParams = new ArrayList<Pair>();
         List<Pair> localVarCollectionQueryParams = new ArrayList<Pair>();
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "documentFileName", request.getDocumentFileName());
+        addParameterToQuery(localVarQueryParams, "documentFileName", request.getDocumentFileName());
 
         Map<String, String> localVarHeaderParams = new HashMap<String, String>();
 
@@ -798,10 +807,11 @@ public class WordsApi {
 
         // create path and map variables
         String localVarPath = "/words/classify";
+        localVarPath = localVarPath.replaceAll("//", "/");
 
         List<Pair> localVarQueryParams = new ArrayList<Pair>();
         List<Pair> localVarCollectionQueryParams = new ArrayList<Pair>();
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "bestClassesCount", request.getBestClassesCount());
+        addParameterToQuery(localVarQueryParams, "bestClassesCount", request.getBestClassesCount());
 
         Map<String, String> localVarHeaderParams = new HashMap<String, String>();
 
@@ -928,16 +938,18 @@ public class WordsApi {
         Object localVarPostBody = null;
 
         // create path and map variables
-        String localVarPath = "/words/{documentName}/classify".replaceAll("\\{" + "documentName" + "\\}", request.getDocumentName().toString()).replaceAll("//", "/");
+        String localVarPath = "/words/{documentName}/classify";
+        localVarPath = addParameterToPath(localVarPath, "documentName", request.getDocumentName());
+        localVarPath = localVarPath.replaceAll("//", "/");
 
         List<Pair> localVarQueryParams = new ArrayList<Pair>();
         List<Pair> localVarCollectionQueryParams = new ArrayList<Pair>();
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "folder", request.getFolder());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "storage", request.getStorage());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "loadEncoding", request.getLoadEncoding());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "password", request.getPassword());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "bestClassesCount", request.getBestClassesCount());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "taxonomy", request.getTaxonomy());
+        addParameterToQuery(localVarQueryParams, "folder", request.getFolder());
+        addParameterToQuery(localVarQueryParams, "storage", request.getStorage());
+        addParameterToQuery(localVarQueryParams, "loadEncoding", request.getLoadEncoding());
+        addParameterToQuery(localVarQueryParams, "password", request.getPassword());
+        addParameterToQuery(localVarQueryParams, "bestClassesCount", request.getBestClassesCount());
+        addParameterToQuery(localVarQueryParams, "taxonomy", request.getTaxonomy());
 
         Map<String, String> localVarHeaderParams = new HashMap<String, String>();
 
@@ -1064,15 +1076,17 @@ public class WordsApi {
         Object localVarPostBody = request.getCompareData();
 
         // create path and map variables
-        String localVarPath = "/words/{name}/compareDocument".replaceAll("\\{" + "name" + "\\}", request.getName().toString()).replaceAll("//", "/");
+        String localVarPath = "/words/{name}/compareDocument";
+        localVarPath = addParameterToPath(localVarPath, "name", request.getName());
+        localVarPath = localVarPath.replaceAll("//", "/");
 
         List<Pair> localVarQueryParams = new ArrayList<Pair>();
         List<Pair> localVarCollectionQueryParams = new ArrayList<Pair>();
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "folder", request.getFolder());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "storage", request.getStorage());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "loadEncoding", request.getLoadEncoding());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "password", request.getPassword());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "destFileName", request.getDestFileName());
+        addParameterToQuery(localVarQueryParams, "folder", request.getFolder());
+        addParameterToQuery(localVarQueryParams, "storage", request.getStorage());
+        addParameterToQuery(localVarQueryParams, "loadEncoding", request.getLoadEncoding());
+        addParameterToQuery(localVarQueryParams, "password", request.getPassword());
+        addParameterToQuery(localVarQueryParams, "destFileName", request.getDestFileName());
 
         Map<String, String> localVarHeaderParams = new HashMap<String, String>();
 
@@ -1205,14 +1219,15 @@ public class WordsApi {
 
         // create path and map variables
         String localVarPath = "/words/convert";
+        localVarPath = localVarPath.replaceAll("//", "/");
 
         List<Pair> localVarQueryParams = new ArrayList<Pair>();
         List<Pair> localVarCollectionQueryParams = new ArrayList<Pair>();
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "format", request.getFormat());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "storage", request.getStorage());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "outPath", request.getOutPath());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "fileNameFieldValue", request.getFileNameFieldValue());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "fontsLocation", request.getFontsLocation());
+        addParameterToQuery(localVarQueryParams, "format", request.getFormat());
+        addParameterToQuery(localVarQueryParams, "storage", request.getStorage());
+        addParameterToQuery(localVarQueryParams, "outPath", request.getOutPath());
+        addParameterToQuery(localVarQueryParams, "fileNameFieldValue", request.getFileNameFieldValue());
+        addParameterToQuery(localVarQueryParams, "fontsLocation", request.getFontsLocation());
 
         Map<String, String> localVarHeaderParams = new HashMap<String, String>();
 
@@ -1346,14 +1361,16 @@ public class WordsApi {
         Object localVarPostBody = null;
 
         // create path and map variables
-        String localVarPath = "/words/storage/file/copy/{srcPath}".replaceAll("\\{" + "srcPath" + "\\}", request.getSrcPath().toString()).replaceAll("//", "/");
+        String localVarPath = "/words/storage/file/copy/{srcPath}";
+        localVarPath = addParameterToPath(localVarPath, "srcPath", request.getSrcPath());
+        localVarPath = localVarPath.replaceAll("//", "/");
 
         List<Pair> localVarQueryParams = new ArrayList<Pair>();
         List<Pair> localVarCollectionQueryParams = new ArrayList<Pair>();
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "destPath", request.getDestPath());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "srcStorageName", request.getSrcStorageName());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "destStorageName", request.getDestStorageName());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "versionId", request.getVersionId());
+        addParameterToQuery(localVarQueryParams, "destPath", request.getDestPath());
+        addParameterToQuery(localVarQueryParams, "srcStorageName", request.getSrcStorageName());
+        addParameterToQuery(localVarQueryParams, "destStorageName", request.getDestStorageName());
+        addParameterToQuery(localVarQueryParams, "versionId", request.getVersionId());
 
         Map<String, String> localVarHeaderParams = new HashMap<String, String>();
 
@@ -1480,13 +1497,15 @@ public class WordsApi {
         Object localVarPostBody = null;
 
         // create path and map variables
-        String localVarPath = "/words/storage/folder/copy/{srcPath}".replaceAll("\\{" + "srcPath" + "\\}", request.getSrcPath().toString()).replaceAll("//", "/");
+        String localVarPath = "/words/storage/folder/copy/{srcPath}";
+        localVarPath = addParameterToPath(localVarPath, "srcPath", request.getSrcPath());
+        localVarPath = localVarPath.replaceAll("//", "/");
 
         List<Pair> localVarQueryParams = new ArrayList<Pair>();
         List<Pair> localVarCollectionQueryParams = new ArrayList<Pair>();
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "destPath", request.getDestPath());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "srcStorageName", request.getSrcStorageName());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "destStorageName", request.getDestStorageName());
+        addParameterToQuery(localVarQueryParams, "destPath", request.getDestPath());
+        addParameterToQuery(localVarQueryParams, "srcStorageName", request.getSrcStorageName());
+        addParameterToQuery(localVarQueryParams, "destStorageName", request.getDestStorageName());
 
         Map<String, String> localVarHeaderParams = new HashMap<String, String>();
 
@@ -1613,17 +1632,19 @@ public class WordsApi {
         Object localVarPostBody = request.getStyleCopy();
 
         // create path and map variables
-        String localVarPath = "/words/{name}/styles/copy".replaceAll("\\{" + "name" + "\\}", request.getName().toString()).replaceAll("//", "/");
+        String localVarPath = "/words/{name}/styles/copy";
+        localVarPath = addParameterToPath(localVarPath, "name", request.getName());
+        localVarPath = localVarPath.replaceAll("//", "/");
 
         List<Pair> localVarQueryParams = new ArrayList<Pair>();
         List<Pair> localVarCollectionQueryParams = new ArrayList<Pair>();
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "folder", request.getFolder());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "storage", request.getStorage());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "loadEncoding", request.getLoadEncoding());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "password", request.getPassword());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "destFileName", request.getDestFileName());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "revisionAuthor", request.getRevisionAuthor());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "revisionDateTime", request.getRevisionDateTime());
+        addParameterToQuery(localVarQueryParams, "folder", request.getFolder());
+        addParameterToQuery(localVarQueryParams, "storage", request.getStorage());
+        addParameterToQuery(localVarQueryParams, "loadEncoding", request.getLoadEncoding());
+        addParameterToQuery(localVarQueryParams, "password", request.getPassword());
+        addParameterToQuery(localVarQueryParams, "destFileName", request.getDestFileName());
+        addParameterToQuery(localVarQueryParams, "revisionAuthor", request.getRevisionAuthor());
+        addParameterToQuery(localVarQueryParams, "revisionDateTime", request.getRevisionDateTime());
 
         Map<String, String> localVarHeaderParams = new HashMap<String, String>();
 
@@ -1756,12 +1777,13 @@ public class WordsApi {
 
         // create path and map variables
         String localVarPath = "/words/create";
+        localVarPath = localVarPath.replaceAll("//", "/");
 
         List<Pair> localVarQueryParams = new ArrayList<Pair>();
         List<Pair> localVarCollectionQueryParams = new ArrayList<Pair>();
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "storage", request.getStorage());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "fileName", request.getFileName());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "folder", request.getFolder());
+        addParameterToQuery(localVarQueryParams, "storage", request.getStorage());
+        addParameterToQuery(localVarQueryParams, "fileName", request.getFileName());
+        addParameterToQuery(localVarQueryParams, "folder", request.getFolder());
 
         Map<String, String> localVarHeaderParams = new HashMap<String, String>();
 
@@ -1890,11 +1912,13 @@ public class WordsApi {
         Object localVarPostBody = null;
 
         // create path and map variables
-        String localVarPath = "/words/storage/folder/{path}".replaceAll("\\{" + "path" + "\\}", request.getPath().toString()).replaceAll("//", "/");
+        String localVarPath = "/words/storage/folder/{path}";
+        localVarPath = addParameterToPath(localVarPath, "path", request.getPath());
+        localVarPath = localVarPath.replaceAll("//", "/");
 
         List<Pair> localVarQueryParams = new ArrayList<Pair>();
         List<Pair> localVarCollectionQueryParams = new ArrayList<Pair>();
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "storageName", request.getStorageName());
+        addParameterToQuery(localVarQueryParams, "storageName", request.getStorageName());
 
         Map<String, String> localVarHeaderParams = new HashMap<String, String>();
 
@@ -2016,18 +2040,20 @@ public class WordsApi {
         Object localVarPostBody = request.getProperty();
 
         // create path and map variables
-        String localVarPath = "/words/{name}/documentProperties/{propertyName}".replaceAll("\\{" + "name" + "\\}", request.getName().toString()).replaceAll("//", "/")
-    .replaceAll("\\{" + "propertyName" + "\\}", request.getPropertyName().toString()).replaceAll("//", "/");
+        String localVarPath = "/words/{name}/documentProperties/{propertyName}";
+        localVarPath = addParameterToPath(localVarPath, "name", request.getName());
+        localVarPath = addParameterToPath(localVarPath, "propertyName", request.getPropertyName());
+        localVarPath = localVarPath.replaceAll("//", "/");
 
         List<Pair> localVarQueryParams = new ArrayList<Pair>();
         List<Pair> localVarCollectionQueryParams = new ArrayList<Pair>();
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "folder", request.getFolder());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "storage", request.getStorage());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "loadEncoding", request.getLoadEncoding());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "password", request.getPassword());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "destFileName", request.getDestFileName());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "revisionAuthor", request.getRevisionAuthor());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "revisionDateTime", request.getRevisionDateTime());
+        addParameterToQuery(localVarQueryParams, "folder", request.getFolder());
+        addParameterToQuery(localVarQueryParams, "storage", request.getStorage());
+        addParameterToQuery(localVarQueryParams, "loadEncoding", request.getLoadEncoding());
+        addParameterToQuery(localVarQueryParams, "password", request.getPassword());
+        addParameterToQuery(localVarQueryParams, "destFileName", request.getDestFileName());
+        addParameterToQuery(localVarQueryParams, "revisionAuthor", request.getRevisionAuthor());
+        addParameterToQuery(localVarQueryParams, "revisionDateTime", request.getRevisionDateTime());
 
         Map<String, String> localVarHeaderParams = new HashMap<String, String>();
 
@@ -2164,17 +2190,19 @@ public class WordsApi {
         Object localVarPostBody = null;
 
         // create path and map variables
-        String localVarPath = "/words/{name}/{nodePath}/paragraphs/{index}/tabstops".replaceAll("\\{" + "name" + "\\}", request.getName().toString()).replaceAll("//", "/")
-    .replaceAll("\\{" + "index" + "\\}", request.getIndex().toString()).replaceAll("//", "/")
-    .replaceAll("\\{" + "nodePath" + "\\}", request.getNodePath().toString()).replaceAll("//", "/");
+        String localVarPath = "/words/{name}/{nodePath}/paragraphs/{index}/tabstops";
+        localVarPath = addParameterToPath(localVarPath, "name", request.getName());
+        localVarPath = addParameterToPath(localVarPath, "index", request.getIndex());
+        localVarPath = addParameterToPath(localVarPath, "nodePath", request.getNodePath());
+        localVarPath = localVarPath.replaceAll("//", "/");
 
         List<Pair> localVarQueryParams = new ArrayList<Pair>();
         List<Pair> localVarCollectionQueryParams = new ArrayList<Pair>();
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "folder", request.getFolder());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "storage", request.getStorage());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "loadEncoding", request.getLoadEncoding());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "password", request.getPassword());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "destFileName", request.getDestFileName());
+        addParameterToQuery(localVarQueryParams, "folder", request.getFolder());
+        addParameterToQuery(localVarQueryParams, "storage", request.getStorage());
+        addParameterToQuery(localVarQueryParams, "loadEncoding", request.getLoadEncoding());
+        addParameterToQuery(localVarQueryParams, "password", request.getPassword());
+        addParameterToQuery(localVarQueryParams, "destFileName", request.getDestFileName());
 
         Map<String, String> localVarHeaderParams = new HashMap<String, String>();
 
@@ -2306,19 +2334,21 @@ public class WordsApi {
         Object localVarPostBody = null;
 
         // create path and map variables
-        String localVarPath = "/words/{name}/{nodePath}/borders/{borderType}".replaceAll("\\{" + "name" + "\\}", request.getName().toString()).replaceAll("//", "/")
-    .replaceAll("\\{" + "borderType" + "\\}", request.getBorderType().toString()).replaceAll("//", "/")
-    .replaceAll("\\{" + "nodePath" + "\\}", request.getNodePath().toString()).replaceAll("//", "/");
+        String localVarPath = "/words/{name}/{nodePath}/borders/{borderType}";
+        localVarPath = addParameterToPath(localVarPath, "name", request.getName());
+        localVarPath = addParameterToPath(localVarPath, "borderType", request.getBorderType());
+        localVarPath = addParameterToPath(localVarPath, "nodePath", request.getNodePath());
+        localVarPath = localVarPath.replaceAll("//", "/");
 
         List<Pair> localVarQueryParams = new ArrayList<Pair>();
         List<Pair> localVarCollectionQueryParams = new ArrayList<Pair>();
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "folder", request.getFolder());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "storage", request.getStorage());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "loadEncoding", request.getLoadEncoding());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "password", request.getPassword());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "destFileName", request.getDestFileName());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "revisionAuthor", request.getRevisionAuthor());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "revisionDateTime", request.getRevisionDateTime());
+        addParameterToQuery(localVarQueryParams, "folder", request.getFolder());
+        addParameterToQuery(localVarQueryParams, "storage", request.getStorage());
+        addParameterToQuery(localVarQueryParams, "loadEncoding", request.getLoadEncoding());
+        addParameterToQuery(localVarQueryParams, "password", request.getPassword());
+        addParameterToQuery(localVarQueryParams, "destFileName", request.getDestFileName());
+        addParameterToQuery(localVarQueryParams, "revisionAuthor", request.getRevisionAuthor());
+        addParameterToQuery(localVarQueryParams, "revisionDateTime", request.getRevisionDateTime());
 
         Map<String, String> localVarHeaderParams = new HashMap<String, String>();
 
@@ -2450,18 +2480,20 @@ public class WordsApi {
         Object localVarPostBody = null;
 
         // create path and map variables
-        String localVarPath = "/words/{name}/{nodePath}/borders".replaceAll("\\{" + "name" + "\\}", request.getName().toString()).replaceAll("//", "/")
-    .replaceAll("\\{" + "nodePath" + "\\}", request.getNodePath().toString()).replaceAll("//", "/");
+        String localVarPath = "/words/{name}/{nodePath}/borders";
+        localVarPath = addParameterToPath(localVarPath, "name", request.getName());
+        localVarPath = addParameterToPath(localVarPath, "nodePath", request.getNodePath());
+        localVarPath = localVarPath.replaceAll("//", "/");
 
         List<Pair> localVarQueryParams = new ArrayList<Pair>();
         List<Pair> localVarCollectionQueryParams = new ArrayList<Pair>();
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "folder", request.getFolder());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "storage", request.getStorage());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "loadEncoding", request.getLoadEncoding());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "password", request.getPassword());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "destFileName", request.getDestFileName());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "revisionAuthor", request.getRevisionAuthor());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "revisionDateTime", request.getRevisionDateTime());
+        addParameterToQuery(localVarQueryParams, "folder", request.getFolder());
+        addParameterToQuery(localVarQueryParams, "storage", request.getStorage());
+        addParameterToQuery(localVarQueryParams, "loadEncoding", request.getLoadEncoding());
+        addParameterToQuery(localVarQueryParams, "password", request.getPassword());
+        addParameterToQuery(localVarQueryParams, "destFileName", request.getDestFileName());
+        addParameterToQuery(localVarQueryParams, "revisionAuthor", request.getRevisionAuthor());
+        addParameterToQuery(localVarQueryParams, "revisionDateTime", request.getRevisionDateTime());
 
         Map<String, String> localVarHeaderParams = new HashMap<String, String>();
 
@@ -2588,18 +2620,20 @@ public class WordsApi {
         Object localVarPostBody = null;
 
         // create path and map variables
-        String localVarPath = "/words/{name}/comments/{commentIndex}".replaceAll("\\{" + "name" + "\\}", request.getName().toString()).replaceAll("//", "/")
-    .replaceAll("\\{" + "commentIndex" + "\\}", request.getCommentIndex().toString()).replaceAll("//", "/");
+        String localVarPath = "/words/{name}/comments/{commentIndex}";
+        localVarPath = addParameterToPath(localVarPath, "name", request.getName());
+        localVarPath = addParameterToPath(localVarPath, "commentIndex", request.getCommentIndex());
+        localVarPath = localVarPath.replaceAll("//", "/");
 
         List<Pair> localVarQueryParams = new ArrayList<Pair>();
         List<Pair> localVarCollectionQueryParams = new ArrayList<Pair>();
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "folder", request.getFolder());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "storage", request.getStorage());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "loadEncoding", request.getLoadEncoding());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "password", request.getPassword());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "destFileName", request.getDestFileName());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "revisionAuthor", request.getRevisionAuthor());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "revisionDateTime", request.getRevisionDateTime());
+        addParameterToQuery(localVarQueryParams, "folder", request.getFolder());
+        addParameterToQuery(localVarQueryParams, "storage", request.getStorage());
+        addParameterToQuery(localVarQueryParams, "loadEncoding", request.getLoadEncoding());
+        addParameterToQuery(localVarQueryParams, "password", request.getPassword());
+        addParameterToQuery(localVarQueryParams, "destFileName", request.getDestFileName());
+        addParameterToQuery(localVarQueryParams, "revisionAuthor", request.getRevisionAuthor());
+        addParameterToQuery(localVarQueryParams, "revisionDateTime", request.getRevisionDateTime());
 
         Map<String, String> localVarHeaderParams = new HashMap<String, String>();
 
@@ -2726,18 +2760,20 @@ public class WordsApi {
         Object localVarPostBody = null;
 
         // create path and map variables
-        String localVarPath = "/words/{name}/documentProperties/{propertyName}".replaceAll("\\{" + "name" + "\\}", request.getName().toString()).replaceAll("//", "/")
-    .replaceAll("\\{" + "propertyName" + "\\}", request.getPropertyName().toString()).replaceAll("//", "/");
+        String localVarPath = "/words/{name}/documentProperties/{propertyName}";
+        localVarPath = addParameterToPath(localVarPath, "name", request.getName());
+        localVarPath = addParameterToPath(localVarPath, "propertyName", request.getPropertyName());
+        localVarPath = localVarPath.replaceAll("//", "/");
 
         List<Pair> localVarQueryParams = new ArrayList<Pair>();
         List<Pair> localVarCollectionQueryParams = new ArrayList<Pair>();
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "folder", request.getFolder());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "storage", request.getStorage());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "loadEncoding", request.getLoadEncoding());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "password", request.getPassword());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "destFileName", request.getDestFileName());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "revisionAuthor", request.getRevisionAuthor());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "revisionDateTime", request.getRevisionDateTime());
+        addParameterToQuery(localVarQueryParams, "folder", request.getFolder());
+        addParameterToQuery(localVarQueryParams, "storage", request.getStorage());
+        addParameterToQuery(localVarQueryParams, "loadEncoding", request.getLoadEncoding());
+        addParameterToQuery(localVarQueryParams, "password", request.getPassword());
+        addParameterToQuery(localVarQueryParams, "destFileName", request.getDestFileName());
+        addParameterToQuery(localVarQueryParams, "revisionAuthor", request.getRevisionAuthor());
+        addParameterToQuery(localVarQueryParams, "revisionDateTime", request.getRevisionDateTime());
 
         Map<String, String> localVarHeaderParams = new HashMap<String, String>();
 
@@ -2864,19 +2900,21 @@ public class WordsApi {
         Object localVarPostBody = null;
 
         // create path and map variables
-        String localVarPath = "/words/{name}/{nodePath}/drawingObjects/{index}".replaceAll("\\{" + "name" + "\\}", request.getName().toString()).replaceAll("//", "/")
-    .replaceAll("\\{" + "index" + "\\}", request.getIndex().toString()).replaceAll("//", "/")
-    .replaceAll("\\{" + "nodePath" + "\\}", request.getNodePath().toString()).replaceAll("//", "/");
+        String localVarPath = "/words/{name}/{nodePath}/drawingObjects/{index}";
+        localVarPath = addParameterToPath(localVarPath, "name", request.getName());
+        localVarPath = addParameterToPath(localVarPath, "index", request.getIndex());
+        localVarPath = addParameterToPath(localVarPath, "nodePath", request.getNodePath());
+        localVarPath = localVarPath.replaceAll("//", "/");
 
         List<Pair> localVarQueryParams = new ArrayList<Pair>();
         List<Pair> localVarCollectionQueryParams = new ArrayList<Pair>();
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "folder", request.getFolder());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "storage", request.getStorage());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "loadEncoding", request.getLoadEncoding());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "password", request.getPassword());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "destFileName", request.getDestFileName());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "revisionAuthor", request.getRevisionAuthor());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "revisionDateTime", request.getRevisionDateTime());
+        addParameterToQuery(localVarQueryParams, "folder", request.getFolder());
+        addParameterToQuery(localVarQueryParams, "storage", request.getStorage());
+        addParameterToQuery(localVarQueryParams, "loadEncoding", request.getLoadEncoding());
+        addParameterToQuery(localVarQueryParams, "password", request.getPassword());
+        addParameterToQuery(localVarQueryParams, "destFileName", request.getDestFileName());
+        addParameterToQuery(localVarQueryParams, "revisionAuthor", request.getRevisionAuthor());
+        addParameterToQuery(localVarQueryParams, "revisionDateTime", request.getRevisionDateTime());
 
         Map<String, String> localVarHeaderParams = new HashMap<String, String>();
 
@@ -3003,19 +3041,21 @@ public class WordsApi {
         Object localVarPostBody = null;
 
         // create path and map variables
-        String localVarPath = "/words/{name}/{nodePath}/fields/{index}".replaceAll("\\{" + "name" + "\\}", request.getName().toString()).replaceAll("//", "/")
-    .replaceAll("\\{" + "index" + "\\}", request.getIndex().toString()).replaceAll("//", "/")
-    .replaceAll("\\{" + "nodePath" + "\\}", request.getNodePath().toString()).replaceAll("//", "/");
+        String localVarPath = "/words/{name}/{nodePath}/fields/{index}";
+        localVarPath = addParameterToPath(localVarPath, "name", request.getName());
+        localVarPath = addParameterToPath(localVarPath, "index", request.getIndex());
+        localVarPath = addParameterToPath(localVarPath, "nodePath", request.getNodePath());
+        localVarPath = localVarPath.replaceAll("//", "/");
 
         List<Pair> localVarQueryParams = new ArrayList<Pair>();
         List<Pair> localVarCollectionQueryParams = new ArrayList<Pair>();
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "folder", request.getFolder());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "storage", request.getStorage());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "loadEncoding", request.getLoadEncoding());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "password", request.getPassword());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "destFileName", request.getDestFileName());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "revisionAuthor", request.getRevisionAuthor());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "revisionDateTime", request.getRevisionDateTime());
+        addParameterToQuery(localVarQueryParams, "folder", request.getFolder());
+        addParameterToQuery(localVarQueryParams, "storage", request.getStorage());
+        addParameterToQuery(localVarQueryParams, "loadEncoding", request.getLoadEncoding());
+        addParameterToQuery(localVarQueryParams, "password", request.getPassword());
+        addParameterToQuery(localVarQueryParams, "destFileName", request.getDestFileName());
+        addParameterToQuery(localVarQueryParams, "revisionAuthor", request.getRevisionAuthor());
+        addParameterToQuery(localVarQueryParams, "revisionDateTime", request.getRevisionDateTime());
 
         Map<String, String> localVarHeaderParams = new HashMap<String, String>();
 
@@ -3142,18 +3182,20 @@ public class WordsApi {
         Object localVarPostBody = null;
 
         // create path and map variables
-        String localVarPath = "/words/{name}/{nodePath}/fields".replaceAll("\\{" + "name" + "\\}", request.getName().toString()).replaceAll("//", "/")
-    .replaceAll("\\{" + "nodePath" + "\\}", request.getNodePath().toString()).replaceAll("//", "/");
+        String localVarPath = "/words/{name}/{nodePath}/fields";
+        localVarPath = addParameterToPath(localVarPath, "name", request.getName());
+        localVarPath = addParameterToPath(localVarPath, "nodePath", request.getNodePath());
+        localVarPath = localVarPath.replaceAll("//", "/");
 
         List<Pair> localVarQueryParams = new ArrayList<Pair>();
         List<Pair> localVarCollectionQueryParams = new ArrayList<Pair>();
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "folder", request.getFolder());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "storage", request.getStorage());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "loadEncoding", request.getLoadEncoding());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "password", request.getPassword());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "destFileName", request.getDestFileName());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "revisionAuthor", request.getRevisionAuthor());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "revisionDateTime", request.getRevisionDateTime());
+        addParameterToQuery(localVarQueryParams, "folder", request.getFolder());
+        addParameterToQuery(localVarQueryParams, "storage", request.getStorage());
+        addParameterToQuery(localVarQueryParams, "loadEncoding", request.getLoadEncoding());
+        addParameterToQuery(localVarQueryParams, "password", request.getPassword());
+        addParameterToQuery(localVarQueryParams, "destFileName", request.getDestFileName());
+        addParameterToQuery(localVarQueryParams, "revisionAuthor", request.getRevisionAuthor());
+        addParameterToQuery(localVarQueryParams, "revisionDateTime", request.getRevisionDateTime());
 
         Map<String, String> localVarHeaderParams = new HashMap<String, String>();
 
@@ -3275,12 +3317,14 @@ public class WordsApi {
         Object localVarPostBody = null;
 
         // create path and map variables
-        String localVarPath = "/words/storage/file/{path}".replaceAll("\\{" + "path" + "\\}", request.getPath().toString()).replaceAll("//", "/");
+        String localVarPath = "/words/storage/file/{path}";
+        localVarPath = addParameterToPath(localVarPath, "path", request.getPath());
+        localVarPath = localVarPath.replaceAll("//", "/");
 
         List<Pair> localVarQueryParams = new ArrayList<Pair>();
         List<Pair> localVarCollectionQueryParams = new ArrayList<Pair>();
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "storageName", request.getStorageName());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "versionId", request.getVersionId());
+        addParameterToQuery(localVarQueryParams, "storageName", request.getStorageName());
+        addParameterToQuery(localVarQueryParams, "versionId", request.getVersionId());
 
         Map<String, String> localVarHeaderParams = new HashMap<String, String>();
 
@@ -3402,12 +3446,14 @@ public class WordsApi {
         Object localVarPostBody = null;
 
         // create path and map variables
-        String localVarPath = "/words/storage/folder/{path}".replaceAll("\\{" + "path" + "\\}", request.getPath().toString()).replaceAll("//", "/");
+        String localVarPath = "/words/storage/folder/{path}";
+        localVarPath = addParameterToPath(localVarPath, "path", request.getPath());
+        localVarPath = localVarPath.replaceAll("//", "/");
 
         List<Pair> localVarQueryParams = new ArrayList<Pair>();
         List<Pair> localVarCollectionQueryParams = new ArrayList<Pair>();
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "storageName", request.getStorageName());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "recursive", request.getRecursive());
+        addParameterToQuery(localVarQueryParams, "storageName", request.getStorageName());
+        addParameterToQuery(localVarQueryParams, "recursive", request.getRecursive());
 
         Map<String, String> localVarHeaderParams = new HashMap<String, String>();
 
@@ -3529,19 +3575,21 @@ public class WordsApi {
         Object localVarPostBody = null;
 
         // create path and map variables
-        String localVarPath = "/words/{name}/{nodePath}/footnotes/{index}".replaceAll("\\{" + "name" + "\\}", request.getName().toString()).replaceAll("//", "/")
-    .replaceAll("\\{" + "index" + "\\}", request.getIndex().toString()).replaceAll("//", "/")
-    .replaceAll("\\{" + "nodePath" + "\\}", request.getNodePath().toString()).replaceAll("//", "/");
+        String localVarPath = "/words/{name}/{nodePath}/footnotes/{index}";
+        localVarPath = addParameterToPath(localVarPath, "name", request.getName());
+        localVarPath = addParameterToPath(localVarPath, "index", request.getIndex());
+        localVarPath = addParameterToPath(localVarPath, "nodePath", request.getNodePath());
+        localVarPath = localVarPath.replaceAll("//", "/");
 
         List<Pair> localVarQueryParams = new ArrayList<Pair>();
         List<Pair> localVarCollectionQueryParams = new ArrayList<Pair>();
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "folder", request.getFolder());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "storage", request.getStorage());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "loadEncoding", request.getLoadEncoding());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "password", request.getPassword());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "destFileName", request.getDestFileName());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "revisionAuthor", request.getRevisionAuthor());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "revisionDateTime", request.getRevisionDateTime());
+        addParameterToQuery(localVarQueryParams, "folder", request.getFolder());
+        addParameterToQuery(localVarQueryParams, "storage", request.getStorage());
+        addParameterToQuery(localVarQueryParams, "loadEncoding", request.getLoadEncoding());
+        addParameterToQuery(localVarQueryParams, "password", request.getPassword());
+        addParameterToQuery(localVarQueryParams, "destFileName", request.getDestFileName());
+        addParameterToQuery(localVarQueryParams, "revisionAuthor", request.getRevisionAuthor());
+        addParameterToQuery(localVarQueryParams, "revisionDateTime", request.getRevisionDateTime());
 
         Map<String, String> localVarHeaderParams = new HashMap<String, String>();
 
@@ -3668,19 +3716,21 @@ public class WordsApi {
         Object localVarPostBody = null;
 
         // create path and map variables
-        String localVarPath = "/words/{name}/{nodePath}/formfields/{index}".replaceAll("\\{" + "name" + "\\}", request.getName().toString()).replaceAll("//", "/")
-    .replaceAll("\\{" + "index" + "\\}", request.getIndex().toString()).replaceAll("//", "/")
-    .replaceAll("\\{" + "nodePath" + "\\}", request.getNodePath().toString()).replaceAll("//", "/");
+        String localVarPath = "/words/{name}/{nodePath}/formfields/{index}";
+        localVarPath = addParameterToPath(localVarPath, "name", request.getName());
+        localVarPath = addParameterToPath(localVarPath, "index", request.getIndex());
+        localVarPath = addParameterToPath(localVarPath, "nodePath", request.getNodePath());
+        localVarPath = localVarPath.replaceAll("//", "/");
 
         List<Pair> localVarQueryParams = new ArrayList<Pair>();
         List<Pair> localVarCollectionQueryParams = new ArrayList<Pair>();
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "folder", request.getFolder());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "storage", request.getStorage());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "loadEncoding", request.getLoadEncoding());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "password", request.getPassword());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "destFileName", request.getDestFileName());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "revisionAuthor", request.getRevisionAuthor());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "revisionDateTime", request.getRevisionDateTime());
+        addParameterToQuery(localVarQueryParams, "folder", request.getFolder());
+        addParameterToQuery(localVarQueryParams, "storage", request.getStorage());
+        addParameterToQuery(localVarQueryParams, "loadEncoding", request.getLoadEncoding());
+        addParameterToQuery(localVarQueryParams, "password", request.getPassword());
+        addParameterToQuery(localVarQueryParams, "destFileName", request.getDestFileName());
+        addParameterToQuery(localVarQueryParams, "revisionAuthor", request.getRevisionAuthor());
+        addParameterToQuery(localVarQueryParams, "revisionDateTime", request.getRevisionDateTime());
 
         Map<String, String> localVarHeaderParams = new HashMap<String, String>();
 
@@ -3807,19 +3857,21 @@ public class WordsApi {
         Object localVarPostBody = null;
 
         // create path and map variables
-        String localVarPath = "/words/{name}/{sectionPath}/headersfooters/{index}".replaceAll("\\{" + "name" + "\\}", request.getName().toString()).replaceAll("//", "/")
-    .replaceAll("\\{" + "sectionPath" + "\\}", request.getSectionPath().toString()).replaceAll("//", "/")
-    .replaceAll("\\{" + "index" + "\\}", request.getIndex().toString()).replaceAll("//", "/");
+        String localVarPath = "/words/{name}/{sectionPath}/headersfooters/{index}";
+        localVarPath = addParameterToPath(localVarPath, "name", request.getName());
+        localVarPath = addParameterToPath(localVarPath, "sectionPath", request.getSectionPath());
+        localVarPath = addParameterToPath(localVarPath, "index", request.getIndex());
+        localVarPath = localVarPath.replaceAll("//", "/");
 
         List<Pair> localVarQueryParams = new ArrayList<Pair>();
         List<Pair> localVarCollectionQueryParams = new ArrayList<Pair>();
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "folder", request.getFolder());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "storage", request.getStorage());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "loadEncoding", request.getLoadEncoding());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "password", request.getPassword());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "destFileName", request.getDestFileName());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "revisionAuthor", request.getRevisionAuthor());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "revisionDateTime", request.getRevisionDateTime());
+        addParameterToQuery(localVarQueryParams, "folder", request.getFolder());
+        addParameterToQuery(localVarQueryParams, "storage", request.getStorage());
+        addParameterToQuery(localVarQueryParams, "loadEncoding", request.getLoadEncoding());
+        addParameterToQuery(localVarQueryParams, "password", request.getPassword());
+        addParameterToQuery(localVarQueryParams, "destFileName", request.getDestFileName());
+        addParameterToQuery(localVarQueryParams, "revisionAuthor", request.getRevisionAuthor());
+        addParameterToQuery(localVarQueryParams, "revisionDateTime", request.getRevisionDateTime());
 
         Map<String, String> localVarHeaderParams = new HashMap<String, String>();
 
@@ -3951,19 +4003,21 @@ public class WordsApi {
         Object localVarPostBody = null;
 
         // create path and map variables
-        String localVarPath = "/words/{name}/{sectionPath}/headersfooters".replaceAll("\\{" + "name" + "\\}", request.getName().toString()).replaceAll("//", "/")
-    .replaceAll("\\{" + "sectionPath" + "\\}", request.getSectionPath().toString()).replaceAll("//", "/");
+        String localVarPath = "/words/{name}/{sectionPath}/headersfooters";
+        localVarPath = addParameterToPath(localVarPath, "name", request.getName());
+        localVarPath = addParameterToPath(localVarPath, "sectionPath", request.getSectionPath());
+        localVarPath = localVarPath.replaceAll("//", "/");
 
         List<Pair> localVarQueryParams = new ArrayList<Pair>();
         List<Pair> localVarCollectionQueryParams = new ArrayList<Pair>();
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "folder", request.getFolder());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "storage", request.getStorage());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "loadEncoding", request.getLoadEncoding());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "password", request.getPassword());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "destFileName", request.getDestFileName());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "revisionAuthor", request.getRevisionAuthor());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "revisionDateTime", request.getRevisionDateTime());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "headersFootersTypes", request.getHeadersFootersTypes());
+        addParameterToQuery(localVarQueryParams, "folder", request.getFolder());
+        addParameterToQuery(localVarQueryParams, "storage", request.getStorage());
+        addParameterToQuery(localVarQueryParams, "loadEncoding", request.getLoadEncoding());
+        addParameterToQuery(localVarQueryParams, "password", request.getPassword());
+        addParameterToQuery(localVarQueryParams, "destFileName", request.getDestFileName());
+        addParameterToQuery(localVarQueryParams, "revisionAuthor", request.getRevisionAuthor());
+        addParameterToQuery(localVarQueryParams, "revisionDateTime", request.getRevisionDateTime());
+        addParameterToQuery(localVarQueryParams, "headersFootersTypes", request.getHeadersFootersTypes());
 
         Map<String, String> localVarHeaderParams = new HashMap<String, String>();
 
@@ -4090,17 +4144,19 @@ public class WordsApi {
         Object localVarPostBody = null;
 
         // create path and map variables
-        String localVarPath = "/words/{name}/macros".replaceAll("\\{" + "name" + "\\}", request.getName().toString()).replaceAll("//", "/");
+        String localVarPath = "/words/{name}/macros";
+        localVarPath = addParameterToPath(localVarPath, "name", request.getName());
+        localVarPath = localVarPath.replaceAll("//", "/");
 
         List<Pair> localVarQueryParams = new ArrayList<Pair>();
         List<Pair> localVarCollectionQueryParams = new ArrayList<Pair>();
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "folder", request.getFolder());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "storage", request.getStorage());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "loadEncoding", request.getLoadEncoding());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "password", request.getPassword());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "destFileName", request.getDestFileName());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "revisionAuthor", request.getRevisionAuthor());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "revisionDateTime", request.getRevisionDateTime());
+        addParameterToQuery(localVarQueryParams, "folder", request.getFolder());
+        addParameterToQuery(localVarQueryParams, "storage", request.getStorage());
+        addParameterToQuery(localVarQueryParams, "loadEncoding", request.getLoadEncoding());
+        addParameterToQuery(localVarQueryParams, "password", request.getPassword());
+        addParameterToQuery(localVarQueryParams, "destFileName", request.getDestFileName());
+        addParameterToQuery(localVarQueryParams, "revisionAuthor", request.getRevisionAuthor());
+        addParameterToQuery(localVarQueryParams, "revisionDateTime", request.getRevisionDateTime());
 
         Map<String, String> localVarHeaderParams = new HashMap<String, String>();
 
@@ -4222,19 +4278,21 @@ public class WordsApi {
         Object localVarPostBody = null;
 
         // create path and map variables
-        String localVarPath = "/words/{name}/{nodePath}/OfficeMathObjects/{index}".replaceAll("\\{" + "name" + "\\}", request.getName().toString()).replaceAll("//", "/")
-    .replaceAll("\\{" + "index" + "\\}", request.getIndex().toString()).replaceAll("//", "/")
-    .replaceAll("\\{" + "nodePath" + "\\}", request.getNodePath().toString()).replaceAll("//", "/");
+        String localVarPath = "/words/{name}/{nodePath}/OfficeMathObjects/{index}";
+        localVarPath = addParameterToPath(localVarPath, "name", request.getName());
+        localVarPath = addParameterToPath(localVarPath, "index", request.getIndex());
+        localVarPath = addParameterToPath(localVarPath, "nodePath", request.getNodePath());
+        localVarPath = localVarPath.replaceAll("//", "/");
 
         List<Pair> localVarQueryParams = new ArrayList<Pair>();
         List<Pair> localVarCollectionQueryParams = new ArrayList<Pair>();
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "folder", request.getFolder());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "storage", request.getStorage());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "loadEncoding", request.getLoadEncoding());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "password", request.getPassword());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "destFileName", request.getDestFileName());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "revisionAuthor", request.getRevisionAuthor());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "revisionDateTime", request.getRevisionDateTime());
+        addParameterToQuery(localVarQueryParams, "folder", request.getFolder());
+        addParameterToQuery(localVarQueryParams, "storage", request.getStorage());
+        addParameterToQuery(localVarQueryParams, "loadEncoding", request.getLoadEncoding());
+        addParameterToQuery(localVarQueryParams, "password", request.getPassword());
+        addParameterToQuery(localVarQueryParams, "destFileName", request.getDestFileName());
+        addParameterToQuery(localVarQueryParams, "revisionAuthor", request.getRevisionAuthor());
+        addParameterToQuery(localVarQueryParams, "revisionDateTime", request.getRevisionDateTime());
 
         Map<String, String> localVarHeaderParams = new HashMap<String, String>();
 
@@ -4361,19 +4419,21 @@ public class WordsApi {
         Object localVarPostBody = null;
 
         // create path and map variables
-        String localVarPath = "/words/{name}/{nodePath}/paragraphs/{index}".replaceAll("\\{" + "name" + "\\}", request.getName().toString()).replaceAll("//", "/")
-    .replaceAll("\\{" + "index" + "\\}", request.getIndex().toString()).replaceAll("//", "/")
-    .replaceAll("\\{" + "nodePath" + "\\}", request.getNodePath().toString()).replaceAll("//", "/");
+        String localVarPath = "/words/{name}/{nodePath}/paragraphs/{index}";
+        localVarPath = addParameterToPath(localVarPath, "name", request.getName());
+        localVarPath = addParameterToPath(localVarPath, "index", request.getIndex());
+        localVarPath = addParameterToPath(localVarPath, "nodePath", request.getNodePath());
+        localVarPath = localVarPath.replaceAll("//", "/");
 
         List<Pair> localVarQueryParams = new ArrayList<Pair>();
         List<Pair> localVarCollectionQueryParams = new ArrayList<Pair>();
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "folder", request.getFolder());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "storage", request.getStorage());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "loadEncoding", request.getLoadEncoding());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "password", request.getPassword());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "destFileName", request.getDestFileName());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "revisionAuthor", request.getRevisionAuthor());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "revisionDateTime", request.getRevisionDateTime());
+        addParameterToQuery(localVarQueryParams, "folder", request.getFolder());
+        addParameterToQuery(localVarQueryParams, "storage", request.getStorage());
+        addParameterToQuery(localVarQueryParams, "loadEncoding", request.getLoadEncoding());
+        addParameterToQuery(localVarQueryParams, "password", request.getPassword());
+        addParameterToQuery(localVarQueryParams, "destFileName", request.getDestFileName());
+        addParameterToQuery(localVarQueryParams, "revisionAuthor", request.getRevisionAuthor());
+        addParameterToQuery(localVarQueryParams, "revisionDateTime", request.getRevisionDateTime());
 
         Map<String, String> localVarHeaderParams = new HashMap<String, String>();
 
@@ -4500,19 +4560,21 @@ public class WordsApi {
         Object localVarPostBody = null;
 
         // create path and map variables
-        String localVarPath = "/words/{name}/{nodePath}/paragraphs/{index}/listFormat".replaceAll("\\{" + "name" + "\\}", request.getName().toString()).replaceAll("//", "/")
-    .replaceAll("\\{" + "index" + "\\}", request.getIndex().toString()).replaceAll("//", "/")
-    .replaceAll("\\{" + "nodePath" + "\\}", request.getNodePath().toString()).replaceAll("//", "/");
+        String localVarPath = "/words/{name}/{nodePath}/paragraphs/{index}/listFormat";
+        localVarPath = addParameterToPath(localVarPath, "name", request.getName());
+        localVarPath = addParameterToPath(localVarPath, "index", request.getIndex());
+        localVarPath = addParameterToPath(localVarPath, "nodePath", request.getNodePath());
+        localVarPath = localVarPath.replaceAll("//", "/");
 
         List<Pair> localVarQueryParams = new ArrayList<Pair>();
         List<Pair> localVarCollectionQueryParams = new ArrayList<Pair>();
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "folder", request.getFolder());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "storage", request.getStorage());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "loadEncoding", request.getLoadEncoding());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "password", request.getPassword());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "destFileName", request.getDestFileName());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "revisionAuthor", request.getRevisionAuthor());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "revisionDateTime", request.getRevisionDateTime());
+        addParameterToQuery(localVarQueryParams, "folder", request.getFolder());
+        addParameterToQuery(localVarQueryParams, "storage", request.getStorage());
+        addParameterToQuery(localVarQueryParams, "loadEncoding", request.getLoadEncoding());
+        addParameterToQuery(localVarQueryParams, "password", request.getPassword());
+        addParameterToQuery(localVarQueryParams, "destFileName", request.getDestFileName());
+        addParameterToQuery(localVarQueryParams, "revisionAuthor", request.getRevisionAuthor());
+        addParameterToQuery(localVarQueryParams, "revisionDateTime", request.getRevisionDateTime());
 
         Map<String, String> localVarHeaderParams = new HashMap<String, String>();
 
@@ -4644,18 +4706,20 @@ public class WordsApi {
         Object localVarPostBody = null;
 
         // create path and map variables
-        String localVarPath = "/words/{name}/{nodePath}/paragraphs/{index}/tabstop".replaceAll("\\{" + "name" + "\\}", request.getName().toString()).replaceAll("//", "/")
-    .replaceAll("\\{" + "index" + "\\}", request.getIndex().toString()).replaceAll("//", "/")
-    .replaceAll("\\{" + "nodePath" + "\\}", request.getNodePath().toString()).replaceAll("//", "/");
+        String localVarPath = "/words/{name}/{nodePath}/paragraphs/{index}/tabstop";
+        localVarPath = addParameterToPath(localVarPath, "name", request.getName());
+        localVarPath = addParameterToPath(localVarPath, "index", request.getIndex());
+        localVarPath = addParameterToPath(localVarPath, "nodePath", request.getNodePath());
+        localVarPath = localVarPath.replaceAll("//", "/");
 
         List<Pair> localVarQueryParams = new ArrayList<Pair>();
         List<Pair> localVarCollectionQueryParams = new ArrayList<Pair>();
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "position", request.getPosition());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "folder", request.getFolder());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "storage", request.getStorage());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "loadEncoding", request.getLoadEncoding());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "password", request.getPassword());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "destFileName", request.getDestFileName());
+        addParameterToQuery(localVarQueryParams, "position", request.getPosition());
+        addParameterToQuery(localVarQueryParams, "folder", request.getFolder());
+        addParameterToQuery(localVarQueryParams, "storage", request.getStorage());
+        addParameterToQuery(localVarQueryParams, "loadEncoding", request.getLoadEncoding());
+        addParameterToQuery(localVarQueryParams, "password", request.getPassword());
+        addParameterToQuery(localVarQueryParams, "destFileName", request.getDestFileName());
 
         Map<String, String> localVarHeaderParams = new HashMap<String, String>();
 
@@ -4792,19 +4856,21 @@ public class WordsApi {
         Object localVarPostBody = null;
 
         // create path and map variables
-        String localVarPath = "/words/{name}/{paragraphPath}/runs/{index}".replaceAll("\\{" + "name" + "\\}", request.getName().toString()).replaceAll("//", "/")
-    .replaceAll("\\{" + "paragraphPath" + "\\}", request.getParagraphPath().toString()).replaceAll("//", "/")
-    .replaceAll("\\{" + "index" + "\\}", request.getIndex().toString()).replaceAll("//", "/");
+        String localVarPath = "/words/{name}/{paragraphPath}/runs/{index}";
+        localVarPath = addParameterToPath(localVarPath, "name", request.getName());
+        localVarPath = addParameterToPath(localVarPath, "paragraphPath", request.getParagraphPath());
+        localVarPath = addParameterToPath(localVarPath, "index", request.getIndex());
+        localVarPath = localVarPath.replaceAll("//", "/");
 
         List<Pair> localVarQueryParams = new ArrayList<Pair>();
         List<Pair> localVarCollectionQueryParams = new ArrayList<Pair>();
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "folder", request.getFolder());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "storage", request.getStorage());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "loadEncoding", request.getLoadEncoding());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "password", request.getPassword());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "destFileName", request.getDestFileName());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "revisionAuthor", request.getRevisionAuthor());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "revisionDateTime", request.getRevisionDateTime());
+        addParameterToQuery(localVarQueryParams, "folder", request.getFolder());
+        addParameterToQuery(localVarQueryParams, "storage", request.getStorage());
+        addParameterToQuery(localVarQueryParams, "loadEncoding", request.getLoadEncoding());
+        addParameterToQuery(localVarQueryParams, "password", request.getPassword());
+        addParameterToQuery(localVarQueryParams, "destFileName", request.getDestFileName());
+        addParameterToQuery(localVarQueryParams, "revisionAuthor", request.getRevisionAuthor());
+        addParameterToQuery(localVarQueryParams, "revisionDateTime", request.getRevisionDateTime());
 
         Map<String, String> localVarHeaderParams = new HashMap<String, String>();
 
@@ -4936,18 +5002,20 @@ public class WordsApi {
         Object localVarPostBody = null;
 
         // create path and map variables
-        String localVarPath = "/words/{name}/sections/{sectionIndex}".replaceAll("\\{" + "name" + "\\}", request.getName().toString()).replaceAll("//", "/")
-    .replaceAll("\\{" + "sectionIndex" + "\\}", request.getSectionIndex().toString()).replaceAll("//", "/");
+        String localVarPath = "/words/{name}/sections/{sectionIndex}";
+        localVarPath = addParameterToPath(localVarPath, "name", request.getName());
+        localVarPath = addParameterToPath(localVarPath, "sectionIndex", request.getSectionIndex());
+        localVarPath = localVarPath.replaceAll("//", "/");
 
         List<Pair> localVarQueryParams = new ArrayList<Pair>();
         List<Pair> localVarCollectionQueryParams = new ArrayList<Pair>();
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "folder", request.getFolder());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "storage", request.getStorage());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "loadEncoding", request.getLoadEncoding());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "password", request.getPassword());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "destFileName", request.getDestFileName());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "revisionAuthor", request.getRevisionAuthor());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "revisionDateTime", request.getRevisionDateTime());
+        addParameterToQuery(localVarQueryParams, "folder", request.getFolder());
+        addParameterToQuery(localVarQueryParams, "storage", request.getStorage());
+        addParameterToQuery(localVarQueryParams, "loadEncoding", request.getLoadEncoding());
+        addParameterToQuery(localVarQueryParams, "password", request.getPassword());
+        addParameterToQuery(localVarQueryParams, "destFileName", request.getDestFileName());
+        addParameterToQuery(localVarQueryParams, "revisionAuthor", request.getRevisionAuthor());
+        addParameterToQuery(localVarQueryParams, "revisionDateTime", request.getRevisionDateTime());
 
         Map<String, String> localVarHeaderParams = new HashMap<String, String>();
 
@@ -5074,19 +5142,21 @@ public class WordsApi {
         Object localVarPostBody = null;
 
         // create path and map variables
-        String localVarPath = "/words/{name}/{nodePath}/tables/{index}".replaceAll("\\{" + "name" + "\\}", request.getName().toString()).replaceAll("//", "/")
-    .replaceAll("\\{" + "index" + "\\}", request.getIndex().toString()).replaceAll("//", "/")
-    .replaceAll("\\{" + "nodePath" + "\\}", request.getNodePath().toString()).replaceAll("//", "/");
+        String localVarPath = "/words/{name}/{nodePath}/tables/{index}";
+        localVarPath = addParameterToPath(localVarPath, "name", request.getName());
+        localVarPath = addParameterToPath(localVarPath, "index", request.getIndex());
+        localVarPath = addParameterToPath(localVarPath, "nodePath", request.getNodePath());
+        localVarPath = localVarPath.replaceAll("//", "/");
 
         List<Pair> localVarQueryParams = new ArrayList<Pair>();
         List<Pair> localVarCollectionQueryParams = new ArrayList<Pair>();
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "folder", request.getFolder());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "storage", request.getStorage());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "loadEncoding", request.getLoadEncoding());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "password", request.getPassword());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "destFileName", request.getDestFileName());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "revisionAuthor", request.getRevisionAuthor());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "revisionDateTime", request.getRevisionDateTime());
+        addParameterToQuery(localVarQueryParams, "folder", request.getFolder());
+        addParameterToQuery(localVarQueryParams, "storage", request.getStorage());
+        addParameterToQuery(localVarQueryParams, "loadEncoding", request.getLoadEncoding());
+        addParameterToQuery(localVarQueryParams, "password", request.getPassword());
+        addParameterToQuery(localVarQueryParams, "destFileName", request.getDestFileName());
+        addParameterToQuery(localVarQueryParams, "revisionAuthor", request.getRevisionAuthor());
+        addParameterToQuery(localVarQueryParams, "revisionDateTime", request.getRevisionDateTime());
 
         Map<String, String> localVarHeaderParams = new HashMap<String, String>();
 
@@ -5213,19 +5283,21 @@ public class WordsApi {
         Object localVarPostBody = null;
 
         // create path and map variables
-        String localVarPath = "/words/{name}/{tableRowPath}/cells/{index}".replaceAll("\\{" + "name" + "\\}", request.getName().toString()).replaceAll("//", "/")
-    .replaceAll("\\{" + "tableRowPath" + "\\}", request.getTableRowPath().toString()).replaceAll("//", "/")
-    .replaceAll("\\{" + "index" + "\\}", request.getIndex().toString()).replaceAll("//", "/");
+        String localVarPath = "/words/{name}/{tableRowPath}/cells/{index}";
+        localVarPath = addParameterToPath(localVarPath, "name", request.getName());
+        localVarPath = addParameterToPath(localVarPath, "tableRowPath", request.getTableRowPath());
+        localVarPath = addParameterToPath(localVarPath, "index", request.getIndex());
+        localVarPath = localVarPath.replaceAll("//", "/");
 
         List<Pair> localVarQueryParams = new ArrayList<Pair>();
         List<Pair> localVarCollectionQueryParams = new ArrayList<Pair>();
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "folder", request.getFolder());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "storage", request.getStorage());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "loadEncoding", request.getLoadEncoding());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "password", request.getPassword());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "destFileName", request.getDestFileName());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "revisionAuthor", request.getRevisionAuthor());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "revisionDateTime", request.getRevisionDateTime());
+        addParameterToQuery(localVarQueryParams, "folder", request.getFolder());
+        addParameterToQuery(localVarQueryParams, "storage", request.getStorage());
+        addParameterToQuery(localVarQueryParams, "loadEncoding", request.getLoadEncoding());
+        addParameterToQuery(localVarQueryParams, "password", request.getPassword());
+        addParameterToQuery(localVarQueryParams, "destFileName", request.getDestFileName());
+        addParameterToQuery(localVarQueryParams, "revisionAuthor", request.getRevisionAuthor());
+        addParameterToQuery(localVarQueryParams, "revisionDateTime", request.getRevisionDateTime());
 
         Map<String, String> localVarHeaderParams = new HashMap<String, String>();
 
@@ -5357,19 +5429,21 @@ public class WordsApi {
         Object localVarPostBody = null;
 
         // create path and map variables
-        String localVarPath = "/words/{name}/{tablePath}/rows/{index}".replaceAll("\\{" + "name" + "\\}", request.getName().toString()).replaceAll("//", "/")
-    .replaceAll("\\{" + "tablePath" + "\\}", request.getTablePath().toString()).replaceAll("//", "/")
-    .replaceAll("\\{" + "index" + "\\}", request.getIndex().toString()).replaceAll("//", "/");
+        String localVarPath = "/words/{name}/{tablePath}/rows/{index}";
+        localVarPath = addParameterToPath(localVarPath, "name", request.getName());
+        localVarPath = addParameterToPath(localVarPath, "tablePath", request.getTablePath());
+        localVarPath = addParameterToPath(localVarPath, "index", request.getIndex());
+        localVarPath = localVarPath.replaceAll("//", "/");
 
         List<Pair> localVarQueryParams = new ArrayList<Pair>();
         List<Pair> localVarCollectionQueryParams = new ArrayList<Pair>();
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "folder", request.getFolder());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "storage", request.getStorage());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "loadEncoding", request.getLoadEncoding());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "password", request.getPassword());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "destFileName", request.getDestFileName());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "revisionAuthor", request.getRevisionAuthor());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "revisionDateTime", request.getRevisionDateTime());
+        addParameterToQuery(localVarQueryParams, "folder", request.getFolder());
+        addParameterToQuery(localVarQueryParams, "storage", request.getStorage());
+        addParameterToQuery(localVarQueryParams, "loadEncoding", request.getLoadEncoding());
+        addParameterToQuery(localVarQueryParams, "password", request.getPassword());
+        addParameterToQuery(localVarQueryParams, "destFileName", request.getDestFileName());
+        addParameterToQuery(localVarQueryParams, "revisionAuthor", request.getRevisionAuthor());
+        addParameterToQuery(localVarQueryParams, "revisionDateTime", request.getRevisionDateTime());
 
         Map<String, String> localVarHeaderParams = new HashMap<String, String>();
 
@@ -5501,17 +5575,19 @@ public class WordsApi {
         Object localVarPostBody = null;
 
         // create path and map variables
-        String localVarPath = "/words/{name}/watermarks/deleteLast".replaceAll("\\{" + "name" + "\\}", request.getName().toString()).replaceAll("//", "/");
+        String localVarPath = "/words/{name}/watermarks/deleteLast";
+        localVarPath = addParameterToPath(localVarPath, "name", request.getName());
+        localVarPath = localVarPath.replaceAll("//", "/");
 
         List<Pair> localVarQueryParams = new ArrayList<Pair>();
         List<Pair> localVarCollectionQueryParams = new ArrayList<Pair>();
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "folder", request.getFolder());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "storage", request.getStorage());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "loadEncoding", request.getLoadEncoding());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "password", request.getPassword());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "destFileName", request.getDestFileName());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "revisionAuthor", request.getRevisionAuthor());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "revisionDateTime", request.getRevisionDateTime());
+        addParameterToQuery(localVarQueryParams, "folder", request.getFolder());
+        addParameterToQuery(localVarQueryParams, "storage", request.getStorage());
+        addParameterToQuery(localVarQueryParams, "loadEncoding", request.getLoadEncoding());
+        addParameterToQuery(localVarQueryParams, "password", request.getPassword());
+        addParameterToQuery(localVarQueryParams, "destFileName", request.getDestFileName());
+        addParameterToQuery(localVarQueryParams, "revisionAuthor", request.getRevisionAuthor());
+        addParameterToQuery(localVarQueryParams, "revisionDateTime", request.getRevisionDateTime());
 
         Map<String, String> localVarHeaderParams = new HashMap<String, String>();
 
@@ -5638,12 +5714,14 @@ public class WordsApi {
         Object localVarPostBody = null;
 
         // create path and map variables
-        String localVarPath = "/words/storage/file/{path}".replaceAll("\\{" + "path" + "\\}", request.getPath().toString()).replaceAll("//", "/");
+        String localVarPath = "/words/storage/file/{path}";
+        localVarPath = addParameterToPath(localVarPath, "path", request.getPath());
+        localVarPath = localVarPath.replaceAll("//", "/");
 
         List<Pair> localVarQueryParams = new ArrayList<Pair>();
         List<Pair> localVarCollectionQueryParams = new ArrayList<Pair>();
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "storageName", request.getStorageName());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "versionId", request.getVersionId());
+        addParameterToQuery(localVarQueryParams, "storageName", request.getStorageName());
+        addParameterToQuery(localVarQueryParams, "versionId", request.getVersionId());
 
         Map<String, String> localVarHeaderParams = new HashMap<String, String>();
 
@@ -5770,19 +5848,21 @@ public class WordsApi {
         Object localVarPostBody = null;
 
         // create path and map variables
-        String localVarPath = "/words/{name}/MailMerge".replaceAll("\\{" + "name" + "\\}", request.getName().toString()).replaceAll("//", "/");
+        String localVarPath = "/words/{name}/MailMerge";
+        localVarPath = addParameterToPath(localVarPath, "name", request.getName());
+        localVarPath = localVarPath.replaceAll("//", "/");
 
         List<Pair> localVarQueryParams = new ArrayList<Pair>();
         List<Pair> localVarCollectionQueryParams = new ArrayList<Pair>();
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "folder", request.getFolder());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "storage", request.getStorage());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "loadEncoding", request.getLoadEncoding());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "password", request.getPassword());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "withRegions", request.getWithRegions());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "mailMergeDataFile", request.getMailMergeDataFile());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "cleanup", request.getCleanup());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "useWholeParagraphAsRegion", request.getUseWholeParagraphAsRegion());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "destFileName", request.getDestFileName());
+        addParameterToQuery(localVarQueryParams, "folder", request.getFolder());
+        addParameterToQuery(localVarQueryParams, "storage", request.getStorage());
+        addParameterToQuery(localVarQueryParams, "loadEncoding", request.getLoadEncoding());
+        addParameterToQuery(localVarQueryParams, "password", request.getPassword());
+        addParameterToQuery(localVarQueryParams, "withRegions", request.getWithRegions());
+        addParameterToQuery(localVarQueryParams, "mailMergeDataFile", request.getMailMergeDataFile());
+        addParameterToQuery(localVarQueryParams, "cleanup", request.getCleanup());
+        addParameterToQuery(localVarQueryParams, "useWholeParagraphAsRegion", request.getUseWholeParagraphAsRegion());
+        addParameterToQuery(localVarQueryParams, "destFileName", request.getDestFileName());
 
         Map<String, String> localVarHeaderParams = new HashMap<String, String>();
 
@@ -5912,12 +5992,13 @@ public class WordsApi {
 
         // create path and map variables
         String localVarPath = "/words/MailMerge";
+        localVarPath = localVarPath.replaceAll("//", "/");
 
         List<Pair> localVarQueryParams = new ArrayList<Pair>();
         List<Pair> localVarCollectionQueryParams = new ArrayList<Pair>();
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "withRegions", request.getWithRegions());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "cleanup", request.getCleanup());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "documentFileName", request.getDocumentFileName());
+        addParameterToQuery(localVarQueryParams, "withRegions", request.getWithRegions());
+        addParameterToQuery(localVarQueryParams, "cleanup", request.getCleanup());
+        addParameterToQuery(localVarQueryParams, "documentFileName", request.getDocumentFileName());
 
         Map<String, String> localVarHeaderParams = new HashMap<String, String>();
 
@@ -6055,10 +6136,11 @@ public class WordsApi {
 
         // create path and map variables
         String localVarPath = "/words/fonts/available";
+        localVarPath = localVarPath.replaceAll("//", "/");
 
         List<Pair> localVarQueryParams = new ArrayList<Pair>();
         List<Pair> localVarCollectionQueryParams = new ArrayList<Pair>();
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "fontsLocation", request.getFontsLocation());
+        addParameterToQuery(localVarQueryParams, "fontsLocation", request.getFontsLocation());
 
         Map<String, String> localVarHeaderParams = new HashMap<String, String>();
 
@@ -6181,15 +6263,17 @@ public class WordsApi {
         Object localVarPostBody = null;
 
         // create path and map variables
-        String localVarPath = "/words/{name}/bookmarks/{bookmarkName}".replaceAll("\\{" + "name" + "\\}", request.getName().toString()).replaceAll("//", "/")
-    .replaceAll("\\{" + "bookmarkName" + "\\}", request.getBookmarkName().toString()).replaceAll("//", "/");
+        String localVarPath = "/words/{name}/bookmarks/{bookmarkName}";
+        localVarPath = addParameterToPath(localVarPath, "name", request.getName());
+        localVarPath = addParameterToPath(localVarPath, "bookmarkName", request.getBookmarkName());
+        localVarPath = localVarPath.replaceAll("//", "/");
 
         List<Pair> localVarQueryParams = new ArrayList<Pair>();
         List<Pair> localVarCollectionQueryParams = new ArrayList<Pair>();
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "folder", request.getFolder());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "storage", request.getStorage());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "loadEncoding", request.getLoadEncoding());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "password", request.getPassword());
+        addParameterToQuery(localVarQueryParams, "folder", request.getFolder());
+        addParameterToQuery(localVarQueryParams, "storage", request.getStorage());
+        addParameterToQuery(localVarQueryParams, "loadEncoding", request.getLoadEncoding());
+        addParameterToQuery(localVarQueryParams, "password", request.getPassword());
 
         Map<String, String> localVarHeaderParams = new HashMap<String, String>();
 
@@ -6321,14 +6405,16 @@ public class WordsApi {
         Object localVarPostBody = null;
 
         // create path and map variables
-        String localVarPath = "/words/{name}/bookmarks".replaceAll("\\{" + "name" + "\\}", request.getName().toString()).replaceAll("//", "/");
+        String localVarPath = "/words/{name}/bookmarks";
+        localVarPath = addParameterToPath(localVarPath, "name", request.getName());
+        localVarPath = localVarPath.replaceAll("//", "/");
 
         List<Pair> localVarQueryParams = new ArrayList<Pair>();
         List<Pair> localVarCollectionQueryParams = new ArrayList<Pair>();
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "folder", request.getFolder());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "storage", request.getStorage());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "loadEncoding", request.getLoadEncoding());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "password", request.getPassword());
+        addParameterToQuery(localVarQueryParams, "folder", request.getFolder());
+        addParameterToQuery(localVarQueryParams, "storage", request.getStorage());
+        addParameterToQuery(localVarQueryParams, "loadEncoding", request.getLoadEncoding());
+        addParameterToQuery(localVarQueryParams, "password", request.getPassword());
 
         Map<String, String> localVarHeaderParams = new HashMap<String, String>();
 
@@ -6455,16 +6541,18 @@ public class WordsApi {
         Object localVarPostBody = null;
 
         // create path and map variables
-        String localVarPath = "/words/{name}/{nodePath}/borders/{borderType}".replaceAll("\\{" + "name" + "\\}", request.getName().toString()).replaceAll("//", "/")
-    .replaceAll("\\{" + "borderType" + "\\}", request.getBorderType().toString()).replaceAll("//", "/")
-    .replaceAll("\\{" + "nodePath" + "\\}", request.getNodePath().toString()).replaceAll("//", "/");
+        String localVarPath = "/words/{name}/{nodePath}/borders/{borderType}";
+        localVarPath = addParameterToPath(localVarPath, "name", request.getName());
+        localVarPath = addParameterToPath(localVarPath, "borderType", request.getBorderType());
+        localVarPath = addParameterToPath(localVarPath, "nodePath", request.getNodePath());
+        localVarPath = localVarPath.replaceAll("//", "/");
 
         List<Pair> localVarQueryParams = new ArrayList<Pair>();
         List<Pair> localVarCollectionQueryParams = new ArrayList<Pair>();
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "folder", request.getFolder());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "storage", request.getStorage());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "loadEncoding", request.getLoadEncoding());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "password", request.getPassword());
+        addParameterToQuery(localVarQueryParams, "folder", request.getFolder());
+        addParameterToQuery(localVarQueryParams, "storage", request.getStorage());
+        addParameterToQuery(localVarQueryParams, "loadEncoding", request.getLoadEncoding());
+        addParameterToQuery(localVarQueryParams, "password", request.getPassword());
 
         Map<String, String> localVarHeaderParams = new HashMap<String, String>();
 
@@ -6596,15 +6684,17 @@ public class WordsApi {
         Object localVarPostBody = null;
 
         // create path and map variables
-        String localVarPath = "/words/{name}/{nodePath}/borders".replaceAll("\\{" + "name" + "\\}", request.getName().toString()).replaceAll("//", "/")
-    .replaceAll("\\{" + "nodePath" + "\\}", request.getNodePath().toString()).replaceAll("//", "/");
+        String localVarPath = "/words/{name}/{nodePath}/borders";
+        localVarPath = addParameterToPath(localVarPath, "name", request.getName());
+        localVarPath = addParameterToPath(localVarPath, "nodePath", request.getNodePath());
+        localVarPath = localVarPath.replaceAll("//", "/");
 
         List<Pair> localVarQueryParams = new ArrayList<Pair>();
         List<Pair> localVarCollectionQueryParams = new ArrayList<Pair>();
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "folder", request.getFolder());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "storage", request.getStorage());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "loadEncoding", request.getLoadEncoding());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "password", request.getPassword());
+        addParameterToQuery(localVarQueryParams, "folder", request.getFolder());
+        addParameterToQuery(localVarQueryParams, "storage", request.getStorage());
+        addParameterToQuery(localVarQueryParams, "loadEncoding", request.getLoadEncoding());
+        addParameterToQuery(localVarQueryParams, "password", request.getPassword());
 
         Map<String, String> localVarHeaderParams = new HashMap<String, String>();
 
@@ -6731,15 +6821,17 @@ public class WordsApi {
         Object localVarPostBody = null;
 
         // create path and map variables
-        String localVarPath = "/words/{name}/comments/{commentIndex}".replaceAll("\\{" + "name" + "\\}", request.getName().toString()).replaceAll("//", "/")
-    .replaceAll("\\{" + "commentIndex" + "\\}", request.getCommentIndex().toString()).replaceAll("//", "/");
+        String localVarPath = "/words/{name}/comments/{commentIndex}";
+        localVarPath = addParameterToPath(localVarPath, "name", request.getName());
+        localVarPath = addParameterToPath(localVarPath, "commentIndex", request.getCommentIndex());
+        localVarPath = localVarPath.replaceAll("//", "/");
 
         List<Pair> localVarQueryParams = new ArrayList<Pair>();
         List<Pair> localVarCollectionQueryParams = new ArrayList<Pair>();
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "folder", request.getFolder());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "storage", request.getStorage());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "loadEncoding", request.getLoadEncoding());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "password", request.getPassword());
+        addParameterToQuery(localVarQueryParams, "folder", request.getFolder());
+        addParameterToQuery(localVarQueryParams, "storage", request.getStorage());
+        addParameterToQuery(localVarQueryParams, "loadEncoding", request.getLoadEncoding());
+        addParameterToQuery(localVarQueryParams, "password", request.getPassword());
 
         Map<String, String> localVarHeaderParams = new HashMap<String, String>();
 
@@ -6871,14 +6963,16 @@ public class WordsApi {
         Object localVarPostBody = null;
 
         // create path and map variables
-        String localVarPath = "/words/{name}/comments".replaceAll("\\{" + "name" + "\\}", request.getName().toString()).replaceAll("//", "/");
+        String localVarPath = "/words/{name}/comments";
+        localVarPath = addParameterToPath(localVarPath, "name", request.getName());
+        localVarPath = localVarPath.replaceAll("//", "/");
 
         List<Pair> localVarQueryParams = new ArrayList<Pair>();
         List<Pair> localVarCollectionQueryParams = new ArrayList<Pair>();
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "folder", request.getFolder());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "storage", request.getStorage());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "loadEncoding", request.getLoadEncoding());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "password", request.getPassword());
+        addParameterToQuery(localVarQueryParams, "folder", request.getFolder());
+        addParameterToQuery(localVarQueryParams, "storage", request.getStorage());
+        addParameterToQuery(localVarQueryParams, "loadEncoding", request.getLoadEncoding());
+        addParameterToQuery(localVarQueryParams, "password", request.getPassword());
 
         Map<String, String> localVarHeaderParams = new HashMap<String, String>();
 
@@ -7005,14 +7099,16 @@ public class WordsApi {
         Object localVarPostBody = null;
 
         // create path and map variables
-        String localVarPath = "/words/{documentName}".replaceAll("\\{" + "documentName" + "\\}", request.getDocumentName().toString()).replaceAll("//", "/");
+        String localVarPath = "/words/{documentName}";
+        localVarPath = addParameterToPath(localVarPath, "documentName", request.getDocumentName());
+        localVarPath = localVarPath.replaceAll("//", "/");
 
         List<Pair> localVarQueryParams = new ArrayList<Pair>();
         List<Pair> localVarCollectionQueryParams = new ArrayList<Pair>();
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "folder", request.getFolder());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "storage", request.getStorage());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "loadEncoding", request.getLoadEncoding());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "password", request.getPassword());
+        addParameterToQuery(localVarQueryParams, "folder", request.getFolder());
+        addParameterToQuery(localVarQueryParams, "storage", request.getStorage());
+        addParameterToQuery(localVarQueryParams, "loadEncoding", request.getLoadEncoding());
+        addParameterToQuery(localVarQueryParams, "password", request.getPassword());
 
         Map<String, String> localVarHeaderParams = new HashMap<String, String>();
 
@@ -7139,16 +7235,18 @@ public class WordsApi {
         Object localVarPostBody = null;
 
         // create path and map variables
-        String localVarPath = "/words/{name}/{nodePath}/drawingObjects/{index}".replaceAll("\\{" + "name" + "\\}", request.getName().toString()).replaceAll("//", "/")
-    .replaceAll("\\{" + "index" + "\\}", request.getIndex().toString()).replaceAll("//", "/")
-    .replaceAll("\\{" + "nodePath" + "\\}", request.getNodePath().toString()).replaceAll("//", "/");
+        String localVarPath = "/words/{name}/{nodePath}/drawingObjects/{index}";
+        localVarPath = addParameterToPath(localVarPath, "name", request.getName());
+        localVarPath = addParameterToPath(localVarPath, "index", request.getIndex());
+        localVarPath = addParameterToPath(localVarPath, "nodePath", request.getNodePath());
+        localVarPath = localVarPath.replaceAll("//", "/");
 
         List<Pair> localVarQueryParams = new ArrayList<Pair>();
         List<Pair> localVarCollectionQueryParams = new ArrayList<Pair>();
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "folder", request.getFolder());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "storage", request.getStorage());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "loadEncoding", request.getLoadEncoding());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "password", request.getPassword());
+        addParameterToQuery(localVarQueryParams, "folder", request.getFolder());
+        addParameterToQuery(localVarQueryParams, "storage", request.getStorage());
+        addParameterToQuery(localVarQueryParams, "loadEncoding", request.getLoadEncoding());
+        addParameterToQuery(localVarQueryParams, "password", request.getPassword());
 
         Map<String, String> localVarHeaderParams = new HashMap<String, String>();
 
@@ -7280,16 +7378,18 @@ public class WordsApi {
         Object localVarPostBody = null;
 
         // create path and map variables
-        String localVarPath = "/words/{name}/{nodePath}/drawingObjects/{index}/imageData".replaceAll("\\{" + "name" + "\\}", request.getName().toString()).replaceAll("//", "/")
-    .replaceAll("\\{" + "index" + "\\}", request.getIndex().toString()).replaceAll("//", "/")
-    .replaceAll("\\{" + "nodePath" + "\\}", request.getNodePath().toString()).replaceAll("//", "/");
+        String localVarPath = "/words/{name}/{nodePath}/drawingObjects/{index}/imageData";
+        localVarPath = addParameterToPath(localVarPath, "name", request.getName());
+        localVarPath = addParameterToPath(localVarPath, "index", request.getIndex());
+        localVarPath = addParameterToPath(localVarPath, "nodePath", request.getNodePath());
+        localVarPath = localVarPath.replaceAll("//", "/");
 
         List<Pair> localVarQueryParams = new ArrayList<Pair>();
         List<Pair> localVarCollectionQueryParams = new ArrayList<Pair>();
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "folder", request.getFolder());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "storage", request.getStorage());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "loadEncoding", request.getLoadEncoding());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "password", request.getPassword());
+        addParameterToQuery(localVarQueryParams, "folder", request.getFolder());
+        addParameterToQuery(localVarQueryParams, "storage", request.getStorage());
+        addParameterToQuery(localVarQueryParams, "loadEncoding", request.getLoadEncoding());
+        addParameterToQuery(localVarQueryParams, "password", request.getPassword());
 
         Map<String, String> localVarHeaderParams = new HashMap<String, String>();
 
@@ -7421,16 +7521,18 @@ public class WordsApi {
         Object localVarPostBody = null;
 
         // create path and map variables
-        String localVarPath = "/words/{name}/{nodePath}/drawingObjects/{index}/oleData".replaceAll("\\{" + "name" + "\\}", request.getName().toString()).replaceAll("//", "/")
-    .replaceAll("\\{" + "index" + "\\}", request.getIndex().toString()).replaceAll("//", "/")
-    .replaceAll("\\{" + "nodePath" + "\\}", request.getNodePath().toString()).replaceAll("//", "/");
+        String localVarPath = "/words/{name}/{nodePath}/drawingObjects/{index}/oleData";
+        localVarPath = addParameterToPath(localVarPath, "name", request.getName());
+        localVarPath = addParameterToPath(localVarPath, "index", request.getIndex());
+        localVarPath = addParameterToPath(localVarPath, "nodePath", request.getNodePath());
+        localVarPath = localVarPath.replaceAll("//", "/");
 
         List<Pair> localVarQueryParams = new ArrayList<Pair>();
         List<Pair> localVarCollectionQueryParams = new ArrayList<Pair>();
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "folder", request.getFolder());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "storage", request.getStorage());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "loadEncoding", request.getLoadEncoding());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "password", request.getPassword());
+        addParameterToQuery(localVarQueryParams, "folder", request.getFolder());
+        addParameterToQuery(localVarQueryParams, "storage", request.getStorage());
+        addParameterToQuery(localVarQueryParams, "loadEncoding", request.getLoadEncoding());
+        addParameterToQuery(localVarQueryParams, "password", request.getPassword());
 
         Map<String, String> localVarHeaderParams = new HashMap<String, String>();
 
@@ -7562,15 +7664,17 @@ public class WordsApi {
         Object localVarPostBody = null;
 
         // create path and map variables
-        String localVarPath = "/words/{name}/{nodePath}/drawingObjects".replaceAll("\\{" + "name" + "\\}", request.getName().toString()).replaceAll("//", "/")
-    .replaceAll("\\{" + "nodePath" + "\\}", request.getNodePath().toString()).replaceAll("//", "/");
+        String localVarPath = "/words/{name}/{nodePath}/drawingObjects";
+        localVarPath = addParameterToPath(localVarPath, "name", request.getName());
+        localVarPath = addParameterToPath(localVarPath, "nodePath", request.getNodePath());
+        localVarPath = localVarPath.replaceAll("//", "/");
 
         List<Pair> localVarQueryParams = new ArrayList<Pair>();
         List<Pair> localVarCollectionQueryParams = new ArrayList<Pair>();
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "folder", request.getFolder());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "storage", request.getStorage());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "loadEncoding", request.getLoadEncoding());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "password", request.getPassword());
+        addParameterToQuery(localVarQueryParams, "folder", request.getFolder());
+        addParameterToQuery(localVarQueryParams, "storage", request.getStorage());
+        addParameterToQuery(localVarQueryParams, "loadEncoding", request.getLoadEncoding());
+        addParameterToQuery(localVarQueryParams, "password", request.getPassword());
 
         Map<String, String> localVarHeaderParams = new HashMap<String, String>();
 
@@ -7697,15 +7801,17 @@ public class WordsApi {
         Object localVarPostBody = null;
 
         // create path and map variables
-        String localVarPath = "/words/{name}/mailMerge/FieldNames".replaceAll("\\{" + "name" + "\\}", request.getName().toString()).replaceAll("//", "/");
+        String localVarPath = "/words/{name}/mailMerge/FieldNames";
+        localVarPath = addParameterToPath(localVarPath, "name", request.getName());
+        localVarPath = localVarPath.replaceAll("//", "/");
 
         List<Pair> localVarQueryParams = new ArrayList<Pair>();
         List<Pair> localVarCollectionQueryParams = new ArrayList<Pair>();
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "folder", request.getFolder());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "storage", request.getStorage());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "loadEncoding", request.getLoadEncoding());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "password", request.getPassword());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "useNonMergeFields", request.getUseNonMergeFields());
+        addParameterToQuery(localVarQueryParams, "folder", request.getFolder());
+        addParameterToQuery(localVarQueryParams, "storage", request.getStorage());
+        addParameterToQuery(localVarQueryParams, "loadEncoding", request.getLoadEncoding());
+        addParameterToQuery(localVarQueryParams, "password", request.getPassword());
+        addParameterToQuery(localVarQueryParams, "useNonMergeFields", request.getUseNonMergeFields());
 
         Map<String, String> localVarHeaderParams = new HashMap<String, String>();
 
@@ -7833,10 +7939,11 @@ public class WordsApi {
 
         // create path and map variables
         String localVarPath = "/words/mailMerge/FieldNames";
+        localVarPath = localVarPath.replaceAll("//", "/");
 
         List<Pair> localVarQueryParams = new ArrayList<Pair>();
         List<Pair> localVarCollectionQueryParams = new ArrayList<Pair>();
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "useNonMergeFields", request.getUseNonMergeFields());
+        addParameterToQuery(localVarQueryParams, "useNonMergeFields", request.getUseNonMergeFields());
 
         Map<String, String> localVarHeaderParams = new HashMap<String, String>();
 
@@ -7965,15 +8072,17 @@ public class WordsApi {
         Object localVarPostBody = null;
 
         // create path and map variables
-        String localVarPath = "/words/{name}/hyperlinks/{hyperlinkIndex}".replaceAll("\\{" + "name" + "\\}", request.getName().toString()).replaceAll("//", "/")
-    .replaceAll("\\{" + "hyperlinkIndex" + "\\}", request.getHyperlinkIndex().toString()).replaceAll("//", "/");
+        String localVarPath = "/words/{name}/hyperlinks/{hyperlinkIndex}";
+        localVarPath = addParameterToPath(localVarPath, "name", request.getName());
+        localVarPath = addParameterToPath(localVarPath, "hyperlinkIndex", request.getHyperlinkIndex());
+        localVarPath = localVarPath.replaceAll("//", "/");
 
         List<Pair> localVarQueryParams = new ArrayList<Pair>();
         List<Pair> localVarCollectionQueryParams = new ArrayList<Pair>();
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "folder", request.getFolder());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "storage", request.getStorage());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "loadEncoding", request.getLoadEncoding());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "password", request.getPassword());
+        addParameterToQuery(localVarQueryParams, "folder", request.getFolder());
+        addParameterToQuery(localVarQueryParams, "storage", request.getStorage());
+        addParameterToQuery(localVarQueryParams, "loadEncoding", request.getLoadEncoding());
+        addParameterToQuery(localVarQueryParams, "password", request.getPassword());
 
         Map<String, String> localVarHeaderParams = new HashMap<String, String>();
 
@@ -8105,14 +8214,16 @@ public class WordsApi {
         Object localVarPostBody = null;
 
         // create path and map variables
-        String localVarPath = "/words/{name}/hyperlinks".replaceAll("\\{" + "name" + "\\}", request.getName().toString()).replaceAll("//", "/");
+        String localVarPath = "/words/{name}/hyperlinks";
+        localVarPath = addParameterToPath(localVarPath, "name", request.getName());
+        localVarPath = localVarPath.replaceAll("//", "/");
 
         List<Pair> localVarQueryParams = new ArrayList<Pair>();
         List<Pair> localVarCollectionQueryParams = new ArrayList<Pair>();
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "folder", request.getFolder());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "storage", request.getStorage());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "loadEncoding", request.getLoadEncoding());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "password", request.getPassword());
+        addParameterToQuery(localVarQueryParams, "folder", request.getFolder());
+        addParameterToQuery(localVarQueryParams, "storage", request.getStorage());
+        addParameterToQuery(localVarQueryParams, "loadEncoding", request.getLoadEncoding());
+        addParameterToQuery(localVarQueryParams, "password", request.getPassword());
 
         Map<String, String> localVarHeaderParams = new HashMap<String, String>();
 
@@ -8239,14 +8350,16 @@ public class WordsApi {
         Object localVarPostBody = null;
 
         // create path and map variables
-        String localVarPath = "/words/{name}/documentProperties".replaceAll("\\{" + "name" + "\\}", request.getName().toString()).replaceAll("//", "/");
+        String localVarPath = "/words/{name}/documentProperties";
+        localVarPath = addParameterToPath(localVarPath, "name", request.getName());
+        localVarPath = localVarPath.replaceAll("//", "/");
 
         List<Pair> localVarQueryParams = new ArrayList<Pair>();
         List<Pair> localVarCollectionQueryParams = new ArrayList<Pair>();
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "folder", request.getFolder());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "storage", request.getStorage());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "loadEncoding", request.getLoadEncoding());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "password", request.getPassword());
+        addParameterToQuery(localVarQueryParams, "folder", request.getFolder());
+        addParameterToQuery(localVarQueryParams, "storage", request.getStorage());
+        addParameterToQuery(localVarQueryParams, "loadEncoding", request.getLoadEncoding());
+        addParameterToQuery(localVarQueryParams, "password", request.getPassword());
 
         Map<String, String> localVarHeaderParams = new HashMap<String, String>();
 
@@ -8373,15 +8486,17 @@ public class WordsApi {
         Object localVarPostBody = null;
 
         // create path and map variables
-        String localVarPath = "/words/{name}/documentProperties/{propertyName}".replaceAll("\\{" + "name" + "\\}", request.getName().toString()).replaceAll("//", "/")
-    .replaceAll("\\{" + "propertyName" + "\\}", request.getPropertyName().toString()).replaceAll("//", "/");
+        String localVarPath = "/words/{name}/documentProperties/{propertyName}";
+        localVarPath = addParameterToPath(localVarPath, "name", request.getName());
+        localVarPath = addParameterToPath(localVarPath, "propertyName", request.getPropertyName());
+        localVarPath = localVarPath.replaceAll("//", "/");
 
         List<Pair> localVarQueryParams = new ArrayList<Pair>();
         List<Pair> localVarCollectionQueryParams = new ArrayList<Pair>();
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "folder", request.getFolder());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "storage", request.getStorage());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "loadEncoding", request.getLoadEncoding());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "password", request.getPassword());
+        addParameterToQuery(localVarQueryParams, "folder", request.getFolder());
+        addParameterToQuery(localVarQueryParams, "storage", request.getStorage());
+        addParameterToQuery(localVarQueryParams, "loadEncoding", request.getLoadEncoding());
+        addParameterToQuery(localVarQueryParams, "password", request.getPassword());
 
         Map<String, String> localVarHeaderParams = new HashMap<String, String>();
 
@@ -8513,14 +8628,16 @@ public class WordsApi {
         Object localVarPostBody = null;
 
         // create path and map variables
-        String localVarPath = "/words/{name}/protection".replaceAll("\\{" + "name" + "\\}", request.getName().toString()).replaceAll("//", "/");
+        String localVarPath = "/words/{name}/protection";
+        localVarPath = addParameterToPath(localVarPath, "name", request.getName());
+        localVarPath = localVarPath.replaceAll("//", "/");
 
         List<Pair> localVarQueryParams = new ArrayList<Pair>();
         List<Pair> localVarCollectionQueryParams = new ArrayList<Pair>();
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "folder", request.getFolder());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "storage", request.getStorage());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "loadEncoding", request.getLoadEncoding());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "password", request.getPassword());
+        addParameterToQuery(localVarQueryParams, "folder", request.getFolder());
+        addParameterToQuery(localVarQueryParams, "storage", request.getStorage());
+        addParameterToQuery(localVarQueryParams, "loadEncoding", request.getLoadEncoding());
+        addParameterToQuery(localVarQueryParams, "password", request.getPassword());
 
         Map<String, String> localVarHeaderParams = new HashMap<String, String>();
 
@@ -8647,17 +8764,19 @@ public class WordsApi {
         Object localVarPostBody = null;
 
         // create path and map variables
-        String localVarPath = "/words/{name}/statistics".replaceAll("\\{" + "name" + "\\}", request.getName().toString()).replaceAll("//", "/");
+        String localVarPath = "/words/{name}/statistics";
+        localVarPath = addParameterToPath(localVarPath, "name", request.getName());
+        localVarPath = localVarPath.replaceAll("//", "/");
 
         List<Pair> localVarQueryParams = new ArrayList<Pair>();
         List<Pair> localVarCollectionQueryParams = new ArrayList<Pair>();
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "folder", request.getFolder());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "storage", request.getStorage());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "loadEncoding", request.getLoadEncoding());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "password", request.getPassword());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "includeComments", request.getIncludeComments());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "includeFootnotes", request.getIncludeFootnotes());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "includeTextInShapes", request.getIncludeTextInShapes());
+        addParameterToQuery(localVarQueryParams, "folder", request.getFolder());
+        addParameterToQuery(localVarQueryParams, "storage", request.getStorage());
+        addParameterToQuery(localVarQueryParams, "loadEncoding", request.getLoadEncoding());
+        addParameterToQuery(localVarQueryParams, "password", request.getPassword());
+        addParameterToQuery(localVarQueryParams, "includeComments", request.getIncludeComments());
+        addParameterToQuery(localVarQueryParams, "includeFootnotes", request.getIncludeFootnotes());
+        addParameterToQuery(localVarQueryParams, "includeTextInShapes", request.getIncludeTextInShapes());
 
         Map<String, String> localVarHeaderParams = new HashMap<String, String>();
 
@@ -8784,17 +8903,19 @@ public class WordsApi {
         Object localVarPostBody = null;
 
         // create path and map variables
-        String localVarPath = "/words/{name}".replaceAll("\\{" + "name" + "\\}", request.getName().toString()).replaceAll("//", "/");
+        String localVarPath = "/words/{name}";
+        localVarPath = addParameterToPath(localVarPath, "name", request.getName());
+        localVarPath = localVarPath.replaceAll("//", "/");
 
         List<Pair> localVarQueryParams = new ArrayList<Pair>();
         List<Pair> localVarCollectionQueryParams = new ArrayList<Pair>();
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "format", request.getFormat());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "folder", request.getFolder());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "storage", request.getStorage());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "loadEncoding", request.getLoadEncoding());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "password", request.getPassword());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "outPath", request.getOutPath());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "fontsLocation", request.getFontsLocation());
+        addParameterToQuery(localVarQueryParams, "format", request.getFormat());
+        addParameterToQuery(localVarQueryParams, "folder", request.getFolder());
+        addParameterToQuery(localVarQueryParams, "storage", request.getStorage());
+        addParameterToQuery(localVarQueryParams, "loadEncoding", request.getLoadEncoding());
+        addParameterToQuery(localVarQueryParams, "password", request.getPassword());
+        addParameterToQuery(localVarQueryParams, "outPath", request.getOutPath());
+        addParameterToQuery(localVarQueryParams, "fontsLocation", request.getFontsLocation());
 
         Map<String, String> localVarHeaderParams = new HashMap<String, String>();
 
@@ -8926,16 +9047,18 @@ public class WordsApi {
         Object localVarPostBody = null;
 
         // create path and map variables
-        String localVarPath = "/words/{name}/{nodePath}/fields/{index}".replaceAll("\\{" + "name" + "\\}", request.getName().toString()).replaceAll("//", "/")
-    .replaceAll("\\{" + "index" + "\\}", request.getIndex().toString()).replaceAll("//", "/")
-    .replaceAll("\\{" + "nodePath" + "\\}", request.getNodePath().toString()).replaceAll("//", "/");
+        String localVarPath = "/words/{name}/{nodePath}/fields/{index}";
+        localVarPath = addParameterToPath(localVarPath, "name", request.getName());
+        localVarPath = addParameterToPath(localVarPath, "index", request.getIndex());
+        localVarPath = addParameterToPath(localVarPath, "nodePath", request.getNodePath());
+        localVarPath = localVarPath.replaceAll("//", "/");
 
         List<Pair> localVarQueryParams = new ArrayList<Pair>();
         List<Pair> localVarCollectionQueryParams = new ArrayList<Pair>();
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "folder", request.getFolder());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "storage", request.getStorage());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "loadEncoding", request.getLoadEncoding());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "password", request.getPassword());
+        addParameterToQuery(localVarQueryParams, "folder", request.getFolder());
+        addParameterToQuery(localVarQueryParams, "storage", request.getStorage());
+        addParameterToQuery(localVarQueryParams, "loadEncoding", request.getLoadEncoding());
+        addParameterToQuery(localVarQueryParams, "password", request.getPassword());
 
         Map<String, String> localVarHeaderParams = new HashMap<String, String>();
 
@@ -9067,15 +9190,17 @@ public class WordsApi {
         Object localVarPostBody = null;
 
         // create path and map variables
-        String localVarPath = "/words/{name}/{nodePath}/fields".replaceAll("\\{" + "name" + "\\}", request.getName().toString()).replaceAll("//", "/")
-    .replaceAll("\\{" + "nodePath" + "\\}", request.getNodePath().toString()).replaceAll("//", "/");
+        String localVarPath = "/words/{name}/{nodePath}/fields";
+        localVarPath = addParameterToPath(localVarPath, "name", request.getName());
+        localVarPath = addParameterToPath(localVarPath, "nodePath", request.getNodePath());
+        localVarPath = localVarPath.replaceAll("//", "/");
 
         List<Pair> localVarQueryParams = new ArrayList<Pair>();
         List<Pair> localVarCollectionQueryParams = new ArrayList<Pair>();
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "folder", request.getFolder());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "storage", request.getStorage());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "loadEncoding", request.getLoadEncoding());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "password", request.getPassword());
+        addParameterToQuery(localVarQueryParams, "folder", request.getFolder());
+        addParameterToQuery(localVarQueryParams, "storage", request.getStorage());
+        addParameterToQuery(localVarQueryParams, "loadEncoding", request.getLoadEncoding());
+        addParameterToQuery(localVarQueryParams, "password", request.getPassword());
 
         Map<String, String> localVarHeaderParams = new HashMap<String, String>();
 
@@ -9202,11 +9327,13 @@ public class WordsApi {
         Object localVarPostBody = null;
 
         // create path and map variables
-        String localVarPath = "/words/storage/folder/{path}".replaceAll("\\{" + "path" + "\\}", request.getPath().toString()).replaceAll("//", "/");
+        String localVarPath = "/words/storage/folder/{path}";
+        localVarPath = addParameterToPath(localVarPath, "path", request.getPath());
+        localVarPath = localVarPath.replaceAll("//", "/");
 
         List<Pair> localVarQueryParams = new ArrayList<Pair>();
         List<Pair> localVarCollectionQueryParams = new ArrayList<Pair>();
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "storageName", request.getStorageName());
+        addParameterToQuery(localVarQueryParams, "storageName", request.getStorageName());
 
         Map<String, String> localVarHeaderParams = new HashMap<String, String>();
 
@@ -9333,16 +9460,18 @@ public class WordsApi {
         Object localVarPostBody = null;
 
         // create path and map variables
-        String localVarPath = "/words/{name}/{nodePath}/footnotes/{index}".replaceAll("\\{" + "name" + "\\}", request.getName().toString()).replaceAll("//", "/")
-    .replaceAll("\\{" + "index" + "\\}", request.getIndex().toString()).replaceAll("//", "/")
-    .replaceAll("\\{" + "nodePath" + "\\}", request.getNodePath().toString()).replaceAll("//", "/");
+        String localVarPath = "/words/{name}/{nodePath}/footnotes/{index}";
+        localVarPath = addParameterToPath(localVarPath, "name", request.getName());
+        localVarPath = addParameterToPath(localVarPath, "index", request.getIndex());
+        localVarPath = addParameterToPath(localVarPath, "nodePath", request.getNodePath());
+        localVarPath = localVarPath.replaceAll("//", "/");
 
         List<Pair> localVarQueryParams = new ArrayList<Pair>();
         List<Pair> localVarCollectionQueryParams = new ArrayList<Pair>();
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "folder", request.getFolder());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "storage", request.getStorage());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "loadEncoding", request.getLoadEncoding());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "password", request.getPassword());
+        addParameterToQuery(localVarQueryParams, "folder", request.getFolder());
+        addParameterToQuery(localVarQueryParams, "storage", request.getStorage());
+        addParameterToQuery(localVarQueryParams, "loadEncoding", request.getLoadEncoding());
+        addParameterToQuery(localVarQueryParams, "password", request.getPassword());
 
         Map<String, String> localVarHeaderParams = new HashMap<String, String>();
 
@@ -9474,15 +9603,17 @@ public class WordsApi {
         Object localVarPostBody = null;
 
         // create path and map variables
-        String localVarPath = "/words/{name}/{nodePath}/footnotes".replaceAll("\\{" + "name" + "\\}", request.getName().toString()).replaceAll("//", "/")
-    .replaceAll("\\{" + "nodePath" + "\\}", request.getNodePath().toString()).replaceAll("//", "/");
+        String localVarPath = "/words/{name}/{nodePath}/footnotes";
+        localVarPath = addParameterToPath(localVarPath, "name", request.getName());
+        localVarPath = addParameterToPath(localVarPath, "nodePath", request.getNodePath());
+        localVarPath = localVarPath.replaceAll("//", "/");
 
         List<Pair> localVarQueryParams = new ArrayList<Pair>();
         List<Pair> localVarCollectionQueryParams = new ArrayList<Pair>();
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "folder", request.getFolder());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "storage", request.getStorage());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "loadEncoding", request.getLoadEncoding());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "password", request.getPassword());
+        addParameterToQuery(localVarQueryParams, "folder", request.getFolder());
+        addParameterToQuery(localVarQueryParams, "storage", request.getStorage());
+        addParameterToQuery(localVarQueryParams, "loadEncoding", request.getLoadEncoding());
+        addParameterToQuery(localVarQueryParams, "password", request.getPassword());
 
         Map<String, String> localVarHeaderParams = new HashMap<String, String>();
 
@@ -9609,16 +9740,18 @@ public class WordsApi {
         Object localVarPostBody = null;
 
         // create path and map variables
-        String localVarPath = "/words/{name}/{nodePath}/formfields/{index}".replaceAll("\\{" + "name" + "\\}", request.getName().toString()).replaceAll("//", "/")
-    .replaceAll("\\{" + "index" + "\\}", request.getIndex().toString()).replaceAll("//", "/")
-    .replaceAll("\\{" + "nodePath" + "\\}", request.getNodePath().toString()).replaceAll("//", "/");
+        String localVarPath = "/words/{name}/{nodePath}/formfields/{index}";
+        localVarPath = addParameterToPath(localVarPath, "name", request.getName());
+        localVarPath = addParameterToPath(localVarPath, "index", request.getIndex());
+        localVarPath = addParameterToPath(localVarPath, "nodePath", request.getNodePath());
+        localVarPath = localVarPath.replaceAll("//", "/");
 
         List<Pair> localVarQueryParams = new ArrayList<Pair>();
         List<Pair> localVarCollectionQueryParams = new ArrayList<Pair>();
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "folder", request.getFolder());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "storage", request.getStorage());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "loadEncoding", request.getLoadEncoding());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "password", request.getPassword());
+        addParameterToQuery(localVarQueryParams, "folder", request.getFolder());
+        addParameterToQuery(localVarQueryParams, "storage", request.getStorage());
+        addParameterToQuery(localVarQueryParams, "loadEncoding", request.getLoadEncoding());
+        addParameterToQuery(localVarQueryParams, "password", request.getPassword());
 
         Map<String, String> localVarHeaderParams = new HashMap<String, String>();
 
@@ -9750,15 +9883,17 @@ public class WordsApi {
         Object localVarPostBody = null;
 
         // create path and map variables
-        String localVarPath = "/words/{name}/{nodePath}/formfields".replaceAll("\\{" + "name" + "\\}", request.getName().toString()).replaceAll("//", "/")
-    .replaceAll("\\{" + "nodePath" + "\\}", request.getNodePath().toString()).replaceAll("//", "/");
+        String localVarPath = "/words/{name}/{nodePath}/formfields";
+        localVarPath = addParameterToPath(localVarPath, "name", request.getName());
+        localVarPath = addParameterToPath(localVarPath, "nodePath", request.getNodePath());
+        localVarPath = localVarPath.replaceAll("//", "/");
 
         List<Pair> localVarQueryParams = new ArrayList<Pair>();
         List<Pair> localVarCollectionQueryParams = new ArrayList<Pair>();
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "folder", request.getFolder());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "storage", request.getStorage());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "loadEncoding", request.getLoadEncoding());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "password", request.getPassword());
+        addParameterToQuery(localVarQueryParams, "folder", request.getFolder());
+        addParameterToQuery(localVarQueryParams, "storage", request.getStorage());
+        addParameterToQuery(localVarQueryParams, "loadEncoding", request.getLoadEncoding());
+        addParameterToQuery(localVarQueryParams, "password", request.getPassword());
 
         Map<String, String> localVarHeaderParams = new HashMap<String, String>();
 
@@ -9885,16 +10020,18 @@ public class WordsApi {
         Object localVarPostBody = null;
 
         // create path and map variables
-        String localVarPath = "/words/{name}/headersfooters/{headerFooterIndex}".replaceAll("\\{" + "name" + "\\}", request.getName().toString()).replaceAll("//", "/")
-    .replaceAll("\\{" + "headerFooterIndex" + "\\}", request.getHeaderFooterIndex().toString()).replaceAll("//", "/");
+        String localVarPath = "/words/{name}/headersfooters/{headerFooterIndex}";
+        localVarPath = addParameterToPath(localVarPath, "name", request.getName());
+        localVarPath = addParameterToPath(localVarPath, "headerFooterIndex", request.getHeaderFooterIndex());
+        localVarPath = localVarPath.replaceAll("//", "/");
 
         List<Pair> localVarQueryParams = new ArrayList<Pair>();
         List<Pair> localVarCollectionQueryParams = new ArrayList<Pair>();
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "folder", request.getFolder());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "storage", request.getStorage());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "loadEncoding", request.getLoadEncoding());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "password", request.getPassword());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "filterByType", request.getFilterByType());
+        addParameterToQuery(localVarQueryParams, "folder", request.getFolder());
+        addParameterToQuery(localVarQueryParams, "storage", request.getStorage());
+        addParameterToQuery(localVarQueryParams, "loadEncoding", request.getLoadEncoding());
+        addParameterToQuery(localVarQueryParams, "password", request.getPassword());
+        addParameterToQuery(localVarQueryParams, "filterByType", request.getFilterByType());
 
         Map<String, String> localVarHeaderParams = new HashMap<String, String>();
 
@@ -10026,17 +10163,19 @@ public class WordsApi {
         Object localVarPostBody = null;
 
         // create path and map variables
-        String localVarPath = "/words/{name}/sections/{sectionIndex}/headersfooters/{headerFooterIndex}".replaceAll("\\{" + "name" + "\\}", request.getName().toString()).replaceAll("//", "/")
-    .replaceAll("\\{" + "headerFooterIndex" + "\\}", request.getHeaderFooterIndex().toString()).replaceAll("//", "/")
-    .replaceAll("\\{" + "sectionIndex" + "\\}", request.getSectionIndex().toString()).replaceAll("//", "/");
+        String localVarPath = "/words/{name}/sections/{sectionIndex}/headersfooters/{headerFooterIndex}";
+        localVarPath = addParameterToPath(localVarPath, "name", request.getName());
+        localVarPath = addParameterToPath(localVarPath, "headerFooterIndex", request.getHeaderFooterIndex());
+        localVarPath = addParameterToPath(localVarPath, "sectionIndex", request.getSectionIndex());
+        localVarPath = localVarPath.replaceAll("//", "/");
 
         List<Pair> localVarQueryParams = new ArrayList<Pair>();
         List<Pair> localVarCollectionQueryParams = new ArrayList<Pair>();
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "folder", request.getFolder());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "storage", request.getStorage());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "loadEncoding", request.getLoadEncoding());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "password", request.getPassword());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "filterByType", request.getFilterByType());
+        addParameterToQuery(localVarQueryParams, "folder", request.getFolder());
+        addParameterToQuery(localVarQueryParams, "storage", request.getStorage());
+        addParameterToQuery(localVarQueryParams, "loadEncoding", request.getLoadEncoding());
+        addParameterToQuery(localVarQueryParams, "password", request.getPassword());
+        addParameterToQuery(localVarQueryParams, "filterByType", request.getFilterByType());
 
         Map<String, String> localVarHeaderParams = new HashMap<String, String>();
 
@@ -10173,16 +10312,18 @@ public class WordsApi {
         Object localVarPostBody = null;
 
         // create path and map variables
-        String localVarPath = "/words/{name}/{sectionPath}/headersfooters".replaceAll("\\{" + "name" + "\\}", request.getName().toString()).replaceAll("//", "/")
-    .replaceAll("\\{" + "sectionPath" + "\\}", request.getSectionPath().toString()).replaceAll("//", "/");
+        String localVarPath = "/words/{name}/{sectionPath}/headersfooters";
+        localVarPath = addParameterToPath(localVarPath, "name", request.getName());
+        localVarPath = addParameterToPath(localVarPath, "sectionPath", request.getSectionPath());
+        localVarPath = localVarPath.replaceAll("//", "/");
 
         List<Pair> localVarQueryParams = new ArrayList<Pair>();
         List<Pair> localVarCollectionQueryParams = new ArrayList<Pair>();
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "folder", request.getFolder());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "storage", request.getStorage());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "loadEncoding", request.getLoadEncoding());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "password", request.getPassword());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "filterByType", request.getFilterByType());
+        addParameterToQuery(localVarQueryParams, "folder", request.getFolder());
+        addParameterToQuery(localVarQueryParams, "storage", request.getStorage());
+        addParameterToQuery(localVarQueryParams, "loadEncoding", request.getLoadEncoding());
+        addParameterToQuery(localVarQueryParams, "password", request.getPassword());
+        addParameterToQuery(localVarQueryParams, "filterByType", request.getFilterByType());
 
         Map<String, String> localVarHeaderParams = new HashMap<String, String>();
 
@@ -10314,15 +10455,17 @@ public class WordsApi {
         Object localVarPostBody = null;
 
         // create path and map variables
-        String localVarPath = "/words/{name}/lists/{listId}".replaceAll("\\{" + "name" + "\\}", request.getName().toString()).replaceAll("//", "/")
-    .replaceAll("\\{" + "listId" + "\\}", request.getListId().toString()).replaceAll("//", "/");
+        String localVarPath = "/words/{name}/lists/{listId}";
+        localVarPath = addParameterToPath(localVarPath, "name", request.getName());
+        localVarPath = addParameterToPath(localVarPath, "listId", request.getListId());
+        localVarPath = localVarPath.replaceAll("//", "/");
 
         List<Pair> localVarQueryParams = new ArrayList<Pair>();
         List<Pair> localVarCollectionQueryParams = new ArrayList<Pair>();
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "folder", request.getFolder());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "storage", request.getStorage());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "loadEncoding", request.getLoadEncoding());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "password", request.getPassword());
+        addParameterToQuery(localVarQueryParams, "folder", request.getFolder());
+        addParameterToQuery(localVarQueryParams, "storage", request.getStorage());
+        addParameterToQuery(localVarQueryParams, "loadEncoding", request.getLoadEncoding());
+        addParameterToQuery(localVarQueryParams, "password", request.getPassword());
 
         Map<String, String> localVarHeaderParams = new HashMap<String, String>();
 
@@ -10454,14 +10597,16 @@ public class WordsApi {
         Object localVarPostBody = null;
 
         // create path and map variables
-        String localVarPath = "/words/{name}/lists".replaceAll("\\{" + "name" + "\\}", request.getName().toString()).replaceAll("//", "/");
+        String localVarPath = "/words/{name}/lists";
+        localVarPath = addParameterToPath(localVarPath, "name", request.getName());
+        localVarPath = localVarPath.replaceAll("//", "/");
 
         List<Pair> localVarQueryParams = new ArrayList<Pair>();
         List<Pair> localVarCollectionQueryParams = new ArrayList<Pair>();
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "folder", request.getFolder());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "storage", request.getStorage());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "loadEncoding", request.getLoadEncoding());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "password", request.getPassword());
+        addParameterToQuery(localVarQueryParams, "folder", request.getFolder());
+        addParameterToQuery(localVarQueryParams, "storage", request.getStorage());
+        addParameterToQuery(localVarQueryParams, "loadEncoding", request.getLoadEncoding());
+        addParameterToQuery(localVarQueryParams, "password", request.getPassword());
 
         Map<String, String> localVarHeaderParams = new HashMap<String, String>();
 
@@ -10588,16 +10733,18 @@ public class WordsApi {
         Object localVarPostBody = null;
 
         // create path and map variables
-        String localVarPath = "/words/{name}/{nodePath}/OfficeMathObjects/{index}".replaceAll("\\{" + "name" + "\\}", request.getName().toString()).replaceAll("//", "/")
-    .replaceAll("\\{" + "index" + "\\}", request.getIndex().toString()).replaceAll("//", "/")
-    .replaceAll("\\{" + "nodePath" + "\\}", request.getNodePath().toString()).replaceAll("//", "/");
+        String localVarPath = "/words/{name}/{nodePath}/OfficeMathObjects/{index}";
+        localVarPath = addParameterToPath(localVarPath, "name", request.getName());
+        localVarPath = addParameterToPath(localVarPath, "index", request.getIndex());
+        localVarPath = addParameterToPath(localVarPath, "nodePath", request.getNodePath());
+        localVarPath = localVarPath.replaceAll("//", "/");
 
         List<Pair> localVarQueryParams = new ArrayList<Pair>();
         List<Pair> localVarCollectionQueryParams = new ArrayList<Pair>();
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "folder", request.getFolder());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "storage", request.getStorage());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "loadEncoding", request.getLoadEncoding());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "password", request.getPassword());
+        addParameterToQuery(localVarQueryParams, "folder", request.getFolder());
+        addParameterToQuery(localVarQueryParams, "storage", request.getStorage());
+        addParameterToQuery(localVarQueryParams, "loadEncoding", request.getLoadEncoding());
+        addParameterToQuery(localVarQueryParams, "password", request.getPassword());
 
         Map<String, String> localVarHeaderParams = new HashMap<String, String>();
 
@@ -10729,15 +10876,17 @@ public class WordsApi {
         Object localVarPostBody = null;
 
         // create path and map variables
-        String localVarPath = "/words/{name}/{nodePath}/OfficeMathObjects".replaceAll("\\{" + "name" + "\\}", request.getName().toString()).replaceAll("//", "/")
-    .replaceAll("\\{" + "nodePath" + "\\}", request.getNodePath().toString()).replaceAll("//", "/");
+        String localVarPath = "/words/{name}/{nodePath}/OfficeMathObjects";
+        localVarPath = addParameterToPath(localVarPath, "name", request.getName());
+        localVarPath = addParameterToPath(localVarPath, "nodePath", request.getNodePath());
+        localVarPath = localVarPath.replaceAll("//", "/");
 
         List<Pair> localVarQueryParams = new ArrayList<Pair>();
         List<Pair> localVarCollectionQueryParams = new ArrayList<Pair>();
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "folder", request.getFolder());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "storage", request.getStorage());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "loadEncoding", request.getLoadEncoding());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "password", request.getPassword());
+        addParameterToQuery(localVarQueryParams, "folder", request.getFolder());
+        addParameterToQuery(localVarQueryParams, "storage", request.getStorage());
+        addParameterToQuery(localVarQueryParams, "loadEncoding", request.getLoadEncoding());
+        addParameterToQuery(localVarQueryParams, "password", request.getPassword());
 
         Map<String, String> localVarHeaderParams = new HashMap<String, String>();
 
@@ -10864,16 +11013,18 @@ public class WordsApi {
         Object localVarPostBody = null;
 
         // create path and map variables
-        String localVarPath = "/words/{name}/{nodePath}/paragraphs/{index}".replaceAll("\\{" + "name" + "\\}", request.getName().toString()).replaceAll("//", "/")
-    .replaceAll("\\{" + "index" + "\\}", request.getIndex().toString()).replaceAll("//", "/")
-    .replaceAll("\\{" + "nodePath" + "\\}", request.getNodePath().toString()).replaceAll("//", "/");
+        String localVarPath = "/words/{name}/{nodePath}/paragraphs/{index}";
+        localVarPath = addParameterToPath(localVarPath, "name", request.getName());
+        localVarPath = addParameterToPath(localVarPath, "index", request.getIndex());
+        localVarPath = addParameterToPath(localVarPath, "nodePath", request.getNodePath());
+        localVarPath = localVarPath.replaceAll("//", "/");
 
         List<Pair> localVarQueryParams = new ArrayList<Pair>();
         List<Pair> localVarCollectionQueryParams = new ArrayList<Pair>();
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "folder", request.getFolder());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "storage", request.getStorage());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "loadEncoding", request.getLoadEncoding());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "password", request.getPassword());
+        addParameterToQuery(localVarQueryParams, "folder", request.getFolder());
+        addParameterToQuery(localVarQueryParams, "storage", request.getStorage());
+        addParameterToQuery(localVarQueryParams, "loadEncoding", request.getLoadEncoding());
+        addParameterToQuery(localVarQueryParams, "password", request.getPassword());
 
         Map<String, String> localVarHeaderParams = new HashMap<String, String>();
 
@@ -11005,16 +11156,18 @@ public class WordsApi {
         Object localVarPostBody = null;
 
         // create path and map variables
-        String localVarPath = "/words/{name}/{nodePath}/paragraphs/{index}/format".replaceAll("\\{" + "name" + "\\}", request.getName().toString()).replaceAll("//", "/")
-    .replaceAll("\\{" + "index" + "\\}", request.getIndex().toString()).replaceAll("//", "/")
-    .replaceAll("\\{" + "nodePath" + "\\}", request.getNodePath().toString()).replaceAll("//", "/");
+        String localVarPath = "/words/{name}/{nodePath}/paragraphs/{index}/format";
+        localVarPath = addParameterToPath(localVarPath, "name", request.getName());
+        localVarPath = addParameterToPath(localVarPath, "index", request.getIndex());
+        localVarPath = addParameterToPath(localVarPath, "nodePath", request.getNodePath());
+        localVarPath = localVarPath.replaceAll("//", "/");
 
         List<Pair> localVarQueryParams = new ArrayList<Pair>();
         List<Pair> localVarCollectionQueryParams = new ArrayList<Pair>();
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "folder", request.getFolder());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "storage", request.getStorage());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "loadEncoding", request.getLoadEncoding());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "password", request.getPassword());
+        addParameterToQuery(localVarQueryParams, "folder", request.getFolder());
+        addParameterToQuery(localVarQueryParams, "storage", request.getStorage());
+        addParameterToQuery(localVarQueryParams, "loadEncoding", request.getLoadEncoding());
+        addParameterToQuery(localVarQueryParams, "password", request.getPassword());
 
         Map<String, String> localVarHeaderParams = new HashMap<String, String>();
 
@@ -11146,16 +11299,18 @@ public class WordsApi {
         Object localVarPostBody = null;
 
         // create path and map variables
-        String localVarPath = "/words/{name}/{nodePath}/paragraphs/{index}/listFormat".replaceAll("\\{" + "name" + "\\}", request.getName().toString()).replaceAll("//", "/")
-    .replaceAll("\\{" + "index" + "\\}", request.getIndex().toString()).replaceAll("//", "/")
-    .replaceAll("\\{" + "nodePath" + "\\}", request.getNodePath().toString()).replaceAll("//", "/");
+        String localVarPath = "/words/{name}/{nodePath}/paragraphs/{index}/listFormat";
+        localVarPath = addParameterToPath(localVarPath, "name", request.getName());
+        localVarPath = addParameterToPath(localVarPath, "index", request.getIndex());
+        localVarPath = addParameterToPath(localVarPath, "nodePath", request.getNodePath());
+        localVarPath = localVarPath.replaceAll("//", "/");
 
         List<Pair> localVarQueryParams = new ArrayList<Pair>();
         List<Pair> localVarCollectionQueryParams = new ArrayList<Pair>();
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "folder", request.getFolder());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "storage", request.getStorage());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "loadEncoding", request.getLoadEncoding());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "password", request.getPassword());
+        addParameterToQuery(localVarQueryParams, "folder", request.getFolder());
+        addParameterToQuery(localVarQueryParams, "storage", request.getStorage());
+        addParameterToQuery(localVarQueryParams, "loadEncoding", request.getLoadEncoding());
+        addParameterToQuery(localVarQueryParams, "password", request.getPassword());
 
         Map<String, String> localVarHeaderParams = new HashMap<String, String>();
 
@@ -11287,15 +11442,17 @@ public class WordsApi {
         Object localVarPostBody = null;
 
         // create path and map variables
-        String localVarPath = "/words/{name}/{nodePath}/paragraphs".replaceAll("\\{" + "name" + "\\}", request.getName().toString()).replaceAll("//", "/")
-    .replaceAll("\\{" + "nodePath" + "\\}", request.getNodePath().toString()).replaceAll("//", "/");
+        String localVarPath = "/words/{name}/{nodePath}/paragraphs";
+        localVarPath = addParameterToPath(localVarPath, "name", request.getName());
+        localVarPath = addParameterToPath(localVarPath, "nodePath", request.getNodePath());
+        localVarPath = localVarPath.replaceAll("//", "/");
 
         List<Pair> localVarQueryParams = new ArrayList<Pair>();
         List<Pair> localVarCollectionQueryParams = new ArrayList<Pair>();
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "folder", request.getFolder());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "storage", request.getStorage());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "loadEncoding", request.getLoadEncoding());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "password", request.getPassword());
+        addParameterToQuery(localVarQueryParams, "folder", request.getFolder());
+        addParameterToQuery(localVarQueryParams, "storage", request.getStorage());
+        addParameterToQuery(localVarQueryParams, "loadEncoding", request.getLoadEncoding());
+        addParameterToQuery(localVarQueryParams, "password", request.getPassword());
 
         Map<String, String> localVarHeaderParams = new HashMap<String, String>();
 
@@ -11422,16 +11579,18 @@ public class WordsApi {
         Object localVarPostBody = null;
 
         // create path and map variables
-        String localVarPath = "/words/{name}/{nodePath}/paragraphs/{index}/tabstops".replaceAll("\\{" + "name" + "\\}", request.getName().toString()).replaceAll("//", "/")
-    .replaceAll("\\{" + "index" + "\\}", request.getIndex().toString()).replaceAll("//", "/")
-    .replaceAll("\\{" + "nodePath" + "\\}", request.getNodePath().toString()).replaceAll("//", "/");
+        String localVarPath = "/words/{name}/{nodePath}/paragraphs/{index}/tabstops";
+        localVarPath = addParameterToPath(localVarPath, "name", request.getName());
+        localVarPath = addParameterToPath(localVarPath, "index", request.getIndex());
+        localVarPath = addParameterToPath(localVarPath, "nodePath", request.getNodePath());
+        localVarPath = localVarPath.replaceAll("//", "/");
 
         List<Pair> localVarQueryParams = new ArrayList<Pair>();
         List<Pair> localVarCollectionQueryParams = new ArrayList<Pair>();
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "folder", request.getFolder());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "storage", request.getStorage());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "loadEncoding", request.getLoadEncoding());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "password", request.getPassword());
+        addParameterToQuery(localVarQueryParams, "folder", request.getFolder());
+        addParameterToQuery(localVarQueryParams, "storage", request.getStorage());
+        addParameterToQuery(localVarQueryParams, "loadEncoding", request.getLoadEncoding());
+        addParameterToQuery(localVarQueryParams, "password", request.getPassword());
 
         Map<String, String> localVarHeaderParams = new HashMap<String, String>();
 
@@ -11563,16 +11722,18 @@ public class WordsApi {
         Object localVarPostBody = null;
 
         // create path and map variables
-        String localVarPath = "/words/{name}/range/{rangeStartIdentifier}/{rangeEndIdentifier}".replaceAll("\\{" + "name" + "\\}", request.getName().toString()).replaceAll("//", "/")
-    .replaceAll("\\{" + "rangeStartIdentifier" + "\\}", request.getRangeStartIdentifier().toString()).replaceAll("//", "/")
-    .replaceAll("\\{" + "rangeEndIdentifier" + "\\}", request.getRangeEndIdentifier().toString()).replaceAll("//", "/");
+        String localVarPath = "/words/{name}/range/{rangeStartIdentifier}/{rangeEndIdentifier}";
+        localVarPath = addParameterToPath(localVarPath, "name", request.getName());
+        localVarPath = addParameterToPath(localVarPath, "rangeStartIdentifier", request.getRangeStartIdentifier());
+        localVarPath = addParameterToPath(localVarPath, "rangeEndIdentifier", request.getRangeEndIdentifier());
+        localVarPath = localVarPath.replaceAll("//", "/");
 
         List<Pair> localVarQueryParams = new ArrayList<Pair>();
         List<Pair> localVarCollectionQueryParams = new ArrayList<Pair>();
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "folder", request.getFolder());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "storage", request.getStorage());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "loadEncoding", request.getLoadEncoding());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "password", request.getPassword());
+        addParameterToQuery(localVarQueryParams, "folder", request.getFolder());
+        addParameterToQuery(localVarQueryParams, "storage", request.getStorage());
+        addParameterToQuery(localVarQueryParams, "loadEncoding", request.getLoadEncoding());
+        addParameterToQuery(localVarQueryParams, "password", request.getPassword());
 
         Map<String, String> localVarHeaderParams = new HashMap<String, String>();
 
@@ -11704,16 +11865,18 @@ public class WordsApi {
         Object localVarPostBody = null;
 
         // create path and map variables
-        String localVarPath = "/words/{name}/{paragraphPath}/runs/{index}".replaceAll("\\{" + "name" + "\\}", request.getName().toString()).replaceAll("//", "/")
-    .replaceAll("\\{" + "paragraphPath" + "\\}", request.getParagraphPath().toString()).replaceAll("//", "/")
-    .replaceAll("\\{" + "index" + "\\}", request.getIndex().toString()).replaceAll("//", "/");
+        String localVarPath = "/words/{name}/{paragraphPath}/runs/{index}";
+        localVarPath = addParameterToPath(localVarPath, "name", request.getName());
+        localVarPath = addParameterToPath(localVarPath, "paragraphPath", request.getParagraphPath());
+        localVarPath = addParameterToPath(localVarPath, "index", request.getIndex());
+        localVarPath = localVarPath.replaceAll("//", "/");
 
         List<Pair> localVarQueryParams = new ArrayList<Pair>();
         List<Pair> localVarCollectionQueryParams = new ArrayList<Pair>();
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "folder", request.getFolder());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "storage", request.getStorage());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "loadEncoding", request.getLoadEncoding());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "password", request.getPassword());
+        addParameterToQuery(localVarQueryParams, "folder", request.getFolder());
+        addParameterToQuery(localVarQueryParams, "storage", request.getStorage());
+        addParameterToQuery(localVarQueryParams, "loadEncoding", request.getLoadEncoding());
+        addParameterToQuery(localVarQueryParams, "password", request.getPassword());
 
         Map<String, String> localVarHeaderParams = new HashMap<String, String>();
 
@@ -11850,16 +12013,18 @@ public class WordsApi {
         Object localVarPostBody = null;
 
         // create path and map variables
-        String localVarPath = "/words/{name}/{paragraphPath}/runs/{index}/font".replaceAll("\\{" + "name" + "\\}", request.getName().toString()).replaceAll("//", "/")
-    .replaceAll("\\{" + "paragraphPath" + "\\}", request.getParagraphPath().toString()).replaceAll("//", "/")
-    .replaceAll("\\{" + "index" + "\\}", request.getIndex().toString()).replaceAll("//", "/");
+        String localVarPath = "/words/{name}/{paragraphPath}/runs/{index}/font";
+        localVarPath = addParameterToPath(localVarPath, "name", request.getName());
+        localVarPath = addParameterToPath(localVarPath, "paragraphPath", request.getParagraphPath());
+        localVarPath = addParameterToPath(localVarPath, "index", request.getIndex());
+        localVarPath = localVarPath.replaceAll("//", "/");
 
         List<Pair> localVarQueryParams = new ArrayList<Pair>();
         List<Pair> localVarCollectionQueryParams = new ArrayList<Pair>();
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "folder", request.getFolder());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "storage", request.getStorage());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "loadEncoding", request.getLoadEncoding());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "password", request.getPassword());
+        addParameterToQuery(localVarQueryParams, "folder", request.getFolder());
+        addParameterToQuery(localVarQueryParams, "storage", request.getStorage());
+        addParameterToQuery(localVarQueryParams, "loadEncoding", request.getLoadEncoding());
+        addParameterToQuery(localVarQueryParams, "password", request.getPassword());
 
         Map<String, String> localVarHeaderParams = new HashMap<String, String>();
 
@@ -11996,15 +12161,17 @@ public class WordsApi {
         Object localVarPostBody = null;
 
         // create path and map variables
-        String localVarPath = "/words/{name}/{paragraphPath}/runs".replaceAll("\\{" + "name" + "\\}", request.getName().toString()).replaceAll("//", "/")
-    .replaceAll("\\{" + "paragraphPath" + "\\}", request.getParagraphPath().toString()).replaceAll("//", "/");
+        String localVarPath = "/words/{name}/{paragraphPath}/runs";
+        localVarPath = addParameterToPath(localVarPath, "name", request.getName());
+        localVarPath = addParameterToPath(localVarPath, "paragraphPath", request.getParagraphPath());
+        localVarPath = localVarPath.replaceAll("//", "/");
 
         List<Pair> localVarQueryParams = new ArrayList<Pair>();
         List<Pair> localVarCollectionQueryParams = new ArrayList<Pair>();
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "folder", request.getFolder());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "storage", request.getStorage());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "loadEncoding", request.getLoadEncoding());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "password", request.getPassword());
+        addParameterToQuery(localVarQueryParams, "folder", request.getFolder());
+        addParameterToQuery(localVarQueryParams, "storage", request.getStorage());
+        addParameterToQuery(localVarQueryParams, "loadEncoding", request.getLoadEncoding());
+        addParameterToQuery(localVarQueryParams, "password", request.getPassword());
 
         Map<String, String> localVarHeaderParams = new HashMap<String, String>();
 
@@ -12136,15 +12303,17 @@ public class WordsApi {
         Object localVarPostBody = null;
 
         // create path and map variables
-        String localVarPath = "/words/{name}/sections/{sectionIndex}".replaceAll("\\{" + "name" + "\\}", request.getName().toString()).replaceAll("//", "/")
-    .replaceAll("\\{" + "sectionIndex" + "\\}", request.getSectionIndex().toString()).replaceAll("//", "/");
+        String localVarPath = "/words/{name}/sections/{sectionIndex}";
+        localVarPath = addParameterToPath(localVarPath, "name", request.getName());
+        localVarPath = addParameterToPath(localVarPath, "sectionIndex", request.getSectionIndex());
+        localVarPath = localVarPath.replaceAll("//", "/");
 
         List<Pair> localVarQueryParams = new ArrayList<Pair>();
         List<Pair> localVarCollectionQueryParams = new ArrayList<Pair>();
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "folder", request.getFolder());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "storage", request.getStorage());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "loadEncoding", request.getLoadEncoding());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "password", request.getPassword());
+        addParameterToQuery(localVarQueryParams, "folder", request.getFolder());
+        addParameterToQuery(localVarQueryParams, "storage", request.getStorage());
+        addParameterToQuery(localVarQueryParams, "loadEncoding", request.getLoadEncoding());
+        addParameterToQuery(localVarQueryParams, "password", request.getPassword());
 
         Map<String, String> localVarHeaderParams = new HashMap<String, String>();
 
@@ -12276,15 +12445,17 @@ public class WordsApi {
         Object localVarPostBody = null;
 
         // create path and map variables
-        String localVarPath = "/words/{name}/sections/{sectionIndex}/pageSetup".replaceAll("\\{" + "name" + "\\}", request.getName().toString()).replaceAll("//", "/")
-    .replaceAll("\\{" + "sectionIndex" + "\\}", request.getSectionIndex().toString()).replaceAll("//", "/");
+        String localVarPath = "/words/{name}/sections/{sectionIndex}/pageSetup";
+        localVarPath = addParameterToPath(localVarPath, "name", request.getName());
+        localVarPath = addParameterToPath(localVarPath, "sectionIndex", request.getSectionIndex());
+        localVarPath = localVarPath.replaceAll("//", "/");
 
         List<Pair> localVarQueryParams = new ArrayList<Pair>();
         List<Pair> localVarCollectionQueryParams = new ArrayList<Pair>();
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "folder", request.getFolder());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "storage", request.getStorage());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "loadEncoding", request.getLoadEncoding());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "password", request.getPassword());
+        addParameterToQuery(localVarQueryParams, "folder", request.getFolder());
+        addParameterToQuery(localVarQueryParams, "storage", request.getStorage());
+        addParameterToQuery(localVarQueryParams, "loadEncoding", request.getLoadEncoding());
+        addParameterToQuery(localVarQueryParams, "password", request.getPassword());
 
         Map<String, String> localVarHeaderParams = new HashMap<String, String>();
 
@@ -12416,14 +12587,16 @@ public class WordsApi {
         Object localVarPostBody = null;
 
         // create path and map variables
-        String localVarPath = "/words/{name}/sections".replaceAll("\\{" + "name" + "\\}", request.getName().toString()).replaceAll("//", "/");
+        String localVarPath = "/words/{name}/sections";
+        localVarPath = addParameterToPath(localVarPath, "name", request.getName());
+        localVarPath = localVarPath.replaceAll("//", "/");
 
         List<Pair> localVarQueryParams = new ArrayList<Pair>();
         List<Pair> localVarCollectionQueryParams = new ArrayList<Pair>();
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "folder", request.getFolder());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "storage", request.getStorage());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "loadEncoding", request.getLoadEncoding());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "password", request.getPassword());
+        addParameterToQuery(localVarQueryParams, "folder", request.getFolder());
+        addParameterToQuery(localVarQueryParams, "storage", request.getStorage());
+        addParameterToQuery(localVarQueryParams, "loadEncoding", request.getLoadEncoding());
+        addParameterToQuery(localVarQueryParams, "password", request.getPassword());
 
         Map<String, String> localVarHeaderParams = new HashMap<String, String>();
 
@@ -12550,15 +12723,17 @@ public class WordsApi {
         Object localVarPostBody = null;
 
         // create path and map variables
-        String localVarPath = "/words/{name}/styles/{styleName}".replaceAll("\\{" + "name" + "\\}", request.getName().toString()).replaceAll("//", "/")
-    .replaceAll("\\{" + "styleName" + "\\}", request.getStyleName().toString()).replaceAll("//", "/");
+        String localVarPath = "/words/{name}/styles/{styleName}";
+        localVarPath = addParameterToPath(localVarPath, "name", request.getName());
+        localVarPath = addParameterToPath(localVarPath, "styleName", request.getStyleName());
+        localVarPath = localVarPath.replaceAll("//", "/");
 
         List<Pair> localVarQueryParams = new ArrayList<Pair>();
         List<Pair> localVarCollectionQueryParams = new ArrayList<Pair>();
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "folder", request.getFolder());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "storage", request.getStorage());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "loadEncoding", request.getLoadEncoding());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "password", request.getPassword());
+        addParameterToQuery(localVarQueryParams, "folder", request.getFolder());
+        addParameterToQuery(localVarQueryParams, "storage", request.getStorage());
+        addParameterToQuery(localVarQueryParams, "loadEncoding", request.getLoadEncoding());
+        addParameterToQuery(localVarQueryParams, "password", request.getPassword());
 
         Map<String, String> localVarHeaderParams = new HashMap<String, String>();
 
@@ -12690,15 +12865,17 @@ public class WordsApi {
         Object localVarPostBody = null;
 
         // create path and map variables
-        String localVarPath = "/words/{name}/{styledNodePath}/style".replaceAll("\\{" + "name" + "\\}", request.getName().toString()).replaceAll("//", "/")
-    .replaceAll("\\{" + "styledNodePath" + "\\}", request.getStyledNodePath().toString()).replaceAll("//", "/");
+        String localVarPath = "/words/{name}/{styledNodePath}/style";
+        localVarPath = addParameterToPath(localVarPath, "name", request.getName());
+        localVarPath = addParameterToPath(localVarPath, "styledNodePath", request.getStyledNodePath());
+        localVarPath = localVarPath.replaceAll("//", "/");
 
         List<Pair> localVarQueryParams = new ArrayList<Pair>();
         List<Pair> localVarCollectionQueryParams = new ArrayList<Pair>();
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "folder", request.getFolder());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "storage", request.getStorage());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "loadEncoding", request.getLoadEncoding());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "password", request.getPassword());
+        addParameterToQuery(localVarQueryParams, "folder", request.getFolder());
+        addParameterToQuery(localVarQueryParams, "storage", request.getStorage());
+        addParameterToQuery(localVarQueryParams, "loadEncoding", request.getLoadEncoding());
+        addParameterToQuery(localVarQueryParams, "password", request.getPassword());
 
         Map<String, String> localVarHeaderParams = new HashMap<String, String>();
 
@@ -12830,14 +13007,16 @@ public class WordsApi {
         Object localVarPostBody = null;
 
         // create path and map variables
-        String localVarPath = "/words/{name}/styles".replaceAll("\\{" + "name" + "\\}", request.getName().toString()).replaceAll("//", "/");
+        String localVarPath = "/words/{name}/styles";
+        localVarPath = addParameterToPath(localVarPath, "name", request.getName());
+        localVarPath = localVarPath.replaceAll("//", "/");
 
         List<Pair> localVarQueryParams = new ArrayList<Pair>();
         List<Pair> localVarCollectionQueryParams = new ArrayList<Pair>();
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "folder", request.getFolder());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "storage", request.getStorage());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "loadEncoding", request.getLoadEncoding());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "password", request.getPassword());
+        addParameterToQuery(localVarQueryParams, "folder", request.getFolder());
+        addParameterToQuery(localVarQueryParams, "storage", request.getStorage());
+        addParameterToQuery(localVarQueryParams, "loadEncoding", request.getLoadEncoding());
+        addParameterToQuery(localVarQueryParams, "password", request.getPassword());
 
         Map<String, String> localVarHeaderParams = new HashMap<String, String>();
 
@@ -12964,16 +13143,18 @@ public class WordsApi {
         Object localVarPostBody = null;
 
         // create path and map variables
-        String localVarPath = "/words/{name}/{nodePath}/tables/{index}".replaceAll("\\{" + "name" + "\\}", request.getName().toString()).replaceAll("//", "/")
-    .replaceAll("\\{" + "index" + "\\}", request.getIndex().toString()).replaceAll("//", "/")
-    .replaceAll("\\{" + "nodePath" + "\\}", request.getNodePath().toString()).replaceAll("//", "/");
+        String localVarPath = "/words/{name}/{nodePath}/tables/{index}";
+        localVarPath = addParameterToPath(localVarPath, "name", request.getName());
+        localVarPath = addParameterToPath(localVarPath, "index", request.getIndex());
+        localVarPath = addParameterToPath(localVarPath, "nodePath", request.getNodePath());
+        localVarPath = localVarPath.replaceAll("//", "/");
 
         List<Pair> localVarQueryParams = new ArrayList<Pair>();
         List<Pair> localVarCollectionQueryParams = new ArrayList<Pair>();
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "folder", request.getFolder());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "storage", request.getStorage());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "loadEncoding", request.getLoadEncoding());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "password", request.getPassword());
+        addParameterToQuery(localVarQueryParams, "folder", request.getFolder());
+        addParameterToQuery(localVarQueryParams, "storage", request.getStorage());
+        addParameterToQuery(localVarQueryParams, "loadEncoding", request.getLoadEncoding());
+        addParameterToQuery(localVarQueryParams, "password", request.getPassword());
 
         Map<String, String> localVarHeaderParams = new HashMap<String, String>();
 
@@ -13105,16 +13286,18 @@ public class WordsApi {
         Object localVarPostBody = null;
 
         // create path and map variables
-        String localVarPath = "/words/{name}/{tableRowPath}/cells/{index}".replaceAll("\\{" + "name" + "\\}", request.getName().toString()).replaceAll("//", "/")
-    .replaceAll("\\{" + "tableRowPath" + "\\}", request.getTableRowPath().toString()).replaceAll("//", "/")
-    .replaceAll("\\{" + "index" + "\\}", request.getIndex().toString()).replaceAll("//", "/");
+        String localVarPath = "/words/{name}/{tableRowPath}/cells/{index}";
+        localVarPath = addParameterToPath(localVarPath, "name", request.getName());
+        localVarPath = addParameterToPath(localVarPath, "tableRowPath", request.getTableRowPath());
+        localVarPath = addParameterToPath(localVarPath, "index", request.getIndex());
+        localVarPath = localVarPath.replaceAll("//", "/");
 
         List<Pair> localVarQueryParams = new ArrayList<Pair>();
         List<Pair> localVarCollectionQueryParams = new ArrayList<Pair>();
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "folder", request.getFolder());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "storage", request.getStorage());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "loadEncoding", request.getLoadEncoding());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "password", request.getPassword());
+        addParameterToQuery(localVarQueryParams, "folder", request.getFolder());
+        addParameterToQuery(localVarQueryParams, "storage", request.getStorage());
+        addParameterToQuery(localVarQueryParams, "loadEncoding", request.getLoadEncoding());
+        addParameterToQuery(localVarQueryParams, "password", request.getPassword());
 
         Map<String, String> localVarHeaderParams = new HashMap<String, String>();
 
@@ -13251,16 +13434,18 @@ public class WordsApi {
         Object localVarPostBody = null;
 
         // create path and map variables
-        String localVarPath = "/words/{name}/{tableRowPath}/cells/{index}/cellformat".replaceAll("\\{" + "name" + "\\}", request.getName().toString()).replaceAll("//", "/")
-    .replaceAll("\\{" + "tableRowPath" + "\\}", request.getTableRowPath().toString()).replaceAll("//", "/")
-    .replaceAll("\\{" + "index" + "\\}", request.getIndex().toString()).replaceAll("//", "/");
+        String localVarPath = "/words/{name}/{tableRowPath}/cells/{index}/cellformat";
+        localVarPath = addParameterToPath(localVarPath, "name", request.getName());
+        localVarPath = addParameterToPath(localVarPath, "tableRowPath", request.getTableRowPath());
+        localVarPath = addParameterToPath(localVarPath, "index", request.getIndex());
+        localVarPath = localVarPath.replaceAll("//", "/");
 
         List<Pair> localVarQueryParams = new ArrayList<Pair>();
         List<Pair> localVarCollectionQueryParams = new ArrayList<Pair>();
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "folder", request.getFolder());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "storage", request.getStorage());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "loadEncoding", request.getLoadEncoding());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "password", request.getPassword());
+        addParameterToQuery(localVarQueryParams, "folder", request.getFolder());
+        addParameterToQuery(localVarQueryParams, "storage", request.getStorage());
+        addParameterToQuery(localVarQueryParams, "loadEncoding", request.getLoadEncoding());
+        addParameterToQuery(localVarQueryParams, "password", request.getPassword());
 
         Map<String, String> localVarHeaderParams = new HashMap<String, String>();
 
@@ -13397,16 +13582,18 @@ public class WordsApi {
         Object localVarPostBody = null;
 
         // create path and map variables
-        String localVarPath = "/words/{name}/{nodePath}/tables/{index}/properties".replaceAll("\\{" + "name" + "\\}", request.getName().toString()).replaceAll("//", "/")
-    .replaceAll("\\{" + "index" + "\\}", request.getIndex().toString()).replaceAll("//", "/")
-    .replaceAll("\\{" + "nodePath" + "\\}", request.getNodePath().toString()).replaceAll("//", "/");
+        String localVarPath = "/words/{name}/{nodePath}/tables/{index}/properties";
+        localVarPath = addParameterToPath(localVarPath, "name", request.getName());
+        localVarPath = addParameterToPath(localVarPath, "index", request.getIndex());
+        localVarPath = addParameterToPath(localVarPath, "nodePath", request.getNodePath());
+        localVarPath = localVarPath.replaceAll("//", "/");
 
         List<Pair> localVarQueryParams = new ArrayList<Pair>();
         List<Pair> localVarCollectionQueryParams = new ArrayList<Pair>();
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "folder", request.getFolder());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "storage", request.getStorage());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "loadEncoding", request.getLoadEncoding());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "password", request.getPassword());
+        addParameterToQuery(localVarQueryParams, "folder", request.getFolder());
+        addParameterToQuery(localVarQueryParams, "storage", request.getStorage());
+        addParameterToQuery(localVarQueryParams, "loadEncoding", request.getLoadEncoding());
+        addParameterToQuery(localVarQueryParams, "password", request.getPassword());
 
         Map<String, String> localVarHeaderParams = new HashMap<String, String>();
 
@@ -13538,16 +13725,18 @@ public class WordsApi {
         Object localVarPostBody = null;
 
         // create path and map variables
-        String localVarPath = "/words/{name}/{tablePath}/rows/{index}".replaceAll("\\{" + "name" + "\\}", request.getName().toString()).replaceAll("//", "/")
-    .replaceAll("\\{" + "tablePath" + "\\}", request.getTablePath().toString()).replaceAll("//", "/")
-    .replaceAll("\\{" + "index" + "\\}", request.getIndex().toString()).replaceAll("//", "/");
+        String localVarPath = "/words/{name}/{tablePath}/rows/{index}";
+        localVarPath = addParameterToPath(localVarPath, "name", request.getName());
+        localVarPath = addParameterToPath(localVarPath, "tablePath", request.getTablePath());
+        localVarPath = addParameterToPath(localVarPath, "index", request.getIndex());
+        localVarPath = localVarPath.replaceAll("//", "/");
 
         List<Pair> localVarQueryParams = new ArrayList<Pair>();
         List<Pair> localVarCollectionQueryParams = new ArrayList<Pair>();
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "folder", request.getFolder());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "storage", request.getStorage());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "loadEncoding", request.getLoadEncoding());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "password", request.getPassword());
+        addParameterToQuery(localVarQueryParams, "folder", request.getFolder());
+        addParameterToQuery(localVarQueryParams, "storage", request.getStorage());
+        addParameterToQuery(localVarQueryParams, "loadEncoding", request.getLoadEncoding());
+        addParameterToQuery(localVarQueryParams, "password", request.getPassword());
 
         Map<String, String> localVarHeaderParams = new HashMap<String, String>();
 
@@ -13684,16 +13873,18 @@ public class WordsApi {
         Object localVarPostBody = null;
 
         // create path and map variables
-        String localVarPath = "/words/{name}/{tablePath}/rows/{index}/rowformat".replaceAll("\\{" + "name" + "\\}", request.getName().toString()).replaceAll("//", "/")
-    .replaceAll("\\{" + "tablePath" + "\\}", request.getTablePath().toString()).replaceAll("//", "/")
-    .replaceAll("\\{" + "index" + "\\}", request.getIndex().toString()).replaceAll("//", "/");
+        String localVarPath = "/words/{name}/{tablePath}/rows/{index}/rowformat";
+        localVarPath = addParameterToPath(localVarPath, "name", request.getName());
+        localVarPath = addParameterToPath(localVarPath, "tablePath", request.getTablePath());
+        localVarPath = addParameterToPath(localVarPath, "index", request.getIndex());
+        localVarPath = localVarPath.replaceAll("//", "/");
 
         List<Pair> localVarQueryParams = new ArrayList<Pair>();
         List<Pair> localVarCollectionQueryParams = new ArrayList<Pair>();
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "folder", request.getFolder());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "storage", request.getStorage());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "loadEncoding", request.getLoadEncoding());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "password", request.getPassword());
+        addParameterToQuery(localVarQueryParams, "folder", request.getFolder());
+        addParameterToQuery(localVarQueryParams, "storage", request.getStorage());
+        addParameterToQuery(localVarQueryParams, "loadEncoding", request.getLoadEncoding());
+        addParameterToQuery(localVarQueryParams, "password", request.getPassword());
 
         Map<String, String> localVarHeaderParams = new HashMap<String, String>();
 
@@ -13830,15 +14021,17 @@ public class WordsApi {
         Object localVarPostBody = null;
 
         // create path and map variables
-        String localVarPath = "/words/{name}/{nodePath}/tables".replaceAll("\\{" + "name" + "\\}", request.getName().toString()).replaceAll("//", "/")
-    .replaceAll("\\{" + "nodePath" + "\\}", request.getNodePath().toString()).replaceAll("//", "/");
+        String localVarPath = "/words/{name}/{nodePath}/tables";
+        localVarPath = addParameterToPath(localVarPath, "name", request.getName());
+        localVarPath = addParameterToPath(localVarPath, "nodePath", request.getNodePath());
+        localVarPath = localVarPath.replaceAll("//", "/");
 
         List<Pair> localVarQueryParams = new ArrayList<Pair>();
         List<Pair> localVarCollectionQueryParams = new ArrayList<Pair>();
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "folder", request.getFolder());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "storage", request.getStorage());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "loadEncoding", request.getLoadEncoding());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "password", request.getPassword());
+        addParameterToQuery(localVarQueryParams, "folder", request.getFolder());
+        addParameterToQuery(localVarQueryParams, "storage", request.getStorage());
+        addParameterToQuery(localVarQueryParams, "loadEncoding", request.getLoadEncoding());
+        addParameterToQuery(localVarQueryParams, "password", request.getPassword());
 
         Map<String, String> localVarHeaderParams = new HashMap<String, String>();
 
@@ -13965,17 +14158,19 @@ public class WordsApi {
         Object localVarPostBody = request.getComment();
 
         // create path and map variables
-        String localVarPath = "/words/{name}/comments".replaceAll("\\{" + "name" + "\\}", request.getName().toString()).replaceAll("//", "/");
+        String localVarPath = "/words/{name}/comments";
+        localVarPath = addParameterToPath(localVarPath, "name", request.getName());
+        localVarPath = localVarPath.replaceAll("//", "/");
 
         List<Pair> localVarQueryParams = new ArrayList<Pair>();
         List<Pair> localVarCollectionQueryParams = new ArrayList<Pair>();
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "folder", request.getFolder());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "storage", request.getStorage());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "loadEncoding", request.getLoadEncoding());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "password", request.getPassword());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "destFileName", request.getDestFileName());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "revisionAuthor", request.getRevisionAuthor());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "revisionDateTime", request.getRevisionDateTime());
+        addParameterToQuery(localVarQueryParams, "folder", request.getFolder());
+        addParameterToQuery(localVarQueryParams, "storage", request.getStorage());
+        addParameterToQuery(localVarQueryParams, "loadEncoding", request.getLoadEncoding());
+        addParameterToQuery(localVarQueryParams, "password", request.getPassword());
+        addParameterToQuery(localVarQueryParams, "destFileName", request.getDestFileName());
+        addParameterToQuery(localVarQueryParams, "revisionAuthor", request.getRevisionAuthor());
+        addParameterToQuery(localVarQueryParams, "revisionDateTime", request.getRevisionDateTime());
 
         Map<String, String> localVarHeaderParams = new HashMap<String, String>();
 
@@ -14107,18 +14302,20 @@ public class WordsApi {
         Object localVarPostBody = null;
 
         // create path and map variables
-        String localVarPath = "/words/{name}/{nodePath}/drawingObjects".replaceAll("\\{" + "name" + "\\}", request.getName().toString()).replaceAll("//", "/")
-    .replaceAll("\\{" + "nodePath" + "\\}", request.getNodePath().toString()).replaceAll("//", "/");
+        String localVarPath = "/words/{name}/{nodePath}/drawingObjects";
+        localVarPath = addParameterToPath(localVarPath, "name", request.getName());
+        localVarPath = addParameterToPath(localVarPath, "nodePath", request.getNodePath());
+        localVarPath = localVarPath.replaceAll("//", "/");
 
         List<Pair> localVarQueryParams = new ArrayList<Pair>();
         List<Pair> localVarCollectionQueryParams = new ArrayList<Pair>();
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "folder", request.getFolder());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "storage", request.getStorage());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "loadEncoding", request.getLoadEncoding());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "password", request.getPassword());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "destFileName", request.getDestFileName());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "revisionAuthor", request.getRevisionAuthor());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "revisionDateTime", request.getRevisionDateTime());
+        addParameterToQuery(localVarQueryParams, "folder", request.getFolder());
+        addParameterToQuery(localVarQueryParams, "storage", request.getStorage());
+        addParameterToQuery(localVarQueryParams, "loadEncoding", request.getLoadEncoding());
+        addParameterToQuery(localVarQueryParams, "password", request.getPassword());
+        addParameterToQuery(localVarQueryParams, "destFileName", request.getDestFileName());
+        addParameterToQuery(localVarQueryParams, "revisionAuthor", request.getRevisionAuthor());
+        addParameterToQuery(localVarQueryParams, "revisionDateTime", request.getRevisionDateTime());
 
         Map<String, String> localVarHeaderParams = new HashMap<String, String>();
 
@@ -14260,19 +14457,21 @@ public class WordsApi {
         Object localVarPostBody = request.getField();
 
         // create path and map variables
-        String localVarPath = "/words/{name}/{nodePath}/fields".replaceAll("\\{" + "name" + "\\}", request.getName().toString()).replaceAll("//", "/")
-    .replaceAll("\\{" + "nodePath" + "\\}", request.getNodePath().toString()).replaceAll("//", "/");
+        String localVarPath = "/words/{name}/{nodePath}/fields";
+        localVarPath = addParameterToPath(localVarPath, "name", request.getName());
+        localVarPath = addParameterToPath(localVarPath, "nodePath", request.getNodePath());
+        localVarPath = localVarPath.replaceAll("//", "/");
 
         List<Pair> localVarQueryParams = new ArrayList<Pair>();
         List<Pair> localVarCollectionQueryParams = new ArrayList<Pair>();
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "folder", request.getFolder());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "storage", request.getStorage());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "loadEncoding", request.getLoadEncoding());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "password", request.getPassword());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "destFileName", request.getDestFileName());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "revisionAuthor", request.getRevisionAuthor());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "revisionDateTime", request.getRevisionDateTime());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "insertBeforeNode", request.getInsertBeforeNode());
+        addParameterToQuery(localVarQueryParams, "folder", request.getFolder());
+        addParameterToQuery(localVarQueryParams, "storage", request.getStorage());
+        addParameterToQuery(localVarQueryParams, "loadEncoding", request.getLoadEncoding());
+        addParameterToQuery(localVarQueryParams, "password", request.getPassword());
+        addParameterToQuery(localVarQueryParams, "destFileName", request.getDestFileName());
+        addParameterToQuery(localVarQueryParams, "revisionAuthor", request.getRevisionAuthor());
+        addParameterToQuery(localVarQueryParams, "revisionDateTime", request.getRevisionDateTime());
+        addParameterToQuery(localVarQueryParams, "insertBeforeNode", request.getInsertBeforeNode());
 
         Map<String, String> localVarHeaderParams = new HashMap<String, String>();
 
@@ -14404,18 +14603,20 @@ public class WordsApi {
         Object localVarPostBody = request.getFootnoteDto();
 
         // create path and map variables
-        String localVarPath = "/words/{name}/{nodePath}/footnotes".replaceAll("\\{" + "name" + "\\}", request.getName().toString()).replaceAll("//", "/")
-    .replaceAll("\\{" + "nodePath" + "\\}", request.getNodePath().toString()).replaceAll("//", "/");
+        String localVarPath = "/words/{name}/{nodePath}/footnotes";
+        localVarPath = addParameterToPath(localVarPath, "name", request.getName());
+        localVarPath = addParameterToPath(localVarPath, "nodePath", request.getNodePath());
+        localVarPath = localVarPath.replaceAll("//", "/");
 
         List<Pair> localVarQueryParams = new ArrayList<Pair>();
         List<Pair> localVarCollectionQueryParams = new ArrayList<Pair>();
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "folder", request.getFolder());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "storage", request.getStorage());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "loadEncoding", request.getLoadEncoding());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "password", request.getPassword());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "destFileName", request.getDestFileName());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "revisionAuthor", request.getRevisionAuthor());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "revisionDateTime", request.getRevisionDateTime());
+        addParameterToQuery(localVarQueryParams, "folder", request.getFolder());
+        addParameterToQuery(localVarQueryParams, "storage", request.getStorage());
+        addParameterToQuery(localVarQueryParams, "loadEncoding", request.getLoadEncoding());
+        addParameterToQuery(localVarQueryParams, "password", request.getPassword());
+        addParameterToQuery(localVarQueryParams, "destFileName", request.getDestFileName());
+        addParameterToQuery(localVarQueryParams, "revisionAuthor", request.getRevisionAuthor());
+        addParameterToQuery(localVarQueryParams, "revisionDateTime", request.getRevisionDateTime());
 
         Map<String, String> localVarHeaderParams = new HashMap<String, String>();
 
@@ -14547,19 +14748,21 @@ public class WordsApi {
         Object localVarPostBody = request.getFormField();
 
         // create path and map variables
-        String localVarPath = "/words/{name}/{nodePath}/formfields".replaceAll("\\{" + "name" + "\\}", request.getName().toString()).replaceAll("//", "/")
-    .replaceAll("\\{" + "nodePath" + "\\}", request.getNodePath().toString()).replaceAll("//", "/");
+        String localVarPath = "/words/{name}/{nodePath}/formfields";
+        localVarPath = addParameterToPath(localVarPath, "name", request.getName());
+        localVarPath = addParameterToPath(localVarPath, "nodePath", request.getNodePath());
+        localVarPath = localVarPath.replaceAll("//", "/");
 
         List<Pair> localVarQueryParams = new ArrayList<Pair>();
         List<Pair> localVarCollectionQueryParams = new ArrayList<Pair>();
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "folder", request.getFolder());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "storage", request.getStorage());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "loadEncoding", request.getLoadEncoding());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "password", request.getPassword());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "destFileName", request.getDestFileName());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "revisionAuthor", request.getRevisionAuthor());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "revisionDateTime", request.getRevisionDateTime());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "insertBeforeNode", request.getInsertBeforeNode());
+        addParameterToQuery(localVarQueryParams, "folder", request.getFolder());
+        addParameterToQuery(localVarQueryParams, "storage", request.getStorage());
+        addParameterToQuery(localVarQueryParams, "loadEncoding", request.getLoadEncoding());
+        addParameterToQuery(localVarQueryParams, "password", request.getPassword());
+        addParameterToQuery(localVarQueryParams, "destFileName", request.getDestFileName());
+        addParameterToQuery(localVarQueryParams, "revisionAuthor", request.getRevisionAuthor());
+        addParameterToQuery(localVarQueryParams, "revisionDateTime", request.getRevisionDateTime());
+        addParameterToQuery(localVarQueryParams, "insertBeforeNode", request.getInsertBeforeNode());
 
         Map<String, String> localVarHeaderParams = new HashMap<String, String>();
 
@@ -14691,18 +14894,20 @@ public class WordsApi {
         Object localVarPostBody = request.getHeaderFooterType();
 
         // create path and map variables
-        String localVarPath = "/words/{name}/{sectionPath}/headersfooters".replaceAll("\\{" + "name" + "\\}", request.getName().toString()).replaceAll("//", "/")
-    .replaceAll("\\{" + "sectionPath" + "\\}", request.getSectionPath().toString()).replaceAll("//", "/");
+        String localVarPath = "/words/{name}/{sectionPath}/headersfooters";
+        localVarPath = addParameterToPath(localVarPath, "name", request.getName());
+        localVarPath = addParameterToPath(localVarPath, "sectionPath", request.getSectionPath());
+        localVarPath = localVarPath.replaceAll("//", "/");
 
         List<Pair> localVarQueryParams = new ArrayList<Pair>();
         List<Pair> localVarCollectionQueryParams = new ArrayList<Pair>();
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "folder", request.getFolder());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "storage", request.getStorage());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "loadEncoding", request.getLoadEncoding());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "password", request.getPassword());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "destFileName", request.getDestFileName());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "revisionAuthor", request.getRevisionAuthor());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "revisionDateTime", request.getRevisionDateTime());
+        addParameterToQuery(localVarQueryParams, "folder", request.getFolder());
+        addParameterToQuery(localVarQueryParams, "storage", request.getStorage());
+        addParameterToQuery(localVarQueryParams, "loadEncoding", request.getLoadEncoding());
+        addParameterToQuery(localVarQueryParams, "password", request.getPassword());
+        addParameterToQuery(localVarQueryParams, "destFileName", request.getDestFileName());
+        addParameterToQuery(localVarQueryParams, "revisionAuthor", request.getRevisionAuthor());
+        addParameterToQuery(localVarQueryParams, "revisionDateTime", request.getRevisionDateTime());
 
         Map<String, String> localVarHeaderParams = new HashMap<String, String>();
 
@@ -14839,17 +15044,19 @@ public class WordsApi {
         Object localVarPostBody = request.getListInsert();
 
         // create path and map variables
-        String localVarPath = "/words/{name}/lists".replaceAll("\\{" + "name" + "\\}", request.getName().toString()).replaceAll("//", "/");
+        String localVarPath = "/words/{name}/lists";
+        localVarPath = addParameterToPath(localVarPath, "name", request.getName());
+        localVarPath = localVarPath.replaceAll("//", "/");
 
         List<Pair> localVarQueryParams = new ArrayList<Pair>();
         List<Pair> localVarCollectionQueryParams = new ArrayList<Pair>();
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "folder", request.getFolder());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "storage", request.getStorage());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "loadEncoding", request.getLoadEncoding());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "password", request.getPassword());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "destFileName", request.getDestFileName());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "revisionAuthor", request.getRevisionAuthor());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "revisionDateTime", request.getRevisionDateTime());
+        addParameterToQuery(localVarQueryParams, "folder", request.getFolder());
+        addParameterToQuery(localVarQueryParams, "storage", request.getStorage());
+        addParameterToQuery(localVarQueryParams, "loadEncoding", request.getLoadEncoding());
+        addParameterToQuery(localVarQueryParams, "password", request.getPassword());
+        addParameterToQuery(localVarQueryParams, "destFileName", request.getDestFileName());
+        addParameterToQuery(localVarQueryParams, "revisionAuthor", request.getRevisionAuthor());
+        addParameterToQuery(localVarQueryParams, "revisionDateTime", request.getRevisionDateTime());
 
         Map<String, String> localVarHeaderParams = new HashMap<String, String>();
 
@@ -14981,17 +15188,19 @@ public class WordsApi {
         Object localVarPostBody = request.getDto();
 
         // create path and map variables
-        String localVarPath = "/words/{name}/{nodePath}/paragraphs/{index}/tabstops".replaceAll("\\{" + "name" + "\\}", request.getName().toString()).replaceAll("//", "/")
-    .replaceAll("\\{" + "index" + "\\}", request.getIndex().toString()).replaceAll("//", "/")
-    .replaceAll("\\{" + "nodePath" + "\\}", request.getNodePath().toString()).replaceAll("//", "/");
+        String localVarPath = "/words/{name}/{nodePath}/paragraphs/{index}/tabstops";
+        localVarPath = addParameterToPath(localVarPath, "name", request.getName());
+        localVarPath = addParameterToPath(localVarPath, "index", request.getIndex());
+        localVarPath = addParameterToPath(localVarPath, "nodePath", request.getNodePath());
+        localVarPath = localVarPath.replaceAll("//", "/");
 
         List<Pair> localVarQueryParams = new ArrayList<Pair>();
         List<Pair> localVarCollectionQueryParams = new ArrayList<Pair>();
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "folder", request.getFolder());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "storage", request.getStorage());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "loadEncoding", request.getLoadEncoding());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "password", request.getPassword());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "destFileName", request.getDestFileName());
+        addParameterToQuery(localVarQueryParams, "folder", request.getFolder());
+        addParameterToQuery(localVarQueryParams, "storage", request.getStorage());
+        addParameterToQuery(localVarQueryParams, "loadEncoding", request.getLoadEncoding());
+        addParameterToQuery(localVarQueryParams, "password", request.getPassword());
+        addParameterToQuery(localVarQueryParams, "destFileName", request.getDestFileName());
 
         Map<String, String> localVarHeaderParams = new HashMap<String, String>();
 
@@ -15128,17 +15337,19 @@ public class WordsApi {
         Object localVarPostBody = request.getPageNumber();
 
         // create path and map variables
-        String localVarPath = "/words/{name}/PageNumbers".replaceAll("\\{" + "name" + "\\}", request.getName().toString()).replaceAll("//", "/");
+        String localVarPath = "/words/{name}/PageNumbers";
+        localVarPath = addParameterToPath(localVarPath, "name", request.getName());
+        localVarPath = localVarPath.replaceAll("//", "/");
 
         List<Pair> localVarQueryParams = new ArrayList<Pair>();
         List<Pair> localVarCollectionQueryParams = new ArrayList<Pair>();
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "folder", request.getFolder());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "storage", request.getStorage());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "loadEncoding", request.getLoadEncoding());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "password", request.getPassword());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "destFileName", request.getDestFileName());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "revisionAuthor", request.getRevisionAuthor());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "revisionDateTime", request.getRevisionDateTime());
+        addParameterToQuery(localVarQueryParams, "folder", request.getFolder());
+        addParameterToQuery(localVarQueryParams, "storage", request.getStorage());
+        addParameterToQuery(localVarQueryParams, "loadEncoding", request.getLoadEncoding());
+        addParameterToQuery(localVarQueryParams, "password", request.getPassword());
+        addParameterToQuery(localVarQueryParams, "destFileName", request.getDestFileName());
+        addParameterToQuery(localVarQueryParams, "revisionAuthor", request.getRevisionAuthor());
+        addParameterToQuery(localVarQueryParams, "revisionDateTime", request.getRevisionDateTime());
 
         Map<String, String> localVarHeaderParams = new HashMap<String, String>();
 
@@ -15270,19 +15481,21 @@ public class WordsApi {
         Object localVarPostBody = request.getParagraph();
 
         // create path and map variables
-        String localVarPath = "/words/{name}/{nodePath}/paragraphs".replaceAll("\\{" + "name" + "\\}", request.getName().toString()).replaceAll("//", "/")
-    .replaceAll("\\{" + "nodePath" + "\\}", request.getNodePath().toString()).replaceAll("//", "/");
+        String localVarPath = "/words/{name}/{nodePath}/paragraphs";
+        localVarPath = addParameterToPath(localVarPath, "name", request.getName());
+        localVarPath = addParameterToPath(localVarPath, "nodePath", request.getNodePath());
+        localVarPath = localVarPath.replaceAll("//", "/");
 
         List<Pair> localVarQueryParams = new ArrayList<Pair>();
         List<Pair> localVarCollectionQueryParams = new ArrayList<Pair>();
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "folder", request.getFolder());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "storage", request.getStorage());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "loadEncoding", request.getLoadEncoding());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "password", request.getPassword());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "destFileName", request.getDestFileName());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "revisionAuthor", request.getRevisionAuthor());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "revisionDateTime", request.getRevisionDateTime());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "insertBeforeNode", request.getInsertBeforeNode());
+        addParameterToQuery(localVarQueryParams, "folder", request.getFolder());
+        addParameterToQuery(localVarQueryParams, "storage", request.getStorage());
+        addParameterToQuery(localVarQueryParams, "loadEncoding", request.getLoadEncoding());
+        addParameterToQuery(localVarQueryParams, "password", request.getPassword());
+        addParameterToQuery(localVarQueryParams, "destFileName", request.getDestFileName());
+        addParameterToQuery(localVarQueryParams, "revisionAuthor", request.getRevisionAuthor());
+        addParameterToQuery(localVarQueryParams, "revisionDateTime", request.getRevisionDateTime());
+        addParameterToQuery(localVarQueryParams, "insertBeforeNode", request.getInsertBeforeNode());
 
         Map<String, String> localVarHeaderParams = new HashMap<String, String>();
 
@@ -15414,19 +15627,21 @@ public class WordsApi {
         Object localVarPostBody = request.getRun();
 
         // create path and map variables
-        String localVarPath = "/words/{name}/{paragraphPath}/runs".replaceAll("\\{" + "name" + "\\}", request.getName().toString()).replaceAll("//", "/")
-    .replaceAll("\\{" + "paragraphPath" + "\\}", request.getParagraphPath().toString()).replaceAll("//", "/");
+        String localVarPath = "/words/{name}/{paragraphPath}/runs";
+        localVarPath = addParameterToPath(localVarPath, "name", request.getName());
+        localVarPath = addParameterToPath(localVarPath, "paragraphPath", request.getParagraphPath());
+        localVarPath = localVarPath.replaceAll("//", "/");
 
         List<Pair> localVarQueryParams = new ArrayList<Pair>();
         List<Pair> localVarCollectionQueryParams = new ArrayList<Pair>();
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "folder", request.getFolder());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "storage", request.getStorage());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "loadEncoding", request.getLoadEncoding());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "password", request.getPassword());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "destFileName", request.getDestFileName());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "revisionAuthor", request.getRevisionAuthor());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "revisionDateTime", request.getRevisionDateTime());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "insertBeforeNode", request.getInsertBeforeNode());
+        addParameterToQuery(localVarQueryParams, "folder", request.getFolder());
+        addParameterToQuery(localVarQueryParams, "storage", request.getStorage());
+        addParameterToQuery(localVarQueryParams, "loadEncoding", request.getLoadEncoding());
+        addParameterToQuery(localVarQueryParams, "password", request.getPassword());
+        addParameterToQuery(localVarQueryParams, "destFileName", request.getDestFileName());
+        addParameterToQuery(localVarQueryParams, "revisionAuthor", request.getRevisionAuthor());
+        addParameterToQuery(localVarQueryParams, "revisionDateTime", request.getRevisionDateTime());
+        addParameterToQuery(localVarQueryParams, "insertBeforeNode", request.getInsertBeforeNode());
 
         Map<String, String> localVarHeaderParams = new HashMap<String, String>();
 
@@ -15563,17 +15778,19 @@ public class WordsApi {
         Object localVarPostBody = request.getStyleInsert();
 
         // create path and map variables
-        String localVarPath = "/words/{name}/styles/insert".replaceAll("\\{" + "name" + "\\}", request.getName().toString()).replaceAll("//", "/");
+        String localVarPath = "/words/{name}/styles/insert";
+        localVarPath = addParameterToPath(localVarPath, "name", request.getName());
+        localVarPath = localVarPath.replaceAll("//", "/");
 
         List<Pair> localVarQueryParams = new ArrayList<Pair>();
         List<Pair> localVarCollectionQueryParams = new ArrayList<Pair>();
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "folder", request.getFolder());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "storage", request.getStorage());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "loadEncoding", request.getLoadEncoding());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "password", request.getPassword());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "destFileName", request.getDestFileName());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "revisionAuthor", request.getRevisionAuthor());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "revisionDateTime", request.getRevisionDateTime());
+        addParameterToQuery(localVarQueryParams, "folder", request.getFolder());
+        addParameterToQuery(localVarQueryParams, "storage", request.getStorage());
+        addParameterToQuery(localVarQueryParams, "loadEncoding", request.getLoadEncoding());
+        addParameterToQuery(localVarQueryParams, "password", request.getPassword());
+        addParameterToQuery(localVarQueryParams, "destFileName", request.getDestFileName());
+        addParameterToQuery(localVarQueryParams, "revisionAuthor", request.getRevisionAuthor());
+        addParameterToQuery(localVarQueryParams, "revisionDateTime", request.getRevisionDateTime());
 
         Map<String, String> localVarHeaderParams = new HashMap<String, String>();
 
@@ -15705,18 +15922,20 @@ public class WordsApi {
         Object localVarPostBody = request.getTable();
 
         // create path and map variables
-        String localVarPath = "/words/{name}/{nodePath}/tables".replaceAll("\\{" + "name" + "\\}", request.getName().toString()).replaceAll("//", "/")
-    .replaceAll("\\{" + "nodePath" + "\\}", request.getNodePath().toString()).replaceAll("//", "/");
+        String localVarPath = "/words/{name}/{nodePath}/tables";
+        localVarPath = addParameterToPath(localVarPath, "name", request.getName());
+        localVarPath = addParameterToPath(localVarPath, "nodePath", request.getNodePath());
+        localVarPath = localVarPath.replaceAll("//", "/");
 
         List<Pair> localVarQueryParams = new ArrayList<Pair>();
         List<Pair> localVarCollectionQueryParams = new ArrayList<Pair>();
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "folder", request.getFolder());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "storage", request.getStorage());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "loadEncoding", request.getLoadEncoding());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "password", request.getPassword());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "destFileName", request.getDestFileName());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "revisionAuthor", request.getRevisionAuthor());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "revisionDateTime", request.getRevisionDateTime());
+        addParameterToQuery(localVarQueryParams, "folder", request.getFolder());
+        addParameterToQuery(localVarQueryParams, "storage", request.getStorage());
+        addParameterToQuery(localVarQueryParams, "loadEncoding", request.getLoadEncoding());
+        addParameterToQuery(localVarQueryParams, "password", request.getPassword());
+        addParameterToQuery(localVarQueryParams, "destFileName", request.getDestFileName());
+        addParameterToQuery(localVarQueryParams, "revisionAuthor", request.getRevisionAuthor());
+        addParameterToQuery(localVarQueryParams, "revisionDateTime", request.getRevisionDateTime());
 
         Map<String, String> localVarHeaderParams = new HashMap<String, String>();
 
@@ -15848,18 +16067,20 @@ public class WordsApi {
         Object localVarPostBody = request.getCell();
 
         // create path and map variables
-        String localVarPath = "/words/{name}/{tableRowPath}/cells".replaceAll("\\{" + "name" + "\\}", request.getName().toString()).replaceAll("//", "/")
-    .replaceAll("\\{" + "tableRowPath" + "\\}", request.getTableRowPath().toString()).replaceAll("//", "/");
+        String localVarPath = "/words/{name}/{tableRowPath}/cells";
+        localVarPath = addParameterToPath(localVarPath, "name", request.getName());
+        localVarPath = addParameterToPath(localVarPath, "tableRowPath", request.getTableRowPath());
+        localVarPath = localVarPath.replaceAll("//", "/");
 
         List<Pair> localVarQueryParams = new ArrayList<Pair>();
         List<Pair> localVarCollectionQueryParams = new ArrayList<Pair>();
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "folder", request.getFolder());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "storage", request.getStorage());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "loadEncoding", request.getLoadEncoding());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "password", request.getPassword());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "destFileName", request.getDestFileName());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "revisionAuthor", request.getRevisionAuthor());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "revisionDateTime", request.getRevisionDateTime());
+        addParameterToQuery(localVarQueryParams, "folder", request.getFolder());
+        addParameterToQuery(localVarQueryParams, "storage", request.getStorage());
+        addParameterToQuery(localVarQueryParams, "loadEncoding", request.getLoadEncoding());
+        addParameterToQuery(localVarQueryParams, "password", request.getPassword());
+        addParameterToQuery(localVarQueryParams, "destFileName", request.getDestFileName());
+        addParameterToQuery(localVarQueryParams, "revisionAuthor", request.getRevisionAuthor());
+        addParameterToQuery(localVarQueryParams, "revisionDateTime", request.getRevisionDateTime());
 
         Map<String, String> localVarHeaderParams = new HashMap<String, String>();
 
@@ -15996,18 +16217,20 @@ public class WordsApi {
         Object localVarPostBody = request.getRow();
 
         // create path and map variables
-        String localVarPath = "/words/{name}/{tablePath}/rows".replaceAll("\\{" + "name" + "\\}", request.getName().toString()).replaceAll("//", "/")
-    .replaceAll("\\{" + "tablePath" + "\\}", request.getTablePath().toString()).replaceAll("//", "/");
+        String localVarPath = "/words/{name}/{tablePath}/rows";
+        localVarPath = addParameterToPath(localVarPath, "name", request.getName());
+        localVarPath = addParameterToPath(localVarPath, "tablePath", request.getTablePath());
+        localVarPath = localVarPath.replaceAll("//", "/");
 
         List<Pair> localVarQueryParams = new ArrayList<Pair>();
         List<Pair> localVarCollectionQueryParams = new ArrayList<Pair>();
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "folder", request.getFolder());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "storage", request.getStorage());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "loadEncoding", request.getLoadEncoding());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "password", request.getPassword());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "destFileName", request.getDestFileName());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "revisionAuthor", request.getRevisionAuthor());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "revisionDateTime", request.getRevisionDateTime());
+        addParameterToQuery(localVarQueryParams, "folder", request.getFolder());
+        addParameterToQuery(localVarQueryParams, "storage", request.getStorage());
+        addParameterToQuery(localVarQueryParams, "loadEncoding", request.getLoadEncoding());
+        addParameterToQuery(localVarQueryParams, "password", request.getPassword());
+        addParameterToQuery(localVarQueryParams, "destFileName", request.getDestFileName());
+        addParameterToQuery(localVarQueryParams, "revisionAuthor", request.getRevisionAuthor());
+        addParameterToQuery(localVarQueryParams, "revisionDateTime", request.getRevisionDateTime());
 
         Map<String, String> localVarHeaderParams = new HashMap<String, String>();
 
@@ -16144,19 +16367,21 @@ public class WordsApi {
         Object localVarPostBody = null;
 
         // create path and map variables
-        String localVarPath = "/words/{name}/watermarks/images".replaceAll("\\{" + "name" + "\\}", request.getName().toString()).replaceAll("//", "/");
+        String localVarPath = "/words/{name}/watermarks/images";
+        localVarPath = addParameterToPath(localVarPath, "name", request.getName());
+        localVarPath = localVarPath.replaceAll("//", "/");
 
         List<Pair> localVarQueryParams = new ArrayList<Pair>();
         List<Pair> localVarCollectionQueryParams = new ArrayList<Pair>();
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "folder", request.getFolder());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "storage", request.getStorage());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "loadEncoding", request.getLoadEncoding());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "password", request.getPassword());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "destFileName", request.getDestFileName());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "revisionAuthor", request.getRevisionAuthor());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "revisionDateTime", request.getRevisionDateTime());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "rotationAngle", request.getRotationAngle());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "image", request.getImage());
+        addParameterToQuery(localVarQueryParams, "folder", request.getFolder());
+        addParameterToQuery(localVarQueryParams, "storage", request.getStorage());
+        addParameterToQuery(localVarQueryParams, "loadEncoding", request.getLoadEncoding());
+        addParameterToQuery(localVarQueryParams, "password", request.getPassword());
+        addParameterToQuery(localVarQueryParams, "destFileName", request.getDestFileName());
+        addParameterToQuery(localVarQueryParams, "revisionAuthor", request.getRevisionAuthor());
+        addParameterToQuery(localVarQueryParams, "revisionDateTime", request.getRevisionDateTime());
+        addParameterToQuery(localVarQueryParams, "rotationAngle", request.getRotationAngle());
+        addParameterToQuery(localVarQueryParams, "image", request.getImage());
 
         Map<String, String> localVarHeaderParams = new HashMap<String, String>();
 
@@ -16285,17 +16510,19 @@ public class WordsApi {
         Object localVarPostBody = request.getWatermarkText();
 
         // create path and map variables
-        String localVarPath = "/words/{name}/watermarks/texts".replaceAll("\\{" + "name" + "\\}", request.getName().toString()).replaceAll("//", "/");
+        String localVarPath = "/words/{name}/watermarks/texts";
+        localVarPath = addParameterToPath(localVarPath, "name", request.getName());
+        localVarPath = localVarPath.replaceAll("//", "/");
 
         List<Pair> localVarQueryParams = new ArrayList<Pair>();
         List<Pair> localVarCollectionQueryParams = new ArrayList<Pair>();
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "folder", request.getFolder());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "storage", request.getStorage());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "loadEncoding", request.getLoadEncoding());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "password", request.getPassword());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "destFileName", request.getDestFileName());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "revisionAuthor", request.getRevisionAuthor());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "revisionDateTime", request.getRevisionDateTime());
+        addParameterToQuery(localVarQueryParams, "folder", request.getFolder());
+        addParameterToQuery(localVarQueryParams, "storage", request.getStorage());
+        addParameterToQuery(localVarQueryParams, "loadEncoding", request.getLoadEncoding());
+        addParameterToQuery(localVarQueryParams, "password", request.getPassword());
+        addParameterToQuery(localVarQueryParams, "destFileName", request.getDestFileName());
+        addParameterToQuery(localVarQueryParams, "revisionAuthor", request.getRevisionAuthor());
+        addParameterToQuery(localVarQueryParams, "revisionDateTime", request.getRevisionDateTime());
 
         Map<String, String> localVarHeaderParams = new HashMap<String, String>();
 
@@ -16428,10 +16655,11 @@ public class WordsApi {
 
         // create path and map variables
         String localVarPath = "/words/loadWebDocument";
+        localVarPath = localVarPath.replaceAll("//", "/");
 
         List<Pair> localVarQueryParams = new ArrayList<Pair>();
         List<Pair> localVarCollectionQueryParams = new ArrayList<Pair>();
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "storage", request.getStorage());
+        addParameterToQuery(localVarQueryParams, "storage", request.getStorage());
 
         Map<String, String> localVarHeaderParams = new HashMap<String, String>();
 
@@ -16558,14 +16786,16 @@ public class WordsApi {
         Object localVarPostBody = null;
 
         // create path and map variables
-        String localVarPath = "/words/storage/file/move/{srcPath}".replaceAll("\\{" + "srcPath" + "\\}", request.getSrcPath().toString()).replaceAll("//", "/");
+        String localVarPath = "/words/storage/file/move/{srcPath}";
+        localVarPath = addParameterToPath(localVarPath, "srcPath", request.getSrcPath());
+        localVarPath = localVarPath.replaceAll("//", "/");
 
         List<Pair> localVarQueryParams = new ArrayList<Pair>();
         List<Pair> localVarCollectionQueryParams = new ArrayList<Pair>();
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "destPath", request.getDestPath());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "srcStorageName", request.getSrcStorageName());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "destStorageName", request.getDestStorageName());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "versionId", request.getVersionId());
+        addParameterToQuery(localVarQueryParams, "destPath", request.getDestPath());
+        addParameterToQuery(localVarQueryParams, "srcStorageName", request.getSrcStorageName());
+        addParameterToQuery(localVarQueryParams, "destStorageName", request.getDestStorageName());
+        addParameterToQuery(localVarQueryParams, "versionId", request.getVersionId());
 
         Map<String, String> localVarHeaderParams = new HashMap<String, String>();
 
@@ -16692,13 +16922,15 @@ public class WordsApi {
         Object localVarPostBody = null;
 
         // create path and map variables
-        String localVarPath = "/words/storage/folder/move/{srcPath}".replaceAll("\\{" + "srcPath" + "\\}", request.getSrcPath().toString()).replaceAll("//", "/");
+        String localVarPath = "/words/storage/folder/move/{srcPath}";
+        localVarPath = addParameterToPath(localVarPath, "srcPath", request.getSrcPath());
+        localVarPath = localVarPath.replaceAll("//", "/");
 
         List<Pair> localVarQueryParams = new ArrayList<Pair>();
         List<Pair> localVarCollectionQueryParams = new ArrayList<Pair>();
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "destPath", request.getDestPath());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "srcStorageName", request.getSrcStorageName());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "destStorageName", request.getDestStorageName());
+        addParameterToQuery(localVarQueryParams, "destPath", request.getDestPath());
+        addParameterToQuery(localVarQueryParams, "srcStorageName", request.getSrcStorageName());
+        addParameterToQuery(localVarQueryParams, "destStorageName", request.getDestStorageName());
 
         Map<String, String> localVarHeaderParams = new HashMap<String, String>();
 
@@ -16825,17 +17057,19 @@ public class WordsApi {
         Object localVarPostBody = request.getOptions();
 
         // create path and map variables
-        String localVarPath = "/words/{name}/compatibility/optimize".replaceAll("\\{" + "name" + "\\}", request.getName().toString()).replaceAll("//", "/");
+        String localVarPath = "/words/{name}/compatibility/optimize";
+        localVarPath = addParameterToPath(localVarPath, "name", request.getName());
+        localVarPath = localVarPath.replaceAll("//", "/");
 
         List<Pair> localVarQueryParams = new ArrayList<Pair>();
         List<Pair> localVarCollectionQueryParams = new ArrayList<Pair>();
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "folder", request.getFolder());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "storage", request.getStorage());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "loadEncoding", request.getLoadEncoding());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "password", request.getPassword());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "destFileName", request.getDestFileName());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "revisionAuthor", request.getRevisionAuthor());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "revisionDateTime", request.getRevisionDateTime());
+        addParameterToQuery(localVarQueryParams, "folder", request.getFolder());
+        addParameterToQuery(localVarQueryParams, "storage", request.getStorage());
+        addParameterToQuery(localVarQueryParams, "loadEncoding", request.getLoadEncoding());
+        addParameterToQuery(localVarQueryParams, "password", request.getPassword());
+        addParameterToQuery(localVarQueryParams, "destFileName", request.getDestFileName());
+        addParameterToQuery(localVarQueryParams, "revisionAuthor", request.getRevisionAuthor());
+        addParameterToQuery(localVarQueryParams, "revisionDateTime", request.getRevisionDateTime());
 
         Map<String, String> localVarHeaderParams = new HashMap<String, String>();
 
@@ -16962,15 +17196,17 @@ public class WordsApi {
         Object localVarPostBody = request.getProtectionRequest();
 
         // create path and map variables
-        String localVarPath = "/words/{name}/protection".replaceAll("\\{" + "name" + "\\}", request.getName().toString()).replaceAll("//", "/");
+        String localVarPath = "/words/{name}/protection";
+        localVarPath = addParameterToPath(localVarPath, "name", request.getName());
+        localVarPath = localVarPath.replaceAll("//", "/");
 
         List<Pair> localVarQueryParams = new ArrayList<Pair>();
         List<Pair> localVarCollectionQueryParams = new ArrayList<Pair>();
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "folder", request.getFolder());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "storage", request.getStorage());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "loadEncoding", request.getLoadEncoding());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "password", request.getPassword());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "destFileName", request.getDestFileName());
+        addParameterToQuery(localVarQueryParams, "folder", request.getFolder());
+        addParameterToQuery(localVarQueryParams, "storage", request.getStorage());
+        addParameterToQuery(localVarQueryParams, "loadEncoding", request.getLoadEncoding());
+        addParameterToQuery(localVarQueryParams, "password", request.getPassword());
+        addParameterToQuery(localVarQueryParams, "destFileName", request.getDestFileName());
 
         Map<String, String> localVarHeaderParams = new HashMap<String, String>();
 
@@ -17102,15 +17338,17 @@ public class WordsApi {
         Object localVarPostBody = null;
 
         // create path and map variables
-        String localVarPath = "/words/{name}/revisions/rejectAll".replaceAll("\\{" + "name" + "\\}", request.getName().toString()).replaceAll("//", "/");
+        String localVarPath = "/words/{name}/revisions/rejectAll";
+        localVarPath = addParameterToPath(localVarPath, "name", request.getName());
+        localVarPath = localVarPath.replaceAll("//", "/");
 
         List<Pair> localVarQueryParams = new ArrayList<Pair>();
         List<Pair> localVarCollectionQueryParams = new ArrayList<Pair>();
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "folder", request.getFolder());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "storage", request.getStorage());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "loadEncoding", request.getLoadEncoding());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "password", request.getPassword());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "destFileName", request.getDestFileName());
+        addParameterToQuery(localVarQueryParams, "folder", request.getFolder());
+        addParameterToQuery(localVarQueryParams, "storage", request.getStorage());
+        addParameterToQuery(localVarQueryParams, "loadEncoding", request.getLoadEncoding());
+        addParameterToQuery(localVarQueryParams, "password", request.getPassword());
+        addParameterToQuery(localVarQueryParams, "destFileName", request.getDestFileName());
 
         Map<String, String> localVarHeaderParams = new HashMap<String, String>();
 
@@ -17237,17 +17475,19 @@ public class WordsApi {
         Object localVarPostBody = null;
 
         // create path and map variables
-        String localVarPath = "/words/{name}/range/{rangeStartIdentifier}/{rangeEndIdentifier}".replaceAll("\\{" + "name" + "\\}", request.getName().toString()).replaceAll("//", "/")
-    .replaceAll("\\{" + "rangeStartIdentifier" + "\\}", request.getRangeStartIdentifier().toString()).replaceAll("//", "/")
-    .replaceAll("\\{" + "rangeEndIdentifier" + "\\}", request.getRangeEndIdentifier().toString()).replaceAll("//", "/");
+        String localVarPath = "/words/{name}/range/{rangeStartIdentifier}/{rangeEndIdentifier}";
+        localVarPath = addParameterToPath(localVarPath, "name", request.getName());
+        localVarPath = addParameterToPath(localVarPath, "rangeStartIdentifier", request.getRangeStartIdentifier());
+        localVarPath = addParameterToPath(localVarPath, "rangeEndIdentifier", request.getRangeEndIdentifier());
+        localVarPath = localVarPath.replaceAll("//", "/");
 
         List<Pair> localVarQueryParams = new ArrayList<Pair>();
         List<Pair> localVarCollectionQueryParams = new ArrayList<Pair>();
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "folder", request.getFolder());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "storage", request.getStorage());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "loadEncoding", request.getLoadEncoding());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "password", request.getPassword());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "destFileName", request.getDestFileName());
+        addParameterToQuery(localVarQueryParams, "folder", request.getFolder());
+        addParameterToQuery(localVarQueryParams, "storage", request.getStorage());
+        addParameterToQuery(localVarQueryParams, "loadEncoding", request.getLoadEncoding());
+        addParameterToQuery(localVarQueryParams, "password", request.getPassword());
+        addParameterToQuery(localVarQueryParams, "destFileName", request.getDestFileName());
 
         Map<String, String> localVarHeaderParams = new HashMap<String, String>();
 
@@ -17379,18 +17619,20 @@ public class WordsApi {
         Object localVarPostBody = null;
 
         // create path and map variables
-        String localVarPath = "/words/{name}/{nodePath}/drawingObjects/{index}/render".replaceAll("\\{" + "name" + "\\}", request.getName().toString()).replaceAll("//", "/")
-    .replaceAll("\\{" + "index" + "\\}", request.getIndex().toString()).replaceAll("//", "/")
-    .replaceAll("\\{" + "nodePath" + "\\}", request.getNodePath().toString()).replaceAll("//", "/");
+        String localVarPath = "/words/{name}/{nodePath}/drawingObjects/{index}/render";
+        localVarPath = addParameterToPath(localVarPath, "name", request.getName());
+        localVarPath = addParameterToPath(localVarPath, "index", request.getIndex());
+        localVarPath = addParameterToPath(localVarPath, "nodePath", request.getNodePath());
+        localVarPath = localVarPath.replaceAll("//", "/");
 
         List<Pair> localVarQueryParams = new ArrayList<Pair>();
         List<Pair> localVarCollectionQueryParams = new ArrayList<Pair>();
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "format", request.getFormat());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "folder", request.getFolder());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "storage", request.getStorage());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "loadEncoding", request.getLoadEncoding());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "password", request.getPassword());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "fontsLocation", request.getFontsLocation());
+        addParameterToQuery(localVarQueryParams, "format", request.getFormat());
+        addParameterToQuery(localVarQueryParams, "folder", request.getFolder());
+        addParameterToQuery(localVarQueryParams, "storage", request.getStorage());
+        addParameterToQuery(localVarQueryParams, "loadEncoding", request.getLoadEncoding());
+        addParameterToQuery(localVarQueryParams, "password", request.getPassword());
+        addParameterToQuery(localVarQueryParams, "fontsLocation", request.getFontsLocation());
 
         Map<String, String> localVarHeaderParams = new HashMap<String, String>();
 
@@ -17527,18 +17769,20 @@ public class WordsApi {
         Object localVarPostBody = null;
 
         // create path and map variables
-        String localVarPath = "/words/{name}/{nodePath}/OfficeMathObjects/{index}/render".replaceAll("\\{" + "name" + "\\}", request.getName().toString()).replaceAll("//", "/")
-    .replaceAll("\\{" + "index" + "\\}", request.getIndex().toString()).replaceAll("//", "/")
-    .replaceAll("\\{" + "nodePath" + "\\}", request.getNodePath().toString()).replaceAll("//", "/");
+        String localVarPath = "/words/{name}/{nodePath}/OfficeMathObjects/{index}/render";
+        localVarPath = addParameterToPath(localVarPath, "name", request.getName());
+        localVarPath = addParameterToPath(localVarPath, "index", request.getIndex());
+        localVarPath = addParameterToPath(localVarPath, "nodePath", request.getNodePath());
+        localVarPath = localVarPath.replaceAll("//", "/");
 
         List<Pair> localVarQueryParams = new ArrayList<Pair>();
         List<Pair> localVarCollectionQueryParams = new ArrayList<Pair>();
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "format", request.getFormat());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "folder", request.getFolder());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "storage", request.getStorage());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "loadEncoding", request.getLoadEncoding());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "password", request.getPassword());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "fontsLocation", request.getFontsLocation());
+        addParameterToQuery(localVarQueryParams, "format", request.getFormat());
+        addParameterToQuery(localVarQueryParams, "folder", request.getFolder());
+        addParameterToQuery(localVarQueryParams, "storage", request.getStorage());
+        addParameterToQuery(localVarQueryParams, "loadEncoding", request.getLoadEncoding());
+        addParameterToQuery(localVarQueryParams, "password", request.getPassword());
+        addParameterToQuery(localVarQueryParams, "fontsLocation", request.getFontsLocation());
 
         Map<String, String> localVarHeaderParams = new HashMap<String, String>();
 
@@ -17675,17 +17919,19 @@ public class WordsApi {
         Object localVarPostBody = null;
 
         // create path and map variables
-        String localVarPath = "/words/{name}/pages/{pageIndex}/render".replaceAll("\\{" + "name" + "\\}", request.getName().toString()).replaceAll("//", "/")
-    .replaceAll("\\{" + "pageIndex" + "\\}", request.getPageIndex().toString()).replaceAll("//", "/");
+        String localVarPath = "/words/{name}/pages/{pageIndex}/render";
+        localVarPath = addParameterToPath(localVarPath, "name", request.getName());
+        localVarPath = addParameterToPath(localVarPath, "pageIndex", request.getPageIndex());
+        localVarPath = localVarPath.replaceAll("//", "/");
 
         List<Pair> localVarQueryParams = new ArrayList<Pair>();
         List<Pair> localVarCollectionQueryParams = new ArrayList<Pair>();
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "format", request.getFormat());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "folder", request.getFolder());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "storage", request.getStorage());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "loadEncoding", request.getLoadEncoding());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "password", request.getPassword());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "fontsLocation", request.getFontsLocation());
+        addParameterToQuery(localVarQueryParams, "format", request.getFormat());
+        addParameterToQuery(localVarQueryParams, "folder", request.getFolder());
+        addParameterToQuery(localVarQueryParams, "storage", request.getStorage());
+        addParameterToQuery(localVarQueryParams, "loadEncoding", request.getLoadEncoding());
+        addParameterToQuery(localVarQueryParams, "password", request.getPassword());
+        addParameterToQuery(localVarQueryParams, "fontsLocation", request.getFontsLocation());
 
         Map<String, String> localVarHeaderParams = new HashMap<String, String>();
 
@@ -17822,18 +18068,20 @@ public class WordsApi {
         Object localVarPostBody = null;
 
         // create path and map variables
-        String localVarPath = "/words/{name}/{nodePath}/paragraphs/{index}/render".replaceAll("\\{" + "name" + "\\}", request.getName().toString()).replaceAll("//", "/")
-    .replaceAll("\\{" + "index" + "\\}", request.getIndex().toString()).replaceAll("//", "/")
-    .replaceAll("\\{" + "nodePath" + "\\}", request.getNodePath().toString()).replaceAll("//", "/");
+        String localVarPath = "/words/{name}/{nodePath}/paragraphs/{index}/render";
+        localVarPath = addParameterToPath(localVarPath, "name", request.getName());
+        localVarPath = addParameterToPath(localVarPath, "index", request.getIndex());
+        localVarPath = addParameterToPath(localVarPath, "nodePath", request.getNodePath());
+        localVarPath = localVarPath.replaceAll("//", "/");
 
         List<Pair> localVarQueryParams = new ArrayList<Pair>();
         List<Pair> localVarCollectionQueryParams = new ArrayList<Pair>();
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "format", request.getFormat());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "folder", request.getFolder());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "storage", request.getStorage());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "loadEncoding", request.getLoadEncoding());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "password", request.getPassword());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "fontsLocation", request.getFontsLocation());
+        addParameterToQuery(localVarQueryParams, "format", request.getFormat());
+        addParameterToQuery(localVarQueryParams, "folder", request.getFolder());
+        addParameterToQuery(localVarQueryParams, "storage", request.getStorage());
+        addParameterToQuery(localVarQueryParams, "loadEncoding", request.getLoadEncoding());
+        addParameterToQuery(localVarQueryParams, "password", request.getPassword());
+        addParameterToQuery(localVarQueryParams, "fontsLocation", request.getFontsLocation());
 
         Map<String, String> localVarHeaderParams = new HashMap<String, String>();
 
@@ -17970,18 +18218,20 @@ public class WordsApi {
         Object localVarPostBody = null;
 
         // create path and map variables
-        String localVarPath = "/words/{name}/{nodePath}/tables/{index}/render".replaceAll("\\{" + "name" + "\\}", request.getName().toString()).replaceAll("//", "/")
-    .replaceAll("\\{" + "index" + "\\}", request.getIndex().toString()).replaceAll("//", "/")
-    .replaceAll("\\{" + "nodePath" + "\\}", request.getNodePath().toString()).replaceAll("//", "/");
+        String localVarPath = "/words/{name}/{nodePath}/tables/{index}/render";
+        localVarPath = addParameterToPath(localVarPath, "name", request.getName());
+        localVarPath = addParameterToPath(localVarPath, "index", request.getIndex());
+        localVarPath = addParameterToPath(localVarPath, "nodePath", request.getNodePath());
+        localVarPath = localVarPath.replaceAll("//", "/");
 
         List<Pair> localVarQueryParams = new ArrayList<Pair>();
         List<Pair> localVarCollectionQueryParams = new ArrayList<Pair>();
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "format", request.getFormat());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "folder", request.getFolder());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "storage", request.getStorage());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "loadEncoding", request.getLoadEncoding());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "password", request.getPassword());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "fontsLocation", request.getFontsLocation());
+        addParameterToQuery(localVarQueryParams, "format", request.getFormat());
+        addParameterToQuery(localVarQueryParams, "folder", request.getFolder());
+        addParameterToQuery(localVarQueryParams, "storage", request.getStorage());
+        addParameterToQuery(localVarQueryParams, "loadEncoding", request.getLoadEncoding());
+        addParameterToQuery(localVarQueryParams, "password", request.getPassword());
+        addParameterToQuery(localVarQueryParams, "fontsLocation", request.getFontsLocation());
 
         Map<String, String> localVarHeaderParams = new HashMap<String, String>();
 
@@ -18118,17 +18368,19 @@ public class WordsApi {
         Object localVarPostBody = request.getReplaceText();
 
         // create path and map variables
-        String localVarPath = "/words/{name}/replaceText".replaceAll("\\{" + "name" + "\\}", request.getName().toString()).replaceAll("//", "/");
+        String localVarPath = "/words/{name}/replaceText";
+        localVarPath = addParameterToPath(localVarPath, "name", request.getName());
+        localVarPath = localVarPath.replaceAll("//", "/");
 
         List<Pair> localVarQueryParams = new ArrayList<Pair>();
         List<Pair> localVarCollectionQueryParams = new ArrayList<Pair>();
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "folder", request.getFolder());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "storage", request.getStorage());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "loadEncoding", request.getLoadEncoding());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "password", request.getPassword());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "destFileName", request.getDestFileName());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "revisionAuthor", request.getRevisionAuthor());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "revisionDateTime", request.getRevisionDateTime());
+        addParameterToQuery(localVarQueryParams, "folder", request.getFolder());
+        addParameterToQuery(localVarQueryParams, "storage", request.getStorage());
+        addParameterToQuery(localVarQueryParams, "loadEncoding", request.getLoadEncoding());
+        addParameterToQuery(localVarQueryParams, "password", request.getPassword());
+        addParameterToQuery(localVarQueryParams, "destFileName", request.getDestFileName());
+        addParameterToQuery(localVarQueryParams, "revisionAuthor", request.getRevisionAuthor());
+        addParameterToQuery(localVarQueryParams, "revisionDateTime", request.getRevisionDateTime());
 
         Map<String, String> localVarHeaderParams = new HashMap<String, String>();
 
@@ -18260,17 +18512,19 @@ public class WordsApi {
         Object localVarPostBody = request.getRangeText();
 
         // create path and map variables
-        String localVarPath = "/words/{name}/range/{rangeStartIdentifier}/{rangeEndIdentifier}".replaceAll("\\{" + "name" + "\\}", request.getName().toString()).replaceAll("//", "/")
-    .replaceAll("\\{" + "rangeStartIdentifier" + "\\}", request.getRangeStartIdentifier().toString()).replaceAll("//", "/")
-    .replaceAll("\\{" + "rangeEndIdentifier" + "\\}", request.getRangeEndIdentifier().toString()).replaceAll("//", "/");
+        String localVarPath = "/words/{name}/range/{rangeStartIdentifier}/{rangeEndIdentifier}";
+        localVarPath = addParameterToPath(localVarPath, "name", request.getName());
+        localVarPath = addParameterToPath(localVarPath, "rangeStartIdentifier", request.getRangeStartIdentifier());
+        localVarPath = addParameterToPath(localVarPath, "rangeEndIdentifier", request.getRangeEndIdentifier());
+        localVarPath = localVarPath.replaceAll("//", "/");
 
         List<Pair> localVarQueryParams = new ArrayList<Pair>();
         List<Pair> localVarCollectionQueryParams = new ArrayList<Pair>();
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "folder", request.getFolder());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "storage", request.getStorage());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "loadEncoding", request.getLoadEncoding());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "password", request.getPassword());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "destFileName", request.getDestFileName());
+        addParameterToQuery(localVarQueryParams, "folder", request.getFolder());
+        addParameterToQuery(localVarQueryParams, "storage", request.getStorage());
+        addParameterToQuery(localVarQueryParams, "loadEncoding", request.getLoadEncoding());
+        addParameterToQuery(localVarQueryParams, "password", request.getPassword());
+        addParameterToQuery(localVarQueryParams, "destFileName", request.getDestFileName());
 
         Map<String, String> localVarHeaderParams = new HashMap<String, String>();
 
@@ -18408,6 +18662,7 @@ public class WordsApi {
 
         // create path and map variables
         String localVarPath = "/words/fonts/cache";
+        localVarPath = localVarPath.replaceAll("//", "/");
 
         List<Pair> localVarQueryParams = new ArrayList<Pair>();
         List<Pair> localVarCollectionQueryParams = new ArrayList<Pair>();
@@ -18528,15 +18783,17 @@ public class WordsApi {
         Object localVarPostBody = request.getSaveOptionsData();
 
         // create path and map variables
-        String localVarPath = "/words/{name}/saveAs".replaceAll("\\{" + "name" + "\\}", request.getName().toString()).replaceAll("//", "/");
+        String localVarPath = "/words/{name}/saveAs";
+        localVarPath = addParameterToPath(localVarPath, "name", request.getName());
+        localVarPath = localVarPath.replaceAll("//", "/");
 
         List<Pair> localVarQueryParams = new ArrayList<Pair>();
         List<Pair> localVarCollectionQueryParams = new ArrayList<Pair>();
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "folder", request.getFolder());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "storage", request.getStorage());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "loadEncoding", request.getLoadEncoding());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "password", request.getPassword());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "fontsLocation", request.getFontsLocation());
+        addParameterToQuery(localVarQueryParams, "folder", request.getFolder());
+        addParameterToQuery(localVarQueryParams, "storage", request.getStorage());
+        addParameterToQuery(localVarQueryParams, "loadEncoding", request.getLoadEncoding());
+        addParameterToQuery(localVarQueryParams, "password", request.getPassword());
+        addParameterToQuery(localVarQueryParams, "fontsLocation", request.getFontsLocation());
 
         Map<String, String> localVarHeaderParams = new HashMap<String, String>();
 
@@ -18668,16 +18925,18 @@ public class WordsApi {
         Object localVarPostBody = request.getDocumentParameters();
 
         // create path and map variables
-        String localVarPath = "/words/{name}/range/{rangeStartIdentifier}/{rangeEndIdentifier}/SaveAs".replaceAll("\\{" + "name" + "\\}", request.getName().toString()).replaceAll("//", "/")
-    .replaceAll("\\{" + "rangeStartIdentifier" + "\\}", request.getRangeStartIdentifier().toString()).replaceAll("//", "/")
-    .replaceAll("\\{" + "rangeEndIdentifier" + "\\}", request.getRangeEndIdentifier().toString()).replaceAll("//", "/");
+        String localVarPath = "/words/{name}/range/{rangeStartIdentifier}/{rangeEndIdentifier}/SaveAs";
+        localVarPath = addParameterToPath(localVarPath, "name", request.getName());
+        localVarPath = addParameterToPath(localVarPath, "rangeStartIdentifier", request.getRangeStartIdentifier());
+        localVarPath = addParameterToPath(localVarPath, "rangeEndIdentifier", request.getRangeEndIdentifier());
+        localVarPath = localVarPath.replaceAll("//", "/");
 
         List<Pair> localVarQueryParams = new ArrayList<Pair>();
         List<Pair> localVarCollectionQueryParams = new ArrayList<Pair>();
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "folder", request.getFolder());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "storage", request.getStorage());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "loadEncoding", request.getLoadEncoding());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "password", request.getPassword());
+        addParameterToQuery(localVarQueryParams, "folder", request.getFolder());
+        addParameterToQuery(localVarQueryParams, "storage", request.getStorage());
+        addParameterToQuery(localVarQueryParams, "loadEncoding", request.getLoadEncoding());
+        addParameterToQuery(localVarQueryParams, "password", request.getPassword());
 
         Map<String, String> localVarHeaderParams = new HashMap<String, String>();
 
@@ -18814,32 +19073,34 @@ public class WordsApi {
         Object localVarPostBody = request.getSaveOptions();
 
         // create path and map variables
-        String localVarPath = "/words/{name}/saveAs/tiff".replaceAll("\\{" + "name" + "\\}", request.getName().toString()).replaceAll("//", "/");
+        String localVarPath = "/words/{name}/saveAs/tiff";
+        localVarPath = addParameterToPath(localVarPath, "name", request.getName());
+        localVarPath = localVarPath.replaceAll("//", "/");
 
         List<Pair> localVarQueryParams = new ArrayList<Pair>();
         List<Pair> localVarCollectionQueryParams = new ArrayList<Pair>();
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "folder", request.getFolder());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "storage", request.getStorage());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "loadEncoding", request.getLoadEncoding());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "password", request.getPassword());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "useAntiAliasing", request.getUseAntiAliasing());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "useHighQualityRendering", request.getUseHighQualityRendering());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "imageBrightness", request.getImageBrightness());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "imageColorMode", request.getImageColorMode());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "imageContrast", request.getImageContrast());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "numeralFormat", request.getNumeralFormat());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "pageCount", request.getPageCount());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "pageIndex", request.getPageIndex());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "paperColor", request.getPaperColor());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "pixelFormat", request.getPixelFormat());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "resolution", request.getResolution());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "scale", request.getScale());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "tiffCompression", request.getTiffCompression());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "dmlRenderingMode", request.getDmlRenderingMode());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "dmlEffectsRenderingMode", request.getDmlEffectsRenderingMode());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "tiffBinarizationMethod", request.getTiffBinarizationMethod());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "zipOutput", request.getZipOutput());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "fontsLocation", request.getFontsLocation());
+        addParameterToQuery(localVarQueryParams, "folder", request.getFolder());
+        addParameterToQuery(localVarQueryParams, "storage", request.getStorage());
+        addParameterToQuery(localVarQueryParams, "loadEncoding", request.getLoadEncoding());
+        addParameterToQuery(localVarQueryParams, "password", request.getPassword());
+        addParameterToQuery(localVarQueryParams, "useAntiAliasing", request.getUseAntiAliasing());
+        addParameterToQuery(localVarQueryParams, "useHighQualityRendering", request.getUseHighQualityRendering());
+        addParameterToQuery(localVarQueryParams, "imageBrightness", request.getImageBrightness());
+        addParameterToQuery(localVarQueryParams, "imageColorMode", request.getImageColorMode());
+        addParameterToQuery(localVarQueryParams, "imageContrast", request.getImageContrast());
+        addParameterToQuery(localVarQueryParams, "numeralFormat", request.getNumeralFormat());
+        addParameterToQuery(localVarQueryParams, "pageCount", request.getPageCount());
+        addParameterToQuery(localVarQueryParams, "pageIndex", request.getPageIndex());
+        addParameterToQuery(localVarQueryParams, "paperColor", request.getPaperColor());
+        addParameterToQuery(localVarQueryParams, "pixelFormat", request.getPixelFormat());
+        addParameterToQuery(localVarQueryParams, "resolution", request.getResolution());
+        addParameterToQuery(localVarQueryParams, "scale", request.getScale());
+        addParameterToQuery(localVarQueryParams, "tiffCompression", request.getTiffCompression());
+        addParameterToQuery(localVarQueryParams, "dmlRenderingMode", request.getDmlRenderingMode());
+        addParameterToQuery(localVarQueryParams, "dmlEffectsRenderingMode", request.getDmlEffectsRenderingMode());
+        addParameterToQuery(localVarQueryParams, "tiffBinarizationMethod", request.getTiffBinarizationMethod());
+        addParameterToQuery(localVarQueryParams, "zipOutput", request.getZipOutput());
+        addParameterToQuery(localVarQueryParams, "fontsLocation", request.getFontsLocation());
 
         Map<String, String> localVarHeaderParams = new HashMap<String, String>();
 
@@ -18971,15 +19232,17 @@ public class WordsApi {
         Object localVarPostBody = null;
 
         // create path and map variables
-        String localVarPath = "/words/{name}/search".replaceAll("\\{" + "name" + "\\}", request.getName().toString()).replaceAll("//", "/");
+        String localVarPath = "/words/{name}/search";
+        localVarPath = addParameterToPath(localVarPath, "name", request.getName());
+        localVarPath = localVarPath.replaceAll("//", "/");
 
         List<Pair> localVarQueryParams = new ArrayList<Pair>();
         List<Pair> localVarCollectionQueryParams = new ArrayList<Pair>();
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "pattern", request.getPattern());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "folder", request.getFolder());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "storage", request.getStorage());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "loadEncoding", request.getLoadEncoding());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "password", request.getPassword());
+        addParameterToQuery(localVarQueryParams, "pattern", request.getPattern());
+        addParameterToQuery(localVarQueryParams, "folder", request.getFolder());
+        addParameterToQuery(localVarQueryParams, "storage", request.getStorage());
+        addParameterToQuery(localVarQueryParams, "loadEncoding", request.getLoadEncoding());
+        addParameterToQuery(localVarQueryParams, "password", request.getPassword());
 
         Map<String, String> localVarHeaderParams = new HashMap<String, String>();
 
@@ -19111,20 +19374,22 @@ public class WordsApi {
         Object localVarPostBody = null;
 
         // create path and map variables
-        String localVarPath = "/words/{name}/split".replaceAll("\\{" + "name" + "\\}", request.getName().toString()).replaceAll("//", "/");
+        String localVarPath = "/words/{name}/split";
+        localVarPath = addParameterToPath(localVarPath, "name", request.getName());
+        localVarPath = localVarPath.replaceAll("//", "/");
 
         List<Pair> localVarQueryParams = new ArrayList<Pair>();
         List<Pair> localVarCollectionQueryParams = new ArrayList<Pair>();
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "format", request.getFormat());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "folder", request.getFolder());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "storage", request.getStorage());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "loadEncoding", request.getLoadEncoding());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "password", request.getPassword());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "destFileName", request.getDestFileName());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "from", request.getFrom());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "to", request.getTo());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "zipOutput", request.getZipOutput());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "fontsLocation", request.getFontsLocation());
+        addParameterToQuery(localVarQueryParams, "format", request.getFormat());
+        addParameterToQuery(localVarQueryParams, "folder", request.getFolder());
+        addParameterToQuery(localVarQueryParams, "storage", request.getStorage());
+        addParameterToQuery(localVarQueryParams, "loadEncoding", request.getLoadEncoding());
+        addParameterToQuery(localVarQueryParams, "password", request.getPassword());
+        addParameterToQuery(localVarQueryParams, "destFileName", request.getDestFileName());
+        addParameterToQuery(localVarQueryParams, "from", request.getFrom());
+        addParameterToQuery(localVarQueryParams, "to", request.getTo());
+        addParameterToQuery(localVarQueryParams, "zipOutput", request.getZipOutput());
+        addParameterToQuery(localVarQueryParams, "fontsLocation", request.getFontsLocation());
 
         Map<String, String> localVarHeaderParams = new HashMap<String, String>();
 
@@ -19256,15 +19521,17 @@ public class WordsApi {
         Object localVarPostBody = request.getProtectionRequest();
 
         // create path and map variables
-        String localVarPath = "/words/{name}/protection".replaceAll("\\{" + "name" + "\\}", request.getName().toString()).replaceAll("//", "/");
+        String localVarPath = "/words/{name}/protection";
+        localVarPath = addParameterToPath(localVarPath, "name", request.getName());
+        localVarPath = localVarPath.replaceAll("//", "/");
 
         List<Pair> localVarQueryParams = new ArrayList<Pair>();
         List<Pair> localVarCollectionQueryParams = new ArrayList<Pair>();
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "folder", request.getFolder());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "storage", request.getStorage());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "loadEncoding", request.getLoadEncoding());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "password", request.getPassword());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "destFileName", request.getDestFileName());
+        addParameterToQuery(localVarQueryParams, "folder", request.getFolder());
+        addParameterToQuery(localVarQueryParams, "storage", request.getStorage());
+        addParameterToQuery(localVarQueryParams, "loadEncoding", request.getLoadEncoding());
+        addParameterToQuery(localVarQueryParams, "password", request.getPassword());
+        addParameterToQuery(localVarQueryParams, "destFileName", request.getDestFileName());
 
         Map<String, String> localVarHeaderParams = new HashMap<String, String>();
 
@@ -19396,18 +19663,20 @@ public class WordsApi {
         Object localVarPostBody = request.getBookmarkData();
 
         // create path and map variables
-        String localVarPath = "/words/{name}/bookmarks/{bookmarkName}".replaceAll("\\{" + "name" + "\\}", request.getName().toString()).replaceAll("//", "/")
-    .replaceAll("\\{" + "bookmarkName" + "\\}", request.getBookmarkName().toString()).replaceAll("//", "/");
+        String localVarPath = "/words/{name}/bookmarks/{bookmarkName}";
+        localVarPath = addParameterToPath(localVarPath, "name", request.getName());
+        localVarPath = addParameterToPath(localVarPath, "bookmarkName", request.getBookmarkName());
+        localVarPath = localVarPath.replaceAll("//", "/");
 
         List<Pair> localVarQueryParams = new ArrayList<Pair>();
         List<Pair> localVarCollectionQueryParams = new ArrayList<Pair>();
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "folder", request.getFolder());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "storage", request.getStorage());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "loadEncoding", request.getLoadEncoding());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "password", request.getPassword());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "destFileName", request.getDestFileName());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "revisionAuthor", request.getRevisionAuthor());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "revisionDateTime", request.getRevisionDateTime());
+        addParameterToQuery(localVarQueryParams, "folder", request.getFolder());
+        addParameterToQuery(localVarQueryParams, "storage", request.getStorage());
+        addParameterToQuery(localVarQueryParams, "loadEncoding", request.getLoadEncoding());
+        addParameterToQuery(localVarQueryParams, "password", request.getPassword());
+        addParameterToQuery(localVarQueryParams, "destFileName", request.getDestFileName());
+        addParameterToQuery(localVarQueryParams, "revisionAuthor", request.getRevisionAuthor());
+        addParameterToQuery(localVarQueryParams, "revisionDateTime", request.getRevisionDateTime());
 
         Map<String, String> localVarHeaderParams = new HashMap<String, String>();
 
@@ -19544,19 +19813,21 @@ public class WordsApi {
         Object localVarPostBody = request.getBorderProperties();
 
         // create path and map variables
-        String localVarPath = "/words/{name}/{nodePath}/borders/{borderType}".replaceAll("\\{" + "name" + "\\}", request.getName().toString()).replaceAll("//", "/")
-    .replaceAll("\\{" + "borderType" + "\\}", request.getBorderType().toString()).replaceAll("//", "/")
-    .replaceAll("\\{" + "nodePath" + "\\}", request.getNodePath().toString()).replaceAll("//", "/");
+        String localVarPath = "/words/{name}/{nodePath}/borders/{borderType}";
+        localVarPath = addParameterToPath(localVarPath, "name", request.getName());
+        localVarPath = addParameterToPath(localVarPath, "borderType", request.getBorderType());
+        localVarPath = addParameterToPath(localVarPath, "nodePath", request.getNodePath());
+        localVarPath = localVarPath.replaceAll("//", "/");
 
         List<Pair> localVarQueryParams = new ArrayList<Pair>();
         List<Pair> localVarCollectionQueryParams = new ArrayList<Pair>();
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "folder", request.getFolder());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "storage", request.getStorage());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "loadEncoding", request.getLoadEncoding());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "password", request.getPassword());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "destFileName", request.getDestFileName());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "revisionAuthor", request.getRevisionAuthor());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "revisionDateTime", request.getRevisionDateTime());
+        addParameterToQuery(localVarQueryParams, "folder", request.getFolder());
+        addParameterToQuery(localVarQueryParams, "storage", request.getStorage());
+        addParameterToQuery(localVarQueryParams, "loadEncoding", request.getLoadEncoding());
+        addParameterToQuery(localVarQueryParams, "password", request.getPassword());
+        addParameterToQuery(localVarQueryParams, "destFileName", request.getDestFileName());
+        addParameterToQuery(localVarQueryParams, "revisionAuthor", request.getRevisionAuthor());
+        addParameterToQuery(localVarQueryParams, "revisionDateTime", request.getRevisionDateTime());
 
         Map<String, String> localVarHeaderParams = new HashMap<String, String>();
 
@@ -19693,18 +19964,20 @@ public class WordsApi {
         Object localVarPostBody = request.getComment();
 
         // create path and map variables
-        String localVarPath = "/words/{name}/comments/{commentIndex}".replaceAll("\\{" + "name" + "\\}", request.getName().toString()).replaceAll("//", "/")
-    .replaceAll("\\{" + "commentIndex" + "\\}", request.getCommentIndex().toString()).replaceAll("//", "/");
+        String localVarPath = "/words/{name}/comments/{commentIndex}";
+        localVarPath = addParameterToPath(localVarPath, "name", request.getName());
+        localVarPath = addParameterToPath(localVarPath, "commentIndex", request.getCommentIndex());
+        localVarPath = localVarPath.replaceAll("//", "/");
 
         List<Pair> localVarQueryParams = new ArrayList<Pair>();
         List<Pair> localVarCollectionQueryParams = new ArrayList<Pair>();
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "folder", request.getFolder());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "storage", request.getStorage());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "loadEncoding", request.getLoadEncoding());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "password", request.getPassword());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "destFileName", request.getDestFileName());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "revisionAuthor", request.getRevisionAuthor());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "revisionDateTime", request.getRevisionDateTime());
+        addParameterToQuery(localVarQueryParams, "folder", request.getFolder());
+        addParameterToQuery(localVarQueryParams, "storage", request.getStorage());
+        addParameterToQuery(localVarQueryParams, "loadEncoding", request.getLoadEncoding());
+        addParameterToQuery(localVarQueryParams, "password", request.getPassword());
+        addParameterToQuery(localVarQueryParams, "destFileName", request.getDestFileName());
+        addParameterToQuery(localVarQueryParams, "revisionAuthor", request.getRevisionAuthor());
+        addParameterToQuery(localVarQueryParams, "revisionDateTime", request.getRevisionDateTime());
 
         Map<String, String> localVarHeaderParams = new HashMap<String, String>();
 
@@ -19841,19 +20114,21 @@ public class WordsApi {
         Object localVarPostBody = null;
 
         // create path and map variables
-        String localVarPath = "/words/{name}/{nodePath}/drawingObjects/{index}".replaceAll("\\{" + "name" + "\\}", request.getName().toString()).replaceAll("//", "/")
-    .replaceAll("\\{" + "index" + "\\}", request.getIndex().toString()).replaceAll("//", "/")
-    .replaceAll("\\{" + "nodePath" + "\\}", request.getNodePath().toString()).replaceAll("//", "/");
+        String localVarPath = "/words/{name}/{nodePath}/drawingObjects/{index}";
+        localVarPath = addParameterToPath(localVarPath, "name", request.getName());
+        localVarPath = addParameterToPath(localVarPath, "index", request.getIndex());
+        localVarPath = addParameterToPath(localVarPath, "nodePath", request.getNodePath());
+        localVarPath = localVarPath.replaceAll("//", "/");
 
         List<Pair> localVarQueryParams = new ArrayList<Pair>();
         List<Pair> localVarCollectionQueryParams = new ArrayList<Pair>();
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "folder", request.getFolder());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "storage", request.getStorage());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "loadEncoding", request.getLoadEncoding());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "password", request.getPassword());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "destFileName", request.getDestFileName());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "revisionAuthor", request.getRevisionAuthor());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "revisionDateTime", request.getRevisionDateTime());
+        addParameterToQuery(localVarQueryParams, "folder", request.getFolder());
+        addParameterToQuery(localVarQueryParams, "storage", request.getStorage());
+        addParameterToQuery(localVarQueryParams, "loadEncoding", request.getLoadEncoding());
+        addParameterToQuery(localVarQueryParams, "password", request.getPassword());
+        addParameterToQuery(localVarQueryParams, "destFileName", request.getDestFileName());
+        addParameterToQuery(localVarQueryParams, "revisionAuthor", request.getRevisionAuthor());
+        addParameterToQuery(localVarQueryParams, "revisionDateTime", request.getRevisionDateTime());
 
         Map<String, String> localVarHeaderParams = new HashMap<String, String>();
 
@@ -20000,19 +20275,21 @@ public class WordsApi {
         Object localVarPostBody = request.getField();
 
         // create path and map variables
-        String localVarPath = "/words/{name}/{nodePath}/fields/{index}".replaceAll("\\{" + "name" + "\\}", request.getName().toString()).replaceAll("//", "/")
-    .replaceAll("\\{" + "index" + "\\}", request.getIndex().toString()).replaceAll("//", "/")
-    .replaceAll("\\{" + "nodePath" + "\\}", request.getNodePath().toString()).replaceAll("//", "/");
+        String localVarPath = "/words/{name}/{nodePath}/fields/{index}";
+        localVarPath = addParameterToPath(localVarPath, "name", request.getName());
+        localVarPath = addParameterToPath(localVarPath, "index", request.getIndex());
+        localVarPath = addParameterToPath(localVarPath, "nodePath", request.getNodePath());
+        localVarPath = localVarPath.replaceAll("//", "/");
 
         List<Pair> localVarQueryParams = new ArrayList<Pair>();
         List<Pair> localVarCollectionQueryParams = new ArrayList<Pair>();
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "folder", request.getFolder());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "storage", request.getStorage());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "loadEncoding", request.getLoadEncoding());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "password", request.getPassword());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "destFileName", request.getDestFileName());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "revisionAuthor", request.getRevisionAuthor());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "revisionDateTime", request.getRevisionDateTime());
+        addParameterToQuery(localVarQueryParams, "folder", request.getFolder());
+        addParameterToQuery(localVarQueryParams, "storage", request.getStorage());
+        addParameterToQuery(localVarQueryParams, "loadEncoding", request.getLoadEncoding());
+        addParameterToQuery(localVarQueryParams, "password", request.getPassword());
+        addParameterToQuery(localVarQueryParams, "destFileName", request.getDestFileName());
+        addParameterToQuery(localVarQueryParams, "revisionAuthor", request.getRevisionAuthor());
+        addParameterToQuery(localVarQueryParams, "revisionDateTime", request.getRevisionDateTime());
 
         Map<String, String> localVarHeaderParams = new HashMap<String, String>();
 
@@ -20149,15 +20426,17 @@ public class WordsApi {
         Object localVarPostBody = null;
 
         // create path and map variables
-        String localVarPath = "/words/{name}/updateFields".replaceAll("\\{" + "name" + "\\}", request.getName().toString()).replaceAll("//", "/");
+        String localVarPath = "/words/{name}/updateFields";
+        localVarPath = addParameterToPath(localVarPath, "name", request.getName());
+        localVarPath = localVarPath.replaceAll("//", "/");
 
         List<Pair> localVarQueryParams = new ArrayList<Pair>();
         List<Pair> localVarCollectionQueryParams = new ArrayList<Pair>();
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "folder", request.getFolder());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "storage", request.getStorage());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "loadEncoding", request.getLoadEncoding());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "password", request.getPassword());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "destFileName", request.getDestFileName());
+        addParameterToQuery(localVarQueryParams, "folder", request.getFolder());
+        addParameterToQuery(localVarQueryParams, "storage", request.getStorage());
+        addParameterToQuery(localVarQueryParams, "loadEncoding", request.getLoadEncoding());
+        addParameterToQuery(localVarQueryParams, "password", request.getPassword());
+        addParameterToQuery(localVarQueryParams, "destFileName", request.getDestFileName());
 
         Map<String, String> localVarHeaderParams = new HashMap<String, String>();
 
@@ -20284,19 +20563,21 @@ public class WordsApi {
         Object localVarPostBody = request.getFootnoteDto();
 
         // create path and map variables
-        String localVarPath = "/words/{name}/{nodePath}/footnotes/{index}".replaceAll("\\{" + "name" + "\\}", request.getName().toString()).replaceAll("//", "/")
-    .replaceAll("\\{" + "index" + "\\}", request.getIndex().toString()).replaceAll("//", "/")
-    .replaceAll("\\{" + "nodePath" + "\\}", request.getNodePath().toString()).replaceAll("//", "/");
+        String localVarPath = "/words/{name}/{nodePath}/footnotes/{index}";
+        localVarPath = addParameterToPath(localVarPath, "name", request.getName());
+        localVarPath = addParameterToPath(localVarPath, "index", request.getIndex());
+        localVarPath = addParameterToPath(localVarPath, "nodePath", request.getNodePath());
+        localVarPath = localVarPath.replaceAll("//", "/");
 
         List<Pair> localVarQueryParams = new ArrayList<Pair>();
         List<Pair> localVarCollectionQueryParams = new ArrayList<Pair>();
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "folder", request.getFolder());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "storage", request.getStorage());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "loadEncoding", request.getLoadEncoding());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "password", request.getPassword());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "destFileName", request.getDestFileName());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "revisionAuthor", request.getRevisionAuthor());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "revisionDateTime", request.getRevisionDateTime());
+        addParameterToQuery(localVarQueryParams, "folder", request.getFolder());
+        addParameterToQuery(localVarQueryParams, "storage", request.getStorage());
+        addParameterToQuery(localVarQueryParams, "loadEncoding", request.getLoadEncoding());
+        addParameterToQuery(localVarQueryParams, "password", request.getPassword());
+        addParameterToQuery(localVarQueryParams, "destFileName", request.getDestFileName());
+        addParameterToQuery(localVarQueryParams, "revisionAuthor", request.getRevisionAuthor());
+        addParameterToQuery(localVarQueryParams, "revisionDateTime", request.getRevisionDateTime());
 
         Map<String, String> localVarHeaderParams = new HashMap<String, String>();
 
@@ -20433,19 +20714,21 @@ public class WordsApi {
         Object localVarPostBody = request.getFormField();
 
         // create path and map variables
-        String localVarPath = "/words/{name}/{nodePath}/formfields/{index}".replaceAll("\\{" + "name" + "\\}", request.getName().toString()).replaceAll("//", "/")
-    .replaceAll("\\{" + "index" + "\\}", request.getIndex().toString()).replaceAll("//", "/")
-    .replaceAll("\\{" + "nodePath" + "\\}", request.getNodePath().toString()).replaceAll("//", "/");
+        String localVarPath = "/words/{name}/{nodePath}/formfields/{index}";
+        localVarPath = addParameterToPath(localVarPath, "name", request.getName());
+        localVarPath = addParameterToPath(localVarPath, "index", request.getIndex());
+        localVarPath = addParameterToPath(localVarPath, "nodePath", request.getNodePath());
+        localVarPath = localVarPath.replaceAll("//", "/");
 
         List<Pair> localVarQueryParams = new ArrayList<Pair>();
         List<Pair> localVarCollectionQueryParams = new ArrayList<Pair>();
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "folder", request.getFolder());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "storage", request.getStorage());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "loadEncoding", request.getLoadEncoding());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "password", request.getPassword());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "destFileName", request.getDestFileName());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "revisionAuthor", request.getRevisionAuthor());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "revisionDateTime", request.getRevisionDateTime());
+        addParameterToQuery(localVarQueryParams, "folder", request.getFolder());
+        addParameterToQuery(localVarQueryParams, "storage", request.getStorage());
+        addParameterToQuery(localVarQueryParams, "loadEncoding", request.getLoadEncoding());
+        addParameterToQuery(localVarQueryParams, "password", request.getPassword());
+        addParameterToQuery(localVarQueryParams, "destFileName", request.getDestFileName());
+        addParameterToQuery(localVarQueryParams, "revisionAuthor", request.getRevisionAuthor());
+        addParameterToQuery(localVarQueryParams, "revisionDateTime", request.getRevisionDateTime());
 
         Map<String, String> localVarHeaderParams = new HashMap<String, String>();
 
@@ -20582,18 +20865,20 @@ public class WordsApi {
         Object localVarPostBody = request.getListUpdate();
 
         // create path and map variables
-        String localVarPath = "/words/{name}/lists/{listId}".replaceAll("\\{" + "name" + "\\}", request.getName().toString()).replaceAll("//", "/")
-    .replaceAll("\\{" + "listId" + "\\}", request.getListId().toString()).replaceAll("//", "/");
+        String localVarPath = "/words/{name}/lists/{listId}";
+        localVarPath = addParameterToPath(localVarPath, "name", request.getName());
+        localVarPath = addParameterToPath(localVarPath, "listId", request.getListId());
+        localVarPath = localVarPath.replaceAll("//", "/");
 
         List<Pair> localVarQueryParams = new ArrayList<Pair>();
         List<Pair> localVarCollectionQueryParams = new ArrayList<Pair>();
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "folder", request.getFolder());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "storage", request.getStorage());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "loadEncoding", request.getLoadEncoding());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "password", request.getPassword());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "destFileName", request.getDestFileName());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "revisionAuthor", request.getRevisionAuthor());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "revisionDateTime", request.getRevisionDateTime());
+        addParameterToQuery(localVarQueryParams, "folder", request.getFolder());
+        addParameterToQuery(localVarQueryParams, "storage", request.getStorage());
+        addParameterToQuery(localVarQueryParams, "loadEncoding", request.getLoadEncoding());
+        addParameterToQuery(localVarQueryParams, "password", request.getPassword());
+        addParameterToQuery(localVarQueryParams, "destFileName", request.getDestFileName());
+        addParameterToQuery(localVarQueryParams, "revisionAuthor", request.getRevisionAuthor());
+        addParameterToQuery(localVarQueryParams, "revisionDateTime", request.getRevisionDateTime());
 
         Map<String, String> localVarHeaderParams = new HashMap<String, String>();
 
@@ -20730,19 +21015,21 @@ public class WordsApi {
         Object localVarPostBody = request.getListUpdate();
 
         // create path and map variables
-        String localVarPath = "/words/{name}/lists/{listId}/listLevels/{listLevel}".replaceAll("\\{" + "name" + "\\}", request.getName().toString()).replaceAll("//", "/")
-    .replaceAll("\\{" + "listId" + "\\}", request.getListId().toString()).replaceAll("//", "/")
-    .replaceAll("\\{" + "listLevel" + "\\}", request.getListLevel().toString()).replaceAll("//", "/");
+        String localVarPath = "/words/{name}/lists/{listId}/listLevels/{listLevel}";
+        localVarPath = addParameterToPath(localVarPath, "name", request.getName());
+        localVarPath = addParameterToPath(localVarPath, "listId", request.getListId());
+        localVarPath = addParameterToPath(localVarPath, "listLevel", request.getListLevel());
+        localVarPath = localVarPath.replaceAll("//", "/");
 
         List<Pair> localVarQueryParams = new ArrayList<Pair>();
         List<Pair> localVarCollectionQueryParams = new ArrayList<Pair>();
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "folder", request.getFolder());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "storage", request.getStorage());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "loadEncoding", request.getLoadEncoding());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "password", request.getPassword());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "destFileName", request.getDestFileName());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "revisionAuthor", request.getRevisionAuthor());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "revisionDateTime", request.getRevisionDateTime());
+        addParameterToQuery(localVarQueryParams, "folder", request.getFolder());
+        addParameterToQuery(localVarQueryParams, "storage", request.getStorage());
+        addParameterToQuery(localVarQueryParams, "loadEncoding", request.getLoadEncoding());
+        addParameterToQuery(localVarQueryParams, "password", request.getPassword());
+        addParameterToQuery(localVarQueryParams, "destFileName", request.getDestFileName());
+        addParameterToQuery(localVarQueryParams, "revisionAuthor", request.getRevisionAuthor());
+        addParameterToQuery(localVarQueryParams, "revisionDateTime", request.getRevisionDateTime());
 
         Map<String, String> localVarHeaderParams = new HashMap<String, String>();
 
@@ -20884,19 +21171,21 @@ public class WordsApi {
         Object localVarPostBody = request.getDto();
 
         // create path and map variables
-        String localVarPath = "/words/{name}/{nodePath}/paragraphs/{index}/format".replaceAll("\\{" + "name" + "\\}", request.getName().toString()).replaceAll("//", "/")
-    .replaceAll("\\{" + "index" + "\\}", request.getIndex().toString()).replaceAll("//", "/")
-    .replaceAll("\\{" + "nodePath" + "\\}", request.getNodePath().toString()).replaceAll("//", "/");
+        String localVarPath = "/words/{name}/{nodePath}/paragraphs/{index}/format";
+        localVarPath = addParameterToPath(localVarPath, "name", request.getName());
+        localVarPath = addParameterToPath(localVarPath, "index", request.getIndex());
+        localVarPath = addParameterToPath(localVarPath, "nodePath", request.getNodePath());
+        localVarPath = localVarPath.replaceAll("//", "/");
 
         List<Pair> localVarQueryParams = new ArrayList<Pair>();
         List<Pair> localVarCollectionQueryParams = new ArrayList<Pair>();
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "folder", request.getFolder());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "storage", request.getStorage());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "loadEncoding", request.getLoadEncoding());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "password", request.getPassword());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "destFileName", request.getDestFileName());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "revisionAuthor", request.getRevisionAuthor());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "revisionDateTime", request.getRevisionDateTime());
+        addParameterToQuery(localVarQueryParams, "folder", request.getFolder());
+        addParameterToQuery(localVarQueryParams, "storage", request.getStorage());
+        addParameterToQuery(localVarQueryParams, "loadEncoding", request.getLoadEncoding());
+        addParameterToQuery(localVarQueryParams, "password", request.getPassword());
+        addParameterToQuery(localVarQueryParams, "destFileName", request.getDestFileName());
+        addParameterToQuery(localVarQueryParams, "revisionAuthor", request.getRevisionAuthor());
+        addParameterToQuery(localVarQueryParams, "revisionDateTime", request.getRevisionDateTime());
 
         Map<String, String> localVarHeaderParams = new HashMap<String, String>();
 
@@ -21033,19 +21322,21 @@ public class WordsApi {
         Object localVarPostBody = request.getDto();
 
         // create path and map variables
-        String localVarPath = "/words/{name}/{nodePath}/paragraphs/{index}/listFormat".replaceAll("\\{" + "name" + "\\}", request.getName().toString()).replaceAll("//", "/")
-    .replaceAll("\\{" + "index" + "\\}", request.getIndex().toString()).replaceAll("//", "/")
-    .replaceAll("\\{" + "nodePath" + "\\}", request.getNodePath().toString()).replaceAll("//", "/");
+        String localVarPath = "/words/{name}/{nodePath}/paragraphs/{index}/listFormat";
+        localVarPath = addParameterToPath(localVarPath, "name", request.getName());
+        localVarPath = addParameterToPath(localVarPath, "index", request.getIndex());
+        localVarPath = addParameterToPath(localVarPath, "nodePath", request.getNodePath());
+        localVarPath = localVarPath.replaceAll("//", "/");
 
         List<Pair> localVarQueryParams = new ArrayList<Pair>();
         List<Pair> localVarCollectionQueryParams = new ArrayList<Pair>();
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "folder", request.getFolder());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "storage", request.getStorage());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "loadEncoding", request.getLoadEncoding());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "password", request.getPassword());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "destFileName", request.getDestFileName());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "revisionAuthor", request.getRevisionAuthor());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "revisionDateTime", request.getRevisionDateTime());
+        addParameterToQuery(localVarQueryParams, "folder", request.getFolder());
+        addParameterToQuery(localVarQueryParams, "storage", request.getStorage());
+        addParameterToQuery(localVarQueryParams, "loadEncoding", request.getLoadEncoding());
+        addParameterToQuery(localVarQueryParams, "password", request.getPassword());
+        addParameterToQuery(localVarQueryParams, "destFileName", request.getDestFileName());
+        addParameterToQuery(localVarQueryParams, "revisionAuthor", request.getRevisionAuthor());
+        addParameterToQuery(localVarQueryParams, "revisionDateTime", request.getRevisionDateTime());
 
         Map<String, String> localVarHeaderParams = new HashMap<String, String>();
 
@@ -21182,19 +21473,21 @@ public class WordsApi {
         Object localVarPostBody = request.getRun();
 
         // create path and map variables
-        String localVarPath = "/words/{name}/{paragraphPath}/runs/{index}".replaceAll("\\{" + "name" + "\\}", request.getName().toString()).replaceAll("//", "/")
-    .replaceAll("\\{" + "paragraphPath" + "\\}", request.getParagraphPath().toString()).replaceAll("//", "/")
-    .replaceAll("\\{" + "index" + "\\}", request.getIndex().toString()).replaceAll("//", "/");
+        String localVarPath = "/words/{name}/{paragraphPath}/runs/{index}";
+        localVarPath = addParameterToPath(localVarPath, "name", request.getName());
+        localVarPath = addParameterToPath(localVarPath, "paragraphPath", request.getParagraphPath());
+        localVarPath = addParameterToPath(localVarPath, "index", request.getIndex());
+        localVarPath = localVarPath.replaceAll("//", "/");
 
         List<Pair> localVarQueryParams = new ArrayList<Pair>();
         List<Pair> localVarCollectionQueryParams = new ArrayList<Pair>();
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "folder", request.getFolder());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "storage", request.getStorage());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "loadEncoding", request.getLoadEncoding());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "password", request.getPassword());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "destFileName", request.getDestFileName());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "revisionAuthor", request.getRevisionAuthor());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "revisionDateTime", request.getRevisionDateTime());
+        addParameterToQuery(localVarQueryParams, "folder", request.getFolder());
+        addParameterToQuery(localVarQueryParams, "storage", request.getStorage());
+        addParameterToQuery(localVarQueryParams, "loadEncoding", request.getLoadEncoding());
+        addParameterToQuery(localVarQueryParams, "password", request.getPassword());
+        addParameterToQuery(localVarQueryParams, "destFileName", request.getDestFileName());
+        addParameterToQuery(localVarQueryParams, "revisionAuthor", request.getRevisionAuthor());
+        addParameterToQuery(localVarQueryParams, "revisionDateTime", request.getRevisionDateTime());
 
         Map<String, String> localVarHeaderParams = new HashMap<String, String>();
 
@@ -21336,19 +21629,21 @@ public class WordsApi {
         Object localVarPostBody = request.getFontDto();
 
         // create path and map variables
-        String localVarPath = "/words/{name}/{paragraphPath}/runs/{index}/font".replaceAll("\\{" + "name" + "\\}", request.getName().toString()).replaceAll("//", "/")
-    .replaceAll("\\{" + "paragraphPath" + "\\}", request.getParagraphPath().toString()).replaceAll("//", "/")
-    .replaceAll("\\{" + "index" + "\\}", request.getIndex().toString()).replaceAll("//", "/");
+        String localVarPath = "/words/{name}/{paragraphPath}/runs/{index}/font";
+        localVarPath = addParameterToPath(localVarPath, "name", request.getName());
+        localVarPath = addParameterToPath(localVarPath, "paragraphPath", request.getParagraphPath());
+        localVarPath = addParameterToPath(localVarPath, "index", request.getIndex());
+        localVarPath = localVarPath.replaceAll("//", "/");
 
         List<Pair> localVarQueryParams = new ArrayList<Pair>();
         List<Pair> localVarCollectionQueryParams = new ArrayList<Pair>();
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "folder", request.getFolder());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "storage", request.getStorage());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "loadEncoding", request.getLoadEncoding());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "password", request.getPassword());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "destFileName", request.getDestFileName());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "revisionAuthor", request.getRevisionAuthor());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "revisionDateTime", request.getRevisionDateTime());
+        addParameterToQuery(localVarQueryParams, "folder", request.getFolder());
+        addParameterToQuery(localVarQueryParams, "storage", request.getStorage());
+        addParameterToQuery(localVarQueryParams, "loadEncoding", request.getLoadEncoding());
+        addParameterToQuery(localVarQueryParams, "password", request.getPassword());
+        addParameterToQuery(localVarQueryParams, "destFileName", request.getDestFileName());
+        addParameterToQuery(localVarQueryParams, "revisionAuthor", request.getRevisionAuthor());
+        addParameterToQuery(localVarQueryParams, "revisionDateTime", request.getRevisionDateTime());
 
         Map<String, String> localVarHeaderParams = new HashMap<String, String>();
 
@@ -21490,18 +21785,20 @@ public class WordsApi {
         Object localVarPostBody = request.getPageSetup();
 
         // create path and map variables
-        String localVarPath = "/words/{name}/sections/{sectionIndex}/pageSetup".replaceAll("\\{" + "name" + "\\}", request.getName().toString()).replaceAll("//", "/")
-    .replaceAll("\\{" + "sectionIndex" + "\\}", request.getSectionIndex().toString()).replaceAll("//", "/");
+        String localVarPath = "/words/{name}/sections/{sectionIndex}/pageSetup";
+        localVarPath = addParameterToPath(localVarPath, "name", request.getName());
+        localVarPath = addParameterToPath(localVarPath, "sectionIndex", request.getSectionIndex());
+        localVarPath = localVarPath.replaceAll("//", "/");
 
         List<Pair> localVarQueryParams = new ArrayList<Pair>();
         List<Pair> localVarCollectionQueryParams = new ArrayList<Pair>();
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "folder", request.getFolder());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "storage", request.getStorage());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "loadEncoding", request.getLoadEncoding());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "password", request.getPassword());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "destFileName", request.getDestFileName());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "revisionAuthor", request.getRevisionAuthor());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "revisionDateTime", request.getRevisionDateTime());
+        addParameterToQuery(localVarQueryParams, "folder", request.getFolder());
+        addParameterToQuery(localVarQueryParams, "storage", request.getStorage());
+        addParameterToQuery(localVarQueryParams, "loadEncoding", request.getLoadEncoding());
+        addParameterToQuery(localVarQueryParams, "password", request.getPassword());
+        addParameterToQuery(localVarQueryParams, "destFileName", request.getDestFileName());
+        addParameterToQuery(localVarQueryParams, "revisionAuthor", request.getRevisionAuthor());
+        addParameterToQuery(localVarQueryParams, "revisionDateTime", request.getRevisionDateTime());
 
         Map<String, String> localVarHeaderParams = new HashMap<String, String>();
 
@@ -21638,18 +21935,20 @@ public class WordsApi {
         Object localVarPostBody = request.getStyleUpdate();
 
         // create path and map variables
-        String localVarPath = "/words/{name}/styles/{styleName}/update".replaceAll("\\{" + "name" + "\\}", request.getName().toString()).replaceAll("//", "/")
-    .replaceAll("\\{" + "styleName" + "\\}", request.getStyleName().toString()).replaceAll("//", "/");
+        String localVarPath = "/words/{name}/styles/{styleName}/update";
+        localVarPath = addParameterToPath(localVarPath, "name", request.getName());
+        localVarPath = addParameterToPath(localVarPath, "styleName", request.getStyleName());
+        localVarPath = localVarPath.replaceAll("//", "/");
 
         List<Pair> localVarQueryParams = new ArrayList<Pair>();
         List<Pair> localVarCollectionQueryParams = new ArrayList<Pair>();
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "folder", request.getFolder());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "storage", request.getStorage());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "loadEncoding", request.getLoadEncoding());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "password", request.getPassword());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "destFileName", request.getDestFileName());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "revisionAuthor", request.getRevisionAuthor());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "revisionDateTime", request.getRevisionDateTime());
+        addParameterToQuery(localVarQueryParams, "folder", request.getFolder());
+        addParameterToQuery(localVarQueryParams, "storage", request.getStorage());
+        addParameterToQuery(localVarQueryParams, "loadEncoding", request.getLoadEncoding());
+        addParameterToQuery(localVarQueryParams, "password", request.getPassword());
+        addParameterToQuery(localVarQueryParams, "destFileName", request.getDestFileName());
+        addParameterToQuery(localVarQueryParams, "revisionAuthor", request.getRevisionAuthor());
+        addParameterToQuery(localVarQueryParams, "revisionDateTime", request.getRevisionDateTime());
 
         Map<String, String> localVarHeaderParams = new HashMap<String, String>();
 
@@ -21786,19 +22085,21 @@ public class WordsApi {
         Object localVarPostBody = request.getFormat();
 
         // create path and map variables
-        String localVarPath = "/words/{name}/{tableRowPath}/cells/{index}/cellformat".replaceAll("\\{" + "name" + "\\}", request.getName().toString()).replaceAll("//", "/")
-    .replaceAll("\\{" + "tableRowPath" + "\\}", request.getTableRowPath().toString()).replaceAll("//", "/")
-    .replaceAll("\\{" + "index" + "\\}", request.getIndex().toString()).replaceAll("//", "/");
+        String localVarPath = "/words/{name}/{tableRowPath}/cells/{index}/cellformat";
+        localVarPath = addParameterToPath(localVarPath, "name", request.getName());
+        localVarPath = addParameterToPath(localVarPath, "tableRowPath", request.getTableRowPath());
+        localVarPath = addParameterToPath(localVarPath, "index", request.getIndex());
+        localVarPath = localVarPath.replaceAll("//", "/");
 
         List<Pair> localVarQueryParams = new ArrayList<Pair>();
         List<Pair> localVarCollectionQueryParams = new ArrayList<Pair>();
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "folder", request.getFolder());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "storage", request.getStorage());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "loadEncoding", request.getLoadEncoding());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "password", request.getPassword());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "destFileName", request.getDestFileName());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "revisionAuthor", request.getRevisionAuthor());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "revisionDateTime", request.getRevisionDateTime());
+        addParameterToQuery(localVarQueryParams, "folder", request.getFolder());
+        addParameterToQuery(localVarQueryParams, "storage", request.getStorage());
+        addParameterToQuery(localVarQueryParams, "loadEncoding", request.getLoadEncoding());
+        addParameterToQuery(localVarQueryParams, "password", request.getPassword());
+        addParameterToQuery(localVarQueryParams, "destFileName", request.getDestFileName());
+        addParameterToQuery(localVarQueryParams, "revisionAuthor", request.getRevisionAuthor());
+        addParameterToQuery(localVarQueryParams, "revisionDateTime", request.getRevisionDateTime());
 
         Map<String, String> localVarHeaderParams = new HashMap<String, String>();
 
@@ -21940,19 +22241,21 @@ public class WordsApi {
         Object localVarPostBody = request.getProperties();
 
         // create path and map variables
-        String localVarPath = "/words/{name}/{nodePath}/tables/{index}/properties".replaceAll("\\{" + "name" + "\\}", request.getName().toString()).replaceAll("//", "/")
-    .replaceAll("\\{" + "index" + "\\}", request.getIndex().toString()).replaceAll("//", "/")
-    .replaceAll("\\{" + "nodePath" + "\\}", request.getNodePath().toString()).replaceAll("//", "/");
+        String localVarPath = "/words/{name}/{nodePath}/tables/{index}/properties";
+        localVarPath = addParameterToPath(localVarPath, "name", request.getName());
+        localVarPath = addParameterToPath(localVarPath, "index", request.getIndex());
+        localVarPath = addParameterToPath(localVarPath, "nodePath", request.getNodePath());
+        localVarPath = localVarPath.replaceAll("//", "/");
 
         List<Pair> localVarQueryParams = new ArrayList<Pair>();
         List<Pair> localVarCollectionQueryParams = new ArrayList<Pair>();
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "folder", request.getFolder());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "storage", request.getStorage());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "loadEncoding", request.getLoadEncoding());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "password", request.getPassword());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "destFileName", request.getDestFileName());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "revisionAuthor", request.getRevisionAuthor());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "revisionDateTime", request.getRevisionDateTime());
+        addParameterToQuery(localVarQueryParams, "folder", request.getFolder());
+        addParameterToQuery(localVarQueryParams, "storage", request.getStorage());
+        addParameterToQuery(localVarQueryParams, "loadEncoding", request.getLoadEncoding());
+        addParameterToQuery(localVarQueryParams, "password", request.getPassword());
+        addParameterToQuery(localVarQueryParams, "destFileName", request.getDestFileName());
+        addParameterToQuery(localVarQueryParams, "revisionAuthor", request.getRevisionAuthor());
+        addParameterToQuery(localVarQueryParams, "revisionDateTime", request.getRevisionDateTime());
 
         Map<String, String> localVarHeaderParams = new HashMap<String, String>();
 
@@ -22089,19 +22392,21 @@ public class WordsApi {
         Object localVarPostBody = request.getFormat();
 
         // create path and map variables
-        String localVarPath = "/words/{name}/{tablePath}/rows/{index}/rowformat".replaceAll("\\{" + "name" + "\\}", request.getName().toString()).replaceAll("//", "/")
-    .replaceAll("\\{" + "tablePath" + "\\}", request.getTablePath().toString()).replaceAll("//", "/")
-    .replaceAll("\\{" + "index" + "\\}", request.getIndex().toString()).replaceAll("//", "/");
+        String localVarPath = "/words/{name}/{tablePath}/rows/{index}/rowformat";
+        localVarPath = addParameterToPath(localVarPath, "name", request.getName());
+        localVarPath = addParameterToPath(localVarPath, "tablePath", request.getTablePath());
+        localVarPath = addParameterToPath(localVarPath, "index", request.getIndex());
+        localVarPath = localVarPath.replaceAll("//", "/");
 
         List<Pair> localVarQueryParams = new ArrayList<Pair>();
         List<Pair> localVarCollectionQueryParams = new ArrayList<Pair>();
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "folder", request.getFolder());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "storage", request.getStorage());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "loadEncoding", request.getLoadEncoding());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "password", request.getPassword());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "destFileName", request.getDestFileName());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "revisionAuthor", request.getRevisionAuthor());
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "revisionDateTime", request.getRevisionDateTime());
+        addParameterToQuery(localVarQueryParams, "folder", request.getFolder());
+        addParameterToQuery(localVarQueryParams, "storage", request.getStorage());
+        addParameterToQuery(localVarQueryParams, "loadEncoding", request.getLoadEncoding());
+        addParameterToQuery(localVarQueryParams, "password", request.getPassword());
+        addParameterToQuery(localVarQueryParams, "destFileName", request.getDestFileName());
+        addParameterToQuery(localVarQueryParams, "revisionAuthor", request.getRevisionAuthor());
+        addParameterToQuery(localVarQueryParams, "revisionDateTime", request.getRevisionDateTime());
 
         Map<String, String> localVarHeaderParams = new HashMap<String, String>();
 
@@ -22243,11 +22548,13 @@ public class WordsApi {
         Object localVarPostBody = null;
 
         // create path and map variables
-        String localVarPath = "/words/storage/file/{path}".replaceAll("\\{" + "path" + "\\}", request.getPath().toString()).replaceAll("//", "/");
+        String localVarPath = "/words/storage/file/{path}";
+        localVarPath = addParameterToPath(localVarPath, "path", request.getPath());
+        localVarPath = localVarPath.replaceAll("//", "/");
 
         List<Pair> localVarQueryParams = new ArrayList<Pair>();
         List<Pair> localVarCollectionQueryParams = new ArrayList<Pair>();
-        localVarPath = addParameterToQuery(localVarQueryParams, localVarPath, "storageName", request.getStorageName());
+        addParameterToQuery(localVarQueryParams, "storageName", request.getStorageName());
 
         Map<String, String> localVarHeaderParams = new HashMap<String, String>();
 
@@ -22369,7 +22676,11 @@ public class WordsApi {
         return call;
     }
 
-    private String addParameterToQuery(List<Pair> queryParams, String path, String paramName, Object paramValue) {
+    private void addParameterToQuery(List<Pair> queryParams, String paramName, Object paramValue) {
+        queryParams.addAll(apiClient.parameterToPair(paramName, paramValue));
+    }
+
+    private String addParameterToPath(String path, String paramName, Object paramValue) {
         if (path.contains("{" + paramName + "}")) {
             if (paramValue == null || paramValue.equals("")) {
                 return path.replace("{" + paramName + "}", "");
@@ -22379,7 +22690,6 @@ public class WordsApi {
             }
         }
 
-        queryParams.addAll(apiClient.parameterToPair(paramName, paramValue));
         return path;
     }
 }
