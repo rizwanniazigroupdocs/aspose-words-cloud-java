@@ -13,6 +13,22 @@ This repository contains Aspose.Words Cloud SDK for Java source code. This SDK a
 * Watermarks and protection
 * Full read & write access to Document Object Model, including sections, paragraphs, text, images, tables, headers/footers and many others
 
+## Read & Write Document Formats
+
+**Microsoft Word:** DOC, DOCX, RTF, DOT, DOTX, DOTM, FlatOPC (XML)
+**OpenOffice:** ODT, OTT
+**WordprocessingML:** XML
+**Web:** HTML, MHTML, HtmlFixed
+**Text:** TXT
+**Fixed Layout:** PDF
+
+## Save Document As
+
+**Fixed Layout:** PDF/A, XPS, OpenXPS, PS
+**Images:** JPEG, PNG, BMP, SVG, TIFF, EMF
+**Others:** PCL
+
+
 ## Enhancements in Version 20.11
 
 - In configuration json file appSid / appKey has been replaced to clientId / clientSecret.
@@ -96,6 +112,10 @@ The complete source code is available in this repository folder. You can either 
 
 To use Aspose Words for Cloud Java SDK you need to register an account with [Aspose Cloud](https://www.aspose.cloud/) and lookup/create App Key and SID at [Cloud Dashboard](https://dashboard.aspose.cloud/#/apps). There is free quota available. For more details, see [Aspose Cloud Pricing](https://purchase.aspose.cloud/pricing).
 
+## Dependencies
+- Java 1.7+
+- referenced packages (see [here](pom.xml) for more details)
+
 ## Installation & Usage
 Add this dependency to your project's POM:
 
@@ -139,26 +159,12 @@ Add this dependency to your project's POM:
 
 [Test](src/test/java/com/aspose/words/cloud) contain various examples of using the SDK.
 
-## Dependencies
-- Java 1.7+
-- referenced packages (see [here](pom.xml) for more details)
+## Aspose.Words Cloud SDKs in Popular Languages
 
-## Licensing
+| .NET | Java | PHP | Python | Ruby | Node.js | Android |
+|---|---|---|---|---|---|---|
+| [GitHub](https://github.com/aspose-words-cloud/aspose-words-cloud-dotnet) | [GitHub](https://github.com/aspose-words-cloud/aspose-words-cloud-java) | [GitHub](https://github.com/aspose-words-cloud/aspose-words-cloud-php) | [GitHub](https://github.com/aspose-words-cloud/aspose-words-cloud-python) | [GitHub](https://github.com/aspose-words-cloud/aspose-words-cloud-ruby)  | [GitHub](https://github.com/aspose-words-cloud/aspose-words-cloud-node) | [GitHub](https://github.com/aspose-words-cloud/aspose-words-cloud-android) |
+| [NuGet](https://www.nuget.org/packages/Aspose.Words-Cloud/) | [Maven](https://repository.aspose.cloud/webapp/#/artifacts/browse/tree/General/repo/com/aspose/aspose-words-cloud) | [Composer](https://packagist.org/packages/aspose-cloud/aspose-words-cloud) | [PIP](https://pypi.org/project/aspose.words-cloud/) | [GEM](https://rubygems.org/gems/aspose_words_cloud)  | [NPM](https://www.npmjs.com/package/asposewordscloud) | [Maven](https://repository.aspose.cloud/webapp/#/artifacts/browse/tree/General/repo/com/aspose/aspose-words-cloud) | 
 
-All Aspose.Words Cloud SDKs, helper scripts and templates are licensed under [MIT License](https://github.com/aspose-words-cloud/aspose-words-cloud-java/blob/master/LICENSE). 
 
-## Contact Us
-Your feedback is very important to us. Please feel free to contact us using our [Support Forums](https://forum.aspose.cloud/c/words).
-
-## Resources
-
-[Website](https://www.aspose.cloud/)  
-[Product Home](https://products.aspose.cloud/words/family)  
-[API Reference](https://apireference.aspose.cloud/words/)  
-[Documentation](https://docs.aspose.cloud/display/wordscloud/Home)  
-[Blog](https://blog.aspose.cloud/category/words/)  
-
-## Other languages
-We generate our SDKs in different languages so you may check if yours is available in our [list](https://github.com/aspose-words-cloud).
-
-If you don't find your language in the list, feel free to request it from us, or use raw REST API requests as you can find it [here](https://products.aspose.cloud/words/curl).
+[Product Page](https://products.aspose.cloud/words/net) | [Documentation](https://docs.aspose.cloud/display/wordscloud/Home) | [API Reference](https://apireference.aspose.cloud/words/) | [Code Samples](https://github.com/aspose-words-cloud/aspose-words-cloud-dotnet) | [Blog](https://blog.aspose.cloud/category/words/) | [Free Support](https://forum.aspose.cloud/c/words) | [Free Trial](https://dashboard.aspose.cloud/#/apps)
