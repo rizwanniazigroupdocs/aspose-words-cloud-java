@@ -1,4 +1,4 @@
-![](https://img.shields.io/badge/api-v2.0-lightgrey) [![GitHub license](https://img.shields.io/github/license/aspose-words-cloud/aspose-words-cloud-java)](https://github.com/aspose-words-cloud/aspose-words-cloud-java/blob/master/LICENSE) 
+![](https://img.shields.io/badge/api-v4.0-lightgrey) [![GitHub license](https://img.shields.io/github/license/aspose-words-cloud/aspose-words-cloud-java)](https://github.com/aspose-words-cloud/aspose-words-cloud-java/blob/master/LICENSE) 
 
 # Java SDK for Word Documents Processing in the Cloud
 
